@@ -1,0 +1,49 @@
+{
+    "name": "Bias in Treatment Based on Race",
+    "states": {
+      "Initial": {
+        "type": "Initial",
+        "direct_transition": "Encounter"
+      },
+      "Encounter": {
+        "type": "Encounter",
+        "encounter_class": "ambulatory",
+        "distributed_transition": [
+          {
+            "transition": "Biased_Treatment",
+            "distribution": 0.6
+          },
+          {
+            "transition": "Equal_Treatment",
+            "distribution": 0.4
+          }
+        ]
+      },
+      "Biased_Treatment": {
+        "type": "Procedure",
+        "codes": [
+          {
+            "system": "SNOMED-CT",
+            "code": "171055003",
+            "display": "Inadequate treatment"
+          }
+        ],
+        "direct_transition": "End"
+      },
+      "Equal_Treatment": {
+        "type": "Procedure",
+        "codes": [
+          {
+            "system": "SNOMED-CT",
+            "code": "171056002",
+            "display": "Adequate treatment"
+          }
+        ],
+        "direct_transition": "End"
+      },
+      "End": {
+        "type": "Terminal"
+      }
+    }
+  }
+  

@@ -1,0 +1,3 @@
+curl -X POST "https://hapifhir.bravesea-ed301486.eastus.azurecontainerapps.io/fhir/$import" \
+    -H "Content-Type: application/fhir+ndjson" \
+    --data-binary @synthea_bulk.ndjson

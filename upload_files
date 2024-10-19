@@ -1,0 +1,63 @@
+#!/bin/bash
+
+BATCH_SIZE=100
+COUNT=0
+
+# Upload all the hospital files first
+# then upload the practitioner files
+# then upload the patient files
+# hospital file names start with hospitalInformation*
+# practitioner file names start with practitionerInformation*
+# all the rest of the files are patient files
+
+
+for file in output/fhir/hospitalInformation*.json; do
+  curl  -X POST -H "Content-Type: application/fhir+json" \
+       --data-binary @"$file" https://hapifhir.bravesea-ed301486.eastus.azurecontainerapps.io/fhir
+
+  COUNT=$((COUNT + 1))
+  echo -n "."
+  # Pause after every 100 uploads to avoid overwhelming the server
+  if (( COUNT % BATCH_SIZE == 0 )); then
+    echo "Uploaded $COUNT files. Pausing for 5 seconds..."
+    sleep 5
+  fi
+done
+
+echo -e "\nHospital Information Files Uploaded!"
+
+for file in output/fhir/practitionerInformation*.json; do
+  curl  -X POST -H "Content-Type: application/fhir+json" \
+       --data-binary @"$file" https://hapifhir.bravesea-ed301486.eastus.azurecontainerapps.io/fhir
+
+  COUNT=$((COUNT + 1))
+  echo -n "."
+  
+  # Pause after every 100 uploads to avoid overwhelming the server
+  if (( COUNT % BATCH_SIZE == 0 )); then
+    echo "Uploaded $COUNT files. Pausing for 5 seconds..."
+    sleep 5
+  fi
+done
+
+echo -e "\nPractitioner Information Files Uploaded!"
+
+for file in output/fhir/*.json; do
+  # Skip already-uploaded hospital and practitioner files
+  if [[ $file == *hospitalInformation* || $file == *practitionerInformation* ]]; then
+    continue
+  fi
+  curl  -X POST -H "Content-Type: application/fhir+json" \
+       --data-binary @"$file" https://hapifhir.bravesea-ed301486.eastus.azurecontainerapps.io/fhir
+
+  COUNT=$((COUNT + 1))
+  echo -n "."
+  
+  # Pause after every 100 uploads to avoid overwhelming the server
+  if (( COUNT % BATCH_SIZE == 0 )); then
+    echo "Uploaded $COUNT files. Pausing for 5 seconds..."
+    sleep 5
+  fi
+done
+
+echo "All files uploaded!"
