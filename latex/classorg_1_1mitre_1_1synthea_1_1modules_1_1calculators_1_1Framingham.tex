@@ -1,0 +1,114 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+calculators.\+Framingham Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham}\index{org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a4b742ca13dc4ee89b6b50a3f716b1751}{chd10\+Year}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean per\+Timestep)
+\begin{DoxyCompactList}\small\item\em Calculates a patient\textquotesingle{}s risk of coronary heart disease, based on the 1998 \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham}{Framingham}} study group. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a03b7e1449e8c725ef40367f07ca11479}{cvd10\+Year}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean per\+Timestep)
+\begin{DoxyCompactList}\small\item\em Calculates a patient\textquotesingle{}s risk of cardiovascular disease, based on the 2008 \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham}{Framingham}} study group. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a60b9aa4042bda8b595d1dc67f58d129b}{atrial\+Fibrillation10\+Year}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean per\+Timestep)
+\begin{DoxyCompactList}\small\item\em Calculate 10 year risk of atrial fibrillation. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a4b71556aa9ef8438faf7615c4297844c}{stroke10\+Year}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean per\+Timestep)
+\begin{DoxyCompactList}\small\item\em Calculate 10 year stroke risk. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_ae2f576bf9aa1a1df468152996f779749}{inventory\+Attributes}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_aad428c61b6381f9aafba99ee57c79d72}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_aad428c61b6381f9aafba99ee57c79d72}} 
+static final long {\bfseries TEN\+\_\+\+YEARS\+\_\+\+IN\+\_\+\+MS} = Time\+Unit.\+DAYS.\+to\+Millis(3650)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a60b9aa4042bda8b595d1dc67f58d129b}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a60b9aa4042bda8b595d1dc67f58d129b}} 
+\index{org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}!atrialFibrillation10Year@{atrialFibrillation10Year}}
+\index{atrialFibrillation10Year@{atrialFibrillation10Year}!org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}}
+\doxysubsubsection{\texorpdfstring{atrialFibrillation10Year()}{atrialFibrillation10Year()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+calculators.\+Framingham.\+atrial\+Fibrillation10\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{per\+Timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculate 10 year risk of atrial fibrillation. 
+
+\begin{DoxyReturn}{Returns}
+risk 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a4b742ca13dc4ee89b6b50a3f716b1751}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a4b742ca13dc4ee89b6b50a3f716b1751}} 
+\index{org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}!chd10Year@{chd10Year}}
+\index{chd10Year@{chd10Year}!org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}}
+\doxysubsubsection{\texorpdfstring{chd10Year()}{chd10Year()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+calculators.\+Framingham.\+chd10\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{per\+Timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates a patient\textquotesingle{}s risk of coronary heart disease, based on the 1998 \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham}{Framingham}} study group. 
+
+This includes events such as Angina Pectoris, Unstable Angina, MI, and CHD Death. 
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient \\
+\hline
+{\em time} & Time to calculate risk as of \\
+\hline
+{\em per\+Timestep} & Whether to return the risk per timestep (default 7 days) or per 10 years \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The patient\textquotesingle{}s risk of CHD 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a03b7e1449e8c725ef40367f07ca11479}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a03b7e1449e8c725ef40367f07ca11479}} 
+\index{org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}!cvd10Year@{cvd10Year}}
+\index{cvd10Year@{cvd10Year}!org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}}
+\doxysubsubsection{\texorpdfstring{cvd10Year()}{cvd10Year()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+calculators.\+Framingham.\+cvd10\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{per\+Timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates a patient\textquotesingle{}s risk of cardiovascular disease, based on the 2008 \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham}{Framingham}} study group. 
+
+This includes \char`\"{}\+Hard ASCVD\char`\"{} events\+: MI, CHD Death, Stroke, and Stroke Death. 
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient \\
+\hline
+{\em time} & Time to calculate risk as of \\
+\hline
+{\em per\+Timestep} & Whether to return the risk per timestep (default 7 days) or per 10 years \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The patient\textquotesingle{}s risk of CVD 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_ae2f576bf9aa1a1df468152996f779749}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_ae2f576bf9aa1a1df468152996f779749}} 
+\index{org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+calculators.\+Framingham.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a4b71556aa9ef8438faf7615c4297844c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1Framingham_a4b71556aa9ef8438faf7615c4297844c}} 
+\index{org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}!stroke10Year@{stroke10Year}}
+\index{stroke10Year@{stroke10Year}!org.mitre.synthea.modules.calculators.Framingham@{org.mitre.synthea.modules.calculators.Framingham}}
+\doxysubsubsection{\texorpdfstring{stroke10Year()}{stroke10Year()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+calculators.\+Framingham.\+stroke10\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{per\+Timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculate 10 year stroke risk. 
+
+\begin{DoxyReturn}{Returns}
+risk 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/calculators/Framingham.\+java\end{DoxyCompactItemize}

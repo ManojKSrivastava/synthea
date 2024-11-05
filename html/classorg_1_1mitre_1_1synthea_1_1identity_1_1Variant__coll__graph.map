@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.identity.Variant" name="org.mitre.synthea.identity.Variant">
+<area shape="rect" id="node1" title="A representation of demographic information for a person." alt="" coords="5,95,200,136"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1mitre_1_1synthea_1_1identity_1_1IdentityRecord.html" title=" " alt="" coords="5,5,200,47"/>
+</map>

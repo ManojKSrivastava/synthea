@@ -1,0 +1,12 @@
+<map id="org.mitre.synthea.world.concepts.HealthRecord" name="org.mitre.synthea.world.concepts.HealthRecord">
+<area shape="rect" id="node1" title="HealthRecord contains all the coded entries in a person&#39;s health record." alt="" coords="943,201,1187,242"/>
+<area shape="rect" id="node2" title=" " alt="" coords="113,5,212,32"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider.html" title=" " alt="" coords="535,201,766,242"/>
+<area shape="rect" id="node3" title=" " alt="" coords="509,135,792,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="79,337,247,364"/>
+<area shape="rect" id="node6" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement.html" title=" " alt="" coords="5,57,320,98"/>
+<area shape="rect" id="node7" title=" " alt="" coords="40,123,285,179"/>
+<area shape="rect" id="node8" title=" " alt="" coords="23,203,303,245"/>
+<area shape="rect" id="node9" href="$enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType.html" title=" " alt="" coords="47,269,278,310"/>
+<area shape="rect" id="node10" title=" " alt="" coords="484,405,817,446"/>
+</map>

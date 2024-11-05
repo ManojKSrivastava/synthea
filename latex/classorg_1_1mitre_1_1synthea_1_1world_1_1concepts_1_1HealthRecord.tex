@@ -1,0 +1,832 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} contains all the coded entries in a person\textquotesingle{}s health record.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Allergy}{Allergy}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1CarePlan}{Care\+Plan}}
+\item 
+class {\bfseries Code}
+\begin{DoxyCompactList}\small\item\em Health\+Record.\+Code represents a system, code, and display value. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Device}{Device}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Device}{Device}} is an implantable device such as a coronary stent, artificial knee or hip, heart pacemaker, or implantable defibrillator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}
+\begin{DoxyCompactList}\small\item\em All things within a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} are instances of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EntryWithReasons}{Entry\+With\+Reasons}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy}{Imaging\+Study}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Immunization}{Immunization}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication}{Medication}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Procedure}{Procedure}}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ReactionSeverity}{Reaction\+Severity}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Report}{Report}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Supply}{Supply}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a53aa31a9d8bc67bb96d1eb0c25911809}{Health\+Record}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Construct a health record for the supplied person. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a32f10de38fb5719fb8f2cf05cb841391}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a32f10de38fb5719fb8f2cf05cb841391}} 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a32f10de38fb5719fb8f2cf05cb841391}{provider\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of providers associated with this healthrecord. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa67f9196918f58ec3489acae55bb0608}{text\+Summary}} ()
+\begin{DoxyCompactList}\small\item\em Create a text summary of the health record containing counts of each time of entry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_afa7730909b452b002face292dcb4e00d}{current\+Encounter}} (long time)
+\begin{DoxyCompactList}\small\item\em Get the latest encounter or, if none exists, create a new wellness encounter. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad6bdbdb585e3cd65876eb399336692da}{time\+Since\+Last\+Wellness\+Encounter}} (long time)
+\begin{DoxyCompactList}\small\item\em Return the time between the supplied time and the time of the last wellness encounter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_adc510bda230d324f3ba9cc274cc0fa30}{last\+Wellness\+Encounter}} ()
+\begin{DoxyCompactList}\small\item\em Return the last wellness encounter for the individual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a2dfa3ba973d9ad85f3517a39e03d2839}{observation}} (long time, String type, Object value)
+\begin{DoxyCompactList}\small\item\em Add an observation with the supplied properties to the current encounter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9ae674c9ebd6edc3e77a87871d4c2099}{multi\+Observation}} (long time, String type, int number\+Of\+Observations)
+\begin{DoxyCompactList}\small\item\em Add a new observation for the specified time and type, move the specified number of observations (in reverse order) from the encounter to sub observations of the new observation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a07e1e8250a14258f5fb16ef927f50e6a}{get\+Latest\+Observation}} (String type)
+\begin{DoxyCompactList}\small\item\em Get the latest observation of the specified type or null if none exists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a1673f97c3237dd43882e0fa924c17069}{condition\+Start}} (long time, String primary\+Code)
+\begin{DoxyCompactList}\small\item\em Return an existing \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} for the specified code or create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} if none exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a757fcb9dd24816eb743c30bf6820b17e}{condition\+End}} (long time, String primary\+Code)
+\begin{DoxyCompactList}\small\item\em End an existing condition if one exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9adc21cc30494516a5f17ae4657eb72a}{condition\+End\+By\+State}} (long time, String state\+Name)
+\begin{DoxyCompactList}\small\item\em End an existing condition with the supplied state if one exists. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a36be8958526dc502fe44222bda98d4df}{condition\+Active}} (String type)
+\begin{DoxyCompactList}\small\item\em Check whether the specified condition type is currently active (end is not specified). \end{DoxyCompactList}\item 
+Long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a22c30459c1bd3cda0df2907c0093f419}{present\+Onset}} (String code)
+\begin{DoxyCompactList}\small\item\em Get the onset time for any entry that is currently present in the healthrecord. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Allergy}{Allergy}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ae1d170ca9e05f15abe90a3b3381a1b8a}{allergy\+Start}} (long time, String primary\+Code)
+\begin{DoxyCompactList}\small\item\em Return the current allergy of the specified type or create a new one if none exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a27c87470a9b09df42154f24c4de94a65}{allergy\+End}} (long time, String primary\+Code)
+\begin{DoxyCompactList}\small\item\em End the current allergy of the specified type if one exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a1c9c1afa05080ee36a78446d25809c56}{allergy\+End\+By\+State}} (long time, String state\+Name)
+\begin{DoxyCompactList}\small\item\em End an existing allergy with the supplied state if one exists. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a804568e5f970d20efb1dd98e867d30fc}{allergy\+Active}} (String type)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified allergy is active. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Procedure}{Procedure}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa387f3e16126dea899b0fe03899ce26f}{procedure}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Create a new procedure of the specified type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Device}{Device}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_af64c5777368514420d29478d016c7d0d}{device\+Implant}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Implant or assign a device to this patient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a6b6a9970d7c04fd7090a16c317202790}{device\+Remove}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Remove a device from the patient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa3edfe4ac825be114adfc45554224cda}{device\+Remove\+By\+State}} (long time, String state\+Name)
+\begin{DoxyCompactList}\small\item\em Remove a device from the patient based on the state where it was assigned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Supply}{Supply}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac9f795154d700f996855bf41ba98e241}{use\+Supply}} (long time, Code code, int quantity)
+\begin{DoxyCompactList}\small\item\em Track the use of a supply in the provision of care for this patient. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Report}{Report}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aec93ba9a88deefb3a0e144ac7ed31485}{report}} (long time, String type, int number\+Of\+Observations)
+\begin{DoxyCompactList}\small\item\em Add a new report for the specified time and type, copy the specified number of observations (in reverse order) from the encounter to the new report. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a731c546dc7c0ce74a21a1374361ede4d}{encounter\+Start}} (long time, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Starts an encounter of the given type at the given time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a69fa512be6c2216e7322da173f147300}{encounter\+End}} (long time, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Ends an encounter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a3081d451672f33bf80315b4f032d2cd6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a3081d451672f33bf80315b4f032d2cd6}} 
+long {\bfseries last\+Encounter\+Time} ()
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Immunization}{Immunization}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a324dea67238c3cfc2be1f4acf5670c8b}{immunization}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Create a new immunization and add it to the current encounter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication}{Medication}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ab06133f9f02fc1e356a7ba169097b607}{medication\+Start}} (long time, String type, boolean chronic)
+\begin{DoxyCompactList}\small\item\em Get an existing medication of the specified type or create one if none exists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication}{Medication}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ae48af271d089fbaaa6065ac9a22b3a30}{medication\+Administration}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Administer a medication without altering existing medications. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa924aa79f4874e9e21788a01190ec1bc}{medication\+End}} (long time, String type, Code reason)
+\begin{DoxyCompactList}\small\item\em End a current medication of the specified type if one exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_af6fff6f4a0f2579d974a9c85ebf705b5}{medication\+End\+By\+State}} (long time, String state\+Name, Code reason)
+\begin{DoxyCompactList}\small\item\em End an existing medication with the supplied state if one exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a222fe22470fce7f65781df511e7a2bd6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a222fe22470fce7f65781df511e7a2bd6}} 
+boolean {\bfseries medication\+Active} (String type)
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1CarePlan}{Care\+Plan}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a321b2fe09447a29a26087324446af7d2}{careplan\+Start}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Get the current care plan of the specified type or create a new one if none found. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa38b65b12a69684e1d9eb80e27c940c5}{careplan\+End}} (long time, String type, Code reason)
+\begin{DoxyCompactList}\small\item\em End the current care plan of the specified type if one exists. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a403dab26a15e80001bdb9b4bccc480bd}{careplan\+End\+By\+State}} (long time, String state\+Name, Code reason)
+\begin{DoxyCompactList}\small\item\em End an existing care plan with the supplied state if one exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_afd65ddcb6e6df21473d2bcd54090e310}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_afd65ddcb6e6df21473d2bcd54090e310}} 
+boolean {\bfseries careplan\+Active} (String type)
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy}{Imaging\+Study}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a4c2d80b2225f593ba083739d6c77e3e1}{imaging\+Study}} (long time, String type, List$<$ Imaging\+Study.\+Series $>$ series)
+\begin{DoxyCompactList}\small\item\em Create a new imaging study. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a01ca54302df0c0735458e82dae0a8a40}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a01ca54302df0c0735458e82dae0a8a40}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} {\bfseries provider}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_acc9990d76de31cdb0c8bf0587a34e142}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_acc9990d76de31cdb0c8bf0587a34e142}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} $>$ {\bfseries encounters}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac08e0616ecb36af280825741d0440365}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac08e0616ecb36af280825741d0440365}} 
+Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} $>$ {\bfseries present}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9c77e24b21f19ad7ede9830eb9ad0594}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9c77e24b21f19ad7ede9830eb9ad0594}} 
+Long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9c77e24b21f19ad7ede9830eb9ad0594}{death}}
+\begin{DoxyCompactList}\small\item\em recorded death date/time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad54c00b63a4ad23bdaa4093a6dfb0771}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad54c00b63a4ad23bdaa4093a6dfb0771}} 
+Map$<$ String, Object $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad54c00b63a4ad23bdaa4093a6dfb0771}{demographics\+At\+Record\+Creation}}
+\begin{DoxyCompactList}\small\item\em The person\textquotesingle{}s demographics at the time of record creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a0510d2643ec9ef71c8d6c4b8bc4d193a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a0510d2643ec9ef71c8d6c4b8bc4d193a}} 
+static final String {\bfseries ENCOUNTERS} = \char`\"{}encounters\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac3ab5ae1f6b214080f09b947f19728bd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac3ab5ae1f6b214080f09b947f19728bd}} 
+static final String {\bfseries PROCEDURES} = \char`\"{}procedures\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_acc5fd53f37b987e74dfb52888aceabc5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_acc5fd53f37b987e74dfb52888aceabc5}} 
+static final String {\bfseries MEDICATIONS} = \char`\"{}medications\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad49b29bb8dc12d6962cafdae5272b208}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad49b29bb8dc12d6962cafdae5272b208}} 
+static final String {\bfseries IMMUNIZATIONS} = \char`\"{}immunizations\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} contains all the coded entries in a person\textquotesingle{}s health record. 
+
+This class represents a logical health record. Exporters will convert this health record into various standardized formats. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a53aa31a9d8bc67bb96d1eb0c25911809}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a53aa31a9d8bc67bb96d1eb0c25911809}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!HealthRecord@{HealthRecord}}
+\index{HealthRecord@{HealthRecord}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{HealthRecord()}{HealthRecord()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Health\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Construct a health record for the supplied person. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a804568e5f970d20efb1dd98e867d30fc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a804568e5f970d20efb1dd98e867d30fc}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!allergyActive@{allergyActive}}
+\index{allergyActive@{allergyActive}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{allergyActive()}{allergyActive()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+allergy\+Active (\begin{DoxyParamCaption}\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Checks whether the specified allergy is active. 
+
+Note that this functionality already exited in the condition\+Active method, but adding this method makes the intention of the caller more clear. This is method simply calls condition\+Active and returns the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of allergy to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is an active allergy for the type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a27c87470a9b09df42154f24c4de94a65}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a27c87470a9b09df42154f24c4de94a65}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!allergyEnd@{allergyEnd}}
+\index{allergyEnd@{allergyEnd}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{allergyEnd()}{allergyEnd()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+allergy\+End (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{primary\+Code }\end{DoxyParamCaption})}
+
+
+
+End the current allergy of the specified type if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & end time of the allergy. \\
+\hline
+{\em primary\+Code} & type of the allergy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a1c9c1afa05080ee36a78446d25809c56}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a1c9c1afa05080ee36a78446d25809c56}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!allergyEndByState@{allergyEndByState}}
+\index{allergyEndByState@{allergyEndByState}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{allergyEndByState()}{allergyEndByState()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+allergy\+End\+By\+State (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{state\+Name }\end{DoxyParamCaption})}
+
+
+
+End an existing allergy with the supplied state if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the allergy. \\
+\hline
+{\em state\+Name} & the state to search for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ae1d170ca9e05f15abe90a3b3381a1b8a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ae1d170ca9e05f15abe90a3b3381a1b8a}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!allergyStart@{allergyStart}}
+\index{allergyStart@{allergyStart}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{allergyStart()}{allergyStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Allergy}{Allergy}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+allergy\+Start (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{primary\+Code }\end{DoxyParamCaption})}
+
+
+
+Return the current allergy of the specified type or create a new one if none exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the start time of the new allergy if one is created. \\
+\hline
+{\em primary\+Code} & the type of allergy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the existing or new allergy entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa38b65b12a69684e1d9eb80e27c940c5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa38b65b12a69684e1d9eb80e27c940c5}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!careplanEnd@{careplanEnd}}
+\index{careplanEnd@{careplanEnd}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{careplanEnd()}{careplanEnd()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+careplan\+End (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{Code}]{reason }\end{DoxyParamCaption})}
+
+
+
+End the current care plan of the specified type if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the care plan. \\
+\hline
+{\em type} & the type of the care plan. \\
+\hline
+{\em reason} & the reason for ending the care plan. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a403dab26a15e80001bdb9b4bccc480bd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a403dab26a15e80001bdb9b4bccc480bd}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!careplanEndByState@{careplanEndByState}}
+\index{careplanEndByState@{careplanEndByState}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{careplanEndByState()}{careplanEndByState()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+careplan\+End\+By\+State (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{state\+Name,  }\item[{Code}]{reason }\end{DoxyParamCaption})}
+
+
+
+End an existing care plan with the supplied state if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the care plan. \\
+\hline
+{\em state\+Name} & the state to search for. \\
+\hline
+{\em reason} & the reason for ending the care plan. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a321b2fe09447a29a26087324446af7d2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a321b2fe09447a29a26087324446af7d2}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!careplanStart@{careplanStart}}
+\index{careplanStart@{careplanStart}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{careplanStart()}{careplanStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1CarePlan}{Care\+Plan}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+careplan\+Start (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Get the current care plan of the specified type or create a new one if none found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the start time of the care plan if one is created. \\
+\hline
+{\em type} & the type of the care plan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+existing or new care plan. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a36be8958526dc502fe44222bda98d4df}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a36be8958526dc502fe44222bda98d4df}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!conditionActive@{conditionActive}}
+\index{conditionActive@{conditionActive}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{conditionActive()}{conditionActive()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+condition\+Active (\begin{DoxyParamCaption}\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Check whether the specified condition type is currently active (end is not specified). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of the condition. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of the condition exists and does not have a specified stop time, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a757fcb9dd24816eb743c30bf6820b17e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a757fcb9dd24816eb743c30bf6820b17e}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!conditionEnd@{conditionEnd}}
+\index{conditionEnd@{conditionEnd}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{conditionEnd()}{conditionEnd()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+condition\+End (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{primary\+Code }\end{DoxyParamCaption})}
+
+
+
+End an existing condition if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the condition. \\
+\hline
+{\em primary\+Code} & the type of the condition to search for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9adc21cc30494516a5f17ae4657eb72a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9adc21cc30494516a5f17ae4657eb72a}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!conditionEndByState@{conditionEndByState}}
+\index{conditionEndByState@{conditionEndByState}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{conditionEndByState()}{conditionEndByState()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+condition\+End\+By\+State (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{state\+Name }\end{DoxyParamCaption})}
+
+
+
+End an existing condition with the supplied state if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the condition. \\
+\hline
+{\em state\+Name} & the state to search for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a1673f97c3237dd43882e0fa924c17069}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a1673f97c3237dd43882e0fa924c17069}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!conditionStart@{conditionStart}}
+\index{conditionStart@{conditionStart}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{conditionStart()}{conditionStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+condition\+Start (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{primary\+Code }\end{DoxyParamCaption})}
+
+
+
+Return an existing \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} for the specified code or create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} if none exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the new entry if one is created. \\
+\hline
+{\em primary\+Code} & the type of the entry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the entry (existing or new). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_afa7730909b452b002face292dcb4e00d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_afa7730909b452b002face292dcb4e00d}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!currentEncounter@{currentEncounter}}
+\index{currentEncounter@{currentEncounter}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{currentEncounter()}{currentEncounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+current\+Encounter (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Get the latest encounter or, if none exists, create a new wellness encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the encounter if a new one is created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the latest encounter (possibly newly created). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_af64c5777368514420d29478d016c7d0d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_af64c5777368514420d29478d016c7d0d}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!deviceImplant@{deviceImplant}}
+\index{deviceImplant@{deviceImplant}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{deviceImplant()}{deviceImplant()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Device}{Device}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+device\+Implant (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Implant or assign a device to this patient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time the device is implanted or assigned. \\
+\hline
+{\em type} & The type of device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a6b6a9970d7c04fd7090a16c317202790}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a6b6a9970d7c04fd7090a16c317202790}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!deviceRemove@{deviceRemove}}
+\index{deviceRemove@{deviceRemove}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{deviceRemove()}{deviceRemove()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+device\+Remove (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Remove a device from the patient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time the device is removed. \\
+\hline
+{\em type} & The type of device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa3edfe4ac825be114adfc45554224cda}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa3edfe4ac825be114adfc45554224cda}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!deviceRemoveByState@{deviceRemoveByState}}
+\index{deviceRemoveByState@{deviceRemoveByState}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{deviceRemoveByState()}{deviceRemoveByState()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+device\+Remove\+By\+State (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{state\+Name }\end{DoxyParamCaption})}
+
+
+
+Remove a device from the patient based on the state where it was assigned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time the device is removed. \\
+\hline
+{\em state\+Name} & The state where the device was implanted or assigned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a69fa512be6c2216e7322da173f147300}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a69fa512be6c2216e7322da173f147300}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!encounterEnd@{encounterEnd}}
+\index{encounterEnd@{encounterEnd}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{encounterEnd()}{encounterEnd()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+encounter\+End (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Ends an encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the encounter. \\
+\hline
+{\em type} & the type of the encounter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a731c546dc7c0ce74a21a1374361ede4d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a731c546dc7c0ce74a21a1374361ede4d}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!encounterStart@{encounterStart}}
+\index{encounterStart@{encounterStart}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{encounterStart()}{encounterStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+encounter\+Start (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Starts an encounter of the given type at the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the start time of the encounter. \\
+\hline
+{\em type} & the type of the encounter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a07e1e8250a14258f5fb16ef927f50e6a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a07e1e8250a14258f5fb16ef927f50e6a}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!getLatestObservation@{getLatestObservation}}
+\index{getLatestObservation@{getLatestObservation}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{getLatestObservation()}{getLatestObservation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+get\+Latest\+Observation (\begin{DoxyParamCaption}\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Get the latest observation of the specified type or null if none exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of observation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the latest observation or null if none exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a4c2d80b2225f593ba083739d6c77e3e1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a4c2d80b2225f593ba083739d6c77e3e1}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!imagingStudy@{imagingStudy}}
+\index{imagingStudy@{imagingStudy}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{imagingStudy()}{imagingStudy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy}{Imaging\+Study}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+imaging\+Study (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{List$<$ Imaging\+Study.\+Series $>$}]{series }\end{DoxyParamCaption})}
+
+
+
+Create a new imaging study. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the study. \\
+\hline
+{\em type} & the type of the study. \\
+\hline
+{\em series} & the series associated with the study. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a324dea67238c3cfc2be1f4acf5670c8b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a324dea67238c3cfc2be1f4acf5670c8b}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!immunization@{immunization}}
+\index{immunization@{immunization}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{immunization()}{immunization()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Immunization}{Immunization}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+immunization (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Create a new immunization and add it to the current encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the immunization. \\
+\hline
+{\em type} & the type of the immunization. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new immunization. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_adc510bda230d324f3ba9cc274cc0fa30}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_adc510bda230d324f3ba9cc274cc0fa30}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!lastWellnessEncounter@{lastWellnessEncounter}}
+\index{lastWellnessEncounter@{lastWellnessEncounter}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{lastWellnessEncounter()}{lastWellnessEncounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+last\+Wellness\+Encounter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the last wellness encounter for the individual. 
+
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} or null if it does not exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ae48af271d089fbaaa6065ac9a22b3a30}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ae48af271d089fbaaa6065ac9a22b3a30}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!medicationAdministration@{medicationAdministration}}
+\index{medicationAdministration@{medicationAdministration}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{medicationAdministration()}{medicationAdministration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication}{Medication}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+medication\+Administration (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Administer a medication without altering existing medications. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the administration. \\
+\hline
+{\em type} & the type of the medication to administer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new medication of the specified type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa924aa79f4874e9e21788a01190ec1bc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa924aa79f4874e9e21788a01190ec1bc}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!medicationEnd@{medicationEnd}}
+\index{medicationEnd@{medicationEnd}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{medicationEnd()}{medicationEnd()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+medication\+End (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{Code}]{reason }\end{DoxyParamCaption})}
+
+
+
+End a current medication of the specified type if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the medication. \\
+\hline
+{\em type} & the type of the medication. \\
+\hline
+{\em reason} & the reason for ending the medication. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_af6fff6f4a0f2579d974a9c85ebf705b5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_af6fff6f4a0f2579d974a9c85ebf705b5}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!medicationEndByState@{medicationEndByState}}
+\index{medicationEndByState@{medicationEndByState}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{medicationEndByState()}{medicationEndByState()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+medication\+End\+By\+State (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{state\+Name,  }\item[{Code}]{reason }\end{DoxyParamCaption})}
+
+
+
+End an existing medication with the supplied state if one exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the end time of the medication. \\
+\hline
+{\em state\+Name} & the state to search for. \\
+\hline
+{\em reason} & the reason for ending the medication. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ab06133f9f02fc1e356a7ba169097b607}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ab06133f9f02fc1e356a7ba169097b607}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!medicationStart@{medicationStart}}
+\index{medicationStart@{medicationStart}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{medicationStart()}{medicationStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication}{Medication}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+medication\+Start (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{boolean}]{chronic }\end{DoxyParamCaption})}
+
+
+
+Get an existing medication of the specified type or create one if none exists. 
+
+If chronic is true the medication will be added to the list of chronic medications whether it already exists or is created. 
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the medication if a new one is created. \\
+\hline
+{\em type} & the type of the medication to find or create. \\
+\hline
+{\em chronic} & whether the medication is chronic. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+existing or new medication of the specified type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9ae674c9ebd6edc3e77a87871d4c2099}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a9ae674c9ebd6edc3e77a87871d4c2099}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!multiObservation@{multiObservation}}
+\index{multiObservation@{multiObservation}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{multiObservation()}{multiObservation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+multi\+Observation (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{int}]{number\+Of\+Observations }\end{DoxyParamCaption})}
+
+
+
+Add a new observation for the specified time and type, move the specified number of observations (in reverse order) from the encounter to sub observations of the new observation. 
+
+If the encounter does not have the specified number of observations then none are moved and a new empty observation results. 
+\begin{DoxyParams}{Parameters}
+{\em time} & time of the new observation. \\
+\hline
+{\em type} & type of the new observation. \\
+\hline
+{\em number\+Of\+Observations} & the number of observations to move from the encounter to the new observation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new observation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a2dfa3ba973d9ad85f3517a39e03d2839}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a2dfa3ba973d9ad85f3517a39e03d2839}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!observation@{observation}}
+\index{observation@{observation}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{observation()}{observation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+observation (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+
+
+Add an observation with the supplied properties to the current encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & time of the observation. \\
+\hline
+{\em type} & type of the observation. \\
+\hline
+{\em value} & value of the observation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new observation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a22c30459c1bd3cda0df2907c0093f419}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_a22c30459c1bd3cda0df2907c0093f419}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!presentOnset@{presentOnset}}
+\index{presentOnset@{presentOnset}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{presentOnset()}{presentOnset()}}
+{\footnotesize\ttfamily Long org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+present\+Onset (\begin{DoxyParamCaption}\item[{String}]{code }\end{DoxyParamCaption})}
+
+
+
+Get the onset time for any entry that is currently present in the healthrecord. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The clinical code for the entry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The onset time or null if not present. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa387f3e16126dea899b0fe03899ce26f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa387f3e16126dea899b0fe03899ce26f}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!procedure@{procedure}}
+\index{procedure@{procedure}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{procedure()}{procedure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Procedure}{Procedure}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+procedure (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Create a new procedure of the specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the procedure. \\
+\hline
+{\em type} & the type of the procedure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new procedure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aec93ba9a88deefb3a0e144ac7ed31485}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aec93ba9a88deefb3a0e144ac7ed31485}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!report@{report}}
+\index{report@{report}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Report}{Report}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+report (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{int}]{number\+Of\+Observations }\end{DoxyParamCaption})}
+
+
+
+Add a new report for the specified time and type, copy the specified number of observations (in reverse order) from the encounter to the new report. 
+
+If the encounter does not have the specified number of observations then all of the encounter observations are copied to the report. 
+\begin{DoxyParams}{Parameters}
+{\em time} & time of the new report. \\
+\hline
+{\em type} & type of the new report. \\
+\hline
+{\em number\+Of\+Observations} & the number of observations to copy from the encounter to the new report. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new report. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa67f9196918f58ec3489acae55bb0608}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_aa67f9196918f58ec3489acae55bb0608}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!textSummary@{textSummary}}
+\index{textSummary@{textSummary}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{textSummary()}{textSummary()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+text\+Summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a text summary of the health record containing counts of each time of entry. 
+
+\begin{DoxyReturn}{Returns}
+text summary. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad6bdbdb585e3cd65876eb399336692da}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ad6bdbdb585e3cd65876eb399336692da}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!timeSinceLastWellnessEncounter@{timeSinceLastWellnessEncounter}}
+\index{timeSinceLastWellnessEncounter@{timeSinceLastWellnessEncounter}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{timeSinceLastWellnessEncounter()}{timeSinceLastWellnessEncounter()}}
+{\footnotesize\ttfamily long org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+time\+Since\+Last\+Wellness\+Encounter (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Return the time between the supplied time and the time of the last wellness encounter. 
+
+If there are no wellness encounter return Long.\+MAX\+\_\+\+VALUE. 
+\begin{DoxyParams}{Parameters}
+{\em time} & the time to measure from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the time difference, negative if time is before the first wellness encounter). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac9f795154d700f996855bf41ba98e241}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_ac9f795154d700f996855bf41ba98e241}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}!useSupply@{useSupply}}
+\index{useSupply@{useSupply}!org.mitre.synthea.world.concepts.HealthRecord@{org.mitre.synthea.world.concepts.HealthRecord}}
+\doxysubsubsection{\texorpdfstring{useSupply()}{useSupply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Supply}{Supply}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+use\+Supply (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{Code}]{code,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Track the use of a supply in the provision of care for this patient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time the supply was used \\
+\hline
+{\em code} & SNOMED Code to identify the supply \\
+\hline
+{\em quantity} & Number of this supply used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Supply}{Supply}} entry 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Health\+Record.\+java\end{DoxyCompactItemize}

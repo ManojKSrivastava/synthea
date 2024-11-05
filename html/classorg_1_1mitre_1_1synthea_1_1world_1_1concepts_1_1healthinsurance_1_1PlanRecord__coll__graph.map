@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.world.concepts.healthinsurance.PlanRecord" name="org.mitre.synthea.world.concepts.healthinsurance.PlanRecord">
+<area shape="rect" id="node1" title="A class that manages a person&#39;s record of plan uses and expenses for an enrollment period." alt="" coords="5,95,357,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="71,5,169,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="194,5,291,32"/>
+</map>

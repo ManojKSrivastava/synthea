@@ -1,0 +1,115 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Entry Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}\index{org.mitre.synthea.world.concepts.HealthRecord.Entry@{org.mitre.synthea.world.concepts.HealthRecord.Entry}}
+
+
+All things within a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} are instances of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Entry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Entry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a24057877c4f489933576ffe4ec1ca78e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a24057877c4f489933576ffe4ec1ca78e}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a24057877c4f489933576ffe4ec1ca78e}{Entry}} (long start, String type)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_ab14b91c6c4b3d9be19017dc5c8bdcc4f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_ab14b91c6c4b3d9be19017dc5c8bdcc4f}} 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_ab14b91c6c4b3d9be19017dc5c8bdcc4f}{get\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Returns the base cost of the entry. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a1f969e9087b1606cd46943ef5b7ac368}{contains\+Code}} (String code, String system)
+\begin{DoxyCompactList}\small\item\em Determines if the given entry contains the provided code in its list of codes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a194702e8df3a53df49a91292bc5d157b}{merge\+Code\+List}} (List$<$ Code $>$ other\+Codes)
+\begin{DoxyCompactList}\small\item\em Merges the passed in code list into the existing list of codes for this entry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_afb7eb378fb3465dbd6fed54de58dfe8d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_afb7eb378fb3465dbd6fed54de58dfe8d}} 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_afb7eb378fb3465dbd6fed54de58dfe8d}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Converts the entry to a String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a46060866de0adf41e6815a97b2bee7b9}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a46060866de0adf41e6815a97b2bee7b9}} 
+final UUID {\bfseries uuid} = record.\+person.\+rand\+UUID()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_aed08fcc572c5efcb1f1e5316017945f5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_aed08fcc572c5efcb1f1e5316017945f5}} 
+String {\bfseries full\+Url}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a93cd94aa3ec336b186f0ccb51033bde7}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a93cd94aa3ec336b186f0ccb51033bde7}} 
+String {\bfseries name}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a3aeb32ca108bfd9f54123df6f668f4cd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a3aeb32ca108bfd9f54123df6f668f4cd}} 
+long {\bfseries start}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_ab9790185d4a705a638afa33926b43824}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_ab9790185d4a705a638afa33926b43824}} 
+long {\bfseries stop}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_adb1f9524c23e9dda3b35e4b71350aa15}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_adb1f9524c23e9dda3b35e4b71350aa15}} 
+String {\bfseries type}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a4803153856e541feb0cc460723083c82}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a4803153856e541feb0cc460723083c82}} 
+List$<$ Code $>$ {\bfseries codes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+All things within a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} are instances of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}. 
+
+For example, Observations, Reports, Medications, etc. All Entries have a name, start and stop times, a type, and a list of associated codes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a1f969e9087b1606cd46943ef5b7ac368}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a1f969e9087b1606cd46943ef5b7ac368}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Entry@{org.mitre.synthea.world.concepts.HealthRecord.Entry}!containsCode@{containsCode}}
+\index{containsCode@{containsCode}!org.mitre.synthea.world.concepts.HealthRecord.Entry@{org.mitre.synthea.world.concepts.HealthRecord.Entry}}
+\doxysubsubsection{\texorpdfstring{containsCode()}{containsCode()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Entry.\+contains\+Code (\begin{DoxyParamCaption}\item[{String}]{code,  }\item[{String}]{system }\end{DoxyParamCaption})}
+
+
+
+Determines if the given entry contains the provided code in its list of codes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & clinical term \\
+\hline
+{\em system} & system for the code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the code is there 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a194702e8df3a53df49a91292bc5d157b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry_a194702e8df3a53df49a91292bc5d157b}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Entry@{org.mitre.synthea.world.concepts.HealthRecord.Entry}!mergeCodeList@{mergeCodeList}}
+\index{mergeCodeList@{mergeCodeList}!org.mitre.synthea.world.concepts.HealthRecord.Entry@{org.mitre.synthea.world.concepts.HealthRecord.Entry}}
+\doxysubsubsection{\texorpdfstring{mergeCodeList()}{mergeCodeList()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Entry.\+merge\+Code\+List (\begin{DoxyParamCaption}\item[{List$<$ Code $>$}]{other\+Codes }\end{DoxyParamCaption})}
+
+
+
+Merges the passed in code list into the existing list of codes for this entry. 
+
+If a code in other\+Codes already exists in this.\+codes, it is skipped, since it already exists in the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}. 
+\begin{DoxyParams}{Parameters}
+{\em other\+Codes} & codes to add to this entry \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Health\+Record.\+java\end{DoxyCompactItemize}

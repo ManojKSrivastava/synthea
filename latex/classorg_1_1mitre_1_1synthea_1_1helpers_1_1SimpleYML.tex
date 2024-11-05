@@ -1,0 +1,75 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Simple\+YML Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML}\index{org.mitre.synthea.helpers.SimpleYML@{org.mitre.synthea.helpers.SimpleYML}}
+
+
+Helper class to parse a YAML file into a (hopefully) useable map format.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML_a8f507b2e667dfa8666319177732a0a78}{Simple\+YML}} (String raw\+Content)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML}{Simple\+YML}} from the String contents from a file. \end{DoxyCompactList}\item 
+Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML_aa69ae6a7f35139da451f955231729317}{get}} (String path)
+\begin{DoxyCompactList}\small\item\em Get the object at the given path from the YML. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to parse a YAML file into a (hopefully) useable map format. 
+
+This is useful for arbitrary YAML which doesn\textquotesingle{}t try to adhere to any schema. (If it does adhere to a schema, there are other methods to parse YAML to objects which should be preferred) Java doesn\textquotesingle{}t have dynamic typing so this class exposes a \char`\"{}get\char`\"{} method which takes a path string, and walks the map to find the desired item. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML_a8f507b2e667dfa8666319177732a0a78}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML_a8f507b2e667dfa8666319177732a0a78}} 
+\index{org.mitre.synthea.helpers.SimpleYML@{org.mitre.synthea.helpers.SimpleYML}!SimpleYML@{SimpleYML}}
+\index{SimpleYML@{SimpleYML}!org.mitre.synthea.helpers.SimpleYML@{org.mitre.synthea.helpers.SimpleYML}}
+\doxysubsubsection{\texorpdfstring{SimpleYML()}{SimpleYML()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+helpers.\+Simple\+YML.\+Simple\+YML (\begin{DoxyParamCaption}\item[{String}]{raw\+Content }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML}{Simple\+YML}} from the String contents from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Content} & YML file as a String \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML_aa69ae6a7f35139da451f955231729317}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleYML_aa69ae6a7f35139da451f955231729317}} 
+\index{org.mitre.synthea.helpers.SimpleYML@{org.mitre.synthea.helpers.SimpleYML}!get@{get}}
+\index{get@{get}!org.mitre.synthea.helpers.SimpleYML@{org.mitre.synthea.helpers.SimpleYML}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Object org.\+mitre.\+synthea.\+helpers.\+Simple\+YML.\+get (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})}
+
+
+
+Get the object at the given path from the YML. 
+
+For example, given the following YML\+:
+\begin{DoxyPre}
+foo:
+   bar: 2
+   baz: 4
+   qux:
+     corge: 9
+     grault: -\/1
+ plugh: 7
+\end{DoxyPre}
+ calling get(\char`\"{}foo.\+qux.\+grault\char`\"{}) will return Integer(-\/1)
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to desired object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object at path 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Simple\+YML.\+java\end{DoxyCompactItemize}

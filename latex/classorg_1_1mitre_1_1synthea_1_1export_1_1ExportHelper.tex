@@ -1,0 +1,276 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Export\+Helper Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper}\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+
+
+Helper class for common logic that is used by more than one otherwise unrelated exporter.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+Export\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5dcc99bdd3ca3efb72233ab3dd6eab4c}{get\+Observation\+Value}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} observation)
+\begin{DoxyCompactList}\small\item\em Helper to get a readable string representation of an Observation\textquotesingle{}s value. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ae3a47a000fb8463f37f0bcfc53483a6a}{get\+Observation\+Value}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} observation, String code)
+\begin{DoxyCompactList}\small\item\em Helper to get a readable string representation of an Observation\textquotesingle{}s value. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a02c0ed1e6ad6739b76a758e6cb49676b}{sampled\+Data\+To\+Value\+String}} (Sampled\+Data sampled\+Data)
+\begin{DoxyCompactList}\small\item\em Helper to translate all Sampled\+Data values into string form. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ab4ab4f676242baa9f029678071117c38}{attachment\+To\+Value\+String}} (Attachment attachment)
+\begin{DoxyCompactList}\small\item\em Helper to translate all Attachment values into string form. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a269ac6de3db0223103ed36992e2c9c6b}{get\+Observation\+Type}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} observation)
+\begin{DoxyCompactList}\small\item\em Helper to get a readable string representation of an Observation\textquotesingle{}s type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_afd2bcd35916f6087cb685dfac8448ddb}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_afd2bcd35916f6087cb685dfac8448ddb}} 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_afd2bcd35916f6087cb685dfac8448ddb}{date\+From\+Timestamp}} (long time)
+\begin{DoxyCompactList}\small\item\em Get a date string in the format YYYY-\/\+MM-\/\+DD from the given time stamp. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a459f1eea42b9b2777abfd6e48d62839f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a459f1eea42b9b2777abfd6e48d62839f}} 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a459f1eea42b9b2777abfd6e48d62839f}{iso8601\+Timestamp}} (long time)
+\begin{DoxyCompactList}\small\item\em Get an iso8601 string for the given time stamp. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a1968783ec2354be2d29af274a9a9f64c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a1968783ec2354be2d29af274a9a9f64c}} 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a1968783ec2354be2d29af274a9a9f64c}{next\+Friday}} (long time)
+\begin{DoxyCompactList}\small\item\em Get the timestamp for next Friday. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a57483f241a5302bc08d3048915875e4d}{get\+System\+URI}} (String system)
+\begin{DoxyCompactList}\small\item\em Translate the system name (e.\+g. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5193726d89912a2ea362c7f94e1e4351}{get\+System\+From\+URI}} (String uri)
+\begin{DoxyCompactList}\small\item\em Translate the official FHIR system URI (e.\+g. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a8f98e36e15adf488e43da914271d4e18}{build\+Fhir\+Search\+Url}} (String resource\+Type, String identifier)
+\begin{DoxyCompactList}\small\item\em Build a FHIR search url for the specified type of resource and identifier. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5feebe32b0782f6345e54f9cd5ce015b}{build\+Fhir\+Npi\+Search\+Url}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}} clinician)
+\begin{DoxyCompactList}\small\item\em Build a FHIR search URL for a clinician using the clinician\textquotesingle{}s NPI identifier. \end{DoxyCompactList}\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a84fad992904c4179885369bf78d8a550}{build\+UUID}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long timestamp, String key)
+\begin{DoxyCompactList}\small\item\em Construct a consistent UUID based on the given Person, timestamp, and a key. \end{DoxyCompactList}\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ab71ba81c7f43f1d7970776c33b4435d5}{build\+UUID}} (long person\+Seed, long timestamp, String key)
+\begin{DoxyCompactList}\small\item\em Construct a consistent UUID based on the given seed, timestamp, and a key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a991289f6f11e03473e25dc6e61b0159b}{UNDUPLICATED\+\_\+\+FHIR\+\_\+\+RESOURCES}}
+\begin{DoxyCompactList}\small\item\em FHIR resources that should include an if\+None\+Exist precondition when outputting transaction bundles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class for common logic that is used by more than one otherwise unrelated exporter. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ab4ab4f676242baa9f029678071117c38}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ab4ab4f676242baa9f029678071117c38}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!attachmentToValueString@{attachmentToValueString}}
+\index{attachmentToValueString@{attachmentToValueString}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{attachmentToValueString()}{attachmentToValueString()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+attachment\+To\+Value\+String (\begin{DoxyParamCaption}\item[{Attachment}]{attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper to translate all Attachment values into string form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attachment} & The Attachment object to export \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stringified Attachment data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5feebe32b0782f6345e54f9cd5ce015b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5feebe32b0782f6345e54f9cd5ce015b}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!buildFhirNpiSearchUrl@{buildFhirNpiSearchUrl}}
+\index{buildFhirNpiSearchUrl@{buildFhirNpiSearchUrl}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{buildFhirNpiSearchUrl()}{buildFhirNpiSearchUrl()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+build\+Fhir\+Npi\+Search\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}}}]{clinician }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a FHIR search URL for a clinician using the clinician\textquotesingle{}s NPI identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinician} & the Synthea clinician instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FHIR search URL or null if clinician is null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a8f98e36e15adf488e43da914271d4e18}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a8f98e36e15adf488e43da914271d4e18}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!buildFhirSearchUrl@{buildFhirSearchUrl}}
+\index{buildFhirSearchUrl@{buildFhirSearchUrl}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{buildFhirSearchUrl()}{buildFhirSearchUrl()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+build\+Fhir\+Search\+Url (\begin{DoxyParamCaption}\item[{String}]{resource\+Type,  }\item[{String}]{identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a FHIR search url for the specified type of resource and identifier. 
+
+This method hard codes the identifier type to \char`\"{}https\+://github.\+com/synthetichealth/synthea\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em resource\+Type} & type of FHIR resource \\
+\hline
+{\em identifier} & the identifier value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FHIR search URL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ab71ba81c7f43f1d7970776c33b4435d5}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ab71ba81c7f43f1d7970776c33b4435d5}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!buildUUID@{buildUUID}}
+\index{buildUUID@{buildUUID}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{buildUUID()}{buildUUID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static final String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+build\+UUID (\begin{DoxyParamCaption}\item[{long}]{person\+Seed,  }\item[{long}]{timestamp,  }\item[{String}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Construct a consistent UUID based on the given seed, timestamp, and a key. 
+
+This method allows you to get the same UUID for a concept at a given point in time, when that concept does not map cleanly 1\+:1 to an object in the Synthea model. IMPORTANT\+: this is NOT random but attempts to minimize the likelihood of collisions. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a84fad992904c4179885369bf78d8a550}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a84fad992904c4179885369bf78d8a550}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!buildUUID@{buildUUID}}
+\index{buildUUID@{buildUUID}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{buildUUID()}{buildUUID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static final String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+build\+UUID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{timestamp,  }\item[{String}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Construct a consistent UUID based on the given Person, timestamp, and a key. 
+
+This method allows you to get the same UUID for a concept at a given point in time, when that concept does not map cleanly 1\+:1 to an object in the Synthea model. IMPORTANT\+: this is NOT random but attempts to minimize the likelihood of collisions. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a269ac6de3db0223103ed36992e2c9c6b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a269ac6de3db0223103ed36992e2c9c6b}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!getObservationType@{getObservationType}}
+\index{getObservationType@{getObservationType}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{getObservationType()}{getObservationType()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+get\+Observation\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}}}]{observation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper to get a readable string representation of an Observation\textquotesingle{}s type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observation} & The observation to get the type from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A human-\/readable string representation of the type of observation.\+value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5dcc99bdd3ca3efb72233ab3dd6eab4c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5dcc99bdd3ca3efb72233ab3dd6eab4c}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!getObservationValue@{getObservationValue}}
+\index{getObservationValue@{getObservationValue}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{getObservationValue()}{getObservationValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+get\+Observation\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}}}]{observation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper to get a readable string representation of an Observation\textquotesingle{}s value. 
+
+Units are not included.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observation} & The observation to get the value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A human-\/readable string representation of observation.\+value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ae3a47a000fb8463f37f0bcfc53483a6a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_ae3a47a000fb8463f37f0bcfc53483a6a}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!getObservationValue@{getObservationValue}}
+\index{getObservationValue@{getObservationValue}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{getObservationValue()}{getObservationValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+get\+Observation\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}}}]{observation,  }\item[{String}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper to get a readable string representation of an Observation\textquotesingle{}s value. 
+
+Units are not included.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observation} & The observation to get the value from. \\
+\hline
+{\em code} & The observation or component observation matching this code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A human-\/readable string representation of observation with the given code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5193726d89912a2ea362c7f94e1e4351}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a5193726d89912a2ea362c7f94e1e4351}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!getSystemFromURI@{getSystemFromURI}}
+\index{getSystemFromURI@{getSystemFromURI}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{getSystemFromURI()}{getSystemFromURI()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+get\+System\+From\+URI (\begin{DoxyParamCaption}\item[{String}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Translate the official FHIR system URI (e.\+g. 
+
+\href{http://snomed.info/sct}{\texttt{ http\+://snomed.\+info/sct}}) into system name (e.\+g. SNOMED-\/\+CT). 
+\begin{DoxyParams}{Parameters}
+{\em uri} & \href{http://snomed.info/sct}{\texttt{ http\+://snomed.\+info/sct}}, \href{http://loinc.org}{\texttt{ http\+://loinc.\+org}}, etc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The internal short name used by Synthea, or \char`\"{}\+Unknown\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a57483f241a5302bc08d3048915875e4d}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a57483f241a5302bc08d3048915875e4d}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!getSystemURI@{getSystemURI}}
+\index{getSystemURI@{getSystemURI}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{getSystemURI()}{getSystemURI()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+get\+System\+URI (\begin{DoxyParamCaption}\item[{String}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Translate the system name (e.\+g. 
+
+SNOMED-\/\+CT) into the official FHIR system URI (e.\+g. \href{http://snomed.info/sct}{\texttt{ http\+://snomed.\+info/sct}}). 
+\begin{DoxyParams}{Parameters}
+{\em system} & SNOMED-\/\+CT, LOINC, Rx\+Norm, CVX \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The FHIR system URI for the given system or the input if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a02c0ed1e6ad6739b76a758e6cb49676b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a02c0ed1e6ad6739b76a758e6cb49676b}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!sampledDataToValueString@{sampledDataToValueString}}
+\index{sampledDataToValueString@{sampledDataToValueString}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{sampledDataToValueString()}{sampledDataToValueString()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+sampled\+Data\+To\+Value\+String (\begin{DoxyParamCaption}\item[{Sampled\+Data}]{sampled\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper to translate all Sampled\+Data values into string form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sampled\+Data} & The Sampled\+Data object to export \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stringified sampled data values 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a991289f6f11e03473e25dc6e61b0159b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ExportHelper_a991289f6f11e03473e25dc6e61b0159b}} 
+\index{org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}!UNDUPLICATED\_FHIR\_RESOURCES@{UNDUPLICATED\_FHIR\_RESOURCES}}
+\index{UNDUPLICATED\_FHIR\_RESOURCES@{UNDUPLICATED\_FHIR\_RESOURCES}!org.mitre.synthea.export.ExportHelper@{org.mitre.synthea.export.ExportHelper}}
+\doxysubsubsection{\texorpdfstring{UNDUPLICATED\_FHIR\_RESOURCES}{UNDUPLICATED\_FHIR\_RESOURCES}}
+{\footnotesize\ttfamily final List$<$String$>$ org.\+mitre.\+synthea.\+export.\+Export\+Helper.\+UNDUPLICATED\+\_\+\+FHIR\+\_\+\+RESOURCES\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= Arrays.asList(}
+\DoxyCodeLine{          \textcolor{stringliteral}{"{}Location"{}}, \textcolor{stringliteral}{"{}Organization"{}}, \textcolor{stringliteral}{"{}Practitioner"{}})}
+
+\end{DoxyCode}
+
+
+FHIR resources that should include an if\+None\+Exist precondition when outputting transaction bundles. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Export\+Helper.\+java\end{DoxyCompactItemize}

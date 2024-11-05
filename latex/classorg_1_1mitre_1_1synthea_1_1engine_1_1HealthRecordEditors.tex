@@ -1,0 +1,86 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Health\+Record\+Editors Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors}\index{org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}}
+
+
+A singleton class for managing all of the implementations of \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_a6eb5d4336ca08cd4d98bee84a00368fe}{register\+Editor}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}} editor)
+\begin{DoxyCompactList}\small\item\em Add a \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}} to be run during the simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_afe4590374369fd0fd02869100a9760ce}{execute\+All}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} record, long time, long step)
+\begin{DoxyCompactList}\small\item\em Runs all of the registered implementations of \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_a2213515da4ff015539ec968548064275}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_a2213515da4ff015539ec968548064275}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_a2213515da4ff015539ec968548064275}{reset\+Editors}} ()
+\begin{DoxyCompactList}\small\item\em Remove all registered editors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors}{Health\+Record\+Editors}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_adde4c1dbcde6b5476f83721074903cbd}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the singleton instance of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors}{Health\+Record\+Editors}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A singleton class for managing all of the implementations of \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_afe4590374369fd0fd02869100a9760ce}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_afe4590374369fd0fd02869100a9760ce}} 
+\index{org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}!executeAll@{executeAll}}
+\index{executeAll@{executeAll}!org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}}
+\doxysubsubsection{\texorpdfstring{executeAll()}{executeAll()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+engine.\+Health\+Record\+Editors.\+execute\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}}}]{record,  }\item[{long}]{time,  }\item[{long}]{step }\end{DoxyParamCaption})}
+
+
+
+Runs all of the registered implementations of \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}}. 
+
+Will first check to see if the editor should be run by invoking... should\+Run. If it should run, will call process on the editor. 
+
+It\textquotesingle{}s unlikely that this method should be called by anything outside of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The Person to run on, and the source of randomness \\
+\hline
+{\em record} & The Health\+Record to potentially modify \\
+\hline
+{\em time} & The current time in the simulation \\
+\hline
+{\em step} & The time step for the simulation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_adde4c1dbcde6b5476f83721074903cbd}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_adde4c1dbcde6b5476f83721074903cbd}} 
+\index{org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors}{Health\+Record\+Editors}} org.\+mitre.\+synthea.\+engine.\+Health\+Record\+Editors.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the singleton instance of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors}{Health\+Record\+Editors}}. 
+
+\begin{DoxyReturn}{Returns}
+the one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_a6eb5d4336ca08cd4d98bee84a00368fe}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditors_a6eb5d4336ca08cd4d98bee84a00368fe}} 
+\index{org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}!registerEditor@{registerEditor}}
+\index{registerEditor@{registerEditor}!org.mitre.synthea.engine.HealthRecordEditors@{org.mitre.synthea.engine.HealthRecordEditors}}
+\doxysubsubsection{\texorpdfstring{registerEditor()}{registerEditor()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+engine.\+Health\+Record\+Editors.\+register\+Editor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}}}]{editor }\end{DoxyParamCaption})}
+
+
+
+Add a \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor}{Health\+Record\+Editor}} to be run during the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em editor} & The editor to add \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Health\+Record\+Editors.\+java\end{DoxyCompactItemize}

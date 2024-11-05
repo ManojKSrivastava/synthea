@@ -1,0 +1,97 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Best\+Rates Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates}\index{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates@{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates}}
+
+
+Find a particular provider by service.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Best\+Rates\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Best\+Rates\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a3e3f953c31a18f8244095129a3660af5}{find}} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$ plans, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time)
+\begin{DoxyCompactList}\small\item\em Find a provider with a specific service for the person. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a010790b43d85d5077b851d3c39a78260}{twelve\+Month\+Encounter\+Count}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} record, long time)
+\begin{DoxyCompactList}\small\item\em Calculates the number of encounters during the last 12 months. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Find a particular provider by service. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a3e3f953c31a18f8244095129a3660af5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a3e3f953c31a18f8244095129a3660af5}} 
+\index{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates@{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates}!find@{find}}
+\index{find@{find}!org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates@{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Best\+Rates.\+find (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$}]{plans,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{service,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Find a provider with a specific service for the person. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plans} & The list of eligible plans. \\
+\hline
+{\em person} & The patient who requires the service. \\
+\hline
+{\em service} & The service required. \\
+\hline
+{\em time} & The date/time within the simulated world, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A plan or null if none is available. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a70d79a2c93a0d2fb4b7205a7048730c7}{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+IPlan\+Finder}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a010790b43d85d5077b851d3c39a78260}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a010790b43d85d5077b851d3c39a78260}} 
+\index{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates@{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates}!twelveMonthEncounterCount@{twelveMonthEncounterCount}}
+\index{twelveMonthEncounterCount@{twelveMonthEncounterCount}!org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates@{org.mitre.synthea.world.agents.behaviors.planfinder.PlanFinderBestRates}}
+\doxysubsubsection{\texorpdfstring{twelveMonthEncounterCount()}{twelveMonthEncounterCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Best\+Rates.\+twelve\+Month\+Encounter\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}}}]{record,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Calculates the number of encounters during the last 12 months. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & The health record being examined. \\
+\hline
+{\em time} & The date/time within the simulated world, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of encounters during the last 12 months. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/behaviors/planfinder/Plan\+Finder\+Best\+Rates.\+java\end{DoxyCompactItemize}

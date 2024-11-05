@@ -1,0 +1,121 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Biometrics\+Config Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig}\index{org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}}
+
+
+Class exposing various configurable biometric settings, which are set in resources/biometrics.\+yml.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}{get}} (String path)
+\begin{DoxyCompactList}\small\item\em Get the object at the given path from the YML. \end{DoxyCompactList}\item 
+static Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a6f34ae2c2f2acd7b72ec9eac6401f0cc}{get}} (String path, Object default\+Value)
+\begin{DoxyCompactList}\small\item\em Get the object at the given path from the YML. \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_affb697c50cd503049c0990f6869c78fc}{ints}} (String path)
+\begin{DoxyCompactList}\small\item\em Helper function to get a list of ints from a given location as an array. \end{DoxyCompactList}\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a4712f1c6aca809edf65e88f32ec34cf0}{doubles}} (String path)
+\begin{DoxyCompactList}\small\item\em Helper function to get a list of doubles from a given location as an array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class exposing various configurable biometric settings, which are set in resources/biometrics.\+yml. 
+
+Unlike the standard \char`\"{}\+Config\char`\"{} and synthea.\+properties, it is unlikely that an end-\/user will want to tweak these often. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a4712f1c6aca809edf65e88f32ec34cf0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a4712f1c6aca809edf65e88f32ec34cf0}} 
+\index{org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}!doubles@{doubles}}
+\index{doubles@{doubles}!org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}}
+\doxysubsubsection{\texorpdfstring{doubles()}{doubles()}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} org.\+mitre.\+synthea.\+world.\+concepts.\+Biometrics\+Config.\+doubles (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper function to get a list of doubles from a given location as an array. 
+
+This function does convert integers to doubles, so it should be preferred over \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_affb697c50cd503049c0990f6869c78fc}{ints()}} if the data type is unknown or may change.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the desired object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed double array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}} 
+\index{org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}!get@{get}}
+\index{get@{get}!org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Object org.\+mitre.\+synthea.\+world.\+concepts.\+Biometrics\+Config.\+get (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the object at the given path from the YML. 
+
+For example, given the following YML\+:
+\begin{DoxyPre}
+foo:
+   bar: 2
+   baz: 4
+   qux:
+     corge: 9
+     grault: -\/1
+ plugh: 7
+\end{DoxyPre}
+ calling get(\char`\"{}foo.\+qux.\+grault\char`\"{}) will return Integer(-\/1)
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the desired object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object at path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a6f34ae2c2f2acd7b72ec9eac6401f0cc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a6f34ae2c2f2acd7b72ec9eac6401f0cc}} 
+\index{org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}!get@{get}}
+\index{get@{get}!org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Object org.\+mitre.\+synthea.\+world.\+concepts.\+Biometrics\+Config.\+get (\begin{DoxyParamCaption}\item[{String}]{path,  }\item[{Object}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the object at the given path from the YML. 
+
+If not found, returns the default value. 
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the desired object \\
+\hline
+{\em default\+Value} & value returned if there is no object at the given path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object at path, or default\+Value if not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_affb697c50cd503049c0990f6869c78fc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_affb697c50cd503049c0990f6869c78fc}} 
+\index{org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}!ints@{ints}}
+\index{ints@{ints}!org.mitre.synthea.world.concepts.BiometricsConfig@{org.mitre.synthea.world.concepts.BiometricsConfig}}
+\doxysubsubsection{\texorpdfstring{ints()}{ints()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} org.\+mitre.\+synthea.\+world.\+concepts.\+Biometrics\+Config.\+ints (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper function to get a list of ints from a given location as an array. 
+
+Note that this function does not convert doubles to integers, so if the YML contains doubles then this method may throw.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the desired object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed integer array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Biometrics\+Config.\+java\end{DoxyCompactItemize}

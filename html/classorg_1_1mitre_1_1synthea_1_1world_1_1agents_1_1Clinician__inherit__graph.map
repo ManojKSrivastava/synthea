@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.world.agents.Clinician" name="org.mitre.synthea.world.agents.Clinician">
+<area shape="rect" id="node1" title=" " alt="" coords="54,95,285,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,104,39"/>
+<area shape="rect" id="node3" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement.html" title=" " alt="" coords="128,5,443,47"/>
+</map>

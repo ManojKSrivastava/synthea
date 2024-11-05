@@ -1,0 +1,444 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+
+
+A class that defines an insurance plan.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a04cb0412b902024b648f66787ed18030}{Insurance\+Plan}} (int id, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} payer, Set$<$ String $>$ services\+Covered, Big\+Decimal deductible, Big\+Decimal default\+Coinsurance, Big\+Decimal default\+Copay, Big\+Decimal monthly\+Premium, Big\+Decimal max\+Out\+Of\+Pocket, boolean medicare\+Supplement, boolean is\+ACA, boolean income\+Based\+Premium, int active\+Year\+Start, int active\+Year\+End, int priority, String eligibility\+Name)
+\begin{DoxyCompactList}\small\item\em Insurance Plan Constructor. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9d2e46c0d849f1aabf7c56ef28522574}{is\+Active}} (long time)
+\begin{DoxyCompactList}\small\item\em Returns whether this plan is active at the given time. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5c2bb1c9e3aa40cf23d1ad5f2265c370}{determine\+Copay}} (String entry\+Type, long entry\+Start)
+\begin{DoxyCompactList}\small\item\em Determines the copay owed for this Payer based on the type of entry. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_ab3b653a53aaef666781210a26dfcb1a5}{get\+Monthly\+Premium}} (int income)
+\begin{DoxyCompactList}\small\item\em Returns the monthly premium for this plan. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a644b84d1a2e8a321ef05b28c4422f617}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a644b84d1a2e8a321ef05b28c4422f617}} 
+Big\+Decimal {\bfseries get\+Deductible} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a7a388d2dffaa3a133c62f6482b58c9f2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a7a388d2dffaa3a133c62f6482b58c9f2}} 
+Big\+Decimal {\bfseries get\+Payer\+Coinsurance} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9f7585df891ff270052f0a3024e8e232}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9f7585df891ff270052f0a3024e8e232}} 
+Big\+Decimal {\bfseries get\+Patient\+Coinsurance} ()
+\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aa891eab2623255ccf9bf9f23fe77ad13}{pay\+Monthly\+Premium}} (double employer\+Level, int income)
+\begin{DoxyCompactList}\small\item\em Pays the plan\textquotesingle{}s premium to the Payer, increasing their revenue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aa3911a864560302b8e3b8ac850270089}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aa3911a864560302b8e3b8ac850270089}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} {\bfseries get\+Payer} ()
+\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a6ce58a2fdfbb3e44cebc31dd59e4d9cb}{get\+Insurance\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns the insurance status type of this plan. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a39e9ab93acdeaf0654a3074274f14f66}{increment\+Customers}} (String person\+Id)
+\begin{DoxyCompactList}\small\item\em Increments the number of customers that have used this plan\textquotesingle{}s payers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_abdac64ba14e9be02b8cd9b3d827192d4}{increment\+Covered\+Entries}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Increments the number of covered entries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5ac7cda8c76a64785f510e9f85dbe050}{increment\+Uncovered\+Entries}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Increments the number of uncovered entries. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a32fd6484f71257281ee5d241916e3aec}{covers\+Service}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Determines whether this plan covers the given service type. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a0d783eb7c21a5b6eda82308dcbbdaf44}{adjust\+Claim}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}} claim\+Entry, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Determines whether or not this payer will adjust this claim, and by how much. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a70a26b82a70bcec1cd8a1c1c30543ca3}{get\+Yearly\+Cost}} (int income)
+\begin{DoxyCompactList}\small\item\em Returns the yearly cost of this plan. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9445e4cad97088adbae8287229870a1c}{accepts}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Returns whether a plan will accept the given patient at this time using the plan eligibility criteria. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a89f4623f3ad4cce50dce21173840c6ae}{is\+No\+Insurance}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether this plan is based on the no insurance payer. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a41868f77a191a7055a96d456d0194a79}{is\+Government\+Plan}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether this is a government plan. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_ac3e00512c196a37c7baffb44ad8caefe}{may\+Purchase\+Supplement}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether a customer may buy a supplement to this plan. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a59833592d36bab2f1afaea7d0c1ba2cd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a59833592d36bab2f1afaea7d0c1ba2cd}} 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a59833592d36bab2f1afaea7d0c1ba2cd}{is\+Medicare\+Supplement\+Plan}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether this plans is a medicare supplement plan. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a177b8ba0f1f9e315b1cf120b73123414}{get\+Priority}} ()
+\begin{DoxyCompactList}\small\item\em Returns the priority level of this plan. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a29d075765523909a87c9a36df5972d5b}{is\+Copay\+Based}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether this plan is copay-\/based. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aef527aa2e5ad0842d2f76328cf0824e3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aef527aa2e5ad0842d2f76328cf0824e3}} 
+Big\+Decimal {\bfseries get\+Max\+Oop} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5c71c85f62c15d38930b5e749290b109}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5c71c85f62c15d38930b5e749290b109}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_afdd014844f53ae351c91b64d7dbfe05d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_afdd014844f53ae351c91b64d7dbfe05d}} 
+final int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_add068b665e90ceaff3e41f36b3ca9522}{add\+Covered\+Cost}} (Big\+Decimal covered\+Costs)
+\begin{DoxyCompactList}\small\item\em Adds a covered cost to this plan. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_af086f864af9dfbe5966e789002b42fc0}{add\+Uncovered\+Cost}} (Big\+Decimal uncovered\+Costs)
+\begin{DoxyCompactList}\small\item\em Adds an uncovered cost to this plan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that defines an insurance plan. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a04cb0412b902024b648f66787ed18030}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a04cb0412b902024b648f66787ed18030}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!InsurancePlan@{InsurancePlan}}
+\index{InsurancePlan@{InsurancePlan}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{InsurancePlan()}{InsurancePlan()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+Insurance\+Plan (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}}}]{payer,  }\item[{Set$<$ String $>$}]{services\+Covered,  }\item[{Big\+Decimal}]{deductible,  }\item[{Big\+Decimal}]{default\+Coinsurance,  }\item[{Big\+Decimal}]{default\+Copay,  }\item[{Big\+Decimal}]{monthly\+Premium,  }\item[{Big\+Decimal}]{max\+Out\+Of\+Pocket,  }\item[{boolean}]{medicare\+Supplement,  }\item[{boolean}]{is\+ACA,  }\item[{boolean}]{income\+Based\+Premium,  }\item[{int}]{active\+Year\+Start,  }\item[{int}]{active\+Year\+End,  }\item[{int}]{priority,  }\item[{String}]{eligibility\+Name }\end{DoxyParamCaption})}
+
+
+
+Insurance Plan Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payer} & The plan\textquotesingle{}s payer. \\
+\hline
+{\em services\+Covered} & The services covered. \\
+\hline
+{\em deductible} & The deductible. \\
+\hline
+{\em default\+Coinsurance} & The default coinsurance. \\
+\hline
+{\em default\+Copay} & The default copay. \\
+\hline
+{\em monthly\+Premium} & The monthly premium. \\
+\hline
+{\em max\+Out\+Of\+Pocket} & Max yearly out of pocket cost to patient. \\
+\hline
+{\em medicare\+Supplement} & If this is a medicare supplement plan. \\
+\hline
+{\em is\+ACA} & If this is an Affordable Care Act plan. \\
+\hline
+{\em income\+Based\+Premium} & If this plan has an income-\/based percentage premium. \\
+\hline
+{\em active\+Year\+Start} & The first year the plan is available. \\
+\hline
+{\em active\+Year\+End} & The last year the plan is available. \\
+\hline
+{\em priority} & The priority of this plan for patients to choose it. \\
+\hline
+{\em eligibility\+Name} & The eligibility algorithm to use. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9445e4cad97088adbae8287229870a1c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9445e4cad97088adbae8287229870a1c}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!accepts@{accepts}}
+\index{accepts@{accepts}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+accepts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Returns whether a plan will accept the given patient at this time using the plan eligibility criteria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to consider \\
+\hline
+{\em time} & Time the person seeks care \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether or not the payer will accept this patient as a customer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_add068b665e90ceaff3e41f36b3ca9522}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_add068b665e90ceaff3e41f36b3ca9522}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!addCoveredCost@{addCoveredCost}}
+\index{addCoveredCost@{addCoveredCost}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{addCoveredCost()}{addCoveredCost()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+add\+Covered\+Cost (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{covered\+Costs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Adds a covered cost to this plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em covered\+Costs} & The cost covered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_af086f864af9dfbe5966e789002b42fc0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_af086f864af9dfbe5966e789002b42fc0}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!addUncoveredCost@{addUncoveredCost}}
+\index{addUncoveredCost@{addUncoveredCost}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{addUncoveredCost()}{addUncoveredCost()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+add\+Uncovered\+Cost (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{uncovered\+Costs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Adds an uncovered cost to this plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uncovered\+Costs} & The cost covered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a0d783eb7c21a5b6eda82308dcbbdaf44}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a0d783eb7c21a5b6eda82308dcbbdaf44}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!adjustClaim@{adjustClaim}}
+\index{adjustClaim@{adjustClaim}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{adjustClaim()}{adjustClaim()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+adjust\+Claim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}}}]{claim\+Entry,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Determines whether or not this payer will adjust this claim, and by how much. 
+
+This determination is based on the claim adjustment strategy configuration, which defaults to none. 
+\begin{DoxyParams}{Parameters}
+{\em claim\+Entry} & The claim entry to be adjusted. \\
+\hline
+{\em person} & The person making the claim. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dollar amount the claim entry was adjusted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a32fd6484f71257281ee5d241916e3aec}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a32fd6484f71257281ee5d241916e3aec}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!coversService@{coversService}}
+\index{coversService@{coversService}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{coversService()}{coversService()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+covers\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Determines whether this plan covers the given service type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & The entry to cover. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this plan covers the given service type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5c2bb1c9e3aa40cf23d1ad5f2265c370}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5c2bb1c9e3aa40cf23d1ad5f2265c370}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!determineCopay@{determineCopay}}
+\index{determineCopay@{determineCopay}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{determineCopay()}{determineCopay()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+determine\+Copay (\begin{DoxyParamCaption}\item[{String}]{entry\+Type,  }\item[{long}]{entry\+Start }\end{DoxyParamCaption})}
+
+
+
+Determines the copay owed for this Payer based on the type of entry. 
+
+For now, this returns a default copay. But in the future there will be different copays depending on the encounter type covered. If the entry is a wellness visit and the time is after the mandate year, then the copay is \$0.\+00.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\+Type} & the entry type to calculate the copay for. \\
+\hline
+{\em entry\+Start} & The start time of the entry. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a6ce58a2fdfbb3e44cebc31dd59e4d9cb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a6ce58a2fdfbb3e44cebc31dd59e4d9cb}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!getInsuranceStatus@{getInsuranceStatus}}
+\index{getInsuranceStatus@{getInsuranceStatus}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getInsuranceStatus()}{getInsuranceStatus()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+get\+Insurance\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the insurance status type of this plan. 
+
+\begin{DoxyReturn}{Returns}
+The insurance status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_ab3b653a53aaef666781210a26dfcb1a5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_ab3b653a53aaef666781210a26dfcb1a5}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!getMonthlyPremium@{getMonthlyPremium}}
+\index{getMonthlyPremium@{getMonthlyPremium}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getMonthlyPremium()}{getMonthlyPremium()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+get\+Monthly\+Premium (\begin{DoxyParamCaption}\item[{int}]{income }\end{DoxyParamCaption})}
+
+
+
+Returns the monthly premium for this plan. 
+
+If this is an income based premium, it will use the income to calculate what the monthly premium should be. 
+\begin{DoxyParams}{Parameters}
+{\em income} & the income to base income-\/based premiums on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a177b8ba0f1f9e315b1cf120b73123414}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a177b8ba0f1f9e315b1cf120b73123414}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the priority level of this plan. 
+
+\begin{DoxyReturn}{Returns}
+The priority level of the plan. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a70a26b82a70bcec1cd8a1c1c30543ca3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a70a26b82a70bcec1cd8a1c1c30543ca3}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!getYearlyCost@{getYearlyCost}}
+\index{getYearlyCost@{getYearlyCost}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getYearlyCost()}{getYearlyCost()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+get\+Yearly\+Cost (\begin{DoxyParamCaption}\item[{int}]{income }\end{DoxyParamCaption})}
+
+
+
+Returns the yearly cost of this plan. 
+
+\begin{DoxyReturn}{Returns}
+the yearly cost. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_abdac64ba14e9be02b8cd9b3d827192d4}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_abdac64ba14e9be02b8cd9b3d827192d4}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!incrementCoveredEntries@{incrementCoveredEntries}}
+\index{incrementCoveredEntries@{incrementCoveredEntries}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{incrementCoveredEntries()}{incrementCoveredEntries()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+increment\+Covered\+Entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Increments the number of covered entries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & The covered entry. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a39e9ab93acdeaf0654a3074274f14f66}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a39e9ab93acdeaf0654a3074274f14f66}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!incrementCustomers@{incrementCustomers}}
+\index{incrementCustomers@{incrementCustomers}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{incrementCustomers()}{incrementCustomers()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+increment\+Customers (\begin{DoxyParamCaption}\item[{String}]{person\+Id }\end{DoxyParamCaption})}
+
+
+
+Increments the number of customers that have used this plan\textquotesingle{}s payers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & The person Id for whom to increment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5ac7cda8c76a64785f510e9f85dbe050}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a5ac7cda8c76a64785f510e9f85dbe050}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!incrementUncoveredEntries@{incrementUncoveredEntries}}
+\index{incrementUncoveredEntries@{incrementUncoveredEntries}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{incrementUncoveredEntries()}{incrementUncoveredEntries()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+increment\+Uncovered\+Entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Increments the number of uncovered entries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & The uncovered entry. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9d2e46c0d849f1aabf7c56ef28522574}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a9d2e46c0d849f1aabf7c56ef28522574}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!isActive@{isActive}}
+\index{isActive@{isActive}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+is\+Active (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Returns whether this plan is active at the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time to check if the plan is active at. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether this plan is active at the given time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a29d075765523909a87c9a36df5972d5b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a29d075765523909a87c9a36df5972d5b}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!isCopayBased@{isCopayBased}}
+\index{isCopayBased@{isCopayBased}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{isCopayBased()}{isCopayBased()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+is\+Copay\+Based (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether this plan is copay-\/based. 
+
+\begin{DoxyReturn}{Returns}
+whether this is a copay-\/based plan. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a41868f77a191a7055a96d456d0194a79}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a41868f77a191a7055a96d456d0194a79}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!isGovernmentPlan@{isGovernmentPlan}}
+\index{isGovernmentPlan@{isGovernmentPlan}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{isGovernmentPlan()}{isGovernmentPlan()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+is\+Government\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether this is a government plan. 
+
+\begin{DoxyReturn}{Returns}
+whether this is a government plan. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a89f4623f3ad4cce50dce21173840c6ae}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_a89f4623f3ad4cce50dce21173840c6ae}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!isNoInsurance@{isNoInsurance}}
+\index{isNoInsurance@{isNoInsurance}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{isNoInsurance()}{isNoInsurance()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+is\+No\+Insurance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether this plan is based on the no insurance payer. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_ac3e00512c196a37c7baffb44ad8caefe}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_ac3e00512c196a37c7baffb44ad8caefe}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!mayPurchaseSupplement@{mayPurchaseSupplement}}
+\index{mayPurchaseSupplement@{mayPurchaseSupplement}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{mayPurchaseSupplement()}{mayPurchaseSupplement()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+may\+Purchase\+Supplement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether a customer may buy a supplement to this plan. 
+
+\begin{DoxyReturn}{Returns}
+Whether a person may buy a supplement plan. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aa891eab2623255ccf9bf9f23fe77ad13}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan_aa891eab2623255ccf9bf9f23fe77ad13}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}!payMonthlyPremium@{payMonthlyPremium}}
+\index{payMonthlyPremium@{payMonthlyPremium}!org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan@{org.mitre.synthea.world.concepts.healthinsurance.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{payMonthlyPremium()}{payMonthlyPremium()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Insurance\+Plan.\+pay\+Monthly\+Premium (\begin{DoxyParamCaption}\item[{double}]{employer\+Level,  }\item[{int}]{income }\end{DoxyParamCaption})}
+
+
+
+Pays the plan\textquotesingle{}s premium to the Payer, increasing their revenue. 
+
+\begin{DoxyReturn}{Returns}
+the monthly premium amount. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/healthinsurance/Insurance\+Plan.\+java\end{DoxyCompactItemize}

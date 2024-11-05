@@ -1,0 +1,6 @@
+<map id="org.mitre.synthea.world.agents.behaviors.payeradjustment.IPayerAdjustment" name="org.mitre.synthea.world.agents.behaviors.payeradjustment.IPayerAdjustment">
+<area shape="rect" id="node1" title="Interface to abstract various claim adjustment strategies." alt="" coords="5,71,419,112"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1PayerAdjustmentFixed.html" title="Fixed payment adjustment strategy." alt="" coords="467,5,880,47"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1PayerAdjustmentNone.html" title="Default payer adjustment strategy – no adjustment." alt="" coords="467,71,880,112"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1PayerAdjustmentRandom.html" title="Randomized payment adjustment strategy." alt="" coords="467,136,880,177"/>
+</map>

@@ -1,0 +1,130 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Claim Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}\index{org.mitre.synthea.world.concepts.Claim@{org.mitre.synthea.world.concepts.Claim}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Claim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Claim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Claim\+Cost}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a50b82b1c860b5a7119fd668ca1440d8a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a50b82b1c860b5a7119fd668ca1440d8a}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a50b82b1c860b5a7119fd668ca1440d8a}{Claim}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Constructor of a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{Claim}} for an Entry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_af2e1e810ccf1fb34f9c0cb3921acba69}{add\+Line\+Item}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Adds non-\/explicit costs to the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{Claim}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae9a385c48492ca9f74c6e9505af30a1f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae9a385c48492ca9f74c6e9505af30a1f}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae9a385c48492ca9f74c6e9505af30a1f}{assign\+Costs}} ()
+\begin{DoxyCompactList}\small\item\em Assign costs between the payer and patient for all Claim\+Entries in this claim. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a51325336d8f1a1abcdf3be98a2a48bd1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a51325336d8f1a1abcdf3be98a2a48bd1}} 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a51325336d8f1a1abcdf3be98a2a48bd1}{get\+Total\+Claim\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total cost of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{Claim}}, including immunizations/procedures tied to the encounter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a6246d4f9cb41116b8db1a1ff222185e2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a6246d4f9cb41116b8db1a1ff222185e2}} 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a6246d4f9cb41116b8db1a1ff222185e2}{get\+Total\+Covered\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total cost that the Payer covered for this claim. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a29c94cad6ec905c7453e45413b0840b5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a29c94cad6ec905c7453e45413b0840b5}} 
+Big\+Decimal {\bfseries get\+Total\+Deductible\+Paid} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ad1a620ddd84414f902235c3488d434ea}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ad1a620ddd84414f902235c3488d434ea}} 
+Big\+Decimal {\bfseries get\+Total\+Copay\+Paid} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a6b06663d50bff64fbf69c6511ad3ef04}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a6b06663d50bff64fbf69c6511ad3ef04}} 
+Big\+Decimal {\bfseries get\+Total\+Paid\+By\+Secondary\+Payer} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ac89d73f80d47986ed894139da1fbc005}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ac89d73f80d47986ed894139da1fbc005}} 
+Big\+Decimal {\bfseries get\+Total\+Adjustment} ()
+\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a27f9954149ba3196293d7907fb9b1411}{get\+Total\+Coinsurance\+Paid}} ()
+\begin{DoxyCompactList}\small\item\em Returns the amount of coinsurance paid by the patient, either via secondary insurance or out of pocket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a9a88e885c4ace21d660bb85bb67267d5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a9a88e885c4ace21d660bb85bb67267d5}} 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a9a88e885c4ace21d660bb85bb67267d5}{get\+Total\+Patient\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total cost to the patient, including copay, coinsurance, and deductible. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a3b6b0c53d66251f1099912064065fc6c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a3b6b0c53d66251f1099912064065fc6c}} 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a3b6b0c53d66251f1099912064065fc6c}{covered\+By\+Medicare}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{Claim}} was covered by Medicare as the primary payer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a0a332811354371a9ee7073147dc9752b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a0a332811354371a9ee7073147dc9752b}} 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a0a332811354371a9ee7073147dc9752b}{get\+Plan\+Record\+Member\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the plan record associated with this claim. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a8633605396ea2487bbad7645779b63aa}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a8633605396ea2487bbad7645779b63aa}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a8633605396ea2487bbad7645779b63aa}{get\+Payer}} ()
+\begin{DoxyCompactList}\small\item\em Get the primary payer of this claim. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ab31bd29bd5777989162bc2d10e631ef6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ab31bd29bd5777989162bc2d10e631ef6}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ab31bd29bd5777989162bc2d10e631ef6}{get\+Secondary\+Payer}} ()
+\begin{DoxyCompactList}\small\item\em Return the secondary payer of this claim. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae6c29183d70ecdbeaf4bfce242dc5596}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae6c29183d70ecdbeaf4bfce242dc5596}} 
+final \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} {\bfseries person}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a70edffed83e62ddd4d150e68f8716f7c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a70edffed83e62ddd4d150e68f8716f7c}} 
+final \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}} {\bfseries main\+Entry}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a3adf1a169df7a0d47d99b228214767d6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a3adf1a169df7a0d47d99b228214767d6}} 
+final List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}} $>$ {\bfseries items}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ad57a89fcd486903969e950f1c0b491d8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ad57a89fcd486903969e950f1c0b491d8}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}} {\bfseries totals}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_af0468bace42490d8c46c2e1c7e552100}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_af0468bace42490d8c46c2e1c7e552100}} 
+final UUID {\bfseries uuid}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae3df4e8b4e9959d49a50dee3914428c3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_ae3df4e8b4e9959d49a50dee3914428c3}} 
+static final Big\+Decimal {\bfseries ZERO\+\_\+\+CENTS} = Big\+Decimal.\+ZERO.\+set\+Scale(2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_af2e1e810ccf1fb34f9c0cb3921acba69}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_af2e1e810ccf1fb34f9c0cb3921acba69}} 
+\index{org.mitre.synthea.world.concepts.Claim@{org.mitre.synthea.world.concepts.Claim}!addLineItem@{addLineItem}}
+\index{addLineItem@{addLineItem}!org.mitre.synthea.world.concepts.Claim@{org.mitre.synthea.world.concepts.Claim}}
+\doxysubsubsection{\texorpdfstring{addLineItem()}{addLineItem()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Claim.\+add\+Line\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Adds non-\/explicit costs to the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{Claim}}. 
+
+(Procedures/\+Immunizations/etc). \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a27f9954149ba3196293d7907fb9b1411}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_a27f9954149ba3196293d7907fb9b1411}} 
+\index{org.mitre.synthea.world.concepts.Claim@{org.mitre.synthea.world.concepts.Claim}!getTotalCoinsurancePaid@{getTotalCoinsurancePaid}}
+\index{getTotalCoinsurancePaid@{getTotalCoinsurancePaid}!org.mitre.synthea.world.concepts.Claim@{org.mitre.synthea.world.concepts.Claim}}
+\doxysubsubsection{\texorpdfstring{getTotalCoinsurancePaid()}{getTotalCoinsurancePaid()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+Claim.\+get\+Total\+Coinsurance\+Paid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the amount of coinsurance paid by the patient, either via secondary insurance or out of pocket. 
+
+\begin{DoxyReturn}{Returns}
+the amount of coinsurance paid 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Claim.\+java\end{DoxyCompactItemize}

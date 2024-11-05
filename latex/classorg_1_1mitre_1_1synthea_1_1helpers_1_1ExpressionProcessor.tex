@@ -1,0 +1,232 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor}\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a1d3e8116725421d2ad9421a6816674c7}{Expression\+Processor}} (String expression)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor}{Expression\+Processor}} convenience constructor when all parameters are Decimals. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a57267ac5781fe5b5e3f6a47f172f437a}{Expression\+Processor}} (String expression, Map$<$ String, String $>$ param\+Type\+Map)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor}{Expression\+Processor}} constructor. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_abb0cfecdc5224c2bb4a8b2cacd748c68}{get\+Expression}} ()
+\begin{DoxyCompactList}\small\item\em Returns the expression associated with this expression processor. \end{DoxyCompactList}\item 
+Set$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_adb9ebe3d406a95094ad7492d4f90e4a5}{get\+Param\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Returns a list of parameters in the expression associated with this processor. \end{DoxyCompactList}\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0065199a5655403d9622fd32a4d62e6e}{get\+Param\+Types}} ()
+\begin{DoxyCompactList}\small\item\em Returns a map of parameter names to their CQL types as provided to the constructor. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a37ab4fad5adcf73d6e63bafb4e037b0a}{evaluate\+Numeric}} (Map$<$ String, Object $>$ params)
+\begin{DoxyCompactList}\small\item\em Evaluates the expression with the given numeric parameters, returning the result as a Big\+Decimal. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0710c5811c11f8a78f428aaecc5434eb}{evaluate\+From\+Sim\+Results}} (Multi\+Table results, double lead\+Time)
+\begin{DoxyCompactList}\small\item\em Evaluates the provided expression given the simulation results. \end{DoxyCompactList}\item 
+Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_aba462e3da26634b604a8c0a478022847}{evaluate}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Evaluates the expression with parameters derived from the given Person object. \end{DoxyCompactList}\item 
+Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_abfd155615aaa2844951d4486f7567372}{evaluate}} (Map$<$ String, Object $>$ params)
+\begin{DoxyCompactList}\small\item\em Evaluates the expression with the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0372c039f515c23f621b37df1c5c0913}{get\+Person\+Value}} (String param, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Retrieve the desired value from a Person model. \end{DoxyCompactList}\item 
+static Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_af830b28de50e429021c26ec471f0b876}{get\+Person\+Value}} (String param, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, String expression)
+\begin{DoxyCompactList}\small\item\em Retrieve the desired value from a Person model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a1d3e8116725421d2ad9421a6816674c7}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a1d3e8116725421d2ad9421a6816674c7}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!ExpressionProcessor@{ExpressionProcessor}}
+\index{ExpressionProcessor@{ExpressionProcessor}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{ExpressionProcessor()}{ExpressionProcessor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+Expression\+Processor (\begin{DoxyParamCaption}\item[{String}]{expression }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor}{Expression\+Processor}} convenience constructor when all parameters are Decimals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Expression to evaluate for each future set of parameters. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a57267ac5781fe5b5e3f6a47f172f437a}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a57267ac5781fe5b5e3f6a47f172f437a}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!ExpressionProcessor@{ExpressionProcessor}}
+\index{ExpressionProcessor@{ExpressionProcessor}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{ExpressionProcessor()}{ExpressionProcessor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+Expression\+Processor (\begin{DoxyParamCaption}\item[{String}]{expression,  }\item[{Map$<$ String, String $>$}]{param\+Type\+Map }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor}{Expression\+Processor}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Expression to evaluate for each future set of parameters. \\
+\hline
+{\em param\+Type\+Map} & Map of parameter names to their corresponding CQL types. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_abfd155615aaa2844951d4486f7567372}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_abfd155615aaa2844951d4486f7567372}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+evaluate (\begin{DoxyParamCaption}\item[{Map$<$ String, Object $>$}]{params }\end{DoxyParamCaption})}
+
+
+
+Evaluates the expression with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & parameters as a map of variable names to values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+evaluation result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_aba462e3da26634b604a8c0a478022847}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_aba462e3da26634b604a8c0a478022847}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Evaluates the expression with parameters derived from the given Person object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person instance to get parameters from \\
+\hline
+{\em time} & simulation time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+evaluation result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0710c5811c11f8a78f428aaecc5434eb}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0710c5811c11f8a78f428aaecc5434eb}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!evaluateFromSimResults@{evaluateFromSimResults}}
+\index{evaluateFromSimResults@{evaluateFromSimResults}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{evaluateFromSimResults()}{evaluateFromSimResults()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+evaluate\+From\+Sim\+Results (\begin{DoxyParamCaption}\item[{Multi\+Table}]{results,  }\item[{double}]{lead\+Time }\end{DoxyParamCaption})}
+
+
+
+Evaluates the provided expression given the simulation results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em results} & table of simulation results \\
+\hline
+{\em lead\+Time} & lead time in seconds before using table values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Big\+Decimal result value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a37ab4fad5adcf73d6e63bafb4e037b0a}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a37ab4fad5adcf73d6e63bafb4e037b0a}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!evaluateNumeric@{evaluateNumeric}}
+\index{evaluateNumeric@{evaluateNumeric}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{evaluateNumeric()}{evaluateNumeric()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+evaluate\+Numeric (\begin{DoxyParamCaption}\item[{Map$<$ String, Object $>$}]{params }\end{DoxyParamCaption})}
+
+
+
+Evaluates the expression with the given numeric parameters, returning the result as a Big\+Decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & numeric parameters as a map of variable names to values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+evaluation result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_abb0cfecdc5224c2bb4a8b2cacd748c68}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_abb0cfecdc5224c2bb4a8b2cacd748c68}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!getExpression@{getExpression}}
+\index{getExpression@{getExpression}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{getExpression()}{getExpression()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+get\+Expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the expression associated with this expression processor. 
+
+\begin{DoxyReturn}{Returns}
+expression 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_adb9ebe3d406a95094ad7492d4f90e4a5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_adb9ebe3d406a95094ad7492d4f90e4a5}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!getParamNames@{getParamNames}}
+\index{getParamNames@{getParamNames}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{getParamNames()}{getParamNames()}}
+{\footnotesize\ttfamily Set$<$String$>$ org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+get\+Param\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a list of parameters in the expression associated with this processor. 
+
+\begin{DoxyReturn}{Returns}
+list of parameters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0065199a5655403d9622fd32a4d62e6e}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0065199a5655403d9622fd32a4d62e6e}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!getParamTypes@{getParamTypes}}
+\index{getParamTypes@{getParamTypes}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{getParamTypes()}{getParamTypes()}}
+{\footnotesize\ttfamily Map$<$String,String$>$ org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+get\+Param\+Types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a map of parameter names to their CQL types as provided to the constructor. 
+
+\begin{DoxyReturn}{Returns}
+map of parameter names to CQL type names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0372c039f515c23f621b37df1c5c0913}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_a0372c039f515c23f621b37df1c5c0913}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!getPersonValue@{getPersonValue}}
+\index{getPersonValue@{getPersonValue}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{getPersonValue()}{getPersonValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Object org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+get\+Person\+Value (\begin{DoxyParamCaption}\item[{String}]{param,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieve the desired value from a Person model. 
+
+Check for a Vital\+Sign first and then an attribute if there is no Vital\+Sign by the provided name. Throws an Illegal\+Argument\+Exception if neither exists. 
+\begin{DoxyParams}{Parameters}
+{\em param} & name of the Vital\+Sign or attribute to retrieve from the Person \\
+\hline
+{\em person} & Person instance to get the parameter from \\
+\hline
+{\em time} & current time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_af830b28de50e429021c26ec471f0b876}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ExpressionProcessor_af830b28de50e429021c26ec471f0b876}} 
+\index{org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}!getPersonValue@{getPersonValue}}
+\index{getPersonValue@{getPersonValue}!org.mitre.synthea.helpers.ExpressionProcessor@{org.mitre.synthea.helpers.ExpressionProcessor}}
+\doxysubsubsection{\texorpdfstring{getPersonValue()}{getPersonValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Object org.\+mitre.\+synthea.\+helpers.\+Expression\+Processor.\+get\+Person\+Value (\begin{DoxyParamCaption}\item[{String}]{param,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{String}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieve the desired value from a Person model. 
+
+Check for a Vital\+Sign first and then an attribute if there is no Vital\+Sign by the provided name. Throws an Illegal\+Argument\+Exception if neither exists. 
+\begin{DoxyParams}{Parameters}
+{\em param} & name of the Vital\+Sign or attribute to retrieve from the Person \\
+\hline
+{\em person} & Person instance to get the parameter from \\
+\hline
+{\em time} & current time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Expression\+Processor.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,220 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a851e3c2753915fa7c2bf7388d194ea17}{Encounter}} (long time, String type)
+\begin{DoxyCompactList}\small\item\em Construct an encounter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a75f5225ce085ecd95bfec9b5a56cd872}{add\+Observation}} (long time, String type, Object value)
+\begin{DoxyCompactList}\small\item\em Add an observation to the encounter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6f90b3ffb83f54e2dda2ee1cd65a3f51}{add\+Observation}} (long time, String type, Object value, String display)
+\begin{DoxyCompactList}\small\item\em Add an observation to the encounter and uses the type to set the first code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a510b01f03a0cff77e078cf2cf21e633c}{find\+Observation}} (String code)
+\begin{DoxyCompactList}\small\item\em Find the first observation in the encounter with the given LOINC code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7b2b53152a2eeff90326a9f800e7f466}{previous\+Encounter}} ()
+\begin{DoxyCompactList}\small\item\em Find the encounter that happened before this one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a95289993557d5387c0048e4178a3dd2d}{end}} (long time)
+\begin{DoxyCompactList}\small\item\em End the encounter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_ab6795f917dc03d901e099cdf0fdd05a0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_ab6795f917dc03d901e099cdf0fdd05a0}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} $>$ {\bfseries observations}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a36ed93171e2efea140d723753f12a441}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a36ed93171e2efea140d723753f12a441}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Report}{Report}} $>$ {\bfseries reports}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a873348aacd5a2fb1139038d8f0372663}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a873348aacd5a2fb1139038d8f0372663}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} $>$ {\bfseries conditions}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a1d3b7089b0b0cb61401f7afec2043c5a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a1d3b7089b0b0cb61401f7afec2043c5a}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Allergy}{Allergy}} $>$ {\bfseries allergies}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_ac4c595f4125e332cb72813622b2a2758}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_ac4c595f4125e332cb72813622b2a2758}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Procedure}{Procedure}} $>$ {\bfseries procedures}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a958a02be567c84016546fd947df4c4ad}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a958a02be567c84016546fd947df4c4ad}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Immunization}{Immunization}} $>$ {\bfseries immunizations}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6a97f295aa1e5ce8bee2071bdbed4d28}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6a97f295aa1e5ce8bee2071bdbed4d28}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication}{Medication}} $>$ {\bfseries medications}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a92eaad3111185e9aa23b6993997c0726}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a92eaad3111185e9aa23b6993997c0726}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1CarePlan}{Care\+Plan}} $>$ {\bfseries careplans}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a1aea0a588d2c9fbf191e87fd82ed7c91}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a1aea0a588d2c9fbf191e87fd82ed7c91}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy}{Imaging\+Study}} $>$ {\bfseries imaging\+Studies}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_add6478666b87dfa38bedd1ac51ec6d17}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_add6478666b87dfa38bedd1ac51ec6d17}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Device}{Device}} $>$ {\bfseries devices}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a1f8cc7c2f950739ee6629d109fa8adda}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a1f8cc7c2f950739ee6629d109fa8adda}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Supply}{Supply}} $>$ {\bfseries supplies}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a4bbc24790f8b8f0caf15d2345b33fbc8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a4bbc24790f8b8f0caf15d2345b33fbc8}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim}{Claim}} {\bfseries claim}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a16611b8641eac14730625fe6053447dd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a16611b8641eac14730625fe6053447dd}} 
+Code {\bfseries reason}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a506307554a3b31c02be3e979eceb0901}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a506307554a3b31c02be3e979eceb0901}} 
+Code {\bfseries discharge}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a0d958b5b457993867fb7da7d9d230641}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a0d958b5b457993867fb7da7d9d230641}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} {\bfseries provider}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6152585c37b1f2db16f5aa4720fab62c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6152585c37b1f2db16f5aa4720fab62c}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}} {\bfseries clinician}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a102f724d33bc769fb9bcc1c9070cd800}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a102f724d33bc769fb9bcc1c9070cd800}} 
+boolean {\bfseries ended}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7bb0e73858ddc234ce76ca5fa42182bf}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7bb0e73858ddc234ce76ca5fa42182bf}} 
+long {\bfseries ended\+Time}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7d918132b2b894cf7c6d4a3861974d5b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7d918132b2b894cf7c6d4a3861974d5b}} 
+boolean {\bfseries chronic\+Meds\+Renewed}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_ae02189585f82f069e177287837e857fd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_ae02189585f82f069e177287837e857fd}} 
+String {\bfseries clinical\+Note}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a851e3c2753915fa7c2bf7388d194ea17}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a851e3c2753915fa7c2bf7388d194ea17}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}!Encounter@{Encounter}}
+\index{Encounter@{Encounter}!org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+\doxysubsubsection{\texorpdfstring{Encounter()}{Encounter()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter.\+Encounter (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type }\end{DoxyParamCaption})}
+
+
+
+Construct an encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of the encounter. \\
+\hline
+{\em type} & the type of the encounter. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a75f5225ce085ecd95bfec9b5a56cd872}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a75f5225ce085ecd95bfec9b5a56cd872}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}!addObservation@{addObservation}}
+\index{addObservation@{addObservation}!org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+\doxysubsubsection{\texorpdfstring{addObservation()}{addObservation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter.\+add\+Observation (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{Object}]{value }\end{DoxyParamCaption})}
+
+
+
+Add an observation to the encounter. 
+
+In this case, no codes are added to the observation. It appears that some code in Synthea likes it this way (and does not like good old OO-\/style encapsulation). 
+\begin{DoxyParams}{Parameters}
+{\em time} & The time of the observation \\
+\hline
+{\em type} & The type of the observation \\
+\hline
+{\em value} & The observation value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created observation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6f90b3ffb83f54e2dda2ee1cd65a3f51}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a6f90b3ffb83f54e2dda2ee1cd65a3f51}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}!addObservation@{addObservation}}
+\index{addObservation@{addObservation}!org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+\doxysubsubsection{\texorpdfstring{addObservation()}{addObservation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter.\+add\+Observation (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{String}]{type,  }\item[{Object}]{value,  }\item[{String}]{display }\end{DoxyParamCaption})}
+
+
+
+Add an observation to the encounter and uses the type to set the first code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time of the observation \\
+\hline
+{\em type} & The LOINC code for the observation \\
+\hline
+{\em value} & The observation value \\
+\hline
+{\em display} & The display text for the first code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created observation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a95289993557d5387c0048e4178a3dd2d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a95289993557d5387c0048e4178a3dd2d}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}!end@{end}}
+\index{end@{end}!org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter.\+end (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+End the encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time of the simulation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a510b01f03a0cff77e078cf2cf21e633c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a510b01f03a0cff77e078cf2cf21e633c}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}!findObservation@{findObservation}}
+\index{findObservation@{findObservation}!org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+\doxysubsubsection{\texorpdfstring{findObservation()}{findObservation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation}{Observation}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter.\+find\+Observation (\begin{DoxyParamCaption}\item[{String}]{code }\end{DoxyParamCaption})}
+
+
+
+Find the first observation in the encounter with the given LOINC code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The LOINC code to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A single observation or null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7b2b53152a2eeff90326a9f800e7f466}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter_a7b2b53152a2eeff90326a9f800e7f466}} 
+\index{org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}!previousEncounter@{previousEncounter}}
+\index{previousEncounter@{previousEncounter}!org.mitre.synthea.world.concepts.HealthRecord.Encounter@{org.mitre.synthea.world.concepts.HealthRecord.Encounter}}
+\doxysubsubsection{\texorpdfstring{previousEncounter()}{previousEncounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} org.\+mitre.\+synthea.\+world.\+concepts.\+Health\+Record.\+Encounter.\+previous\+Encounter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Find the encounter that happened before this one. 
+
+\begin{DoxyReturn}{Returns}
+The previous encounter or null if this is the first 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Health\+Record.\+java\end{DoxyCompactItemize}

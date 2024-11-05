@@ -1,0 +1,120 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Attributes Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes}\index{org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}}
+
+
+Task class to export a report of all Person attributes that Synthea is aware of.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a5f55c6f4e62dfa77e4c8e6f038af47a4}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Generate an output file containing all Person attributes used in Synthea. \end{DoxyCompactList}\item 
+static Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_abe6ca81aa6525626d43bd58d87c1e3cf}{get\+Attribute\+Inventory}} ()  throws Exception 
+\begin{DoxyCompactList}\small\item\em Get the list of all Person attributes in Synthea, as a list of CSV strings. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a6ad99204ccf9977bd272cd8dec27cc78}{inventory}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes, String module, String attribute, boolean read, boolean write, String example)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} an attribute with read, write, and example values. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a83ea3f0733e4d37e48d4b85e0811b7c7}{graph}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ output, String filename, boolean read\+And\+Write)
+\begin{DoxyCompactList}\small\item\em Output a graphviz image of the inventoried attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Task class to export a report of all Person attributes that Synthea is aware of. 
+
+Does not include Clinician or Provider specific attributes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_abe6ca81aa6525626d43bd58d87c1e3cf}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_abe6ca81aa6525626d43bd58d87c1e3cf}} 
+\index{org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}!getAttributeInventory@{getAttributeInventory}}
+\index{getAttributeInventory@{getAttributeInventory}!org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}}
+\doxysubsubsection{\texorpdfstring{getAttributeInventory()}{getAttributeInventory()}}
+{\footnotesize\ttfamily static Map$<$String,\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}}$>$ org.\+mitre.\+synthea.\+helpers.\+Attributes.\+get\+Attribute\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the list of all Person attributes in Synthea, as a list of CSV strings. 
+
+\begin{DoxyReturn}{Returns}
+list of CSV strings 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if any exception occurs in reading the modules. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a83ea3f0733e4d37e48d4b85e0811b7c7}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a83ea3f0733e4d37e48d4b85e0811b7c7}} 
+\index{org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}!graph@{graph}}
+\index{graph@{graph}!org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}}
+\doxysubsubsection{\texorpdfstring{graph()}{graph()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Attributes.\+graph (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{output,  }\item[{String}]{filename,  }\item[{boolean}]{read\+And\+Write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Output a graphviz image of the inventoried attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & The results of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_abe6ca81aa6525626d43bd58d87c1e3cf}{get\+Attribute\+Inventory()}} \\
+\hline
+{\em filename} & The filename of the image (without a path or extension) to write. \\
+\hline
+{\em read\+And\+Write} & If false, all nodes are rendered. If true, only attributes that are both read from and written to are considered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a6ad99204ccf9977bd272cd8dec27cc78}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a6ad99204ccf9977bd272cd8dec27cc78}} 
+\index{org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}!inventory@{inventory}}
+\index{inventory@{inventory}!org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}}
+\doxysubsubsection{\texorpdfstring{inventory()}{inventory()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Attributes.\+inventory (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes,  }\item[{String}]{module,  }\item[{String}]{attribute,  }\item[{boolean}]{read,  }\item[{boolean}]{write,  }\item[{String}]{example }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} an attribute with read, write, and example values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & The inventory. \\
+\hline
+{\em module} & The module name. \\
+\hline
+{\em attribute} & The attribute name. \\
+\hline
+{\em read} & Whether the module reads the attribute or not. \\
+\hline
+{\em write} & Whether the module writes to the attribute or not. \\
+\hline
+{\em example} & Example values the module writes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a5f55c6f4e62dfa77e4c8e6f038af47a4}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_a5f55c6f4e62dfa77e4c8e6f038af47a4}} 
+\index{org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}!main@{main}}
+\index{main@{main}!org.mitre.synthea.helpers.Attributes@{org.mitre.synthea.helpers.Attributes}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Attributes.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate an output file containing all Person attributes used in Synthea. 
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes}{Attributes}} of Clinicians and Providers are not included.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & unused \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if any error occurs in reading the module files \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Attributes.\+java\end{DoxyCompactItemize}

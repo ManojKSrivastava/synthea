@@ -1,0 +1,9 @@
+<map id="org.mitre.synthea.export.rif.identifiers.FixedLengthIdentifier" name="org.mitre.synthea.export.rif.identifiers.FixedLengthIdentifier">
+<area shape="rect" id="node1" title="Base class for fixed length, alphanumeric identifiers." alt="" coords="5,129,280,170"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1CLIA.html" title="Utility class for working with CLIA Lab Numbers." alt="" coords="330,5,633,32"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN.html" title="Utility class for working with CMS HICNs." alt="" coords="328,56,635,83"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI.html" title="Utility class for working with CMS MBIs." alt="" coords="332,107,631,133"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PartCContractID.html" title="Utility class for working with CMS Part C Contract IDs." alt="" coords="344,158,619,199"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PartDContractID.html" title="Utility class for working with CMS Part D Contract IDs." alt="" coords="344,223,619,265"/>
+<area shape="rect" id="node7" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PlanBenefitPackageID.html" title="Utility class for working with CMS Plan Benefit Package IDs." alt="" coords="344,289,619,330"/>
+</map>

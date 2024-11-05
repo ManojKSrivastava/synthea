@@ -1,0 +1,166 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Fact\+Table Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+
+
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{Fact\+Table}} helper class aids in the export of database-\/style Fact Tables.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a54ff827c921db765b87c59dda77ca2d5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a54ff827c921db765b87c59dda77ca2d5}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a54ff827c921db765b87c59dda77ca2d5}{Fact\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{Fact\+Table}} with an ID that starts at 1 and increments with each new key/fact. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a8d2c84460062c207958edf5e1855c332}{set\+Next\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the next ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_ab9b04a8bce94a83b2198536a1dc84081}{set\+Header}} (String header)
+\begin{DoxyCompactList}\small\item\em Set the column headers of the fact table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a6fda2ff92ab7f9f1f4dbbb57174bb557}{get\+Fact\+Id}} (String key)
+\begin{DoxyCompactList}\small\item\em Get the ID for a fact by a key. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_af906c1609fa7f4093190d342a24a1bd1}{get\+Fact\+By\+Key}} (String key)
+\begin{DoxyCompactList}\small\item\em Get the fact for a given key. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a99518e2315ae8492796687c089dbf85e}{get\+Fact\+By\+Id}} (Integer id)
+\begin{DoxyCompactList}\small\item\em Get the fact for a given key. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a58ce41d8e353977109566fb6df1935b8}{add\+Fact}} (String key, String fact)
+\begin{DoxyCompactList}\small\item\em Adds a new key/fact combination to the table and returns the ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a6c2e7a8775fc43806486c457ebbff25d}{write}} (Writer writer)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Write the contents of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{Fact\+Table}} to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{Fact\+Table}} helper class aids in the export of database-\/style Fact Tables. 
+
+If you have a \char`\"{}table\char`\"{} where each row is a fact or lookup table where a value should be referenced by an ID, you can add these keys and facts to this table and get back the ID. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a58ce41d8e353977109566fb6df1935b8}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a58ce41d8e353977109566fb6df1935b8}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!addFact@{addFact}}
+\index{addFact@{addFact}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{addFact()}{addFact()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+add\+Fact (\begin{DoxyParamCaption}\item[{String}]{key,  }\item[{String}]{fact }\end{DoxyParamCaption})}
+
+
+
+Adds a new key/fact combination to the table and returns the ID. 
+
+If the key already exists, the appropriate ID is returned without modifying the table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for a fact. For example, \textquotesingle{}M\textquotesingle{} or \textquotesingle{}F\textquotesingle{}. \\
+\hline
+{\em fact} & The fact. For example, \textquotesingle{}Male\textquotesingle{} or \textquotesingle{}Female\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID for the fact. For example, 1 or 2. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a99518e2315ae8492796687c089dbf85e}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a99518e2315ae8492796687c089dbf85e}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!getFactById@{getFactById}}
+\index{getFactById@{getFactById}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{getFactById()}{getFactById()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+get\+Fact\+By\+Id (\begin{DoxyParamCaption}\item[{Integer}]{id }\end{DoxyParamCaption})}
+
+
+
+Get the fact for a given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID for the fact. For example, 1 or 2. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fact. For example, \textquotesingle{}Male\textquotesingle{} or \textquotesingle{}Female\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_af906c1609fa7f4093190d342a24a1bd1}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_af906c1609fa7f4093190d342a24a1bd1}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!getFactByKey@{getFactByKey}}
+\index{getFactByKey@{getFactByKey}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{getFactByKey()}{getFactByKey()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+get\+Fact\+By\+Key (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+
+
+Get the fact for a given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for a fact. For example, \textquotesingle{}M\textquotesingle{} or \textquotesingle{}F\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fact. For example, \textquotesingle{}Male\textquotesingle{} or \textquotesingle{}Female\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a6fda2ff92ab7f9f1f4dbbb57174bb557}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a6fda2ff92ab7f9f1f4dbbb57174bb557}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!getFactId@{getFactId}}
+\index{getFactId@{getFactId}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{getFactId()}{getFactId()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+get\+Fact\+Id (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+
+
+Get the ID for a fact by a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for a fact. For example, \textquotesingle{}M\textquotesingle{} or \textquotesingle{}F\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID for the fact. For example, 1 or 2. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_ab9b04a8bce94a83b2198536a1dc84081}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_ab9b04a8bce94a83b2198536a1dc84081}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+set\+Header (\begin{DoxyParamCaption}\item[{String}]{header }\end{DoxyParamCaption})}
+
+
+
+Set the column headers of the fact table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em header} & Column headers of the fact table. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a8d2c84460062c207958edf5e1855c332}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a8d2c84460062c207958edf5e1855c332}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!setNextId@{setNextId}}
+\index{setNextId@{setNextId}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{setNextId()}{setNextId()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+set\+Next\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Set the next ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The value of the next ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a6c2e7a8775fc43806486c457ebbff25d}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable_a6c2e7a8775fc43806486c457ebbff25d}} 
+\index{org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}!write@{write}}
+\index{write@{write}!org.mitre.synthea.helpers.FactTable@{org.mitre.synthea.helpers.FactTable}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Fact\+Table.\+write (\begin{DoxyParamCaption}\item[{Writer}]{writer }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Write the contents of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{Fact\+Table}} to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & The open Writer to use to record the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1FactTable}{Fact\+Table}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & On errors. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Fact\+Table.\+java\end{DoxyCompactItemize}

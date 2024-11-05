@@ -1,0 +1,371 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+Provider Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+agents.\+Provider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+agents.\+Provider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType}{Provider\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1a48204fed1065f32e0b83ae0f9fda94}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1a48204fed1065f32e0b83ae0f9fda94}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1a48204fed1065f32e0b83ae0f9fda94}{Provider}} ()
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} with no information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a04e88d8fb30cc1c3a01aec4d5f1384cc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a04e88d8fb30cc1c3a01aec4d5f1384cc}} 
+String {\bfseries get\+Resource\+ID} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a80ee391bb93ea9ef9c1ff524f7e6d120}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a80ee391bb93ea9ef9c1ff524f7e6d120}} 
+String {\bfseries get\+Resource\+Location\+ID} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ae610d2547c2f0a276f9ece301d35387e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ae610d2547c2f0a276f9ece301d35387e}} 
+Map$<$ String, Object $>$ {\bfseries get\+Attributes} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a0c2ec7f6d8ce3031d540aa9fcf07e97a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a0c2ec7f6d8ce3031d540aa9fcf07e97a}} 
+boolean {\bfseries has\+Service} (\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8bbe70a7f7b44c20fb0b5d0b340f70e5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8bbe70a7f7b44c20fb0b5d0b340f70e5}} 
+void {\bfseries increment\+Encounters} (\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, int year)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad84aeca2f4be5ce897e4f9b42cdef5b6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad84aeca2f4be5ce897e4f9b42cdef5b6}} 
+void {\bfseries increment\+Procedures} (int year)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a48b4831c34e9d313a00a4e9495e545f1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a48b4831c34e9d313a00a4e9495e545f1}} 
+void {\bfseries increment\+Labs} (int year)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a33a6a5273ace08c65d3c65b6a6f44db7}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a33a6a5273ace08c65d3c65b6a6f44db7}} 
+void {\bfseries increment\+Prescriptions} (int year)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a168319d172d01dfbe79a4367148538b3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a168319d172d01dfbe79a4367148538b3}} 
+Table$<$ Integer, String, Atomic\+Integer $>$ {\bfseries get\+Utilization} ()
+\item 
+Integer \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a608e71a77d141821ac1b43bf2cc5b48d}{get\+Bed\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the bed count for this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} facility. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad07532d55488ea13fd19cf92c59ff397}{accepts}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Will this provider accept the given person as a patient at the given time?. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a6658b0ac04f4decbeb96dd5868f1a43b}{add\+Revenue}} (double cost\+Of\+Care)
+\begin{DoxyCompactList}\small\item\em Adds the given amount to the provider\textquotesingle{}s total revenue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a9ab836e4bfad948fbd3b986ffd8f21c1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a9ab836e4bfad948fbd3b986ffd8f21c1}} 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a9ab836e4bfad948fbd3b986ffd8f21c1}{get\+Revenue}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total revenue of this provider. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a641330df096f5a6bb39d586855bf1243}{choose\+Clinician\+List}} (String specialty, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Randomly chooses a clinician out of a given clinician list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abdb882b513d0fef5f02240d8bec21e74}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abdb882b513d0fef5f02240d8bec21e74}} 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abdb882b513d0fef5f02240d8bec21e74}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Get the x-\/coordinate of this element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ac4dbe34b2b977366ad5df1794332e743}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ac4dbe34b2b977366ad5df1794332e743}} 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ac4dbe34b2b977366ad5df1794332e743}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Get the y-\/coordinate of this element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1fcb2d831794310b7ede4fa7c95b9173}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1fcb2d831794310b7ede4fa7c95b9173}} 
+Point2\+D.\+Double {\bfseries get\+Lon\+Lat} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_af023c3d966109ac3635ba7da5b49e957}{find\+Service}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time)
+\begin{DoxyCompactList}\small\item\em Find specific service provider for the given person. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ade99baaefadbbceff855ecfe3be57d7b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ade99baaefadbbceff855ecfe3be57d7b}} 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ade99baaefadbbceff855ecfe3be57d7b}{find\+Service\+New\+Provider}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time, List$<$ String $>$ taken\+Ids)
+\begin{DoxyCompactList}\small\item\em Find a provider that does not already have a healthrecord for the given person. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a173bcc0d0266961b0aa456063c064073}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a173bcc0d0266961b0aa456063c064073}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a173bcc0d0266961b0aa456063c064073}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the list of loaded and cached providers. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a00b52261103b6b496c03d6fb52c479ec}{load\+Providers}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} location, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1DefaultRandomNumberGenerator}{Default\+Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Load into cache the list of providers for a state. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3bdfca2a2390307d9360addf492da070}{load\+Providers}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} location, String filename, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType}{Provider\+Type}} provider\+Type, Set$<$ \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} $>$ services\+Provided, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random, boolean optional)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Read the providers from the given resource file, only importing the ones for the given state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8e1b826e10889e4f5d5bacc5b8dd3bc8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8e1b826e10889e4f5d5bacc5b8dd3bc8}} 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} $>$ {\bfseries get\+Provider\+List} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad8378636597cbddb1007c9588186b912}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad8378636597cbddb1007c9588186b912}} 
+Map$<$ String, Object $>$ {\bfseries attributes}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a14b9ce57a2ad7c23f5a57c095c9cc1bc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a14b9ce57a2ad7c23f5a57c095c9cc1bc}} 
+String {\bfseries uuid}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_af335756f63d8132f89108b78b34ce6c7}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_af335756f63d8132f89108b78b34ce6c7}} 
+String {\bfseries id}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3a7f35ac69c95f4d35ac9a2b898616e6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3a7f35ac69c95f4d35ac9a2b898616e6}} 
+String {\bfseries npi}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abb2ab40146145749eefff20b9fa958fb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abb2ab40146145749eefff20b9fa958fb}} 
+String {\bfseries cms\+Provider\+Num}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abbbf9984655bb317bacee0f34073ae8a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_abbbf9984655bb317bacee0f34073ae8a}} 
+String {\bfseries cms\+Pin}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a2576b3696fda58eddd59d85eee416281}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a2576b3696fda58eddd59d85eee416281}} 
+String {\bfseries cms\+Upin}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a28fe9319e6451503709afc18e820d627}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a28fe9319e6451503709afc18e820d627}} 
+String {\bfseries cms\+Category}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1a9b5262d5a061840a2ab7c1acfc04b5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a1a9b5262d5a061840a2ab7c1acfc04b5}} 
+String {\bfseries cms\+Provider\+Type}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8f7bd709aa604e8a3db4abce2eb1a8ec}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8f7bd709aa604e8a3db4abce2eb1a8ec}} 
+String {\bfseries cms\+Region}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a608a5a5970b2e68713d862168035daf7}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a608a5a5970b2e68713d862168035daf7}} 
+String {\bfseries clia\+Number}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a94887c51ed5013d1114a315e469da788}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a94887c51ed5013d1114a315e469da788}} 
+Integer {\bfseries bed\+Count}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a205f15d4f503fd316ec3a82095029a72}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a205f15d4f503fd316ec3a82095029a72}} 
+String {\bfseries name}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad8fa90958e58a56cd40d0043c6edb55e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad8fa90958e58a56cd40d0043c6edb55e}} 
+String {\bfseries address}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a098f1dc987a9f14caf9450635d672c95}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a098f1dc987a9f14caf9450635d672c95}} 
+String {\bfseries city}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a7dbfc2d1c8d695015c0dce6645d82543}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a7dbfc2d1c8d695015c0dce6645d82543}} 
+String {\bfseries state}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad86d6654a57969313f31fc4370d41dd0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad86d6654a57969313f31fc4370d41dd0}} 
+String {\bfseries zip}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a2a9e4c3604b7f183652f6a855379b094}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a2a9e4c3604b7f183652f6a855379b094}} 
+String {\bfseries fips\+County\+Code}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_afa64dac10e02baa7cff3c2203178f441}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_afa64dac10e02baa7cff3c2203178f441}} 
+String {\bfseries phone}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_aea740604854f52ed8d001c8b169e19b4}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_aea740604854f52ed8d001c8b169e19b4}} 
+\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType}{Provider\+Type}} {\bfseries type}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a4660ef5dcc7cc8bb9a5afee43cd6cfe2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a4660ef5dcc7cc8bb9a5afee43cd6cfe2}} 
+String {\bfseries ownership}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3c045ea268d8b6baf43eb93c4db96df7}{institutional}}
+\begin{DoxyCompactList}\small\item\em institutional (e.\+g. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_aee86b22f2c0920def48b2462219299ad}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_aee86b22f2c0920def48b2462219299ad}} 
+Set$<$ \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} $>$ {\bfseries services\+Provided}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a4f0b1a1b31331b8eb233ca787b9e978d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a4f0b1a1b31331b8eb233ca787b9e978d}} 
+Map$<$ String, Array\+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}} $>$ $>$ {\bfseries clinician\+Map}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a230fe9939d738b636faaa1485b6f6019}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a230fe9939d738b636faaa1485b6f6019}} 
+static final String {\bfseries ENCOUNTERS} = \char`\"{}encounters\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8349ec1a74d639106a1becd09d7a4f8f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8349ec1a74d639106a1becd09d7a4f8f}} 
+static final String {\bfseries PROCEDURES} = \char`\"{}procedures\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a016be7866e234434494f7fc07d1943da}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a016be7866e234434494f7fc07d1943da}} 
+static final String {\bfseries LABS} = \char`\"{}labs\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ab1f27bd1e6ed9777b6d388de0a145372}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ab1f27bd1e6ed9777b6d388de0a145372}} 
+static final String {\bfseries PRESCRIPTIONS} = \char`\"{}prescriptions\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a343d35b7a870859f78a56b94271dcd03}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a343d35b7a870859f78a56b94271dcd03}} 
+static final String {\bfseries NEAREST} = \char`\"{}nearest\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a356ac0a2e04aede9bc0a12ade32bb885}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a356ac0a2e04aede9bc0a12ade32bb885}} 
+static final String {\bfseries RANDOM} = \char`\"{}random\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_aa062b19b8ac4a82a55a6496dcd294b04}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_aa062b19b8ac4a82a55a6496dcd294b04}} 
+static final String {\bfseries NETWORK} = \char`\"{}network\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a6e953cf998be1b2f57c70c78d1866be8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a6e953cf998be1b2f57c70c78d1866be8}} 
+static final String {\bfseries MEDICARE} = \char`\"{}medicare\char`\"{}
+\item 
+static final Boolean {\bfseries USE\+\_\+\+HOSPITAL\+\_\+\+AS\+\_\+\+DEFAULT}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad07532d55488ea13fd19cf92c59ff397}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_ad07532d55488ea13fd19cf92c59ff397}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!accepts@{accepts}}
+\index{accepts@{accepts}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+accepts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Will this provider accept the given person as a patient at the given time?. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} to consider \\
+\hline
+{\em time} & Time the person seeks care \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether or not the person can receive care by this provider 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a6658b0ac04f4decbeb96dd5868f1a43b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a6658b0ac04f4decbeb96dd5868f1a43b}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!addRevenue@{addRevenue}}
+\index{addRevenue@{addRevenue}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{addRevenue()}{addRevenue()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+add\+Revenue (\begin{DoxyParamCaption}\item[{double}]{cost\+Of\+Care }\end{DoxyParamCaption})}
+
+
+
+Adds the given amount to the provider\textquotesingle{}s total revenue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost\+Of\+Care} & the cost of the care to be added to revenue. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a641330df096f5a6bb39d586855bf1243}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a641330df096f5a6bb39d586855bf1243}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!chooseClinicianList@{chooseClinicianList}}
+\index{chooseClinicianList@{chooseClinicianList}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{chooseClinicianList()}{chooseClinicianList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}} org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+choose\+Clinician\+List (\begin{DoxyParamCaption}\item[{String}]{specialty,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})}
+
+
+
+Randomly chooses a clinician out of a given clinician list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em specialty} & -\/ the specialty to choose from. \\
+\hline
+{\em rand} & -\/ random number generator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A clinician with the required specialty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_af023c3d966109ac3635ba7da5b49e957}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_af023c3d966109ac3635ba7da5b49e957}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!findService@{findService}}
+\index{findService@{findService}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{findService()}{findService()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+find\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{service,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Find specific service provider for the given person. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient who requires the service. \\
+\hline
+{\em service} & The service required. For example, Encounter\+Type.\+AMBULATORY. \\
+\hline
+{\em time} & The date/time within the simulated world, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Service provider or null if none is available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a608e71a77d141821ac1b43bf2cc5b48d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a608e71a77d141821ac1b43bf2cc5b48d}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!getBedCount@{getBedCount}}
+\index{getBedCount@{getBedCount}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{getBedCount()}{getBedCount()}}
+{\footnotesize\ttfamily Integer org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+get\+Bed\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the bed count for this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} facility. 
+
+\begin{DoxyReturn}{Returns}
+The number of beds, if they exist, otherwise null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a00b52261103b6b496c03d6fb52c479ec}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a00b52261103b6b496c03d6fb52c479ec}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!loadProviders@{loadProviders}}
+\index{loadProviders@{loadProviders}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{loadProviders()}{loadProviders()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+load\+Providers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}}}]{location,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1DefaultRandomNumberGenerator}{Default\+Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load into cache the list of providers for a state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & the state being loaded. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3bdfca2a2390307d9360addf492da070}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3bdfca2a2390307d9360addf492da070}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!loadProviders@{loadProviders}}
+\index{loadProviders@{loadProviders}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{loadProviders()}{loadProviders()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+load\+Providers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}}}]{location,  }\item[{String}]{filename,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType}{Provider\+Type}}}]{provider\+Type,  }\item[{Set$<$ \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} $>$}]{services\+Provided,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random,  }\item[{boolean}]{optional }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read the providers from the given resource file, only importing the ones for the given state. 
+
+THIS method is for loading providers and generating clinicians with specific specialties
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & the state being loaded \\
+\hline
+{\em filename} & Location of the file \\
+\hline
+{\em provider\+Type} & \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType}{Provider\+Type}} \\
+\hline
+{\em services\+Provided} & Set of services provided by these facilities \\
+\hline
+{\em random} & Source of randomness for provider generation \\
+\hline
+{\em optional} & if true the function will silently ignore a null or empty filename \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if the file cannot be read \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3c045ea268d8b6baf43eb93c4db96df7}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a3c045ea268d8b6baf43eb93c4db96df7}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!institutional@{institutional}}
+\index{institutional@{institutional}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{institutional}{institutional}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+institutional}
+
+
+
+institutional (e.\+g. 
+
+hospital) else professional (e.\+g. PCP) \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8c24406f90214668d17380d4658b10ac}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_a8c24406f90214668d17380d4658b10ac}} 
+\index{org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}!USE\_HOSPITAL\_AS\_DEFAULT@{USE\_HOSPITAL\_AS\_DEFAULT}}
+\index{USE\_HOSPITAL\_AS\_DEFAULT@{USE\_HOSPITAL\_AS\_DEFAULT}!org.mitre.synthea.world.agents.Provider@{org.mitre.synthea.world.agents.Provider}}
+\doxysubsubsection{\texorpdfstring{USE\_HOSPITAL\_AS\_DEFAULT}{USE\_HOSPITAL\_AS\_DEFAULT}}
+{\footnotesize\ttfamily final Boolean org.\+mitre.\+synthea.\+world.\+agents.\+Provider.\+USE\+\_\+\+HOSPITAL\+\_\+\+AS\+\_\+\+DEFAULT\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}generate.providers.default\_to\_hospital\_on\_failure"{}}, \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/Provider.\+java\end{DoxyCompactItemize}

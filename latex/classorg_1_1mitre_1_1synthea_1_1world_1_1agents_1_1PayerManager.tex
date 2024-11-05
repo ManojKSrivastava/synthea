@@ -1,0 +1,198 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager}\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+
+
+A class that maintains and manages Payers.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a389664b12e83d019cb7025d6d9241c76}{load\+Payers}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} location)
+\begin{DoxyCompactList}\small\item\em Load into cache the list of payers for a state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a4ea38409a237e2d375d1fd996272521a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a4ea38409a237e2d375d1fd996272521a}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a4ea38409a237e2d375d1fd996272521a}{load\+No\+Insurance}} ()
+\begin{DoxyCompactList}\small\item\em Loads the no\+Insurance \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a84c43d5765983db813dcafac64f411a3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a84c43d5765983db813dcafac64f411a3}} 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a84c43d5765983db813dcafac64f411a3}{get\+All\+Payers}} ()
+\begin{DoxyCompactList}\small\item\em Returns the List of all loaded payers. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_ab92b72e144cbe226f0bdffad8c65da29}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the list of loaded and cached Payers. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a3de20b7fe88ceaa357d0ed85cb60ba80}{find\+Plan}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} that the person can qualify for. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a8b076d4b9e855ead75409241c2d33382}{get\+Active\+Plans}} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} $>$ payers, long time)
+\begin{DoxyCompactList}\small\item\em Returns all active plans in the given payers based on the given time. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a34827b919b6a1d7b6c68829f64142c2e}{get\+No\+Insurance\+Plan}} ()
+\begin{DoxyCompactList}\small\item\em Returns the no insurance plan. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a9dbf41900d12ca86f349984b447da8aa}{find\+Medicare\+Supplement}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time)
+\begin{DoxyCompactList}\small\item\em Finds an eligible medicare supplement plan for the given person. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a3a9dbbb754d38e007075dfa93c9824c8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a3a9dbbb754d38e007075dfa93c9824c8}} 
+static final String {\bfseries GOV\+\_\+\+OWNERSHIP} = \char`\"{}GOVERNMENT\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a955a908242b258fa5e0b0937bea068b5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a955a908242b258fa5e0b0937bea068b5}} 
+static final String {\bfseries PRIVATE\+\_\+\+OWNERSHIP} = \char`\"{}PRIVATE\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a4a2433dbb0b7d78fc2f97316317b9704}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a4a2433dbb0b7d78fc2f97316317b9704}} 
+static final String {\bfseries NO\+\_\+\+INSURANCE} = \char`\"{}NO\+\_\+\+INSURANCE\char`\"{}
+\item 
+static final String {\bfseries MEDICARE}
+\item 
+static final String {\bfseries MEDICAID}
+\item 
+static final String {\bfseries DUAL\+\_\+\+ELIGIBLE}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that maintains and manages Payers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_ab92b72e144cbe226f0bdffad8c65da29}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_ab92b72e144cbe226f0bdffad8c65da29}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!clear@{clear}}
+\index{clear@{clear}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clear the list of loaded and cached Payers. 
+
+Currently only used in tests. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a9dbf41900d12ca86f349984b447da8aa}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a9dbf41900d12ca86f349984b447da8aa}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!findMedicareSupplement@{findMedicareSupplement}}
+\index{findMedicareSupplement@{findMedicareSupplement}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{findMedicareSupplement()}{findMedicareSupplement()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+find\+Medicare\+Supplement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{service,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Finds an eligible medicare supplement plan for the given person. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person for whom to find a medicare supplement plan. \\
+\hline
+{\em service} & The service the plan should cover. \\
+\hline
+{\em time} & The time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A potential Medicare Supplement plan, if eligible and affordable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a3de20b7fe88ceaa357d0ed85cb60ba80}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a3de20b7fe88ceaa357d0ed85cb60ba80}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!findPlan@{findPlan}}
+\index{findPlan@{findPlan}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{findPlan()}{findPlan()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+find\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{service,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} that the person can qualify for. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person who needs to find insurance. \\
+\hline
+{\em service} & the Encounter\+Type the person would like covered. \\
+\hline
+{\em time} & the time that the person requires insurance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a payer who the person can accept and vice versa. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a8b076d4b9e855ead75409241c2d33382}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a8b076d4b9e855ead75409241c2d33382}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!getActivePlans@{getActivePlans}}
+\index{getActivePlans@{getActivePlans}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{getActivePlans()}{getActivePlans()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}}$>$ org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+get\+Active\+Plans (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} $>$}]{payers,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns all active plans in the given payers based on the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payers} & The payers. \\
+\hline
+{\em time} & The time for the plan to be active in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The set of active plans. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a34827b919b6a1d7b6c68829f64142c2e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a34827b919b6a1d7b6c68829f64142c2e}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!getNoInsurancePlan@{getNoInsurancePlan}}
+\index{getNoInsurancePlan@{getNoInsurancePlan}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{getNoInsurancePlan()}{getNoInsurancePlan()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+get\+No\+Insurance\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the no insurance plan. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a389664b12e83d019cb7025d6d9241c76}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a389664b12e83d019cb7025d6d9241c76}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!loadPayers@{loadPayers}}
+\index{loadPayers@{loadPayers}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{loadPayers()}{loadPayers()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+load\+Payers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}}}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load into cache the list of payers for a state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & the state being loaded. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a27363a01d5a1f45be31cc20f05ade372}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a27363a01d5a1f45be31cc20f05ade372}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!DUAL\_ELIGIBLE@{DUAL\_ELIGIBLE}}
+\index{DUAL\_ELIGIBLE@{DUAL\_ELIGIBLE}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{DUAL\_ELIGIBLE}{DUAL\_ELIGIBLE}}
+{\footnotesize\ttfamily final String org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+DUAL\+\_\+\+ELIGIBLE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.get(\textcolor{stringliteral}{"{}generate.payers.insurance\_companies.dual\_eligible"{}}, \textcolor{stringliteral}{"{}Dual Eligible"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_ac8c6ca6ce38601768a172645edc7bc1f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_ac8c6ca6ce38601768a172645edc7bc1f}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!MEDICAID@{MEDICAID}}
+\index{MEDICAID@{MEDICAID}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{MEDICAID}{MEDICAID}}
+{\footnotesize\ttfamily final String org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+MEDICAID\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.get(\textcolor{stringliteral}{"{}generate.payers.insurance\_companies.medicaid"{}}, \textcolor{stringliteral}{"{}Medicaid"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a79aca570897dd2550a3c335f320cb6f5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1PayerManager_a79aca570897dd2550a3c335f320cb6f5}} 
+\index{org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}!MEDICARE@{MEDICARE}}
+\index{MEDICARE@{MEDICARE}!org.mitre.synthea.world.agents.PayerManager@{org.mitre.synthea.world.agents.PayerManager}}
+\doxysubsubsection{\texorpdfstring{MEDICARE}{MEDICARE}}
+{\footnotesize\ttfamily final String org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+Manager.\+MEDICARE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.get(\textcolor{stringliteral}{"{}generate.payers.insurance\_companies.medicare"{}}, \textcolor{stringliteral}{"{}Medicare"{}})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/Payer\+Manager.\+java\end{DoxyCompactItemize}

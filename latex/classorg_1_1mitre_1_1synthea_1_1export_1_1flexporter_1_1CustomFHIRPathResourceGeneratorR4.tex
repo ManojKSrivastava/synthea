@@ -1,0 +1,154 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{}\doxysection{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4$<$ T extends Resource $>$ Class Template Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+
+
+This class can be used to generate resources using FHIRPath expressions.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Generation\+Tier}
+\begin{DoxyCompactList}\small\item\em The Generation\+Tier summarizes some variables that are needed to create FHIR elements later on. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_1_1PathType}{Path\+Type}}
+\begin{DoxyCompactList}\small\item\em A simple enum to diffirentiate between types of FHIRPaths in the special use case of generating FHIR Resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a7040dc733d6beaa65680de19e6aa4321}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a7040dc733d6beaa65680de19e6aa4321}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a7040dc733d6beaa65680de19e6aa4321}{Custom\+FHIRPath\+Resource\+Generator\+R4}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor, needs a call to {\ttfamily set\+Mapping} later on in order to generate any Resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_aaf3ee2de455d8a164d2d1542f1c4a414}{set\+Mapping}} (Map$<$ String, Object $>$ mapping)
+\begin{DoxyCompactList}\small\item\em Setter for the FHIRPath mapping Map instance. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a217c9014b234ba66de5cce0e3e5b7a00}{get\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Getter for a generated Resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a5ff39de5f4bdcbd6c1d6c4a2923a1c5c}{set\+Resource}} (T resource)
+\begin{DoxyCompactList}\small\item\em Sets the resource to apply FHIRPath changes to. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_ad60945826bccf0af97caf522c7d587f2}{generate\+Resource}} (String resource\+Type)
+\begin{DoxyCompactList}\small\item\em The generation method that yields a new instance of the given resource\+Type with every value set in the FHIRPath mapping. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_af9b26427a026860ea9ee0326da1fc3e8}{generate\+Resource}} (Class$<$? extends T $>$ resource\+Class)
+\begin{DoxyCompactList}\small\item\em The generation method that yields a new instance of class {\ttfamily resource\+Class} with every value set in the FHIRPath mapping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static$<$ T extends Resource $>$ void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_ab54663b5ce46b648fe0aa340b9678b3f}{set\+Field}} (T resource, String field\+Path, Object value)
+\begin{DoxyCompactList}\small\item\em Helper function to set a single value on a resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class can be used to generate resources using FHIRPath expressions. 
+
+Note that this is an experimental feature and the API is expected to change. Ideally this will be made version independent in a future release.
+
+Modified for the Flexporter\+: -- allow adding to an existing resource -- add class lookup by resource\+Type -- add support for Backbone\+Elements -- swapped constructors, pass in a Fhir\+Context to avoid recreating it for each resource -- add support for extensions on primitives -- more advanced java generics (some functions now take in
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Class<? extends T> }
+
+\end{DoxyCode}
+ instead of just T) -- reformatted per Synthea style guidelines
+
+Original\+: \href{https://github.com/hapifhir/hapi-fhir/blob/master/hapi-fhir-validation/src/main/java/org/hl7/fhir/common/hapi/validation/validator/FHIRPathResourceGeneratorR4.java}{\texttt{ https\+://github.\+com/hapifhir/hapi-\/fhir/blob/master/hapi-\/fhir-\/validation/src/main/java/org/hl7/fhir/common/hapi/validation/validator/\+FHIRPath\+Resource\+Generator\+R4.\+java}}
+
+\begin{DoxyAuthor}{Author}
+Marcel Parciak \href{mailto:marcel.parciak@med.uni-goettingen.de}{\texttt{ marcel.\+parciak@med.\+uni-\/goettingen.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_af9b26427a026860ea9ee0326da1fc3e8}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_af9b26427a026860ea9ee0326da1fc3e8}} 
+\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}!generateResource@{generateResource}}
+\index{generateResource@{generateResource}!org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+\doxysubsubsection{\texorpdfstring{generateResource()}{generateResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4}}$<$ T extends Resource $>$.generate\+Resource (\begin{DoxyParamCaption}\item[{Class$<$? extends T $>$}]{resource\+Class }\end{DoxyParamCaption})}
+
+
+
+The generation method that yields a new instance of class {\ttfamily resource\+Class} with every value set in the FHIRPath mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Class} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_ad60945826bccf0af97caf522c7d587f2}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_ad60945826bccf0af97caf522c7d587f2}} 
+\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}!generateResource@{generateResource}}
+\index{generateResource@{generateResource}!org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+\doxysubsubsection{\texorpdfstring{generateResource()}{generateResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4}}$<$ T extends Resource $>$.generate\+Resource (\begin{DoxyParamCaption}\item[{String}]{resource\+Type }\end{DoxyParamCaption})}
+
+
+
+The generation method that yields a new instance of the given resource\+Type with every value set in the FHIRPath mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Type} & String The class name of the Resource that shall be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T a new FHIR Resource instance of the given resource type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a217c9014b234ba66de5cce0e3e5b7a00}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a217c9014b234ba66de5cce0e3e5b7a00}} 
+\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}!getResource@{getResource}}
+\index{getResource@{getResource}!org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+\doxysubsubsection{\texorpdfstring{getResource()}{getResource()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4}}$<$ T extends Resource $>$.get\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for a generated Resource. 
+
+null if no Resource has been generated yet.
+
+\begin{DoxyReturn}{Returns}
+T the generated Resource or null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_ab54663b5ce46b648fe0aa340b9678b3f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_ab54663b5ce46b648fe0aa340b9678b3f}} 
+\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}!setField@{setField}}
+\index{setField@{setField}!org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+\doxysubsubsection{\texorpdfstring{setField()}{setField()}}
+{\footnotesize\ttfamily static $<$T extends Resource$>$ void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4}}$<$ T extends Resource $>$.set\+Field (\begin{DoxyParamCaption}\item[{T}]{resource,  }\item[{String}]{field\+Path,  }\item[{Object}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper function to set a single value on a resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & Resource to set value on \\
+\hline
+{\em field\+Path} & Path to set value to. May be a nested field \\
+\hline
+{\em value} & Value to set at given path on the resource \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_aaf3ee2de455d8a164d2d1542f1c4a414}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_aaf3ee2de455d8a164d2d1542f1c4a414}} 
+\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}!setMapping@{setMapping}}
+\index{setMapping@{setMapping}!org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+\doxysubsubsection{\texorpdfstring{setMapping()}{setMapping()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4}}$<$ T extends Resource $>$.set\+Mapping (\begin{DoxyParamCaption}\item[{Map$<$ String, Object $>$}]{mapping }\end{DoxyParamCaption})}
+
+
+
+Setter for the FHIRPath mapping Map instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapping} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a5ff39de5f4bdcbd6c1d6c4a2923a1c5c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4_a5ff39de5f4bdcbd6c1d6c4a2923a1c5c}} 
+\index{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}!setResource@{setResource}}
+\index{setResource@{setResource}!org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$@{org.mitre.synthea.export.flexporter.CustomFHIRPathResourceGeneratorR4$<$ T extends Resource $>$}}
+\doxysubsubsection{\texorpdfstring{setResource()}{setResource()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1CustomFHIRPathResourceGeneratorR4}{org.\+mitre.\+synthea.\+export.\+flexporter.\+Custom\+FHIRPath\+Resource\+Generator\+R4}}$<$ T extends Resource $>$.set\+Resource (\begin{DoxyParamCaption}\item[{T}]{resource }\end{DoxyParamCaption})}
+
+
+
+Sets the resource to apply FHIRPath changes to. 
+
+If not set, calling generate\+Resource will instantiate a new resource. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/flexporter/Custom\+FHIRPath\+Resource\+Generator\+R4.\+java\end{DoxyCompactItemize}

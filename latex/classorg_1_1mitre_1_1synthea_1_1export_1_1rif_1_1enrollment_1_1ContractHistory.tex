@@ -1,0 +1,159 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History$<$ T extends Fixed\+Length\+Identifier $>$ Class Template Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+
+
+Utility class to manage a beneficiary\textquotesingle{}s contract history.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}{Contract\+Period}}
+\begin{DoxyCompactList}\small\item\em Utility class that represents a period of time and an associated contract id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_acdd94505ae053ab9fc23b8e7b01fd25e}{Contract\+History}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time, int years\+Of\+History, int percent\+Change\+Open\+Enrollment, int percent\+Change\+Mid\+Year)
+\begin{DoxyCompactList}\small\item\em Create a new random contract history. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_ad715cae1e6265c14a9ee74bf6ee0110f}{get\+Contract\+ID}} (long time\+Stamp)
+\begin{DoxyCompactList}\small\item\em Get the contract ID for the specified point in time. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}{Contract\+Period}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_a7301a510a4302b21077f907bef69b027}{get\+Contract\+Periods}} (int year)
+\begin{DoxyCompactList}\small\item\em Get a list of contract periods that were active during the specified year. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_abe3174d2f4d097c569554bff84054394}{get\+Covered\+Months\+Count}} (int year)
+\begin{DoxyCompactList}\small\item\em Get a count of months that were covered by Part D in the specified year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_a787c9753d5654e47ac4e01e8ad58dac0}{get\+Random\+Contract\+ID}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Get a random contract ID or null if bene is not enrolled. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PlanBenefitPackageID}{Plan\+Benefit\+Package\+ID}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_af10d81a5bf22b7db51a824be9c439b7c}{get\+Random\+Plan\+Benefit\+Package\+ID}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand, T contract\+ID)
+\begin{DoxyCompactList}\small\item\em Get a random plan benefit package ID or null if the supplied contract ID is null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class to manage a beneficiary\textquotesingle{}s contract history. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_acdd94505ae053ab9fc23b8e7b01fd25e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_acdd94505ae053ab9fc23b8e7b01fd25e}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}!ContractHistory@{ContractHistory}}
+\index{ContractHistory@{ContractHistory}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+\doxysubsubsection{\texorpdfstring{ContractHistory()}{ContractHistory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{Contract\+History}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time,  }\item[{int}]{years\+Of\+History,  }\item[{int}]{percent\+Change\+Open\+Enrollment,  }\item[{int}]{percent\+Change\+Mid\+Year }\end{DoxyParamCaption})}
+
+
+
+Create a new random contract history. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & source of randomness \\
+\hline
+{\em stop\+Time} & when the history should end (as ms since epoch) \\
+\hline
+{\em years\+Of\+History} & how many years should be covered \\
+\hline
+{\em percent\+Change\+Open\+Enrollment} & percent chance contract will change at open enrollment \\
+\hline
+{\em percent\+Change\+Mid\+Year} & percent chance contract will change mid year \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_ad715cae1e6265c14a9ee74bf6ee0110f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_ad715cae1e6265c14a9ee74bf6ee0110f}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}!getContractID@{getContractID}}
+\index{getContractID@{getContractID}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+\doxysubsubsection{\texorpdfstring{getContractID()}{getContractID()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.get\+Contract\+ID (\begin{DoxyParamCaption}\item[{long}]{time\+Stamp }\end{DoxyParamCaption})}
+
+
+
+Get the contract ID for the specified point in time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Stamp} & the point in time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the contract ID or null if not enrolled at the specified point in time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_a7301a510a4302b21077f907bef69b027}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_a7301a510a4302b21077f907bef69b027}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}!getContractPeriods@{getContractPeriods}}
+\index{getContractPeriods@{getContractPeriods}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+\doxysubsubsection{\texorpdfstring{getContractPeriods()}{getContractPeriods()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}{Contract\+Period}}$>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.get\+Contract\+Periods (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Get a list of contract periods that were active during the specified year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & the year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_abe3174d2f4d097c569554bff84054394}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_abe3174d2f4d097c569554bff84054394}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}!getCoveredMonthsCount@{getCoveredMonthsCount}}
+\index{getCoveredMonthsCount@{getCoveredMonthsCount}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+\doxysubsubsection{\texorpdfstring{getCoveredMonthsCount()}{getCoveredMonthsCount()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.get\+Covered\+Months\+Count (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Get a count of months that were covered by Part D in the specified year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & the year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_a787c9753d5654e47ac4e01e8ad58dac0}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_a787c9753d5654e47ac4e01e8ad58dac0}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}!getRandomContractID@{getRandomContractID}}
+\index{getRandomContractID@{getRandomContractID}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+\doxysubsubsection{\texorpdfstring{getRandomContractID()}{getRandomContractID()}}
+{\footnotesize\ttfamily abstract T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.get\+Random\+Contract\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Get a random contract ID or null if bene is not enrolled. 
+
+Implementations of this method should use rand to model the likelihood of a bene being enrolled. 
+\begin{DoxyParams}{Parameters}
+{\em rand} & source of randomness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a contract ID or null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_af10d81a5bf22b7db51a824be9c439b7c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_af10d81a5bf22b7db51a824be9c439b7c}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}!getRandomPlanBenefitPackageID@{getRandomPlanBenefitPackageID}}
+\index{getRandomPlanBenefitPackageID@{getRandomPlanBenefitPackageID}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$}}
+\doxysubsubsection{\texorpdfstring{getRandomPlanBenefitPackageID()}{getRandomPlanBenefitPackageID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PlanBenefitPackageID}{Plan\+Benefit\+Package\+ID}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.get\+Random\+Plan\+Benefit\+Package\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand,  }\item[{T}]{contract\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get a random plan benefit package ID or null if the supplied contract ID is null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rand} & a source of randomness \\
+\hline
+{\em contract\+ID} & the contract ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a random plan benefit package ID 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/enrollment/Contract\+History.\+java\end{DoxyCompactItemize}

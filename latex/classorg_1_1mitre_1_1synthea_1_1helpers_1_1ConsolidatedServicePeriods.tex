@@ -1,0 +1,61 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Consolidated\+Service\+Periods Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods}\index{org.mitre.synthea.helpers.ConsolidatedServicePeriods@{org.mitre.synthea.helpers.ConsolidatedServicePeriods}}
+
+
+Utility class to group encounters by provider that are separated by less than a configurable amount of time.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Consolidated\+Service\+Period}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_a831a27ba63f5dd6a45a84f67cd2c4e90}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_a831a27ba63f5dd6a45a84f67cd2c4e90}} 
+{\bfseries Consolidated\+Service\+Periods} (long max\+Separation\+Time)
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_a0cfb1ddc919bf448c4828cc8cc306eaf}{add\+Encounter}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Add the supplied encounter to the list managed by this instance. \end{DoxyCompactList}\item 
+List$<$ Consolidated\+Service\+Period $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_ac926bf1adb125fab5ba61bb7fd449b17}{get\+Periods}} ()
+\begin{DoxyCompactList}\small\item\em Create a list of consolidated service periods from the encounters previously added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class to group encounters by provider that are separated by less than a configurable amount of time. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_a0cfb1ddc919bf448c4828cc8cc306eaf}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_a0cfb1ddc919bf448c4828cc8cc306eaf}} 
+\index{org.mitre.synthea.helpers.ConsolidatedServicePeriods@{org.mitre.synthea.helpers.ConsolidatedServicePeriods}!addEncounter@{addEncounter}}
+\index{addEncounter@{addEncounter}!org.mitre.synthea.helpers.ConsolidatedServicePeriods@{org.mitre.synthea.helpers.ConsolidatedServicePeriods}}
+\doxysubsubsection{\texorpdfstring{addEncounter()}{addEncounter()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Consolidated\+Service\+Periods.\+add\+Encounter (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})}
+
+
+
+Add the supplied encounter to the list managed by this instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & the encounter to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_ac926bf1adb125fab5ba61bb7fd449b17}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConsolidatedServicePeriods_ac926bf1adb125fab5ba61bb7fd449b17}} 
+\index{org.mitre.synthea.helpers.ConsolidatedServicePeriods@{org.mitre.synthea.helpers.ConsolidatedServicePeriods}!getPeriods@{getPeriods}}
+\index{getPeriods@{getPeriods}!org.mitre.synthea.helpers.ConsolidatedServicePeriods@{org.mitre.synthea.helpers.ConsolidatedServicePeriods}}
+\doxysubsubsection{\texorpdfstring{getPeriods()}{getPeriods()}}
+{\footnotesize\ttfamily List$<$Consolidated\+Service\+Period$>$ org.\+mitre.\+synthea.\+helpers.\+Consolidated\+Service\+Periods.\+get\+Periods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a list of consolidated service periods from the encounters previously added. 
+
+Each member of the list is a consolidated service period for a particular provider. \begin{DoxyReturn}{Returns}
+the list, sorted by period start time 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Consolidated\+Service\+Periods.\+java\end{DoxyCompactItemize}

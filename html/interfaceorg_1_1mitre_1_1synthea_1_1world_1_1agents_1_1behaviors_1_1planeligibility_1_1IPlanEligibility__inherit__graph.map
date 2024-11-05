@@ -1,0 +1,10 @@
+<map id="org.mitre.synthea.world.agents.behaviors.planeligibility.IPlanEligibility" name="org.mitre.synthea.world.agents.behaviors.planeligibility.IPlanEligibility">
+<area shape="rect" id="node1" title=" " alt="" coords="152,169,541,211"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1CSVEligibility.html" title=" " alt="" coords="589,5,979,47"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1DefaultPlanEligibility.html" title="DefaultPlanEligibility can be used for the No Insurance plan." alt="" coords="589,71,979,112"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IncomeSpenddownEligibility.html" title="A class that defines the elgibility logic for Income medical cost spenddowns (MNIL,..." alt="" coords="589,136,979,177"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PovertyMultiplierFileEligibility.html" title="An eligiblity type based on a file that dictates by&#45;age and by&#45;state poverty multiplier thresholds." alt="" coords="589,201,979,243"/>
+<area shape="rect" id="node7" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingAttributesEligibility.html" title="An eligibility criteria based on whether a person has any of the given attributes." alt="" coords="589,267,979,308"/>
+<area shape="rect" id="node8" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility.html" title="An algorithm that defines the logic for eligibility based on a set of qualifying condition codes." alt="" coords="589,332,979,373"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,177,104,203"/>
+</map>

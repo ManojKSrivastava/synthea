@@ -1,0 +1,43 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1tools_1_1BB2RIFBeneSplitter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+tools.\+BB2\+RIFBene\+Splitter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1tools_1_1BB2RIFBeneSplitter}\index{org.mitre.synthea.export.rif.tools.BB2RIFBeneSplitter@{org.mitre.synthea.export.rif.tools.BB2RIFBeneSplitter}}
+
+
+Utility for converting from original BB2 RIF 3 file bene output to one bene file per year.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1tools_1_1BB2RIFBeneSplitter_a3495eeb24d7143b9d9275ceaedd40022}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Split original 3 bene files into one file per year.\+Read in original beneficiary.\+csv, beneficiary\+\_\+interim.\+csv and beneficiary\+\_\+final.\+csv from the current directory and output one or more beneficiary\+\_\+\+YYYY.\+csv files where YYYY is the numerical year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility for converting from original BB2 RIF 3 file bene output to one bene file per year. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1tools_1_1BB2RIFBeneSplitter_a3495eeb24d7143b9d9275ceaedd40022}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1tools_1_1BB2RIFBeneSplitter_a3495eeb24d7143b9d9275ceaedd40022}} 
+\index{org.mitre.synthea.export.rif.tools.BB2RIFBeneSplitter@{org.mitre.synthea.export.rif.tools.BB2RIFBeneSplitter}!main@{main}}
+\index{main@{main}!org.mitre.synthea.export.rif.tools.BB2RIFBeneSplitter@{org.mitre.synthea.export.rif.tools.BB2RIFBeneSplitter}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+rif.\+tools.\+BB2\+RIFBene\+Splitter.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Split original 3 bene files into one file per year.\+Read in original beneficiary.\+csv, beneficiary\+\_\+interim.\+csv and beneficiary\+\_\+final.\+csv from the current directory and output one or more beneficiary\+\_\+\+YYYY.\+csv files where YYYY is the numerical year. 
+
+Works with either BFD or CCW format files and preserves whatever format exists in the output files 
+\begin{DoxyParams}{Parameters}
+{\em args} & unused \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+io.\+IOException} & if something goes wrong \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/tools/BB2\+RIFBene\+Splitter.\+java\end{DoxyCompactItemize}

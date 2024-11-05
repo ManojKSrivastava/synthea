@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.identity.Seed" name="org.mitre.synthea.identity.Seed">
+<area shape="rect" id="node1" title="A representation of demographic information for an Entity for a period of time." alt="" coords="5,95,232,121"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1mitre_1_1synthea_1_1identity_1_1IdentityRecord.html" title=" " alt="" coords="21,5,216,47"/>
+</map>

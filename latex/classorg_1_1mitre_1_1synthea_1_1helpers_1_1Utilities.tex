@@ -1,0 +1,505 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Utilities Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities}\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a182480a0770b00c6382484863f48bb60}{convert\+Time}} (String units, long value)
+\begin{DoxyCompactList}\small\item\em Convert a quantity of time in a specified units into milliseconds. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_ae9cdbb6e1260a6ba24c39d1bb0a12fcb}{convert\+Time}} (String units, double value)
+\begin{DoxyCompactList}\small\item\em Convert a quantity of time in a specified units into milliseconds. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_adfece57fed8d580efd085abf4829606c}{convert\+Calendar\+Years\+To\+Time}} (int years)
+\begin{DoxyCompactList}\small\item\em Convert a calendar year (e.\+g. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a43d9a3dfa42ed7a7d2541f86aaf030b8}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a43d9a3dfa42ed7a7d2541f86aaf030b8}} 
+static int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a43d9a3dfa42ed7a7d2541f86aaf030b8}{get\+Year}} (long time)
+\begin{DoxyCompactList}\small\item\em Get the year of a Unix timestamp. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2c8b7d788e06b307388eb8af7ae20a21}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2c8b7d788e06b307388eb8af7ae20a21}} 
+static int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2c8b7d788e06b307388eb8af7ae20a21}{get\+Month}} (long time)
+\begin{DoxyCompactList}\small\item\em Get the month of a Unix timestamp. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_ace4dabea76eb767e05e18e0a44373f38}{local\+Date\+To\+Timestamp}} (Local\+Date date)
+\begin{DoxyCompactList}\small\item\em Convert the given Local\+Date into a Unix timestamp. \end{DoxyCompactList}\item 
+static Local\+Date \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a16242c1099055ccb3dad1e3eb867eabd}{timestamp\+To\+Local\+Date}} (long timestamp)
+\begin{DoxyCompactList}\small\item\em Convert the given Unix timestamp into a Local\+Date. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9389caa95d563906d416bbe744106be1}{get\+Anniversary}} (long date, int anniversary)
+\begin{DoxyCompactList}\small\item\em Get the timestamp of the nth anniversary of the supplied timestamp. \end{DoxyCompactList}\item 
+static Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9dda516da7136deb176ea61d7000da0c}{primitive}} (Json\+Primitive p)
+\begin{DoxyCompactList}\small\item\em Converts a Json\+Primitive into a primitive Boolean, Double, or String. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a19a23a51c0e787c3c1c1ec195a44b434}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a19a23a51c0e787c3c1c1ec195a44b434}} 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a19a23a51c0e787c3c1c1ec195a44b434}{convert\+Risk\+To\+Timestep}} (double risk, double original\+Period\+In\+MS)
+\begin{DoxyCompactList}\small\item\em Calculates 1 -\/ (1-\/risk)$^\wedge$(curr\+Time\+Step\+In\+MS/original\+Period\+In\+MS). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2be0f76e6ebd9788a1d48020735d2073}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2be0f76e6ebd9788a1d48020735d2073}} 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2be0f76e6ebd9788a1d48020735d2073}{convert\+Risk\+To\+Timestep}} (double risk, double original\+Period\+In\+MS, double new\+Time\+Step\+In\+MS)
+\begin{DoxyCompactList}\small\item\em Calculates 1 -\/ (1-\/risk)$^\wedge$(new\+Time\+Step\+In\+MS/original\+Period\+In\+MS). \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a29ba90228fa8660fcb1865c80d116e57}{compare}} (Object lhs, Object rhs, String operator)
+\begin{DoxyCompactList}\small\item\em Compare two objects. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a74b35aa0e0de61d2564af4e55e7a76ae}{compare}} (Double lhs, Double rhs, String operator)
+\begin{DoxyCompactList}\small\item\em Compare two Doubles. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a1de4bbeb03747538f953c1e64d0a1c32}{compare}} (Boolean lhs, Boolean rhs, String operator)
+\begin{DoxyCompactList}\small\item\em Compare two Booleans. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a5b9624bc751e55bd1b7828e2369e523d}{compare}} (String lhs, String rhs, String operator)
+\begin{DoxyCompactList}\small\item\em Compare two Strings. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a08d59dc8ebf7f9cf7fd2ee22ef1f1e5f}{compare}} (Integer lhs, Integer rhs, String operator)
+\begin{DoxyCompactList}\small\item\em Compare two Integers. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a3cd80bf5abafa3d3d8fea49ac206bc50}{compare}} (Code lhs, Code rhs, String operator)
+\begin{DoxyCompactList}\small\item\em Compare two Codes. \end{DoxyCompactList}\item 
+static Range$<$ Long $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a67e2542e329d0735818d8e40833e5607}{parse\+Date\+Range}} (String range)  throws Illegal\+Argument\+Exception 
+\begin{DoxyCompactList}\small\item\em Parse a range of Synthea timestamps (milliseconds since the epoch) from a String. \end{DoxyCompactList}\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_abfe9d0db378f405bff913e55539789f5}{read\+Resource}} (String filename)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Read the entire contents of a file in resources into a String. \end{DoxyCompactList}\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a8b2bb17abc4162d2bd942ee938df02d8}{read\+Resource}} (String filename, boolean strip\+BOM, boolean allow\+Free\+Path)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Read the entire contents of a file into a String. \end{DoxyCompactList}\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a7bbf04085d08ceda124e799d67483fb0}{read\+Resource\+Or\+Path}} (String filename)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Read the entire contents of a file into a String. \end{DoxyCompactList}\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_aaef81ec3394ef93fb0fcdb80cf26c97d}{read\+Resource\+And\+Strip\+BOM}} (String filename)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Read the entire contents of a file in resources into a String and strip the BOM if present. \end{DoxyCompactList}\item 
+static Gson \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_adb258f03e2373248f779f1f6abaefe64}{get\+Gson}} ()
+\begin{DoxyCompactList}\small\item\em Get a Gson object, preconfigured to load the GMF modules into classes. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a317688021ed94f9f854560fd338dbd83}{random\+Dicom\+Uid}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random, long time, int series\+No, int instance\+No)
+\begin{DoxyCompactList}\small\item\em Generate a random DICOM UID to uniquely identify an Imaging\+Study, Series, or Instance. \end{DoxyCompactList}\item 
+static Object \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9888d6e8d37bba29ee29c59635ea9dd5}{str\+To\+Object}} (Class$<$?$>$ clazz, String value)
+\begin{DoxyCompactList}\small\item\em Utility function to convert from string to a base Java object type. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a4bf4a47c243382bf096229333c33477d}{walk\+All\+Modules}} (Bi\+Consumer$<$ Path, Path $>$ action)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Walk the directory structure of the modules, and apply the given function for every module. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2d4c926661178a8abc18e97214ba3f9f}{walk\+All\+Modules}} (Path modules\+Path, Consumer$<$ Path $>$ action)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Walk the directory structure of the modules starting at the given location, and apply the given function for every module underneath. \end{DoxyCompactList}\item 
+static Map \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a281a75ad6044470ca71cf3ba50061ee4}{clean\+Map}} (Map input)
+\begin{DoxyCompactList}\small\item\em Iterate through a Map and remove any entries where there is a key, but the value is null. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a37b2bb7c7777fda863110f5dc3ab4705}{enable\+Reading\+URIFrom\+Jar}} (URI uri)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Enable reading the given URI from within a JAR file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a5a8f7736ae34c679c1cf918fab74a3e0}{SYNTHEA\+\_\+\+VERSION}} = get\+Synthea\+Version()
+\begin{DoxyCompactList}\small\item\em The version identifier from the current version of Synthea. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a281a75ad6044470ca71cf3ba50061ee4}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a281a75ad6044470ca71cf3ba50061ee4}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!cleanMap@{cleanMap}}
+\index{cleanMap@{cleanMap}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{cleanMap()}{cleanMap()}}
+{\footnotesize\ttfamily static Map org.\+mitre.\+synthea.\+helpers.\+Utilities.\+clean\+Map (\begin{DoxyParamCaption}\item[{Map}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Iterate through a Map and remove any entries where there is a key, but the value is null. 
+
+This method modifies the input Map. 
+\begin{DoxyParams}{Parameters}
+{\em input} & The Map to clean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a null-\/free Map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a1de4bbeb03747538f953c1e64d0a1c32}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a1de4bbeb03747538f953c1e64d0a1c32}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!compare@{compare}}
+\index{compare@{compare}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Utilities.\+compare (\begin{DoxyParamCaption}\item[{Boolean}]{lhs,  }\item[{Boolean}]{rhs,  }\item[{String}]{operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare two Booleans. 
+
+Supported operators are\+: $<$, $<$=, ==, $>$=, $>$, !=, is nil, is not nil. Only lhs is checked for is nil and is not nil. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a3cd80bf5abafa3d3d8fea49ac206bc50}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a3cd80bf5abafa3d3d8fea49ac206bc50}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!compare@{compare}}
+\index{compare@{compare}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Utilities.\+compare (\begin{DoxyParamCaption}\item[{Code}]{lhs,  }\item[{Code}]{rhs,  }\item[{String}]{operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare two Codes. 
+
+Supported operators are\+: !=, is nil, is not nil. Only lhs is checked for is nil and is not nil. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a74b35aa0e0de61d2564af4e55e7a76ae}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a74b35aa0e0de61d2564af4e55e7a76ae}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!compare@{compare}}
+\index{compare@{compare}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Utilities.\+compare (\begin{DoxyParamCaption}\item[{Double}]{lhs,  }\item[{Double}]{rhs,  }\item[{String}]{operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare two Doubles. 
+
+Supported operators are\+: $<$, $<$=, ==, $>$=, $>$, !=, is nil, is not nil. Only lhs is checked for is nil and is not nil. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a08d59dc8ebf7f9cf7fd2ee22ef1f1e5f}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a08d59dc8ebf7f9cf7fd2ee22ef1f1e5f}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!compare@{compare}}
+\index{compare@{compare}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Utilities.\+compare (\begin{DoxyParamCaption}\item[{Integer}]{lhs,  }\item[{Integer}]{rhs,  }\item[{String}]{operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare two Integers. 
+
+Supported operators are\+: $<$, $<$=, ==, $>$=, $>$, !=, is nil, is not nil. Only lhs is checked for is nil and is not nil. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a29ba90228fa8660fcb1865c80d116e57}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a29ba90228fa8660fcb1865c80d116e57}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!compare@{compare}}
+\index{compare@{compare}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Utilities.\+compare (\begin{DoxyParamCaption}\item[{Object}]{lhs,  }\item[{Object}]{rhs,  }\item[{String}]{operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare two objects. 
+
+lhs and rhs must be of the same type (Number, Boolean, String or Code) Numbers are converted to double prior to comparison. Supported operators are\+: $<$, $<$=, ==, $>$=, $>$, !=, is nil, is not nil. Only lhs is checked for is nil and is not nil. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a5b9624bc751e55bd1b7828e2369e523d}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a5b9624bc751e55bd1b7828e2369e523d}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!compare@{compare}}
+\index{compare@{compare}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Utilities.\+compare (\begin{DoxyParamCaption}\item[{String}]{lhs,  }\item[{String}]{rhs,  }\item[{String}]{operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compare two Strings. 
+
+Supported operators are\+: $<$, $<$=, ==, $>$=, $>$, !=, is nil, is not nil. Only lhs is checked for is nil and is not nil. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_adfece57fed8d580efd085abf4829606c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_adfece57fed8d580efd085abf4829606c}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!convertCalendarYearsToTime@{convertCalendarYearsToTime}}
+\index{convertCalendarYearsToTime@{convertCalendarYearsToTime}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{convertCalendarYearsToTime()}{convertCalendarYearsToTime()}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+helpers.\+Utilities.\+convert\+Calendar\+Years\+To\+Time (\begin{DoxyParamCaption}\item[{int}]{years }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a calendar year (e.\+g. 
+
+2020) to a Unix timestamp \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_ae9cdbb6e1260a6ba24c39d1bb0a12fcb}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_ae9cdbb6e1260a6ba24c39d1bb0a12fcb}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!convertTime@{convertTime}}
+\index{convertTime@{convertTime}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{convertTime()}{convertTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+helpers.\+Utilities.\+convert\+Time (\begin{DoxyParamCaption}\item[{String}]{units,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a quantity of time in a specified units into milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \+: \char`\"{}hours\char`\"{}, \char`\"{}minutes\char`\"{}, \char`\"{}seconds\char`\"{}, \char`\"{}days\char`\"{}, \char`\"{}weeks\char`\"{}, \char`\"{}years\char`\"{}, or \char`\"{}months\char`\"{} \\
+\hline
+{\em value} & \+: quantity of units \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+milliseconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a182480a0770b00c6382484863f48bb60}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a182480a0770b00c6382484863f48bb60}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!convertTime@{convertTime}}
+\index{convertTime@{convertTime}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{convertTime()}{convertTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+helpers.\+Utilities.\+convert\+Time (\begin{DoxyParamCaption}\item[{String}]{units,  }\item[{long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a quantity of time in a specified units into milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \+: \char`\"{}hours\char`\"{}, \char`\"{}minutes\char`\"{}, \char`\"{}seconds\char`\"{}, \char`\"{}days\char`\"{}, \char`\"{}weeks\char`\"{}, \char`\"{}years\char`\"{}, or \char`\"{}months\char`\"{} \\
+\hline
+{\em value} & \+: quantity of units \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+milliseconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a37b2bb7c7777fda863110f5dc3ab4705}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a37b2bb7c7777fda863110f5dc3ab4705}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!enableReadingURIFromJar@{enableReadingURIFromJar}}
+\index{enableReadingURIFromJar@{enableReadingURIFromJar}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{enableReadingURIFromJar()}{enableReadingURIFromJar()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Utilities.\+enable\+Reading\+URIFrom\+Jar (\begin{DoxyParamCaption}\item[{URI}]{uri }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable reading the given URI from within a JAR file. 
+
+For example, for command-\/line args which may refer to internal or external paths. Note that it\textquotesingle{}s not always possible to know when a user-\/provided path is within a JAR file, so this method should be called if it is possible the path refers to an internal location. 
+\begin{DoxyParams}{Parameters}
+{\em uri} & URI to be accessed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9389caa95d563906d416bbe744106be1}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9389caa95d563906d416bbe744106be1}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!getAnniversary@{getAnniversary}}
+\index{getAnniversary@{getAnniversary}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{getAnniversary()}{getAnniversary()}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+helpers.\+Utilities.\+get\+Anniversary (\begin{DoxyParamCaption}\item[{long}]{date,  }\item[{int}]{anniversary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the timestamp of the nth anniversary of the supplied timestamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & the timestamp \\
+\hline
+{\em anniversary} & the number of years after \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the anniversary timestamp 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_adb258f03e2373248f779f1f6abaefe64}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_adb258f03e2373248f779f1f6abaefe64}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!getGson@{getGson}}
+\index{getGson@{getGson}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{getGson()}{getGson()}}
+{\footnotesize\ttfamily static Gson org.\+mitre.\+synthea.\+helpers.\+Utilities.\+get\+Gson (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a Gson object, preconfigured to load the GMF modules into classes. 
+
+\begin{DoxyReturn}{Returns}
+Gson object to unmarshal GMF JSON into objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_ace4dabea76eb767e05e18e0a44373f38}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_ace4dabea76eb767e05e18e0a44373f38}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!localDateToTimestamp@{localDateToTimestamp}}
+\index{localDateToTimestamp@{localDateToTimestamp}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{localDateToTimestamp()}{localDateToTimestamp()}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+helpers.\+Utilities.\+local\+Date\+To\+Timestamp (\begin{DoxyParamCaption}\item[{Local\+Date}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given Local\+Date into a Unix timestamp. 
+
+The Local\+Date is assumed to be interpreted in the UTC time zone, and a timestamp is created of the start of the day (00\+:00\+:00, or 12\+:00 midnight). 
+\begin{DoxyParams}{Parameters}
+{\em date} & the local date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the timestamp 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a67e2542e329d0735818d8e40833e5607}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a67e2542e329d0735818d8e40833e5607}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!parseDateRange@{parseDateRange}}
+\index{parseDateRange@{parseDateRange}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{parseDateRange()}{parseDateRange()}}
+{\footnotesize\ttfamily static Range$<$Long$>$ org.\+mitre.\+synthea.\+helpers.\+Utilities.\+parse\+Date\+Range (\begin{DoxyParamCaption}\item[{String}]{range }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse a range of Synthea timestamps (milliseconds since the epoch) from a String. 
+
+The string can be in one of two formats\+: 
+
+\char`\"{}milliseconds start-\/milliseconds end\char`\"{} example\+: \char`\"{}1599264000000-\/1627948800000\char`\"{} or \char`\"{}\+ISO date start-\/\+ISO date end\char`\"{} example\+: \char`\"{}2020-\/09-\/05-\/2021-\/08-\/03\char`\"{} 
+
+If using the ISO date format, the time range will be from the start of the day at the beginning of the range until the end of the day for the last day of the range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & String containing the range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Range with the min and max set to Synthea timestamps, longs containing milliseconds since the epoch 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & If the string is not in one of the expected formats \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9dda516da7136deb176ea61d7000da0c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9dda516da7136deb176ea61d7000da0c}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!primitive@{primitive}}
+\index{primitive@{primitive}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{primitive()}{primitive()}}
+{\footnotesize\ttfamily static Object org.\+mitre.\+synthea.\+helpers.\+Utilities.\+primitive (\begin{DoxyParamCaption}\item[{Json\+Primitive}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a Json\+Primitive into a primitive Boolean, Double, or String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: Json\+Primitive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean, Double, or String 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a317688021ed94f9f854560fd338dbd83}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a317688021ed94f9f854560fd338dbd83}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!randomDicomUid@{randomDicomUid}}
+\index{randomDicomUid@{randomDicomUid}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{randomDicomUid()}{randomDicomUid()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+helpers.\+Utilities.\+random\+Dicom\+Uid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random,  }\item[{long}]{time,  }\item[{int}]{series\+No,  }\item[{int}]{instance\+No }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate a random DICOM UID to uniquely identify an Imaging\+Study, Series, or Instance. 
+
+Optionally add series and/or instance numbers to the UID to enhance its uniqueness. Pass 0 for the series/instance number to omit it from the UID.
+
+\begin{DoxyReturn}{Returns}
+a String DICOM UID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_abfe9d0db378f405bff913e55539789f5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_abfe9d0db378f405bff913e55539789f5}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!readResource@{readResource}}
+\index{readResource@{readResource}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{readResource()}{readResource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static final String org.\+mitre.\+synthea.\+helpers.\+Utilities.\+read\+Resource (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read the entire contents of a file in resources into a String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the file, relative to src/main/resources. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entire text contents of the file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs reading the file \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a8b2bb17abc4162d2bd942ee938df02d8}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a8b2bb17abc4162d2bd942ee938df02d8}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!readResource@{readResource}}
+\index{readResource@{readResource}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{readResource()}{readResource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static final String org.\+mitre.\+synthea.\+helpers.\+Utilities.\+read\+Resource (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{boolean}]{strip\+BOM,  }\item[{boolean}]{allow\+Free\+Path }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read the entire contents of a file into a String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the file. \\
+\hline
+{\em strip\+BOM} & Whether or not to check for and strip a BOM -- see \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_aaef81ec3394ef93fb0fcdb80cf26c97d}{read\+Resource\+And\+Strip\+BOM(\+String)}} for more info \\
+\hline
+{\em allow\+Free\+Path} & If false, the file must be within src/main/resources. If true, the file may be anywhere on the filesystem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entire text contents of the file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs reading the file \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_aaef81ec3394ef93fb0fcdb80cf26c97d}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_aaef81ec3394ef93fb0fcdb80cf26c97d}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!readResourceAndStripBOM@{readResourceAndStripBOM}}
+\index{readResourceAndStripBOM@{readResourceAndStripBOM}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{readResourceAndStripBOM()}{readResourceAndStripBOM()}}
+{\footnotesize\ttfamily static final String org.\+mitre.\+synthea.\+helpers.\+Utilities.\+read\+Resource\+And\+Strip\+BOM (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read the entire contents of a file in resources into a String and strip the BOM if present. 
+
+This method is intended for use when reading CSV files that may have been created by spreadsheet programs that sometimes automatically add a BOM though it could also be used for any other type of file that may optionally include a BOM. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the file, relative to src/main/resources. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entire text contents of the file minus the leading BOM if present. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs reading the file \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a7bbf04085d08ceda124e799d67483fb0}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a7bbf04085d08ceda124e799d67483fb0}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!readResourceOrPath@{readResourceOrPath}}
+\index{readResourceOrPath@{readResourceOrPath}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{readResourceOrPath()}{readResourceOrPath()}}
+{\footnotesize\ttfamily static final String org.\+mitre.\+synthea.\+helpers.\+Utilities.\+read\+Resource\+Or\+Path (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read the entire contents of a file into a String. 
+
+The file may be relative to src/main/resources or anywhere on the filesystem. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to the files. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The entire text contents of the file. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs reading the file \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9888d6e8d37bba29ee29c59635ea9dd5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a9888d6e8d37bba29ee29c59635ea9dd5}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!strToObject@{strToObject}}
+\index{strToObject@{strToObject}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{strToObject()}{strToObject()}}
+{\footnotesize\ttfamily static Object org.\+mitre.\+synthea.\+helpers.\+Utilities.\+str\+To\+Object (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{clazz,  }\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Utility function to convert from string to a base Java object type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & type to convert to \\
+\hline
+{\em value} & string value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+converted value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a16242c1099055ccb3dad1e3eb867eabd}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a16242c1099055ccb3dad1e3eb867eabd}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!timestampToLocalDate@{timestampToLocalDate}}
+\index{timestampToLocalDate@{timestampToLocalDate}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{timestampToLocalDate()}{timestampToLocalDate()}}
+{\footnotesize\ttfamily static Local\+Date org.\+mitre.\+synthea.\+helpers.\+Utilities.\+timestamp\+To\+Local\+Date (\begin{DoxyParamCaption}\item[{long}]{timestamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given Unix timestamp into a Local\+Date. 
+
+The timestamp is assumed to be interpreted in the UTC time zone. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a4bf4a47c243382bf096229333c33477d}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a4bf4a47c243382bf096229333c33477d}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!walkAllModules@{walkAllModules}}
+\index{walkAllModules@{walkAllModules}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{walkAllModules()}{walkAllModules()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Utilities.\+walk\+All\+Modules (\begin{DoxyParamCaption}\item[{Bi\+Consumer$<$ Path, Path $>$}]{action }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Walk the directory structure of the modules, and apply the given function for every module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Action to apply for every module. Function signature is (top\+Level\+Modules\+Folder\+Path, current\+Module\+Path) -\/$>$ \{...\} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2d4c926661178a8abc18e97214ba3f9f}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a2d4c926661178a8abc18e97214ba3f9f}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!walkAllModules@{walkAllModules}}
+\index{walkAllModules@{walkAllModules}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{walkAllModules()}{walkAllModules()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Utilities.\+walk\+All\+Modules (\begin{DoxyParamCaption}\item[{Path}]{modules\+Path,  }\item[{Consumer$<$ Path $>$}]{action }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Walk the directory structure of the modules starting at the given location, and apply the given function for every module underneath. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Action to apply for every module. Function signature is (current\+Module\+Path) -\/$>$ \{...\} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a5a8f7736ae34c679c1cf918fab74a3e0}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a5a8f7736ae34c679c1cf918fab74a3e0}} 
+\index{org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}!SYNTHEA\_VERSION@{SYNTHEA\_VERSION}}
+\index{SYNTHEA\_VERSION@{SYNTHEA\_VERSION}!org.mitre.synthea.helpers.Utilities@{org.mitre.synthea.helpers.Utilities}}
+\doxysubsubsection{\texorpdfstring{SYNTHEA\_VERSION}{SYNTHEA\_VERSION}}
+{\footnotesize\ttfamily final String org.\+mitre.\+synthea.\+helpers.\+Utilities.\+SYNTHEA\+\_\+\+VERSION = get\+Synthea\+Version()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The version identifier from the current version of Synthea. 
+
+Pulled from an autogenerated version file. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Utilities.\+java\end{DoxyCompactItemize}

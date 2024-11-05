@@ -1,0 +1,77 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+CPCDSExporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter}\index{org.mitre.synthea.export.CPCDSExporter@{org.mitre.synthea.export.CPCDSExporter}}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+CPCDSExporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ac2e61b4e14804d1112124cf0e4858819}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Add a single Person\textquotesingle{}s health record info to the CSV records. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter}{CPCDSExporter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ad23365e625d96ce1ab96c8f18c224574}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ab62779b52846562b4d5db886fddd7ab3}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ab62779b52846562b4d5db886fddd7ab3}} 
+Array\+List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ab62779b52846562b4d5db886fddd7ab3}{exported\+Practitioners}} = new Array\+List$<$String$>$()
+\begin{DoxyCompactList}\small\item\em Trackers for Practitioner and Hospital outputs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_a4eec51705707176c6c28ca1d58d7006c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_a4eec51705707176c6c28ca1d58d7006c}} 
+Array\+List$<$ String $>$ {\bfseries exported\+Hospitals} = new Array\+List$<$String$>$()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_a416afd5a3e77edaba37a5fd886d644e5}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_a416afd5a3e77edaba37a5fd886d644e5}} 
+Map$<$ String, String $>$ {\bfseries overwritten\+NPIs} = new Hash\+Map$<$String, String$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ac2e61b4e14804d1112124cf0e4858819}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ac2e61b4e14804d1112124cf0e4858819}} 
+\index{org.mitre.synthea.export.CPCDSExporter@{org.mitre.synthea.export.CPCDSExporter}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.CPCDSExporter@{org.mitre.synthea.export.CPCDSExporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+CPCDSExporter.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Add a single Person\textquotesingle{}s health record info to the CSV records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to write record data for \\
+\hline
+{\em time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any IO error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ad23365e625d96ce1ab96c8f18c224574}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter_ad23365e625d96ce1ab96c8f18c224574}} 
+\index{org.mitre.synthea.export.CPCDSExporter@{org.mitre.synthea.export.CPCDSExporter}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!org.mitre.synthea.export.CPCDSExporter@{org.mitre.synthea.export.CPCDSExporter}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CPCDSExporter}{CPCDSExporter}} org.\+mitre.\+synthea.\+export.\+CPCDSExporter.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}}. 
+
+\begin{DoxyReturn}{Returns}
+the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/CPCDSExporter.\+java\end{DoxyCompactItemize}

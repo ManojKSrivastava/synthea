@@ -1,0 +1,110 @@
+\hypertarget{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+IPlan\+Finder Interface Reference}
+\label{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder}\index{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}}
+
+
+Find a particular provider by service.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+IPlan\+Finder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a70d79a2c93a0d2fb4b7205a7048730c7}{find}} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$ plans, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time)
+\begin{DoxyCompactList}\small\item\em Find a payer that meets the person\textquotesingle{}s and simulation\textquotesingle{}s requirements. \end{DoxyCompactList}\item 
+default \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a5ee0b336f4ba4b9a0932ad3a51c246b2}{choose\+Random\+Plan}} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$ options, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Choose a random payer from a list of payers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a9d70f33beab0fdcff34f901a6437b416}{meets\+Affordability\+Requirements}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} plan, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} service, long time)
+\begin{DoxyCompactList}\small\item\em Determine whether or not the given payer meets the person\textquotesingle{}s basic requirements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Find a particular provider by service. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a5ee0b336f4ba4b9a0932ad3a51c246b2}\label{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a5ee0b336f4ba4b9a0932ad3a51c246b2}} 
+\index{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}!chooseRandomPlan@{chooseRandomPlan}}
+\index{chooseRandomPlan@{chooseRandomPlan}!org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}}
+\doxysubsubsection{\texorpdfstring{chooseRandomPlan()}{chooseRandomPlan()}}
+{\footnotesize\ttfamily default \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+IPlan\+Finder.\+choose\+Random\+Plan (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$}]{options,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})}
+
+
+
+Choose a random payer from a list of payers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the list of acceptable payer options that the person can recieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a random payer from the given list of options. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a70d79a2c93a0d2fb4b7205a7048730c7}\label{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a70d79a2c93a0d2fb4b7205a7048730c7}} 
+\index{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}!find@{find}}
+\index{find@{find}!org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+IPlan\+Finder.\+find (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$}]{plans,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{service,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Find a payer that meets the person\textquotesingle{}s and simulation\textquotesingle{}s requirements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plans} & The list of plans (as determined by state). \\
+\hline
+{\em person} & The patient who requires a payer. \\
+\hline
+{\em service} & The service required. \\
+\hline
+{\em time} & The date/time within the simulated world, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Service provider or null if none is available. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderRandom_ab1009763cfd44ecdb5f8ab7c23093286}{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Random}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderPriority_a10d03c9a9cdb6e588c2544f21e4d21a6}{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Priority}}, and \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1PlanFinderBestRates_a3e3f953c31a18f8244095129a3660af5}{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+Plan\+Finder\+Best\+Rates}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a9d70f33beab0fdcff34f901a6437b416}\label{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder_a9d70f33beab0fdcff34f901a6437b416}} 
+\index{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}!meetsAffordabilityRequirements@{meetsAffordabilityRequirements}}
+\index{meetsAffordabilityRequirements@{meetsAffordabilityRequirements}!org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder@{org.mitre.synthea.world.agents.behaviors.planfinder.IPlanFinder}}
+\doxysubsubsection{\texorpdfstring{meetsAffordabilityRequirements()}{meetsAffordabilityRequirements()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planfinder.\+IPlan\+Finder.\+meets\+Affordability\+Requirements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}}}]{plan,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{service,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determine whether or not the given payer meets the person\textquotesingle{}s basic requirements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plan} & The plan to check. \\
+\hline
+{\em person} & The patient who requires a payer. \\
+\hline
+{\em service} & The service required. \\
+\hline
+{\em time} & The date/time within the simulated world, in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the payer meets the basic requirements. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/behaviors/planfinder/IPlan\+Finder.\+java\end{DoxyCompactItemize}

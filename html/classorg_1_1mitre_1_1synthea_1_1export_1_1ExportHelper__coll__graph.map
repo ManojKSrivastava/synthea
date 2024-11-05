@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.export.ExportHelper" name="org.mitre.synthea.export.ExportHelper">
+<area shape="rect" id="node1" title="Helper class for common logic that is used by more than one otherwise unrelated exporter." alt="" coords="5,95,193,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="43,5,156,32"/>
+</map>

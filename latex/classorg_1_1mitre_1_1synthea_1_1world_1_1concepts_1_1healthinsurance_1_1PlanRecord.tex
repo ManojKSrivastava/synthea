@@ -1,0 +1,135 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Plan\+Record Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord}\index{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord@{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord}}
+
+
+A class that manages a person\textquotesingle{}s record of plan uses and expenses for an enrollment period.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Plan\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Plan\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aa23333c165f556de35078f0d9b6a9fc7}{Plan\+Record}} (long time, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} plan, long next\+Enrollment\+Period)
+\begin{DoxyCompactList}\small\item\em Create a new Plan with the given Payer. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a1c73765a9536f39f205e7ee943965c4a}{pay\+Monthly\+Premiums}} (double employer\+Level, int income)
+\begin{DoxyCompactList}\small\item\em Pay monthly premiums associated with this plan. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a80c362f7a4299a3759ba8d16c0d5752e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a80c362f7a4299a3759ba8d16c0d5752e}} 
+void {\bfseries update\+Stop\+Time} (long updated\+Stop\+Time)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ac58e81b8d5c0cf00f7a36ffef585d92b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ac58e81b8d5c0cf00f7a36ffef585d92b}} 
+String {\bfseries to\+String} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a0d4234650f8d3b1a02638957c65f3e7a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a0d4234650f8d3b1a02638957c65f3e7a}} 
+void {\bfseries increment\+Out\+Of\+Pocket\+Expenses} (Big\+Decimal expenses)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ac6687a7c9e8c577ed981201ae1d144bb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ac6687a7c9e8c577ed981201ae1d144bb}} 
+void {\bfseries increment\+Primary\+Coverage} (Big\+Decimal coverage)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aabf6ed5f420551158c8c8a5b557e1390}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aabf6ed5f420551158c8c8a5b557e1390}} 
+void {\bfseries increment\+Secondary\+Coverage} (Big\+Decimal coverage)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aa22665a86f7903b689f46a5d1049aa85}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aa22665a86f7903b689f46a5d1049aa85}} 
+Big\+Decimal {\bfseries get\+Out\+Of\+Pocket\+Expenses} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ae997ff4e1fb3ad0f8470625027e96fb5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ae997ff4e1fb3ad0f8470625027e96fb5}} 
+Big\+Decimal {\bfseries get\+Covered\+Expenses} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ab4c8f9a4259c159620bfc384c5ac9056}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ab4c8f9a4259c159620bfc384c5ac9056}} 
+Big\+Decimal {\bfseries get\+Insurance\+Expenses} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ae285b3204a7141e0570ac92fc8c8eff3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ae285b3204a7141e0570ac92fc8c8eff3}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} {\bfseries get\+Plan} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ab2ea69cc6311c79a3005799b52ea5709}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ab2ea69cc6311c79a3005799b52ea5709}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ab2ea69cc6311c79a3005799b52ea5709}{determine\+Plan\+Ownership}} (long time, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord}{Plan\+Record}} prev\+Record)
+\begin{DoxyCompactList}\small\item\em Determines and returns what the ownership of the person\textquotesingle{}s insurance at this age. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a968a3765b86c5567e319b15899d96d76}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a968a3765b86c5567e319b15899d96d76}} 
+long {\bfseries get\+Start\+Time} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_affe521313c5d15af021fbb9a302a23e3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_affe521313c5d15af021fbb9a302a23e3}} 
+long {\bfseries get\+Stop\+Time} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a12bee5e95697c0e6cd6e5de51fda7ab4}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a12bee5e95697c0e6cd6e5de51fda7ab4}} 
+void {\bfseries set\+Secondary\+Plan} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} secondary\+Plan)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_af79319576f835e7ea39f5317ed801cdb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_af79319576f835e7ea39f5317ed801cdb}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} {\bfseries get\+Secondary\+Plan} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a4578db4a6b247cc9416b2f92a328d936}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a4578db4a6b247cc9416b2f92a328d936}} 
+String {\bfseries id}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a9a37c1aeaefafd67257d07d2f2123931}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a9a37c1aeaefafd67257d07d2f2123931}} 
+String {\bfseries ownership}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ac0ebc7bb503cd68668960c097d1fb38c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_ac0ebc7bb503cd68668960c097d1fb38c}} 
+String {\bfseries owner\+Name}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a8738a3929709857aee037bb7d969fdec}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a8738a3929709857aee037bb7d969fdec}} 
+Big\+Decimal {\bfseries remaining\+Deductible} = Claim.\+ZERO\+\_\+\+CENTS
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that manages a person\textquotesingle{}s record of plan uses and expenses for an enrollment period. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aa23333c165f556de35078f0d9b6a9fc7}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_aa23333c165f556de35078f0d9b6a9fc7}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord@{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord}!PlanRecord@{PlanRecord}}
+\index{PlanRecord@{PlanRecord}!org.mitre.synthea.world.concepts.healthinsurance.PlanRecord@{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord}}
+\doxysubsubsection{\texorpdfstring{PlanRecord()}{PlanRecord()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Plan\+Record.\+Plan\+Record (\begin{DoxyParamCaption}\item[{long}]{time,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}}}]{plan,  }\item[{long}]{next\+Enrollment\+Period }\end{DoxyParamCaption})}
+
+
+
+Create a new Plan with the given Payer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time the plan starts. \\
+\hline
+{\em plan} & The plan associated with the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord}{Plan\+Record}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a1c73765a9536f39f205e7ee943965c4a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord_a1c73765a9536f39f205e7ee943965c4a}} 
+\index{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord@{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord}!payMonthlyPremiums@{payMonthlyPremiums}}
+\index{payMonthlyPremiums@{payMonthlyPremiums}!org.mitre.synthea.world.concepts.healthinsurance.PlanRecord@{org.mitre.synthea.world.concepts.healthinsurance.PlanRecord}}
+\doxysubsubsection{\texorpdfstring{payMonthlyPremiums()}{payMonthlyPremiums()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+concepts.\+healthinsurance.\+Plan\+Record.\+pay\+Monthly\+Premiums (\begin{DoxyParamCaption}\item[{double}]{employer\+Level,  }\item[{int}]{income }\end{DoxyParamCaption})}
+
+
+
+Pay monthly premiums associated with this plan. 
+
+\begin{DoxyReturn}{Returns}
+Cost of the premiums. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/healthinsurance/Plan\+Record.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms}{}\doxysection{org.\+mitre.\+synthea.\+export.\+flexporter.\+Value\+Transforms Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms}\index{org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_af4bae112ecbf80a3d9fecd85b7f5acc4}{apply}} (String original\+Value, String transform\+Name)
+\begin{DoxyCompactList}\small\item\em Apply the selected Value Transform on the given value. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_aba5ac06d46131704ed8604bcc45979fb}{to\+Instant}} (String src)
+\begin{DoxyCompactList}\small\item\em Convert the given date/time string into an Instant. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_a79466de99954f3476496e3334eb8f1e0}{to\+Date\+Time}} (String src)
+\begin{DoxyCompactList}\small\item\em Convert the given date/time string into a Date\+Time. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_a9174796a322b642735ea0bfb2d6a853e}{to\+Date}} (String src)
+\begin{DoxyCompactList}\small\item\em Convert the given date/time string into a Date. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_af80a1bf007ff711eaf21c4e345f35ffc}{to\+Time}} (String src)
+\begin{DoxyCompactList}\small\item\em Convert the given date/time string into a Time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_af4bae112ecbf80a3d9fecd85b7f5acc4}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_af4bae112ecbf80a3d9fecd85b7f5acc4}} 
+\index{org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}!apply@{apply}}
+\index{apply@{apply}!org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+flexporter.\+Value\+Transforms.\+apply (\begin{DoxyParamCaption}\item[{String}]{original\+Value,  }\item[{String}]{transform\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply the selected Value Transform on the given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original\+Value} & Source value \\
+\hline
+{\em transform\+Name} & Name of the transform to apply \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+transformed value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_a9174796a322b642735ea0bfb2d6a853e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_a9174796a322b642735ea0bfb2d6a853e}} 
+\index{org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}!toDate@{toDate}}
+\index{toDate@{toDate}!org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}}
+\doxysubsubsection{\texorpdfstring{toDate()}{toDate()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+flexporter.\+Value\+Transforms.\+to\+Date (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given date/time string into a Date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source date/time string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input date/time reformatted as a Date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_a79466de99954f3476496e3334eb8f1e0}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_a79466de99954f3476496e3334eb8f1e0}} 
+\index{org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}!toDateTime@{toDateTime}}
+\index{toDateTime@{toDateTime}!org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}}
+\doxysubsubsection{\texorpdfstring{toDateTime()}{toDateTime()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+flexporter.\+Value\+Transforms.\+to\+Date\+Time (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given date/time string into a Date\+Time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source date/time string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input date/time reformatted as a Date\+Time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_aba5ac06d46131704ed8604bcc45979fb}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_aba5ac06d46131704ed8604bcc45979fb}} 
+\index{org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}!toInstant@{toInstant}}
+\index{toInstant@{toInstant}!org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}}
+\doxysubsubsection{\texorpdfstring{toInstant()}{toInstant()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+flexporter.\+Value\+Transforms.\+to\+Instant (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given date/time string into an Instant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source date/time string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input date/time reformatted as an Instant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_af80a1bf007ff711eaf21c4e345f35ffc}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1ValueTransforms_af80a1bf007ff711eaf21c4e345f35ffc}} 
+\index{org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}!toTime@{toTime}}
+\index{toTime@{toTime}!org.mitre.synthea.export.flexporter.ValueTransforms@{org.mitre.synthea.export.flexporter.ValueTransforms}}
+\doxysubsubsection{\texorpdfstring{toTime()}{toTime()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+flexporter.\+Value\+Transforms.\+to\+Time (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given date/time string into a Time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source date/time string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Input date/time reformatted as a Time 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/flexporter/Value\+Transforms.\+java\end{DoxyCompactItemize}

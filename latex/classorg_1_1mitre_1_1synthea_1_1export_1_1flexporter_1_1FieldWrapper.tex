@@ -1,0 +1,168 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{}\doxysection{org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Date\+Field\+Wrapper}
+\begin{DoxyCompactList}\small\item\em Date\+Field\+Wrapper is used to represent a field on a resource representing a date and/or time. \end{DoxyCompactList}\item 
+class {\bfseries Reference\+Field\+Wrapper}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a832e3e02ffa73c53ccd6c70b1842d292}{Field\+Wrapper}} (String field\+Path)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} for the field defined by the given path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a1c32e105a4c1836c733901b6b34edf9b}{Field\+Wrapper}} (Class$<$? extends Resource $>$ clazz, String field\+Name)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} for the field on the given resource type defined by the given path. \end{DoxyCompactList}\item 
+IBase \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_af918124782fcf27786a63157e4310dde}{get\+Single}} (Resource resource)
+\begin{DoxyCompactList}\small\item\em Get a single value from the field this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} represents from the given resource. \end{DoxyCompactList}\item 
+List$<$ IBase $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a49486fa45fad6834572303df23b80539}{get\+All}} (Resource resource)
+\begin{DoxyCompactList}\small\item\em Get the values from the field this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} represents from the given resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a852fe9014fd96db9066b5ff30bcd22ea}{set}} (Resource resource, IBase value)
+\begin{DoxyCompactList}\small\item\em Set the given value for the field this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} represents on the given resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a9dd323d9731bce13f11a64ae34475c57}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a9dd323d9731bce13f11a64ae34475c57}} 
+static final Map$<$ Resource\+Type, List$<$ Date\+Field\+Wrapper $>$ $>$ {\bfseries DATE\+\_\+\+FIELDS} = build\+Date\+Fields()
+\item 
+static final Map$<$ Resource\+Type, List$<$ Reference\+Field\+Wrapper $>$ $>$ {\bfseries REFERENCE\+\_\+\+FIELDS}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_ac683e9ca2996a90fc70df97b5ad48f89}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_ac683e9ca2996a90fc70df97b5ad48f89}} 
+Function$<$ Resource, List$<$ IBase $>$ $>$ {\bfseries getter}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a44432a99ea0d5a637db99e8c6733bd83}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a44432a99ea0d5a637db99e8c6733bd83}} 
+Bi\+Consumer$<$ Resource, IBase $>$ {\bfseries setter}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a832e3e02ffa73c53ccd6c70b1842d292}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a832e3e02ffa73c53ccd6c70b1842d292}} 
+\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}!FieldWrapper@{FieldWrapper}}
+\index{FieldWrapper@{FieldWrapper}!org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+\doxysubsubsection{\texorpdfstring{FieldWrapper()}{FieldWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper.\+Field\+Wrapper (\begin{DoxyParamCaption}\item[{String}]{field\+Path }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} for the field defined by the given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Path} & Path to FHIR field (not FHIRPath). Should be of the form\+: Resource.\+field.\+nested\+Field.\+nested2... \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a1c32e105a4c1836c733901b6b34edf9b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a1c32e105a4c1836c733901b6b34edf9b}} 
+\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}!FieldWrapper@{FieldWrapper}}
+\index{FieldWrapper@{FieldWrapper}!org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+\doxysubsubsection{\texorpdfstring{FieldWrapper()}{FieldWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper.\+Field\+Wrapper (\begin{DoxyParamCaption}\item[{Class$<$? extends Resource $>$}]{clazz,  }\item[{String}]{field\+Name }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} for the field on the given resource type defined by the given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Name} & Path to FHIR field (not FHIRPath). Should not include resource\+Type and should be of the form\+: field.\+nested\+Field.\+nested2... \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a49486fa45fad6834572303df23b80539}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a49486fa45fad6834572303df23b80539}} 
+\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}!getAll@{getAll}}
+\index{getAll@{getAll}!org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily List$<$IBase$>$ org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper.\+get\+All (\begin{DoxyParamCaption}\item[{Resource}]{resource }\end{DoxyParamCaption})}
+
+
+
+Get the values from the field this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} represents from the given resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & Resource to get value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of values from the field 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_af918124782fcf27786a63157e4310dde}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_af918124782fcf27786a63157e4310dde}} 
+\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}!getSingle@{getSingle}}
+\index{getSingle@{getSingle}!org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+\doxysubsubsection{\texorpdfstring{getSingle()}{getSingle()}}
+{\footnotesize\ttfamily IBase org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper.\+get\+Single (\begin{DoxyParamCaption}\item[{Resource}]{resource }\end{DoxyParamCaption})}
+
+
+
+Get a single value from the field this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} represents from the given resource. 
+
+For fields that may have more than a single value, use \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a49486fa45fad6834572303df23b80539}{get\+All(\+Resource)}} instead. Calling this on a field that has more than one value will return only the first value. 
+\begin{DoxyParams}{Parameters}
+{\em resource} & Resource to get value from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value from the field 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a852fe9014fd96db9066b5ff30bcd22ea}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a852fe9014fd96db9066b5ff30bcd22ea}} 
+\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}!set@{set}}
+\index{set@{set}!org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper.\+set (\begin{DoxyParamCaption}\item[{Resource}]{resource,  }\item[{IBase}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the given value for the field this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper}{Field\+Wrapper}} represents on the given resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & The resource to set a value on \\
+\hline
+{\em value} & The value to set \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a72eef2a2c771bf4cf64c8ac317313411}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FieldWrapper_a72eef2a2c771bf4cf64c8ac317313411}} 
+\index{org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}!REFERENCE\_FIELDS@{REFERENCE\_FIELDS}}
+\index{REFERENCE\_FIELDS@{REFERENCE\_FIELDS}!org.mitre.synthea.export.flexporter.FieldWrapper@{org.mitre.synthea.export.flexporter.FieldWrapper}}
+\doxysubsubsection{\texorpdfstring{REFERENCE\_FIELDS}{REFERENCE\_FIELDS}}
+{\footnotesize\ttfamily final Map$<$Resource\+Type, List$<$Reference\+Field\+Wrapper$>$ $>$ org.\+mitre.\+synthea.\+export.\+flexporter.\+Field\+Wrapper.\+REFERENCE\+\_\+\+FIELDS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      buildReferenceFields()}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/flexporter/Field\+Wrapper.\+java\end{DoxyCompactItemize}

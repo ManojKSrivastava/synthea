@@ -1,0 +1,6 @@
+<map id="org.mitre.synthea.world.geography.Place" name="org.mitre.synthea.world.geography.Place">
+<area shape="rect" id="node1" title="Place represents a named place with a postal code and coordinate." alt="" coords="267,109,520,151"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement.html" title=" " alt="" coords="5,5,320,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="344,13,443,39"/>
+<area shape="rect" id="node4" title=" " alt="" coords="467,13,541,39"/>
+</map>

@@ -1,0 +1,356 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Generator Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}} creates a population by running the generic modules each timestep per Person.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Generator\+Options}
+\begin{DoxyCompactList}\small\item\em Helper class following the \char`\"{}\+Parameter Object\char`\"{} pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_aa52c864bd06cf2d9e4e2baba9ef80e29}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_aa52c864bd06cf2d9e4e2baba9ef80e29}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_aa52c864bd06cf2d9e4e2baba9ef80e29}{Generator}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, using all default settings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ad50f5460728c9c6d56b81c7f1a27a6fb}{Generator}} (int population)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given population size and seed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a476eb20d78d2e9b14b0945016730d36a}{Generator}} (int population, long seed, long clinician\+Seed)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given population size and seed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a5f182a24316104006cf1b2cb7390ed71}{Generator}} (Generator\+Options o)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given options. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac704963e3a9819be748a4fb3c67ad9f0}{Generator}} (Generator\+Options o, Exporter.\+Exporter\+Runtime\+Options ero)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given options. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a67ef00cd68c202edc5c98b5d3a91467e}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a67ef00cd68c202edc5c98b5d3a91467e}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a67ef00cd68c202edc5c98b5d3a91467e}{run}} ()
+\begin{DoxyCompactList}\small\item\em Generate the population, using the currently set configuration settings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ad989abab95fee8fe0ed25f4751688881}{generate\+Person}} (int index)
+\begin{DoxyCompactList}\small\item\em Generate a completely random Person. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac1ad935395eb3ff7872890f6ca389909}{generate\+Person}} (int index, long person\+Seed)
+\begin{DoxyCompactList}\small\item\em Generate a random Person, from the given seed. \end{DoxyCompactList}\item 
+Criteria\+Check \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a89e6f5ea7bdf2d8ac5eb07a564ef8ec9}{check\+Criteria}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long finish\+Time, int index, boolean is\+Alive)
+\begin{DoxyCompactList}\small\item\em Determines if a patient meets the requested criteria. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a200e622823279c06217bb8a1075dd38b}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a200e622823279c06217bb8a1075dd38b}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a200e622823279c06217bb8a1075dd38b}{update\+Record\+Export\+Person}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, int index)
+\begin{DoxyCompactList}\small\item\em Update person record to stop time, record the entry and export record. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ace7f5416cf2c4c434a6379160738d06a}{create\+Person}} (long person\+Seed, Map$<$ String, Object $>$ demo\+Attributes)
+\begin{DoxyCompactList}\small\item\em Create a new person and update them until Generator.\+stop or they die, whichever comes sooner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a3b877e12b1ff407c90dab33b50ce5005}{update\+Person}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Update a previously created person from the time they were last updated until Generator.\+stop or they die, whichever comes sooner. \end{DoxyCompactList}\item 
+Map$<$ String, Object $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac4d73785637bb4d5650aee8a96fd9d64}{random\+Demographics}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Create a set of random demographics. \end{DoxyCompactList}\item 
+Map$<$ String, Object $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_acea6eb44ed24e12575fdef48d678df99}{pick\+Fixed\+Demographics}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} entity, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick a person\textquotesingle{}s demographics based on their seed fixed record. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af0d2cb38ef9f95a10dcaa6aef4a4e67a}{record\+Person}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, int index)
+\begin{DoxyCompactList}\small\item\em Record the person using whatever tracking mechanisms are currently configured. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a9ecb51e2657e66f68c752657dbc833f1}{get\+Randomizer}} ()
+\begin{DoxyCompactList}\small\item\em Get the seeded random number generator used by this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final UUID \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a2dca13add9fbedd9dd54207fe30748b3}{id}} = UUID.\+random\+UUID()
+\begin{DoxyCompactList}\small\item\em Unique ID for this instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af715d4c76f40bac6e8b8b5a1b5095bc4}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af715d4c76f40bac6e8b8b5a1b5095bc4}} 
+Generator\+Options {\bfseries options}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ab04ec462885b696798fc9dce5eb8075c}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ab04ec462885b696798fc9dce5eb8075c}} 
+long {\bfseries timestep}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af56a1366997f63bb5801df1b6ed50474}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af56a1366997f63bb5801df1b6ed50474}} 
+long {\bfseries stop}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a33a98f5bab619c94ff9187a32eff63c6}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a33a98f5bab619c94ff9187a32eff63c6}} 
+long {\bfseries reference\+Time}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ab7252f4959e012f777eb3cf3f8cdfb14}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ab7252f4959e012f777eb3cf3f8cdfb14}} 
+Map$<$ String, Atomic\+Integer $>$ {\bfseries stats}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a0b3f135244dc8dc12ee5ada7be85607e}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a0b3f135244dc8dc12ee5ada7be85607e}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} {\bfseries location}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ab3c03b7726a960699a08352b45c1cc96}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ab3c03b7726a960699a08352b45c1cc96}} 
+Atomic\+Integer {\bfseries total\+Generated\+Population}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ae8605fb053bd48867cc77032a123fe5b}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ae8605fb053bd48867cc77032a123fe5b}} 
+final int {\bfseries thread\+Pool\+Size}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a1935a0fa22ba1d7b78f8cf4ffeb297f1}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a1935a0fa22ba1d7b78f8cf4ffeb297f1}} 
+static String {\bfseries DEFAULT\+\_\+\+STATE} = \char`\"{}Massachusetts\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_aaae1c376dc2a8ac31a1d50b4489b1ea3}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_aaae1c376dc2a8ac31a1d50b4489b1ea3}} 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} {\bfseries entity\+Manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}} creates a population by running the generic modules each timestep per Person. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ad50f5460728c9c6d56b81c7f1a27a6fb}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ad50f5460728c9c6d56b81c7f1a27a6fb}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{Generator()}{Generator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+engine.\+Generator.\+Generator (\begin{DoxyParamCaption}\item[{int}]{population }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given population size and seed. 
+
+All other settings are left as defaults.
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & Target population size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a476eb20d78d2e9b14b0945016730d36a}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a476eb20d78d2e9b14b0945016730d36a}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{Generator()}{Generator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+engine.\+Generator.\+Generator (\begin{DoxyParamCaption}\item[{int}]{population,  }\item[{long}]{seed,  }\item[{long}]{clinician\+Seed }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given population size and seed. 
+
+All other settings are left as defaults.
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & Target population size \\
+\hline
+{\em seed} & Seed used for randomness \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a5f182a24316104006cf1b2cb7390ed71}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a5f182a24316104006cf1b2cb7390ed71}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{Generator()}{Generator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+engine.\+Generator.\+Generator (\begin{DoxyParamCaption}\item[{Generator\+Options}]{o }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Desired configuration options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac704963e3a9819be748a4fb3c67ad9f0}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac704963e3a9819be748a4fb3c67ad9f0}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{Generator()}{Generator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+engine.\+Generator.\+Generator (\begin{DoxyParamCaption}\item[{Generator\+Options}]{o,  }\item[{Exporter.\+Exporter\+Runtime\+Options}]{ero }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}, with the given options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Desired configuration options \\
+\hline
+{\em ero} & Desired exporter options \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a89e6f5ea7bdf2d8ac5eb07a564ef8ec9}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a89e6f5ea7bdf2d8ac5eb07a564ef8ec9}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!checkCriteria@{checkCriteria}}
+\index{checkCriteria@{checkCriteria}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{checkCriteria()}{checkCriteria()}}
+{\footnotesize\ttfamily Criteria\+Check org.\+mitre.\+synthea.\+engine.\+Generator.\+check\+Criteria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{finish\+Time,  }\item[{int}]{index,  }\item[{boolean}]{is\+Alive }\end{DoxyParamCaption})}
+
+
+
+Determines if a patient meets the requested criteria. 
+
+If a patient does not meet the criteria the process will be repeated so a new one is generated 
+\begin{DoxyParams}{Parameters}
+{\em person} & the patient to check if we want to export them \\
+\hline
+{\em finish\+Time} & the time simulation finished \\
+\hline
+{\em index} & Target index in the whole set of people to generate \\
+\hline
+{\em is\+Alive} & Whether the patient is alive at end of simulation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Criteria\+Check to determine if the patient should be exported/re-\/simulated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ace7f5416cf2c4c434a6379160738d06a}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ace7f5416cf2c4c434a6379160738d06a}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!createPerson@{createPerson}}
+\index{createPerson@{createPerson}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{createPerson()}{createPerson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} org.\+mitre.\+synthea.\+engine.\+Generator.\+create\+Person (\begin{DoxyParamCaption}\item[{long}]{person\+Seed,  }\item[{Map$<$ String, Object $>$}]{demo\+Attributes }\end{DoxyParamCaption})}
+
+
+
+Create a new person and update them until Generator.\+stop or they die, whichever comes sooner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Seed} & Seed for the random person \\
+\hline
+{\em demo\+Attributes} & Demographic attributes for the new person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac4d73785637bb4d5650aee8a96fd9d64}{random\+Demographics}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new person 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ad989abab95fee8fe0ed25f4751688881}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ad989abab95fee8fe0ed25f4751688881}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!generatePerson@{generatePerson}}
+\index{generatePerson@{generatePerson}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{generatePerson()}{generatePerson()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} org.\+mitre.\+synthea.\+engine.\+Generator.\+generate\+Person (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Generate a completely random Person. 
+
+The returned person will be alive at the end of the simulation. This means that if in the course of the simulation the person dies, a new person will be started to replace them. The seed used to generate the person is randomized as well. Note that this method is only used by unit tests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Target index in the whole set of people to generate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated Person 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac1ad935395eb3ff7872890f6ca389909}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac1ad935395eb3ff7872890f6ca389909}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!generatePerson@{generatePerson}}
+\index{generatePerson@{generatePerson}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{generatePerson()}{generatePerson()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} org.\+mitre.\+synthea.\+engine.\+Generator.\+generate\+Person (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{long}]{person\+Seed }\end{DoxyParamCaption})}
+
+
+
+Generate a random Person, from the given seed. 
+
+The returned person will be alive at the end of the simulation. This means that if in the course of the simulation the person dies, a new person will be started to replace them. Note also that if the person dies, the seed to produce them can\textquotesingle{}t be re-\/used (otherwise the new person would die as well) so a new seed is picked, based on the given seed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Target index in the whole set of people to generate \\
+\hline
+{\em person\+Seed} & Seed for the random person \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generated Person 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a9ecb51e2657e66f68c752657dbc833f1}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a9ecb51e2657e66f68c752657dbc833f1}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!getRandomizer@{getRandomizer}}
+\index{getRandomizer@{getRandomizer}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{getRandomizer()}{getRandomizer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} org.\+mitre.\+synthea.\+engine.\+Generator.\+get\+Randomizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the seeded random number generator used by this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}. 
+
+\begin{DoxyReturn}{Returns}
+the random number generator. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_acea6eb44ed24e12575fdef48d678df99}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_acea6eb44ed24e12575fdef48d678df99}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!pickFixedDemographics@{pickFixedDemographics}}
+\index{pickFixedDemographics@{pickFixedDemographics}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{pickFixedDemographics()}{pickFixedDemographics()}}
+{\footnotesize\ttfamily Map$<$String, Object$>$ org.\+mitre.\+synthea.\+engine.\+Generator.\+pick\+Fixed\+Demographics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}}}]{entity,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick a person\textquotesingle{}s demographics based on their seed fixed record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The record group to pull demographics from. \\
+\hline
+{\em random} & Random object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac4d73785637bb4d5650aee8a96fd9d64}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_ac4d73785637bb4d5650aee8a96fd9d64}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!randomDemographics@{randomDemographics}}
+\index{randomDemographics@{randomDemographics}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{randomDemographics()}{randomDemographics()}}
+{\footnotesize\ttfamily Map$<$String, Object$>$ org.\+mitre.\+synthea.\+engine.\+Generator.\+random\+Demographics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Create a set of random demographics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & The random number generator to use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af0d2cb38ef9f95a10dcaa6aef4a4e67a}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_af0d2cb38ef9f95a10dcaa6aef4a4e67a}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!recordPerson@{recordPerson}}
+\index{recordPerson@{recordPerson}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{recordPerson()}{recordPerson()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+engine.\+Generator.\+record\+Person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Record the person using whatever tracking mechanisms are currently configured. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to record \\
+\hline
+{\em index} & the index of the person being recorded, e.\+g. if generating 100 people, the index would identify which of those 100 is being recorded. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a3b877e12b1ff407c90dab33b50ce5005}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a3b877e12b1ff407c90dab33b50ce5005}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!updatePerson@{updatePerson}}
+\index{updatePerson@{updatePerson}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{updatePerson()}{updatePerson()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+engine.\+Generator.\+update\+Person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Update a previously created person from the time they were last updated until Generator.\+stop or they die, whichever comes sooner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the previously created person to update \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a2dca13add9fbedd9dd54207fe30748b3}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator_a2dca13add9fbedd9dd54207fe30748b3}} 
+\index{org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}!id@{id}}
+\index{id@{id}!org.mitre.synthea.engine.Generator@{org.mitre.synthea.engine.Generator}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily final UUID org.\+mitre.\+synthea.\+engine.\+Generator.\+id = UUID.\+random\+UUID()}
+
+
+
+Unique ID for this instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}. 
+
+Even if the same settings are used multiple times, this ID should be unique. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Generator.\+java\end{DoxyCompactItemize}

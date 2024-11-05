@@ -1,0 +1,82 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Random\+Collection$<$ E $>$ Class Template Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection}\index{org.mitre.synthea.helpers.RandomCollection$<$ E $>$@{org.mitre.synthea.helpers.RandomCollection$<$ E $>$}}
+
+
+Random collection of objects, with weightings.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+helpers.\+Random\+Collection$<$ E $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Random\+Collection$<$ E $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection_a505a39231e2ecfdc4155cfc831709222}{add}} (double weight, E result)
+\begin{DoxyCompactList}\small\item\em Add an object (result) to the collection with a given weight. \end{DoxyCompactList}\item 
+E \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection_a5caba757e4994670e48f197f6e2ac79e}{next}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Select an item from the collection at random by the weight of the items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Random collection of objects, with weightings. 
+
+Intended to be an equivalent to the ruby Pickup gem. Adapted from \href{https://stackoverflow.com/a/6409791/630384}{\texttt{ https\+://stackoverflow.\+com/a/6409791/630384}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection_a505a39231e2ecfdc4155cfc831709222}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection_a505a39231e2ecfdc4155cfc831709222}} 
+\index{org.mitre.synthea.helpers.RandomCollection$<$ E $>$@{org.mitre.synthea.helpers.RandomCollection$<$ E $>$}!add@{add}}
+\index{add@{add}!org.mitre.synthea.helpers.RandomCollection$<$ E $>$@{org.mitre.synthea.helpers.RandomCollection$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection}{org.\+mitre.\+synthea.\+helpers.\+Random\+Collection}}$<$ E $>$.add (\begin{DoxyParamCaption}\item[{double}]{weight,  }\item[{E}]{result }\end{DoxyParamCaption})}
+
+
+
+Add an object (result) to the collection with a given weight. 
+
+If the weight is negative, the object (result) is not added to the collection. Objects are retrieved by weight using the next method. 
+\begin{DoxyParams}{Parameters}
+{\em weight} & -\/ Positive weight of the result. \\
+\hline
+{\em result} & -\/ the object to add to the collection. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection_a5caba757e4994670e48f197f6e2ac79e}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection_a5caba757e4994670e48f197f6e2ac79e}} 
+\index{org.mitre.synthea.helpers.RandomCollection$<$ E $>$@{org.mitre.synthea.helpers.RandomCollection$<$ E $>$}!next@{next}}
+\index{next@{next}!org.mitre.synthea.helpers.RandomCollection$<$ E $>$@{org.mitre.synthea.helpers.RandomCollection$<$ E $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily E \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection}{org.\+mitre.\+synthea.\+helpers.\+Random\+Collection}}$<$ E $>$.next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Select an item from the collection at random by the weight of the items. 
+
+Selecting an item from one draw, does not remove the item from the collection for subsequent draws. In other words, an item can be selected repeatedly if the weights are severely imbalanced. 
+\begin{DoxyParams}{Parameters}
+{\em random} & the random number generator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a random item from the collection weighted by the item weights. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Random\+Collection.\+java\end{DoxyCompactItemize}

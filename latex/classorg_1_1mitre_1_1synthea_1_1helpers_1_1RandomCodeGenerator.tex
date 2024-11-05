@@ -1,0 +1,147 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator}\index{org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}}
+
+
+Generates random codes based upon Value\+Set URIs, with the help of a FHIR terminology service API.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Code \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a5672610e168106a94dbdfaa66ce0131c}{get\+Code}} (String value\+Set\+Uri, long seed, Code code)
+\begin{DoxyCompactList}\small\item\em Gets a random code from the expansion of a Value\+Set. \end{DoxyCompactList}\item 
+static Code \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_ae02bd7a3c329288a5b89b7c4a26e6da7}{get\+Code}} (String value\+Set\+Uri, long seed)
+\begin{DoxyCompactList}\small\item\em Gets a random code from the expansion of a Value\+Set. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a352624328315b70cab568e73777c7e49}{code\+In\+Value\+Set}} (Code code, String value\+Set\+Uri)
+\begin{DoxyCompactList}\small\item\em Check whether the given code is in the given Value\+Set. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a314f10c5d7c8fd417347c64c3ad335e6}{load\+Value\+Set}} (String value\+Set\+Uri, Value\+Set value\+Set)
+\begin{DoxyCompactList}\small\item\em Load the given value set into our cache. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a92b7c8cec10d90820ea1c9c6b6bc12b5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a92b7c8cec10d90820ea1c9c6b6bc12b5}} 
+static void {\bfseries set\+Base\+Url} (String url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String {\bfseries expand\+Base\+Url}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a4c82b8702f00c81256b7478e01cd4332}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a4c82b8702f00c81256b7478e01cd4332}} 
+static Map$<$ String, List$<$ Code $>$ $>$ {\bfseries code\+List\+Cache} = new Hash\+Map$<$$>$()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_aeffc244378fac692972490abbddf156e}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_aeffc244378fac692972490abbddf156e}} 
+static List$<$ Code $>$ {\bfseries selected\+Codes} = new Array\+List$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates random codes based upon Value\+Set URIs, with the help of a FHIR terminology service API. 
+
+The URL for the terminology service is configured using the {\ttfamily generate.\+terminology\+\_\+service\+\_\+url} property. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a352624328315b70cab568e73777c7e49}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a352624328315b70cab568e73777c7e49}} 
+\index{org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}!codeInValueSet@{codeInValueSet}}
+\index{codeInValueSet@{codeInValueSet}!org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{codeInValueSet()}{codeInValueSet()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator.\+code\+In\+Value\+Set (\begin{DoxyParamCaption}\item[{Code}]{code,  }\item[{String}]{value\+Set\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check whether the given code is in the given Value\+Set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & Code to check \\
+\hline
+{\em value\+Set\+Uri} & URI of the Value\+Set to check the code for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the code is in the given valueset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_ae02bd7a3c329288a5b89b7c4a26e6da7}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_ae02bd7a3c329288a5b89b7c4a26e6da7}} 
+\index{org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}!getCode@{getCode}}
+\index{getCode@{getCode}!org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{getCode()}{getCode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Code org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator.\+get\+Code (\begin{DoxyParamCaption}\item[{String}]{value\+Set\+Uri,  }\item[{long}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a random code from the expansion of a Value\+Set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Set\+Uri} & the URI of the Value\+Set \\
+\hline
+{\em seed} & a random seed to ensure reproducibility of this result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the randomly selected code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a5672610e168106a94dbdfaa66ce0131c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a5672610e168106a94dbdfaa66ce0131c}} 
+\index{org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}!getCode@{getCode}}
+\index{getCode@{getCode}!org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{getCode()}{getCode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Code org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator.\+get\+Code (\begin{DoxyParamCaption}\item[{String}]{value\+Set\+Uri,  }\item[{long}]{seed,  }\item[{Code}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a random code from the expansion of a Value\+Set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Set\+Uri} & the URI of the Value\+Set \\
+\hline
+{\em seed} & a random seed to ensure reproducibility of this result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the randomly selected Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a314f10c5d7c8fd417347c64c3ad335e6}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a314f10c5d7c8fd417347c64c3ad335e6}} 
+\index{org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}!loadValueSet@{loadValueSet}}
+\index{loadValueSet@{loadValueSet}!org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{loadValueSet()}{loadValueSet()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator.\+load\+Value\+Set (\begin{DoxyParamCaption}\item[{String}]{value\+Set\+Uri,  }\item[{Value\+Set}]{value\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the given value set into our cache. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+Set\+Uri} & URI to reference this value set \\
+\hline
+{\em value\+Set} & Parsed JSON representation of FHIR valueset \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a2021e0e4f95a296835284314ed52a5df}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCodeGenerator_a2021e0e4f95a296835284314ed52a5df}} 
+\index{org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}!expandBaseUrl@{expandBaseUrl}}
+\index{expandBaseUrl@{expandBaseUrl}!org.mitre.synthea.helpers.RandomCodeGenerator@{org.mitre.synthea.helpers.RandomCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{expandBaseUrl}{expandBaseUrl}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+helpers.\+Random\+Code\+Generator.\+expand\+Base\+Url\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= Config.get(\textcolor{stringliteral}{"{}generate.terminology\_service\_url"{}})}
+\DoxyCodeLine{      + \textcolor{stringliteral}{"{}/ValueSet/\$expand?url="{}}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Random\+Code\+Generator.\+java\end{DoxyCompactItemize}

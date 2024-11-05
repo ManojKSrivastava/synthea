@@ -1,0 +1,121 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Names Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names}\index{org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_abf6d12de182667de6dab012af978f4ca}{fake\+First\+Name}} (String gender, String language, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Generate a first name appropriate for a given gender and language. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_aba89bd678cc7d2bdae73611ac0bd9441}{fake\+Last\+Name}} (String language, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Generate a surname appropriate for a given language. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_ac5b86c2f65233af050d69033ba563911}{fake\+Address}} (boolean include\+Line2, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Generate a Street Address. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_a920b04cf8e2685c1129d1748a72d673a}{add\+Hash}} (String name)
+\begin{DoxyCompactList}\small\item\em Adds a 1-\/ to 3-\/digit hashcode to the end of the name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final boolean {\bfseries append\+Numbers\+To\+Names}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_a920b04cf8e2685c1129d1748a72d673a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_a920b04cf8e2685c1129d1748a72d673a}} 
+\index{org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}!addHash@{addHash}}
+\index{addHash@{addHash}!org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}}
+\doxysubsubsection{\texorpdfstring{addHash()}{addHash()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+concepts.\+Names.\+add\+Hash (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a 1-\/ to 3-\/digit hashcode to the end of the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Person\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name with a hash appended, ex \char`\"{}\+John123\char`\"{} or \char`\"{}\+Smith22\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_ac5b86c2f65233af050d69033ba563911}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_ac5b86c2f65233af050d69033ba563911}} 
+\index{org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}!fakeAddress@{fakeAddress}}
+\index{fakeAddress@{fakeAddress}!org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}}
+\doxysubsubsection{\texorpdfstring{fakeAddress()}{fakeAddress()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+concepts.\+Names.\+fake\+Address (\begin{DoxyParamCaption}\item[{boolean}]{include\+Line2,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate a Street Address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Line2} & Whether or not the address should have a second line, which can take the form of an apartment, unit, or suite number. \\
+\hline
+{\em person} & person to generate an address for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+First name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_abf6d12de182667de6dab012af978f4ca}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_abf6d12de182667de6dab012af978f4ca}} 
+\index{org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}!fakeFirstName@{fakeFirstName}}
+\index{fakeFirstName@{fakeFirstName}!org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}}
+\doxysubsubsection{\texorpdfstring{fakeFirstName()}{fakeFirstName()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+concepts.\+Names.\+fake\+First\+Name (\begin{DoxyParamCaption}\item[{String}]{gender,  }\item[{String}]{language,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate a first name appropriate for a given gender and language. 
+
+If {\ttfamily generate.\+append\+\_\+numbers\+\_\+to\+\_\+person\+\_\+names} == true, then numbers will be appended automatically. 
+\begin{DoxyParams}{Parameters}
+{\em gender} & Gender of the name, \char`\"{}\+M\char`\"{} or \char`\"{}\+F\char`\"{} \\
+\hline
+{\em language} & Origin language of the name, \char`\"{}english\char`\"{}, \char`\"{}spanish\char`\"{} \\
+\hline
+{\em person} & person to generate a name for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+First name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_aba89bd678cc7d2bdae73611ac0bd9441}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_aba89bd678cc7d2bdae73611ac0bd9441}} 
+\index{org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}!fakeLastName@{fakeLastName}}
+\index{fakeLastName@{fakeLastName}!org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}}
+\doxysubsubsection{\texorpdfstring{fakeLastName()}{fakeLastName()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+concepts.\+Names.\+fake\+Last\+Name (\begin{DoxyParamCaption}\item[{String}]{language,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate a surname appropriate for a given language. 
+
+If {\ttfamily generate.\+append\+\_\+numbers\+\_\+to\+\_\+person\+\_\+names} == true, then numbers will be appended automatically. 
+\begin{DoxyParams}{Parameters}
+{\em language} & Origin language of the name, \char`\"{}english\char`\"{}, \char`\"{}spanish\char`\"{} \\
+\hline
+{\em person} & person to generate a name for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Surname or Family Name. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_a1249e07d44d176e2ab868800a2cde8fd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Names_a1249e07d44d176e2ab868800a2cde8fd}} 
+\index{org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}!appendNumbersToNames@{appendNumbersToNames}}
+\index{appendNumbersToNames@{appendNumbersToNames}!org.mitre.synthea.world.concepts.Names@{org.mitre.synthea.world.concepts.Names}}
+\doxysubsubsection{\texorpdfstring{appendNumbersToNames}{appendNumbersToNames}}
+{\footnotesize\ttfamily final boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Names.\+append\+Numbers\+To\+Names\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}generate.append\_numbers\_to\_person\_names"{}}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Names.\+java\end{DoxyCompactItemize}

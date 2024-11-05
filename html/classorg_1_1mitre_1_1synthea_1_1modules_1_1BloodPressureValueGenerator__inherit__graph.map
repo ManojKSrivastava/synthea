@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.modules.BloodPressureValueGenerator" name="org.mitre.synthea.modules.BloodPressureValueGenerator">
+<area shape="rect" id="node1" title="Generate realistic blood pressure vital signs, with impacts from select medications." alt="" coords="5,169,221,211"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator.html" title="The base for all value generators." alt="" coords="16,80,211,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="64,5,163,32"/>
+</map>

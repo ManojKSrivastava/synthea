@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.export.rif.tools.StaticFieldConfig" name="org.mitre.synthea.export.rif.tools.StaticFieldConfig">
+<area shape="rect" id="node1" title="Class to manage mapping values in the static BFD TSV writer to the exported writers." alt="" coords="340,39,581,80"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,220,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="31,71,194,112"/>
+</map>

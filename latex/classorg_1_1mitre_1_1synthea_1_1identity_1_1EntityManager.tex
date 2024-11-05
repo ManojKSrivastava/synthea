@@ -1,0 +1,90 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{}\doxysection{org.\+mitre.\+synthea.\+identity.\+Entity\+Manager Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}\index{org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}}
+
+
+Singleton class that manages all Entities in a simulation.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_afea5f7e219d6b348dd58825d1c3a1af2}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_afea5f7e219d6b348dd58825d1c3a1af2}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} $>$ {\bfseries get\+Records} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a34cec9a07cfc673cdecb86efb1ed40db}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a34cec9a07cfc673cdecb86efb1ed40db}} 
+void {\bfseries set\+Records} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} $>$ records)
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a4dc17e3ebadfd06591b6b32b7a7841f5}{find\+Entity}} (String entity\+Id)
+\begin{DoxyCompactList}\small\item\em Find a particular \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} by Id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a83043d17f8885b7198b1f6329ec753ff}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a83043d17f8885b7198b1f6329ec753ff}} 
+int {\bfseries get\+Population\+Size} ()
+\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a9985750ce049ca56bbd6e395bbbeea55}{validate}} ()
+\begin{DoxyCompactList}\small\item\em Ensures that all Entities loaded by this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} are valid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a1a2d9ed61c70c6a93d6aebf68c107160}{from\+JSON}} (String raw\+JSON)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} by reading in the JSON containing all of the information on entities, seeds and variants. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that manages all Entities in a simulation. 
+
+This class will typically be instantiated using the from\+JSON static method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a4dc17e3ebadfd06591b6b32b7a7841f5}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a4dc17e3ebadfd06591b6b32b7a7841f5}} 
+\index{org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}!findEntity@{findEntity}}
+\index{findEntity@{findEntity}!org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}}
+\doxysubsubsection{\texorpdfstring{findEntity()}{findEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} org.\+mitre.\+synthea.\+identity.\+Entity\+Manager.\+find\+Entity (\begin{DoxyParamCaption}\item[{String}]{entity\+Id }\end{DoxyParamCaption})}
+
+
+
+Find a particular \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} by Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+Id} & The Id to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}}, or null if one does not exist with the given Id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a1a2d9ed61c70c6a93d6aebf68c107160}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a1a2d9ed61c70c6a93d6aebf68c107160}} 
+\index{org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}}
+\doxysubsubsection{\texorpdfstring{fromJSON()}{fromJSON()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} org.\+mitre.\+synthea.\+identity.\+Entity\+Manager.\+from\+JSON (\begin{DoxyParamCaption}\item[{String}]{raw\+JSON }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} by reading in the JSON containing all of the information on entities, seeds and variants. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+JSON} & the actual JSON \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} Manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a9985750ce049ca56bbd6e395bbbeea55}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager_a9985750ce049ca56bbd6e395bbbeea55}} 
+\index{org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}!validate@{validate}}
+\index{validate@{validate}!org.mitre.synthea.identity.EntityManager@{org.mitre.synthea.identity.EntityManager}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+identity.\+Entity\+Manager.\+validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ensures that all Entities loaded by this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1EntityManager}{Entity\+Manager}} are valid. 
+
+\begin{DoxyReturn}{Returns}
+true if all Entities are valid 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/identity/Entity\+Manager.\+java\end{DoxyCompactItemize}

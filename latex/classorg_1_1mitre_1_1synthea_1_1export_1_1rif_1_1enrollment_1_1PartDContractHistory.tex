@@ -1,0 +1,146 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory}\index{org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}}
+
+
+Utility class to manage a beneficiary\textquotesingle{}s part D contract history.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab055e791641f0beac138935b690b817a}{Part\+DContract\+History}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time, int years\+Of\+History)
+\begin{DoxyCompactList}\small\item\em Create a new random Part D contract history. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_a6aa0a77e4a290a65b6e437979952848b}{has\+Employee\+PDP}} ()
+\begin{DoxyCompactList}\small\item\em Check if person has employer sponsored PDP. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_a7f3d6fa20c391ec971efe556c74298c5}{get\+Employee\+PDPIndicator}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PartDContractID}{Part\+DContract\+ID}} contract\+ID)
+\begin{DoxyCompactList}\small\item\em Get the RDS indicator based on whether person is enrolled in Part D and has employee coverage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab168e7f589c14557880e2bbc1ca1d77e}{get\+Part\+DCost\+Sharing\+Code}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Get the part D cost sharing code based on the person\textquotesingle{}s income level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PartDContractID}{Part\+DContract\+ID}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab148a1aad712a016d48c9f4a2e09ede5}{get\+Random\+Contract\+ID}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Get a random contract ID or null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class to manage a beneficiary\textquotesingle{}s part D contract history. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab055e791641f0beac138935b690b817a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab055e791641f0beac138935b690b817a}} 
+\index{org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}!PartDContractHistory@{PartDContractHistory}}
+\index{PartDContractHistory@{PartDContractHistory}!org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}}
+\doxysubsubsection{\texorpdfstring{PartDContractHistory()}{PartDContractHistory()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History.\+Part\+DContract\+History (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time,  }\item[{int}]{years\+Of\+History }\end{DoxyParamCaption})}
+
+
+
+Create a new random Part D contract history. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & source of randomness \\
+\hline
+{\em stop\+Time} & when the history should end (as ms since epoch) \\
+\hline
+{\em years\+Of\+History} & how many years should be covered \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_a7f3d6fa20c391ec971efe556c74298c5}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_a7f3d6fa20c391ec971efe556c74298c5}} 
+\index{org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}!getEmployeePDPIndicator@{getEmployeePDPIndicator}}
+\index{getEmployeePDPIndicator@{getEmployeePDPIndicator}!org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}}
+\doxysubsubsection{\texorpdfstring{getEmployeePDPIndicator()}{getEmployeePDPIndicator()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History.\+get\+Employee\+PDPIndicator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PartDContractID}{Part\+DContract\+ID}}}]{contract\+ID }\end{DoxyParamCaption})}
+
+
+
+Get the RDS indicator based on whether person is enrolled in Part D and has employee coverage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contract\+ID} & Part D contract ID or null if not enrolled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the RDS indicator code or null if contract id is null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab168e7f589c14557880e2bbc1ca1d77e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab168e7f589c14557880e2bbc1ca1d77e}} 
+\index{org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}!getPartDCostSharingCode@{getPartDCostSharingCode}}
+\index{getPartDCostSharingCode@{getPartDCostSharingCode}!org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}}
+\doxysubsubsection{\texorpdfstring{getPartDCostSharingCode()}{getPartDCostSharingCode()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History.\+get\+Part\+DCost\+Sharing\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the part D cost sharing code based on the person\textquotesingle{}s income level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+part D cost sharing code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab148a1aad712a016d48c9f4a2e09ede5}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_ab148a1aad712a016d48c9f4a2e09ede5}} 
+\index{org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}!getRandomContractID@{getRandomContractID}}
+\index{getRandomContractID@{getRandomContractID}!org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}}
+\doxysubsubsection{\texorpdfstring{getRandomContractID()}{getRandomContractID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PartDContractID}{Part\+DContract\+ID}} org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History.\+get\+Random\+Contract\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get a random contract ID or null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rand} & source of randomness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a contract ID (70\% or the time) or null (30\% of the time) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_a6aa0a77e4a290a65b6e437979952848b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1PartDContractHistory_a6aa0a77e4a290a65b6e437979952848b}} 
+\index{org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}!hasEmployeePDP@{hasEmployeePDP}}
+\index{hasEmployeePDP@{hasEmployeePDP}!org.mitre.synthea.export.rif.enrollment.PartDContractHistory@{org.mitre.synthea.export.rif.enrollment.PartDContractHistory}}
+\doxysubsubsection{\texorpdfstring{hasEmployeePDP()}{hasEmployeePDP()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Part\+DContract\+History.\+has\+Employee\+PDP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if person has employer sponsored PDP. 
+
+\begin{DoxyReturn}{Returns}
+true if has employer PDP, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/enrollment/Part\+DContract\+History.\+java\end{DoxyCompactItemize}

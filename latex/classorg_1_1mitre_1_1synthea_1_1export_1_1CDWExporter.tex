@@ -1,0 +1,85 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+CDWExporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}\index{org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}}
+
+
+This exporter attempts to export synthetic patient data into comma-\/separated value (CSV) files that align with the Veteran\textquotesingle{}s Health Administration (VHA) Corporate Data Warehouse (CDW).  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_ac6d9b1f5092682cd7dece32c65d47ceb}{set\+Key\+Start}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the sequence generator key starting values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_abc6751e87488001dfdd9b0ab39975baf}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Add a single Person\textquotesingle{}s health record info to the CSV records. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_a516515ecf3a2272708029f7b22d25354}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_a516515ecf3a2272708029f7b22d25354}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_a516515ecf3a2272708029f7b22d25354}{write\+Fact\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Fact Tables should only be written after all patients have completed export. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}{CDWExporter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_a27d08162e9e457484c949420a2cef9b5}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}{CDWExporter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This exporter attempts to export synthetic patient data into comma-\/separated value (CSV) files that align with the Veteran\textquotesingle{}s Health Administration (VHA) Corporate Data Warehouse (CDW). 
+
+\href{https://www.data.va.gov/dataset/corporate-data-warehouse-cdw}{\texttt{ https\+://www.\+data.\+va.\+gov/dataset/corporate-\/data-\/warehouse-\/cdw}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_abc6751e87488001dfdd9b0ab39975baf}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_abc6751e87488001dfdd9b0ab39975baf}} 
+\index{org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+CDWExporter.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Add a single Person\textquotesingle{}s health record info to the CSV records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to write record data for \\
+\hline
+{\em time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any IO error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_a27d08162e9e457484c949420a2cef9b5}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_a27d08162e9e457484c949420a2cef9b5}} 
+\index{org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}{CDWExporter}} org.\+mitre.\+synthea.\+export.\+CDWExporter.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}{CDWExporter}}. 
+
+\begin{DoxyReturn}{Returns}
+the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter}{CDWExporter}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_ac6d9b1f5092682cd7dece32c65d47ceb}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CDWExporter_ac6d9b1f5092682cd7dece32c65d47ceb}} 
+\index{org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}!setKeyStart@{setKeyStart}}
+\index{setKeyStart@{setKeyStart}!org.mitre.synthea.export.CDWExporter@{org.mitre.synthea.export.CDWExporter}}
+\doxysubsubsection{\texorpdfstring{setKeyStart()}{setKeyStart()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+CDWExporter.\+set\+Key\+Start (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Set the sequence generator key starting values. 
+
+Useful to ensure states do not generate overlapping or colliding values. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The start of the sequence generators. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/CDWExporter.\+java\end{DoxyCompactItemize}

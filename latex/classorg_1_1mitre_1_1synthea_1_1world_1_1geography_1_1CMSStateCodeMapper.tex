@@ -1,0 +1,108 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper}{}\doxysection{org.\+mitre.\+synthea.\+world.\+geography.\+CMSState\+Code\+Mapper Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper}\index{org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}}
+
+
+Utility class for converting between state names and abbreviations and CMS provider state codes.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_ac93444f6e74d6e5a9a3e7d7dd4724f91}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_ac93444f6e74d6e5a9a3e7d7dd4724f91}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_ac93444f6e74d6e5a9a3e7d7dd4724f91}{CMSState\+Code\+Mapper}} ()
+\begin{DoxyCompactList}\small\item\em Create a new instance. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_acb9520d24a68ba62b952b0596b0f1c16}{get\+State\+Code}} (String state)
+\begin{DoxyCompactList}\small\item\em Return state code for a given state. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_ab6383d885a1066d084d180eb25961373}{zip\+To\+County\+Code}} (String zipcode)
+\begin{DoxyCompactList}\small\item\em Get the SSA county code for a given zipcode. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_a1c6c3ec1a045ed202b5324f869759281}{state\+County\+Name\+To\+County\+Code}} (String state, String county\+Name, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Get the SSA county code for a given state and county. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_a660a8a0a8a56e07f1ce6ee8d1a250a99}{zip\+To\+Fips\+County\+Code}} (String zipcode)
+\begin{DoxyCompactList}\small\item\em Get the FIPS county code for a given zipcode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for converting between state names and abbreviations and CMS provider state codes. 
+
+Note that this class is specific to the Centers for Medicare and Medicaid in the USA. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_acb9520d24a68ba62b952b0596b0f1c16}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_acb9520d24a68ba62b952b0596b0f1c16}} 
+\index{org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}!getStateCode@{getStateCode}}
+\index{getStateCode@{getStateCode}!org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}}
+\doxysubsubsection{\texorpdfstring{getStateCode()}{getStateCode()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+CMSState\+Code\+Mapper.\+get\+State\+Code (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+Return state code for a given state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & (either state name or abbreviation) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2-\/digit state code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_a1c6c3ec1a045ed202b5324f869759281}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_a1c6c3ec1a045ed202b5324f869759281}} 
+\index{org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}!stateCountyNameToCountyCode@{stateCountyNameToCountyCode}}
+\index{stateCountyNameToCountyCode@{stateCountyNameToCountyCode}!org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}}
+\doxysubsubsection{\texorpdfstring{stateCountyNameToCountyCode()}{stateCountyNameToCountyCode()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+CMSState\+Code\+Mapper.\+state\+County\+Name\+To\+County\+Code (\begin{DoxyParamCaption}\item[{String}]{state,  }\item[{String}]{county\+Name,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})}
+
+
+
+Get the SSA county code for a given state and county. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The abbreviation of the state. \\
+\hline
+{\em county\+Name} & The name of the county. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The SSA county code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_ab6383d885a1066d084d180eb25961373}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_ab6383d885a1066d084d180eb25961373}} 
+\index{org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}!zipToCountyCode@{zipToCountyCode}}
+\index{zipToCountyCode@{zipToCountyCode}!org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}}
+\doxysubsubsection{\texorpdfstring{zipToCountyCode()}{zipToCountyCode()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+CMSState\+Code\+Mapper.\+zip\+To\+County\+Code (\begin{DoxyParamCaption}\item[{String}]{zipcode }\end{DoxyParamCaption})}
+
+
+
+Get the SSA county code for a given zipcode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zipcode} & the ZIP \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The SSA county code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_a660a8a0a8a56e07f1ce6ee8d1a250a99}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1CMSStateCodeMapper_a660a8a0a8a56e07f1ce6ee8d1a250a99}} 
+\index{org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}!zipToFipsCountyCode@{zipToFipsCountyCode}}
+\index{zipToFipsCountyCode@{zipToFipsCountyCode}!org.mitre.synthea.world.geography.CMSStateCodeMapper@{org.mitre.synthea.world.geography.CMSStateCodeMapper}}
+\doxysubsubsection{\texorpdfstring{zipToFipsCountyCode()}{zipToFipsCountyCode()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+CMSState\+Code\+Mapper.\+zip\+To\+Fips\+County\+Code (\begin{DoxyParamCaption}\item[{String}]{zipcode }\end{DoxyParamCaption})}
+
+
+
+Get the FIPS county code for a given zipcode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zipcode} & the ZIP \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fips county code 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/geography/CMSState\+Code\+Mapper.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="org.mitre.synthea.world.concepts.HealthRecord.Medication" name="org.mitre.synthea.world.concepts.HealthRecord.Medication">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,249,300"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EntryWithReasons.html" title=" " alt="" coords="5,169,249,211"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry.html" title="All things within a HealthRecord are instances of Entry." alt="" coords="5,80,249,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="78,5,177,32"/>
+</map>

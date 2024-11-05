@@ -1,0 +1,79 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+PDEExporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter}\index{org.mitre.synthea.export.rif.PDEExporter@{org.mitre.synthea.export.rif.PDEExporter}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for RIF PDE (prescription) file.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+export.\+rif.\+PDEExporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+rif.\+PDEExporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter_aad62411aa98407db375301bf62953d1d}{PDEExporter}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{BB2\+RIFExporter}} exporter)
+\begin{DoxyCompactList}\small\item\em Construct an exporter for PDE claims. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Atomic\+Long {\bfseries next\+Pde\+Id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for RIF PDE (prescription) file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter_aad62411aa98407db375301bf62953d1d}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter_aad62411aa98407db375301bf62953d1d}} 
+\index{org.mitre.synthea.export.rif.PDEExporter@{org.mitre.synthea.export.rif.PDEExporter}!PDEExporter@{PDEExporter}}
+\index{PDEExporter@{PDEExporter}!org.mitre.synthea.export.rif.PDEExporter@{org.mitre.synthea.export.rif.PDEExporter}}
+\doxysubsubsection{\texorpdfstring{PDEExporter()}{PDEExporter()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+export.\+rif.\+PDEExporter.\+PDEExporter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{BB2\+RIFExporter}}}]{exporter }\end{DoxyParamCaption})}
+
+
+
+Construct an exporter for PDE claims. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exporter} & the exporter instance that will be used to access code mappers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter_a5c6eedca56d97065c9f905418d6918d9}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter_a5c6eedca56d97065c9f905418d6918d9}} 
+\index{org.mitre.synthea.export.rif.PDEExporter@{org.mitre.synthea.export.rif.PDEExporter}!nextPdeId@{nextPdeId}}
+\index{nextPdeId@{nextPdeId}!org.mitre.synthea.export.rif.PDEExporter@{org.mitre.synthea.export.rif.PDEExporter}}
+\doxysubsubsection{\texorpdfstring{nextPdeId}{nextPdeId}}
+{\footnotesize\ttfamily final Atomic\+Long org.\+mitre.\+synthea.\+export.\+rif.\+PDEExporter.\+next\+Pde\+Id\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} AtomicLong(Config.getAsLong(}
+\DoxyCodeLine{          \textcolor{stringliteral}{"{}exporter.bfd.pde\_id\_start"{}}, -\/1))}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/PDEExporter.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer}\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Base64\+Encoded\+Chart}
+\item 
+class {\bfseries Chart\+Config}
+\begin{DoxyCompactList}\small\item\em POJO configuration for a chart. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_1_1ChartType}{Chart\+Type}}
+\begin{DoxyCompactList}\small\item\em Enumeration of supported chart types. \end{DoxyCompactList}\item 
+class {\bfseries Multi\+Table\+Chart\+Config}
+\begin{DoxyCompactList}\small\item\em POJO configuration for a chart with data from a Multi\+Table. \end{DoxyCompactList}\item 
+class {\bfseries Multi\+Table\+Series\+Config}
+\begin{DoxyCompactList}\small\item\em POJO configuration for a chart series with data from a Multi\+Table. \end{DoxyCompactList}\item 
+class {\bfseries Person\+Chart\+Config}
+\begin{DoxyCompactList}\small\item\em POJO configuration for a chart with data from a Person object. \end{DoxyCompactList}\item 
+class {\bfseries Person\+Series\+Config}
+\begin{DoxyCompactList}\small\item\em POJO configuration for a chart series with data from a Person object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static JFree\+Chart \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a2267ef85b2d249853d0ccc7d3a714bc5}{create\+Chart}} (Multi\+Table table, Multi\+Table\+Chart\+Config config)
+\begin{DoxyCompactList}\small\item\em Create a JFree\+Chart object based on values from a Multi\+Table. \end{DoxyCompactList}\item 
+static JFree\+Chart \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a80db88d916244914be9fe2a78ab881fc}{create\+Chart}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, Person\+Chart\+Config config)
+\begin{DoxyCompactList}\small\item\em Create a JFree\+Chart object based on values from a Person object. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a1486732dcdf514ac3402201257555c9c}{draw\+Chart\+As\+File}} (Multi\+Table table, Multi\+Table\+Chart\+Config config)
+\begin{DoxyCompactList}\small\item\em Draw a JFree\+Chart to an image based on values from a Multi\+Table. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_ab82af8419da656ae62da8f5b5a800f61}{draw\+Chart\+As\+File}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, Person\+Chart\+Config config)
+\begin{DoxyCompactList}\small\item\em Draw a JFree\+Chart to an image based on values from a Multi\+Table. \end{DoxyCompactList}\item 
+static Base64\+Encoded\+Chart \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_aba479f85c81527872eccc7a1e814c0f9}{draw\+Chart\+As\+Base64}} (Multi\+Table table, Multi\+Table\+Chart\+Config config)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Draw a JFree\+Chart to a base64 encoded image based on values from a Multi\+Table. \end{DoxyCompactList}\item 
+static Base64\+Encoded\+Chart \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_ac337f2154db1cdb3e58fd9558e14e162}{draw\+Chart\+As\+Base64}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, Person\+Chart\+Config config)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Draw a JFree\+Chart to a base64 encoded image based on values from a Multi\+Table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a2267ef85b2d249853d0ccc7d3a714bc5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a2267ef85b2d249853d0ccc7d3a714bc5}} 
+\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}!createChart@{createChart}}
+\index{createChart@{createChart}!org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsubsection{\texorpdfstring{createChart()}{createChart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static JFree\+Chart org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer.\+create\+Chart (\begin{DoxyParamCaption}\item[{Multi\+Table}]{table,  }\item[{Multi\+Table\+Chart\+Config}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a JFree\+Chart object based on values from a Multi\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Multi\+Table to retrieve values from \\
+\hline
+{\em config} & chart configuration options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a80db88d916244914be9fe2a78ab881fc}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a80db88d916244914be9fe2a78ab881fc}} 
+\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}!createChart@{createChart}}
+\index{createChart@{createChart}!org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsubsection{\texorpdfstring{createChart()}{createChart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static JFree\+Chart org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer.\+create\+Chart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{Person\+Chart\+Config}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a JFree\+Chart object based on values from a Person object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person instance to retrieve values from \\
+\hline
+{\em config} & chart configuration options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_aba479f85c81527872eccc7a1e814c0f9}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_aba479f85c81527872eccc7a1e814c0f9}} 
+\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}!drawChartAsBase64@{drawChartAsBase64}}
+\index{drawChartAsBase64@{drawChartAsBase64}!org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsubsection{\texorpdfstring{drawChartAsBase64()}{drawChartAsBase64()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Base64\+Encoded\+Chart org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer.\+draw\+Chart\+As\+Base64 (\begin{DoxyParamCaption}\item[{Multi\+Table}]{table,  }\item[{Multi\+Table\+Chart\+Config}]{config }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw a JFree\+Chart to a base64 encoded image based on values from a Multi\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Multi\+Table to retrieve values from \\
+\hline
+{\em config} & chart configuration options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_ac337f2154db1cdb3e58fd9558e14e162}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_ac337f2154db1cdb3e58fd9558e14e162}} 
+\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}!drawChartAsBase64@{drawChartAsBase64}}
+\index{drawChartAsBase64@{drawChartAsBase64}!org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsubsection{\texorpdfstring{drawChartAsBase64()}{drawChartAsBase64()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Base64\+Encoded\+Chart org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer.\+draw\+Chart\+As\+Base64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{Person\+Chart\+Config}]{config }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw a JFree\+Chart to a base64 encoded image based on values from a Multi\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to retrieve attribute values from \\
+\hline
+{\em config} & chart configuration options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a1486732dcdf514ac3402201257555c9c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_a1486732dcdf514ac3402201257555c9c}} 
+\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}!drawChartAsFile@{drawChartAsFile}}
+\index{drawChartAsFile@{drawChartAsFile}!org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsubsection{\texorpdfstring{drawChartAsFile()}{drawChartAsFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer.\+draw\+Chart\+As\+File (\begin{DoxyParamCaption}\item[{Multi\+Table}]{table,  }\item[{Multi\+Table\+Chart\+Config}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw a JFree\+Chart to an image based on values from a Multi\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Multi\+Table to retrieve values from \\
+\hline
+{\em config} & chart configuration options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_ab82af8419da656ae62da8f5b5a800f61}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ChartRenderer_ab82af8419da656ae62da8f5b5a800f61}} 
+\index{org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}!drawChartAsFile@{drawChartAsFile}}
+\index{drawChartAsFile@{drawChartAsFile}!org.mitre.synthea.helpers.ChartRenderer@{org.mitre.synthea.helpers.ChartRenderer}}
+\doxysubsubsection{\texorpdfstring{drawChartAsFile()}{drawChartAsFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Chart\+Renderer.\+draw\+Chart\+As\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{Person\+Chart\+Config}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw a JFree\+Chart to an image based on values from a Multi\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to retrieve attributes from \\
+\hline
+{\em config} & chart configuration options \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Chart\+Renderer.\+java\end{DoxyCompactItemize}

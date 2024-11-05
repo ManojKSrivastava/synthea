@@ -1,0 +1,6 @@
+<map id="org.mitre.synthea.world.agents.ProviderTest" name="org.mitre.synthea.world.agents.ProviderTest">
+<area shape="rect" id="node1" title=" " alt="" coords="73,200,303,241"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1DefaultRandomNumberGenerator.html" title="A default implementation of the RandomNumberGenerator interface." alt="" coords="67,96,309,137"/>
+<area shape="rect" id="node3" href="$interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator.html" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="224,13,323,39"/>
+</map>

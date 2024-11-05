@@ -1,0 +1,143 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Vaccine\+Age\+Distributions Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions}\index{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}}
+
+
+This class parses the CSV file that is created by calling the CDC API for COVID-\/19 vaccination information.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Vaccine\+Age\+Distributions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Age\+Range}
+\begin{DoxyCompactList}\small\item\em Representation of an age range in years with logic for parsing the format used by the CDC API. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ab5c31b5949c3cb6eb72405d4251b9ad7}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ab5c31b5949c3cb6eb72405d4251b9ad7}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ab5c31b5949c3cb6eb72405d4251b9ad7}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Run all methods needed to interact with the methods to select shot time or shot chance. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a9106483ff4128e4be8df56ebe97d6b4b}{load\+Raw\+Distribution}} ()
+\begin{DoxyCompactList}\small\item\em Reads in the CSV file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a16e1d9581fc86f8d3ec372e228ca1a74}{populate\+Distributions}} ()
+\begin{DoxyCompactList}\small\item\em Processes the raw distribution information into the Enumerated\+Distributions that will be used to select the date of vaccination administration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_abad5d84f0d8d32fa3d894bae4da00298}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_abad5d84f0d8d32fa3d894bae4da00298}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_abad5d84f0d8d32fa3d894bae4da00298}{load\+Shot\+Probabilities\+By\+Age}} ()
+\begin{DoxyCompactList}\small\item\em Load the JSON file that has a map of age ranges to percentage of that age range that has been vaccinated. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ae78ad998216d23119987d5cc89dcdc5c}{select\+Shot\+Time}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Selects a time for an individual to get the COVID-\/19 vaccine based on their age and historical distributions of vaccine administration based on age. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a2b286d395f83f9c943ecd20ed0760980}{chance\+Of\+Getting\+Shot}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines the likelihood that an individual will get a COVID-\/19 vaccine based on their age. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a232197eddad4dd27fcc8f241f61cf2f3}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a232197eddad4dd27fcc8f241f61cf2f3}} 
+static final String {\bfseries DOSE\+\_\+\+RATES\+\_\+\+FILE} = \char`\"{}covid\+\_\+dose\+\_\+rates.\+csv\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ac5de4510e5937fb98fba30078a6c1c21}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ac5de4510e5937fb98fba30078a6c1c21}} 
+static final String {\bfseries FIRST\+\_\+\+SHOT\+\_\+\+PROBS\+\_\+\+FILE} = \char`\"{}covid\+\_\+first\+\_\+shot\+\_\+percentage\+\_\+by\+\_\+age.\+json\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_afc31a53704f8d070d2e898382cd31cf2}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_afc31a53704f8d070d2e898382cd31cf2}} 
+static final String {\bfseries DATE\+\_\+\+COLUMN\+\_\+\+HEADER} = \char`\"{}date\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_aeb9830f70bfdefd0d8a06de90e1353d2}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_aeb9830f70bfdefd0d8a06de90e1353d2}} 
+static final Local\+Date {\bfseries EXPAND\+\_\+\+AGE\+\_\+\+TO\+\_\+\+TWELVE} = Local\+Date.\+of(2021, 5, 10)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a38c0c10eb8d5598bded4cef0788fdd17}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a38c0c10eb8d5598bded4cef0788fdd17}} 
+static final Date\+Time\+Formatter {\bfseries CSV\+\_\+\+DATE\+\_\+\+FORMAT} = Date\+Time\+Formatter.\+of\+Pattern(\char`\"{}M/d/yyyy\char`\"{})
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ac9cc4cd105b6ee8298b7e6a5f39c7cb4}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ac9cc4cd105b6ee8298b7e6a5f39c7cb4}} 
+static final Hash\+Map$<$ Age\+Range, List$<$ Pair$<$ String, Integer $>$ $>$ $>$ {\bfseries raw\+Distributions} = new Hash\+Map$<$$>$()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a21cc45f7b43b40125cc592d7055b8964}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a21cc45f7b43b40125cc592d7055b8964}} 
+static final Hash\+Map$<$ Age\+Range, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SyncedEnumeratedDistro}{Synced\+Enumerated\+Distro}}$<$ String $>$ $>$ {\bfseries distributions} = new Hash\+Map$<$$>$()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a5d224961c7a10b135bc31b104f960d25}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a5d224961c7a10b135bc31b104f960d25}} 
+static final Hash\+Map$<$ Age\+Range, Double $>$ {\bfseries first\+Shot\+Prob\+By\+Age} = new Hash\+Map$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class parses the CSV file that is created by calling the CDC API for COVID-\/19 vaccination information. 
+
+The API can be found at\+: 
+
+\href{https://data.cdc.gov/resource/km4m-vcsb}{\texttt{ https\+://data.\+cdc.\+gov/resource/km4m-\/vcsb}} 
+
+The number of doses given in a day is used to select a date for when an individual in the simulation will get their vaccine. Enumerated\+Distributions are created for each age group, with the days weighted by the number of doses administered on that day. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a2b286d395f83f9c943ecd20ed0760980}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a2b286d395f83f9c943ecd20ed0760980}} 
+\index{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}!chanceOfGettingShot@{chanceOfGettingShot}}
+\index{chanceOfGettingShot@{chanceOfGettingShot}!org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}}
+\doxysubsubsection{\texorpdfstring{chanceOfGettingShot()}{chanceOfGettingShot()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Vaccine\+Age\+Distributions.\+chance\+Of\+Getting\+Shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines the likelihood that an individual will get a COVID-\/19 vaccine based on their age. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to use \\
+\hline
+{\em time} & Time in the simulation used for age calculation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a value between 0 -\/ 1 representing the chance the person will get vaccinated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a9106483ff4128e4be8df56ebe97d6b4b}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a9106483ff4128e4be8df56ebe97d6b4b}} 
+\index{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}!loadRawDistribution@{loadRawDistribution}}
+\index{loadRawDistribution@{loadRawDistribution}!org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}}
+\doxysubsubsection{\texorpdfstring{loadRawDistribution()}{loadRawDistribution()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Vaccine\+Age\+Distributions.\+load\+Raw\+Distribution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads in the CSV file. 
+
+Creating a List for each Age\+Range, where the items are Pairs of the String representation of the date and an Integer counting the number of doses administered. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a16e1d9581fc86f8d3ec372e228ca1a74}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a16e1d9581fc86f8d3ec372e228ca1a74}} 
+\index{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}!populateDistributions@{populateDistributions}}
+\index{populateDistributions@{populateDistributions}!org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}}
+\doxysubsubsection{\texorpdfstring{populateDistributions()}{populateDistributions()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Vaccine\+Age\+Distributions.\+populate\+Distributions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Processes the raw distribution information into the Enumerated\+Distributions that will be used to select the date of vaccination administration. 
+
+Must be called after \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_a9106483ff4128e4be8df56ebe97d6b4b}{load\+Raw\+Distribution()}}. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ae78ad998216d23119987d5cc89dcdc5c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19VaccineAgeDistributions_ae78ad998216d23119987d5cc89dcdc5c}} 
+\index{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}!selectShotTime@{selectShotTime}}
+\index{selectShotTime@{selectShotTime}!org.mitre.synthea.modules.covid.C19VaccineAgeDistributions@{org.mitre.synthea.modules.covid.C19VaccineAgeDistributions}}
+\doxysubsubsection{\texorpdfstring{selectShotTime()}{selectShotTime()}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Vaccine\+Age\+Distributions.\+select\+Shot\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Selects a time for an individual to get the COVID-\/19 vaccine based on their age and historical distributions of vaccine administration based on age. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to use \\
+\hline
+{\em time} & Time in the simulation used for age calculation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A time in the simulation when the person should get their first (only?) shot 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/covid/C19\+Vaccine\+Age\+Distributions.\+java\end{DoxyCompactItemize}

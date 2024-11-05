@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.world.geography.quadtree.QuadTree" name="org.mitre.synthea.world.geography.quadtree.QuadTree">
+<area shape="rect" id="node1" title="Simple QuadTree class that is optimized for query speed." alt="" coords="25,109,339,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,359,47"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="org.mitre.synthea.engine.Module" name="org.mitre.synthea.engine.Module">
+<area shape="rect" id="node1" title="Module represents the entry point of a generic module." alt="" coords="152,201,343,243"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1CardiovascularDiseaseModule.html" title=" " alt="" coords="402,5,621,47"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule.html" title=" " alt="" coords="410,71,613,112"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1HealthInsuranceModule.html" title=" " alt="" coords="410,136,613,177"/>
+<area shape="rect" id="node7" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule.html" title=" " alt="" coords="410,201,613,243"/>
+<area shape="rect" id="node8" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule.html" title=" " alt="" coords="410,267,613,308"/>
+<area shape="rect" id="node9" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule.html" title="This module allows patients in Synthea to lose weight." alt="" coords="410,332,613,373"/>
+<area shape="rect" id="node10" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule.html" title="A module to simulate COVID19 Immunizations in the United States." alt="" coords="391,397,632,439"/>
+<area shape="rect" id="node2" title=" " alt="" coords="11,183,98,210"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,234,104,261"/>
+</map>

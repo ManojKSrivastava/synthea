@@ -1,0 +1,387 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory}\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+
+
+This class provides growth trajectories for individuals between 2 and 20.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}}
+\begin{DoxyCompactList}\small\item\em A representation of a point in the growth trajectory. \end{DoxyCompactList}\item 
+class {\bfseries Year\+Information}
+\begin{DoxyCompactList}\small\item\em Container for data on changes between years for \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a514bd2dc84b9c04c5eb3e93dde684431}{Pediatric\+Growth\+Trajectory}} (long person\+Seed, long birth\+Time)
+\begin{DoxyCompactList}\small\item\em Starts a new pediatric growth trajectory. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a890de40d8fcab7023c7f9cf4337312eb}{reverse\+Weight\+Percentile}} (String sex, double height\+Percentile)
+\begin{DoxyCompactList}\small\item\em Given the sex, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} and height percentile at age 2, calculate the correct weight percentile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ae3f599b1a8d4da9f523518ebbdc5c673}{generate\+Next\+Year\+BMI}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Generates a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} for the person one year later. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4719130962578eab4d85abca4fae7e3c}{tail}} ()
+\begin{DoxyCompactList}\small\item\em Finds the last point of the growth trajectory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac883892453f21b89239053f7bcca9542}{just\+Before}} (long time)
+\begin{DoxyCompactList}\small\item\em Finds the closest point occurring before the given time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a8a3aa5b3b8d824e91a8131a3ee1b2e50}{just\+After}} (long time)
+\begin{DoxyCompactList}\small\item\em Finds the closest point occurring after the given time. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4b48274bea8b527bfbdc7adb2eb95292}{before\+Initial\+Sample}} (long time)
+\begin{DoxyCompactList}\small\item\em Determines whether the given time is before or after the NHANES sample selected as the seed for this growth trajectory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a95e8c19d5d9787368e3d30fa4c4c29ab}{add\+Point}} (int age\+In\+Months, long time\+In\+Simulation, double bmi)
+\begin{DoxyCompactList}\small\item\em Adds a point to the end of the trajectory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4a4df36218e914a3d4eb22c916794ee1}{add\+Point\+From\+Percentile}} (int age\+In\+Months, long time\+In\+Simulation, double percentile, String sex)
+\begin{DoxyCompactList}\small\item\em Adds a point to the end of the trajectory. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a544bbee4c559c3a066ae0b80c47caaba}{current\+BMI}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Provides the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} for the individual at the supplied time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a2a7def0315aecb68e390a4f0b9264fa1}{percentile\+To\+BMI}} (double percentile, int age\+In\+Months, String sex, double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac3d21979fcf6444bcc8adb1dae2687dc}{sigma}})
+\begin{DoxyCompactList}\small\item\em Uses extended percentiles when calculating a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} greater than or equal to the 95th percentile. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a6aa778433041ba5d883dbdf85ba790ae}{extended\+ZScore}} (double bmi, int age\+In\+Months, String sex, double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac3d21979fcf6444bcc8adb1dae2687dc}{sigma}})
+\begin{DoxyCompactList}\small\item\em Calculates the extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z Score. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac3d21979fcf6444bcc8adb1dae2687dc}{sigma}} (String sex, double age)
+\begin{DoxyCompactList}\small\item\em Calculate the parameter needed to model the half normal distribution for \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} values at or above the 95th percentile. \end{DoxyCompactList}\item 
+static Map$<$ String, Year\+Information $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a5b0eab7f21b8dc3b63580c364c59788c}{load\+Correlations}} ()
+\begin{DoxyCompactList}\small\item\em Load correlations of extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z Scores from age year to age year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a6a3b524f187a10e7eda311468511bf6b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a6a3b524f187a10e7eda311468511bf6b}} 
+static double {\bfseries SIGMA\+\_\+\+FEMALE\+\_\+A} = 0.\+0011
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a5e81072ef2c109ee38f91e6ac594547a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a5e81072ef2c109ee38f91e6ac594547a}} 
+static double {\bfseries SIGMA\+\_\+\+FEMALE\+\_\+B} = 0.\+3712
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_aa550c336efb7570a02e454dc60d68ff2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_aa550c336efb7570a02e454dc60d68ff2}} 
+static double {\bfseries SIGMA\+\_\+\+FEMALE\+\_\+C} = 0.\+8334
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_aa6c9f1a239d720d1a8f5d1d28f3752a6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_aa6c9f1a239d720d1a8f5d1d28f3752a6}} 
+static double {\bfseries SIGMA\+\_\+\+MALE\+\_\+A} = 0.\+0091
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_af2f1823e30289553b8122d0af45ee6d1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_af2f1823e30289553b8122d0af45ee6d1}} 
+static double {\bfseries SIGMA\+\_\+\+MALE\+\_\+B} = 0.\+5196
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a567169005959825bf9e9ce486b7f9b81}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a567169005959825bf9e9ce486b7f9b81}} 
+static double {\bfseries SIGMA\+\_\+\+MALE\+\_\+C} = 0.\+3728
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4bfc7c1dc261e0a009663c473b0bc87a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4bfc7c1dc261e0a009663c473b0bc87a}} 
+static long {\bfseries ONE\+\_\+\+YEAR} = \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a182480a0770b00c6382484863f48bb60}{Utilities.\+convert\+Time}}(\char`\"{}years\char`\"{}, 1)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a130c4de147ab69cdf370ed2f15c7e730}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a130c4de147ab69cdf370ed2f15c7e730}} 
+static int {\bfseries NINETEEN\+\_\+\+YEARS\+\_\+\+IN\+\_\+\+MONTHS} = 228
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides growth trajectories for individuals between 2 and 20. 
+
+For a person, starting at age 2, the trajectory will set an age + 1 year \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}}. The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} will be selected by computing the person\textquotesingle{}s current extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z score. The + 1 year extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z score will be selected from a normal distribution with a mean that is based on the previous score, correlation between extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z scores from year to year and difference in mean extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z scores from year to year. 
+
+This method uses extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z Scores, which is a concept under development at CDC. The current growth charts, were not intended to be used beyond the 97th percentile. See\+: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4528342/}{\texttt{ https\+://www.\+ncbi.\+nlm.\+nih.\+gov/pmc/articles/\+PMC4528342/}} 
+
+Further, CDC growth chart data is from 1960-\/1990. CDC defines obesity in children as having a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} at or above the 95th percentile for sex and age in months\+: \href{https://www.cdc.gov/obesity/childhood/defining.html}{\texttt{ https\+://www.\+cdc.\+gov/obesity/childhood/defining.\+html}} However, recent data shows that at least 18.\+5\% of children have obesity\+: \href{https://www.cdc.gov/obesity/data/childhood.html}{\texttt{ https\+://www.\+cdc.\+gov/obesity/data/childhood.\+html}} This oddly means that more than 18.\+5\% of the population have a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} greater than the 95th percentile. 
+
+To account for these issues, this class uses correlations and means gathered from more recent NHANES data\+: \href{https://wwwn.cdc.gov/nchs/nhanes/Default.aspx}{\texttt{ https\+://wwwn.\+cdc.\+gov/nchs/nhanes/\+Default.\+aspx}} 
+
+The class also uses extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z scores. For children with a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} value less than the 95th percentile, regular Z scores are used. At or above the 95th percentile models \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} values as a half normal distribution with a parameter sigma that is age based. The value for sigma is calculated using a quadratic function with weights obtained by examining NHANES data ADD CITATION ONCE PUBLISHED BY CDC 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a514bd2dc84b9c04c5eb3e93dde684431}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a514bd2dc84b9c04c5eb3e93dde684431}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!PediatricGrowthTrajectory@{PediatricGrowthTrajectory}}
+\index{PediatricGrowthTrajectory@{PediatricGrowthTrajectory}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{PediatricGrowthTrajectory()}{PediatricGrowthTrajectory()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+Pediatric\+Growth\+Trajectory (\begin{DoxyParamCaption}\item[{long}]{person\+Seed,  }\item[{long}]{birth\+Time }\end{DoxyParamCaption})}
+
+
+
+Starts a new pediatric growth trajectory. 
+
+Selects a start \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} between 2 and 3 years old by pulling a weighted sample from NHANES.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Seed} & The person\textquotesingle{}s seed to allow for repeatable randomization \\
+\hline
+{\em birth\+Time} & The time the individual was born in the simulation \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a95e8c19d5d9787368e3d30fa4c4c29ab}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a95e8c19d5d9787368e3d30fa4c4c29ab}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!addPoint@{addPoint}}
+\index{addPoint@{addPoint}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{addPoint()}{addPoint()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+add\+Point (\begin{DoxyParamCaption}\item[{int}]{age\+In\+Months,  }\item[{long}]{time\+In\+Simulation,  }\item[{double}]{bmi }\end{DoxyParamCaption})}
+
+
+
+Adds a point to the end of the trajectory. 
+
+It must be at the end of the trajectory, otherwise, it will throw an Illegal\+Argument\+Exception. 
+\begin{DoxyParams}{Parameters}
+{\em age\+In\+Months} & for the person at the point \\
+\hline
+{\em time\+In\+Simulation} & at the time of the point \\
+\hline
+{\em bmi} & what the body mass index should be at that point in time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4a4df36218e914a3d4eb22c916794ee1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4a4df36218e914a3d4eb22c916794ee1}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!addPointFromPercentile@{addPointFromPercentile}}
+\index{addPointFromPercentile@{addPointFromPercentile}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{addPointFromPercentile()}{addPointFromPercentile()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+add\+Point\+From\+Percentile (\begin{DoxyParamCaption}\item[{int}]{age\+In\+Months,  }\item[{long}]{time\+In\+Simulation,  }\item[{double}]{percentile,  }\item[{String}]{sex }\end{DoxyParamCaption})}
+
+
+
+Adds a point to the end of the trajectory. 
+
+It must be at the end of the trajectory, otherwise, it will throw an Illegal\+Argument\+Exception. 
+
+Instead of providing a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}}, provide a percentile, which will get converted to a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em age\+In\+Months} & for the person at the point \\
+\hline
+{\em time\+In\+Simulation} & at the time of the point \\
+\hline
+{\em percentile} & the percentile \\
+\hline
+{\em sex} & the sex of the individual \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4b48274bea8b527bfbdc7adb2eb95292}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4b48274bea8b527bfbdc7adb2eb95292}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!beforeInitialSample@{beforeInitialSample}}
+\index{beforeInitialSample@{beforeInitialSample}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{beforeInitialSample()}{beforeInitialSample()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+before\+Initial\+Sample (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Determines whether the given time is before or after the NHANES sample selected as the seed for this growth trajectory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the time is before the sample 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a544bbee4c559c3a066ae0b80c47caaba}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a544bbee4c559c3a066ae0b80c47caaba}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!currentBMI@{currentBMI}}
+\index{currentBMI@{currentBMI}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{currentBMI()}{currentBMI()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+current\+BMI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Provides the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} for the individual at the supplied time. 
+
+If the time provided is beyond the current length of the trajectory, it will generate a new point in the trajectory, if that point will happen before the person is 20 years old. 
+\begin{DoxyParams}{Parameters}
+{\em person} & to get the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} for \\
+\hline
+{\em time} & the time at which you want the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a6aa778433041ba5d883dbdf85ba790ae}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a6aa778433041ba5d883dbdf85ba790ae}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!extendedZScore@{extendedZScore}}
+\index{extendedZScore@{extendedZScore}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{extendedZScore()}{extendedZScore()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+extended\+ZScore (\begin{DoxyParamCaption}\item[{double}]{bmi,  }\item[{int}]{age\+In\+Months,  }\item[{String}]{sex,  }\item[{double}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z Score. 
+
+This is the regular Z Score when below the 95th percentile. Above that, a different, half normal distribution is used to model the values. 
+\begin{DoxyParams}{Parameters}
+{\em bmi} & you want the Z Score for \\
+\hline
+{\em age\+In\+Months} & of the person \\
+\hline
+{\em sex} & of the person \\
+\hline
+{\em sigma} & age based value to model the extended percentiles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the extended Z Score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ae3f599b1a8d4da9f523518ebbdc5c673}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ae3f599b1a8d4da9f523518ebbdc5c673}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!generateNextYearBMI@{generateNextYearBMI}}
+\index{generateNextYearBMI@{generateNextYearBMI}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{generateNextYearBMI()}{generateNextYearBMI()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+generate\+Next\+Year\+BMI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Generates a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} for the person one year later. 
+
+BMIs are generated based on correlations measured between years of age and differences in mean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}}. This takes into special consideration people at or above the 95th percentile, as the growth charts start to break down. 
+\begin{DoxyParams}{Parameters}
+{\em person} & to generate the new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} for \\
+\hline
+{\em time} & current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a8a3aa5b3b8d824e91a8131a3ee1b2e50}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a8a3aa5b3b8d824e91a8131a3ee1b2e50}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!justAfter@{justAfter}}
+\index{justAfter@{justAfter}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{justAfter()}{justAfter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+just\+After (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Finds the closest point occurring after the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & time of interest \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} just after it or null if it doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac883892453f21b89239053f7bcca9542}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac883892453f21b89239053f7bcca9542}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!justBefore@{justBefore}}
+\index{justBefore@{justBefore}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{justBefore()}{justBefore()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+just\+Before (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Finds the closest point occurring before the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & time of interest \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} just before it or null if it doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a5b0eab7f21b8dc3b63580c364c59788c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a5b0eab7f21b8dc3b63580c364c59788c}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!loadCorrelations@{loadCorrelations}}
+\index{loadCorrelations@{loadCorrelations}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{loadCorrelations()}{loadCorrelations()}}
+{\footnotesize\ttfamily static Map$<$String, Year\+Information$>$ org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+load\+Correlations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load correlations of extended \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} Z Scores from age year to age year. 
+
+\begin{DoxyReturn}{Returns}
+The correlations keyed by age year 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a2a7def0315aecb68e390a4f0b9264fa1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a2a7def0315aecb68e390a4f0b9264fa1}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!percentileToBMI@{percentileToBMI}}
+\index{percentileToBMI@{percentileToBMI}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{percentileToBMI()}{percentileToBMI()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+percentile\+To\+BMI (\begin{DoxyParamCaption}\item[{double}]{percentile,  }\item[{int}]{age\+In\+Months,  }\item[{String}]{sex,  }\item[{double}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Uses extended percentiles when calculating a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} greater than or equal to the 95th percentile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em percentile} & \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} percentile \{0 -\/ 1\} \\
+\hline
+{\em age\+In\+Months} & of the person \\
+\hline
+{\em sex} & of the person \\
+\hline
+{\em sigma} & age based value to model the extended percentiles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}}, offering a different value than the growth charts when above the 95th 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a890de40d8fcab7023c7f9cf4337312eb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a890de40d8fcab7023c7f9cf4337312eb}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!reverseWeightPercentile@{reverseWeightPercentile}}
+\index{reverseWeightPercentile@{reverseWeightPercentile}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{reverseWeightPercentile()}{reverseWeightPercentile()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+reverse\+Weight\+Percentile (\begin{DoxyParamCaption}\item[{String}]{sex,  }\item[{double}]{height\+Percentile }\end{DoxyParamCaption})}
+
+
+
+Given the sex, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} and height percentile at age 2, calculate the correct weight percentile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sex} & of the person to get the weight percentile for \\
+\hline
+{\em height\+Percentile} & or the person \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the weight percentile the person would have to be in, given their height percentile and \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac3d21979fcf6444bcc8adb1dae2687dc}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_ac3d21979fcf6444bcc8adb1dae2687dc}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!sigma@{sigma}}
+\index{sigma@{sigma}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{sigma()}{sigma()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+sigma (\begin{DoxyParamCaption}\item[{String}]{sex,  }\item[{double}]{age }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculate the parameter needed to model the half normal distribution for \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} values at or above the 95th percentile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sex} & of the person \\
+\hline
+{\em age} & of the person, precision matters! You probably don\textquotesingle{}t want to pass an integer like value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sigma to use in other calculations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4719130962578eab4d85abca4fae7e3c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_a4719130962578eab4d85abca4fae7e3c}} 
+\index{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}!tail@{tail}}
+\index{tail@{tail}!org.mitre.synthea.world.concepts.PediatricGrowthTrajectory@{org.mitre.synthea.world.concepts.PediatricGrowthTrajectory}}
+\doxysubsubsection{\texorpdfstring{tail()}{tail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point}{Point}} org.\+mitre.\+synthea.\+world.\+concepts.\+Pediatric\+Growth\+Trajectory.\+tail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds the last point of the growth trajectory. 
+
+\begin{DoxyReturn}{Returns}
+the point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Pediatric\+Growth\+Trajectory.\+java\end{DoxyCompactItemize}

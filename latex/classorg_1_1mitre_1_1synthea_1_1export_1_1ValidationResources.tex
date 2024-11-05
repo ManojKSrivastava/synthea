@@ -1,0 +1,98 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Validation\+Resources Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}\index{org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}{Validation\+Resources}} loads validation resources (e.\+g.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+Validation\+Resources\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Validation\+Result \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a154a12c1d51fa0bb611bcbaa20041dd9}{validate\+STU3}} (IBase\+Resource the\+Resource)
+\begin{DoxyCompactList}\small\item\em Runs validation on a given resource, logs the results, and returns the response. \end{DoxyCompactList}\item 
+Validation\+Result \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_aae1d75a2df612126dfd5f0e55849a997}{validate\+R4}} (IBase\+Resource the\+Resource)
+\begin{DoxyCompactList}\small\item\em Runs validation on a given resource, logs the results, and returns the response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a6b89aa7f47e5aa70dc9f6f45bf562719}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a6b89aa7f47e5aa70dc9f6f45bf562719}} 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}{Validation\+Resources}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a6b89aa7f47e5aa70dc9f6f45bf562719}{for\+STU3}} ()
+\begin{DoxyCompactList}\small\item\em Create FHIR context, validator, and validation chain for FHIR STU3. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}{Validation\+Resources}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a93cc561fa0c8c0b9f9d27a6827ddc499}{for\+R4}} (Fhir\+R4.\+USCore\+Version us\+Core\+Version)
+\begin{DoxyCompactList}\small\item\em Create FHIR context, validator, and validation chain for FHIR R4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}{Validation\+Resources}} loads validation resources (e.\+g. 
+
+Structure\+Definitions, Value\+Sets, etc) and validates Resources conforming to those profiles using the validate method. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a93cc561fa0c8c0b9f9d27a6827ddc499}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a93cc561fa0c8c0b9f9d27a6827ddc499}} 
+\index{org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}!forR4@{forR4}}
+\index{forR4@{forR4}!org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}}
+\doxysubsubsection{\texorpdfstring{forR4()}{forR4()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources}{Validation\+Resources}} org.\+mitre.\+synthea.\+export.\+Validation\+Resources.\+for\+R4 (\begin{DoxyParamCaption}\item[{Fhir\+R4.\+USCore\+Version}]{us\+Core\+Version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create FHIR context, validator, and validation chain for FHIR R4. 
+
+US Core 3, 4, 5, and 6 support is optional; only one may be loaded at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em us\+Core\+Version} & The version of US Core definitions to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_aae1d75a2df612126dfd5f0e55849a997}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_aae1d75a2df612126dfd5f0e55849a997}} 
+\index{org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}!validateR4@{validateR4}}
+\index{validateR4@{validateR4}!org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}}
+\doxysubsubsection{\texorpdfstring{validateR4()}{validateR4()}}
+{\footnotesize\ttfamily Validation\+Result org.\+mitre.\+synthea.\+export.\+Validation\+Resources.\+validate\+R4 (\begin{DoxyParamCaption}\item[{IBase\+Resource}]{the\+Resource }\end{DoxyParamCaption})}
+
+
+
+Runs validation on a given resource, logs the results, and returns the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Resource} & the resource to be validated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Validation\+Result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a154a12c1d51fa0bb611bcbaa20041dd9}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1ValidationResources_a154a12c1d51fa0bb611bcbaa20041dd9}} 
+\index{org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}!validateSTU3@{validateSTU3}}
+\index{validateSTU3@{validateSTU3}!org.mitre.synthea.export.ValidationResources@{org.mitre.synthea.export.ValidationResources}}
+\doxysubsubsection{\texorpdfstring{validateSTU3()}{validateSTU3()}}
+{\footnotesize\ttfamily Validation\+Result org.\+mitre.\+synthea.\+export.\+Validation\+Resources.\+validate\+STU3 (\begin{DoxyParamCaption}\item[{IBase\+Resource}]{the\+Resource }\end{DoxyParamCaption})}
+
+
+
+Runs validation on a given resource, logs the results, and returns the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Resource} & the resource to be validated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Validation\+Result 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/test/java/org/mitre/synthea/export/Validation\+Resources.\+java\end{DoxyCompactItemize}

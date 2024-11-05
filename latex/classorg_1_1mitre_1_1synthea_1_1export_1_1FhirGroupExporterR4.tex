@@ -1,0 +1,70 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Fhir\+Group\+Exporter\+R4 Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4}\index{org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_ae245e35f76858a0ca37798ee2c53d199}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_ae245e35f76858a0ca37798ee2c53d199}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_ae245e35f76858a0ca37798ee2c53d199}{reset\+Patient\+List}} ()
+\begin{DoxyCompactList}\small\item\em Reset the patient list to empty. \end{DoxyCompactList}\item 
+static synchronized void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_ad05f47b761176cbd9b1c22c8449c8034}{add\+Patient}} (String resource\+Id)
+\begin{DoxyCompactList}\small\item\em Add the patient to the patient list. \end{DoxyCompactList}\item 
+static Group \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_aba1677e0852fed2c40117429d907977d}{export}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand, long stop)
+\begin{DoxyCompactList}\small\item\em Export the patient list as a FHIR Group resource. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_a216a7ff916ec63103ee8fabfa5c32a37}{export\+And\+Save}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand, long stop)
+\begin{DoxyCompactList}\small\item\em Export the current patient list as a FHIR Group resource and save it as a JSON file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_ad05f47b761176cbd9b1c22c8449c8034}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_ad05f47b761176cbd9b1c22c8449c8034}} 
+\index{org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}!addPatient@{addPatient}}
+\index{addPatient@{addPatient}!org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}}
+\doxysubsubsection{\texorpdfstring{addPatient()}{addPatient()}}
+{\footnotesize\ttfamily static synchronized void org.\+mitre.\+synthea.\+export.\+Fhir\+Group\+Exporter\+R4.\+add\+Patient (\begin{DoxyParamCaption}\item[{String}]{resource\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add the patient to the patient list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Id} & The resource ID of the patient. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_aba1677e0852fed2c40117429d907977d}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_aba1677e0852fed2c40117429d907977d}} 
+\index{org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily static Group org.\+mitre.\+synthea.\+export.\+Fhir\+Group\+Exporter\+R4.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand,  }\item[{long}]{stop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Export the patient list as a FHIR Group resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & The stop time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FHIR Group resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_a216a7ff916ec63103ee8fabfa5c32a37}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirGroupExporterR4_a216a7ff916ec63103ee8fabfa5c32a37}} 
+\index{org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}!exportAndSave@{exportAndSave}}
+\index{exportAndSave@{exportAndSave}!org.mitre.synthea.export.FhirGroupExporterR4@{org.mitre.synthea.export.FhirGroupExporterR4}}
+\doxysubsubsection{\texorpdfstring{exportAndSave()}{exportAndSave()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Fhir\+Group\+Exporter\+R4.\+export\+And\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand,  }\item[{long}]{stop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Export the current patient list as a FHIR Group resource and save it as a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop} & The stop time. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Fhir\+Group\+Exporter\+R4.\+java\end{DoxyCompactItemize}

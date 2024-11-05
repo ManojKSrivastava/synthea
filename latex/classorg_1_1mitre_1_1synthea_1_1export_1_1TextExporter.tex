@@ -1,0 +1,203 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Text\+Exporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter}\index{org.mitre.synthea.export.TextExporter@{org.mitre.synthea.export.TextExporter}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for a simple human-\/readable text format per person.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter_a92ca93555efc44aa18db4a8e7c982d9a}{export\+All}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String file\+Tag, long time)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Produce and export a person\textquotesingle{}s record in the text format. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter_a91b6f29b710bbb1e4049d98c1256fedd}{export\+Encounter}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Produce and export a person\textquotesingle{}s record in text format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for a simple human-\/readable text format per person. 
+
+Sample\+: 
+\begin{DoxyPre}
+Colleen Wilkinson
+=================
+Race:                White
+Ethnicity:           Non-\/Hispanic
+Gender:              M
+Age:                 51
+Birth Date:          1966-\/10-\/26
+Marital Status:
+Provider: MCLEAN HOSPITAL CORPORATION
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+ALLERGIES:
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+MEDICATIONS:
+2016-\/12-\/28[STOPPED] : Amoxicillin 250 MG for Sinusitis
+2016-\/10-\/26[CURRENT] : 3 ML liraglutide 6 MG/ML Pen Injector for Diabetes
+2016-\/10-\/26[CURRENT] : 24 HR Metformin hydrochloride for Diabetes
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+CONDITIONS:
+2016-\/12-\/28 -\/ 2017-\/01-\/18 : Viral sinusitis (disorder)
+2016-\/10-\/26 -\/            : Diabetes
+2015-\/11-\/04 -\/ 2015-\/11-\/18 : Acute viral pharyngitis (disorder)
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+CARE PLANS:
+2016-\/10-\/26[CURRENT] : Diabetes self management plan
+                         Reason: Diabetes
+                         Activity: Diabetic diet
+                         Activity: Exercise therapy
+2010-\/09-\/15[STOPPED] : Fracture care
+                         Reason: Fracture subluxation of wrist
+                         Activity: Recommendation to rest
+                         Activity: Physical activity target light exercise
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+OBSERVATIONS:
+2017-\/11-\/01 : Blood Pressure
+\begin{DoxyItemize}
+\item Diastolic Blood Pressure                 76.0 mmHg
+\item Systolic Blood Pressure                  117.8 mmHg
+2017-\/11-\/01 : Body Mass Index                          37.2 kg/m2
+2017-\/11-\/01 : Body Weight                              122.7 kg
+2017-\/11-\/01 : Body Height                              181.6 cm
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+ENCOUNTERS:
+2017-\/11-\/01 : Encounter for check up (procedure)
+2016-\/12-\/28 : Encounter for Viral sinusitis (disorder)
+2016-\/10-\/26 : Encounter for check up (procedure)
+
+\end{DoxyItemize}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for a simple human-\/readable text format per encounter.
+Sample: 
+\begin{DoxyPre}
+Chia293 Rohan584
+================
+Race:                White
+Ethnicity:           Non-\/Hispanic
+Gender:              F
+Age:                 4
+Birth Date:          2014-\/04-\/12
+Marital Status:      S
+Outpatient Provider: BEVERLY HOSPITAL CORPORATION
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+ALLERGIES:
+ 2015-\/01-\/27 : Allergy to wheat
+ 2015-\/01-\/27 : Allergy to tree pollen
+ 2015-\/01-\/27 : Allergy to grass pollen
+ 2015-\/01-\/27 : Dander (animal) allergy
+ 2015-\/01-\/27 : Allergy to mould
+ 2015-\/01-\/27 : Allergy to bee venom
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+ENCOUNTER
+2016-\/06-\/01 : Encounter for Acute bronchitis (disorder)
+Location: BEVERLY HOSPITAL CORPORATION
+Type: ambulatory
+
+ MEDICATIONS:
+ 2016-\/06-\/01 : Acetaminophen 160 MG for Acute bronchitis (disorder)
+
+ CONDITIONS:
+ 2016-\/06-\/01 : Acute bronchitis (disorder)
+
+ CARE PLANS:
+ 2016-\/06-\/01 : Respiratory therapy
+                       Reason: Acute bronchitis (disorder)
+                       Activity: Recommendation to avoid exercise
+                       Activity: Deep breathing and coughing exercises
+
+ OBSERVATIONS:
+
+ PROCEDURES:
+ 2016-\/06-\/01 : Measurement of respiratory function (procedure) for Acute bronchitis (disorder)
+
+ IMMUNIZATIONS:
+
+ IMAGING STUDIES:
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+CONTINUING
+
+ CONDITIONS:
+ 2015-\/01-\/14 : Atopic dermatitis
+ 2016-\/04-\/18 : Childhood asthma
+
+ MEDICATIONS:
+ 2015-\/01-\/27 : 0.3 ML EPINEPHrine 0.5 MG/ML Auto-\/Injector
+ 2015-\/01-\/27 : Loratadine 5 MG Chewable Tablet
+ 2016-\/04-\/18 + 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler for Childhood asthma
+ 2016-\/04-\/18 + 120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose
+             Inhaler for Childhood asthma
+
+ CAREPLANS:
+ 2015-\/01-\/14 : Skin condition care
+                       Reason: Atopic dermatitis
+                       Activity: Application of moisturizer to skin
+ 2015-\/01-\/27 : Self care
+                       Activity: Allergy education
+                       Activity: Food allergy diet
+                       Activity: Allergy education
+ 2016-\/04-\/18 : Asthma self management
+                       Reason: Childhood asthma
+                       Activity: Inhaled steroid therapy
+                       Activity: Home nebulizer therapy
+                       Activity: Breathing control
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+\end{DoxyPre}
+ \end{DoxyPre}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter_a92ca93555efc44aa18db4a8e7c982d9a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter_a92ca93555efc44aa18db4a8e7c982d9a}} 
+\index{org.mitre.synthea.export.TextExporter@{org.mitre.synthea.export.TextExporter}!exportAll@{exportAll}}
+\index{exportAll@{exportAll}!org.mitre.synthea.export.TextExporter@{org.mitre.synthea.export.TextExporter}}
+\doxysubsubsection{\texorpdfstring{exportAll()}{exportAll()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Text\+Exporter.\+export\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{file\+Tag,  }\item[{long}]{time }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Produce and export a person\textquotesingle{}s record in the text format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to export \\
+\hline
+{\em file\+Tag} & Tag to add to the filename \\
+\hline
+{\em time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs writing to the standard export location \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter_a91b6f29b710bbb1e4049d98c1256fedd}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1TextExporter_a91b6f29b710bbb1e4049d98c1256fedd}} 
+\index{org.mitre.synthea.export.TextExporter@{org.mitre.synthea.export.TextExporter}!exportEncounter@{exportEncounter}}
+\index{exportEncounter@{exportEncounter}!org.mitre.synthea.export.TextExporter@{org.mitre.synthea.export.TextExporter}}
+\doxysubsubsection{\texorpdfstring{exportEncounter()}{exportEncounter()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Text\+Exporter.\+export\+Encounter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Produce and export a person\textquotesingle{}s record in text format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person \\
+\hline
+{\em time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs writing to the standard export location \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Text\+Exporter.\+java\end{DoxyCompactItemize}

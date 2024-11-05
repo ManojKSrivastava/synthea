@@ -1,0 +1,219 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Exporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Exporter\+Runtime\+Options}
+\begin{DoxyCompactList}\small\item\em Runtime configuration of the record exporter. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_1_1SupportedFhirVersion}{Supported\+Fhir\+Version}}
+\begin{DoxyCompactList}\small\item\em Supported FHIR versions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a958d6371c32b28b553b6402935efa85e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a958d6371c32b28b553b6402935efa85e}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a958d6371c32b28b553b6402935efa85e}{load\+Custom\+Exporters}} ()
+\begin{DoxyCompactList}\small\item\em If the config setting \char`\"{}exporter.\+enable\+\_\+custom\+\_\+exporters\char`\"{} is enabled, load classes implementing the \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PatientExporter}{Patient\+Exporter}} or \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PostCompletionExporter}{Post\+Completion\+Exporter}} interfaces from the classpath, via the Service\+Loader. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_acd4ac6a0ab0d9ab4c67985d449eead62}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time, Exporter\+Runtime\+Options options)
+\begin{DoxyCompactList}\small\item\em Export a single patient, into all the formats supported. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ab860a975bdf3b2b9c65648f319f92535}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time)
+\begin{DoxyCompactList}\small\item\em Export a single patient, into all the formats supported. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a7530fbc80ec8964e8400dde10f16c825}{overwrite\+File}} (Path file, String contents)
+\begin{DoxyCompactList}\small\item\em Overwrite a file with the given contents. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a0c9adbe1b3eeeaff0fb172aabf950181}{append\+To\+File}} (Path file, String contents)
+\begin{DoxyCompactList}\small\item\em Append contents to the end of a file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a17ea16eee80cb2641d94957d13e144ac}{run\+Post\+Completion\+Exports}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}} generator)
+\begin{DoxyCompactList}\small\item\em Run any exporters that require the full dataset to be generated prior to exporting. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_afa7edc69eac20498a729f159f21899f0}{run\+Post\+Completion\+Exports}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}} generator, Exporter\+Runtime\+Options options)
+\begin{DoxyCompactList}\small\item\em Run any exporters that require the full dataset to be generated prior to exporting. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ad79623403397d5b9c690cc2dbad69e01}{filter\+For\+Export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} original, int years\+To\+Keep, long end\+Time)
+\begin{DoxyCompactList}\small\item\em Filter the patient\textquotesingle{}s history to only the last \+\_\+\+\_\+ years but also include relevant history from before that. \end{DoxyCompactList}\item 
+static File \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ad035743ba29bd59fa0cff2e9ca507dbd}{get\+Output\+Folder}} (String folder\+Name, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Get the folder where the patient record should be stored. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a78c13ecbff16143d808dc3cf8323d051}{filename}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String tag, String extension)
+\begin{DoxyCompactList}\small\item\em Get the filename to used to export the patient record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a0c9adbe1b3eeeaff0fb172aabf950181}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a0c9adbe1b3eeeaff0fb172aabf950181}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!appendToFile@{appendToFile}}
+\index{appendToFile@{appendToFile}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{appendToFile()}{appendToFile()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Exporter.\+append\+To\+File (\begin{DoxyParamCaption}\item[{Path}]{file,  }\item[{String}]{contents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Append contents to the end of a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Path to the new file. \\
+\hline
+{\em contents} & The contents of the file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ab860a975bdf3b2b9c65648f319f92535}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ab860a975bdf3b2b9c65648f319f92535}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Exporter.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Export a single patient, into all the formats supported. 
+
+(Formats may be enabled or disabled by configuration). This method variant is only currently used by test classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Patient to export \\
+\hline
+{\em stop\+Time} & Time at which the simulation stopped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_acd4ac6a0ab0d9ab4c67985d449eead62}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_acd4ac6a0ab0d9ab4c67985d449eead62}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+export.\+Exporter.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time,  }\item[{Exporter\+Runtime\+Options}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Export a single patient, into all the formats supported. 
+
+(Formats may be enabled or disabled by configuration)
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Patient to export \\
+\hline
+{\em stop\+Time} & Time at which the simulation stopped \\
+\hline
+{\em options} & Runtime exporter options \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a78c13ecbff16143d808dc3cf8323d051}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a78c13ecbff16143d808dc3cf8323d051}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!filename@{filename}}
+\index{filename@{filename}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Exporter.\+filename (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{tag,  }\item[{String}]{extension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the filename to used to export the patient record. 
+
+See the configuration setting \char`\"{}exporter.\+use\+\_\+uuid\+\_\+filenames\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person being exported. \\
+\hline
+{\em tag} & A tag to add to the filename before the extension. \\
+\hline
+{\em extension} & The file extension to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filename only (not a path). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ad79623403397d5b9c690cc2dbad69e01}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ad79623403397d5b9c690cc2dbad69e01}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!filterForExport@{filterForExport}}
+\index{filterForExport@{filterForExport}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{filterForExport()}{filterForExport()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} org.\+mitre.\+synthea.\+export.\+Exporter.\+filter\+For\+Export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{original,  }\item[{int}]{years\+To\+Keep,  }\item[{long}]{end\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Filter the patient\textquotesingle{}s history to only the last \+\_\+\+\_\+ years but also include relevant history from before that. 
+
+Exclude any history that occurs after the specified end\+\_\+time -- typically this is the current time/\+System.\+current\+Time\+Millis().
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & The Person to filter. \\
+\hline
+{\em years\+To\+Keep} & The last \+\_\+\+\_\+ years to keep. \\
+\hline
+{\em end\+Time} & The time the history ends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Modified Person with history expunged. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ad035743ba29bd59fa0cff2e9ca507dbd}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_ad035743ba29bd59fa0cff2e9ca507dbd}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!getOutputFolder@{getOutputFolder}}
+\index{getOutputFolder@{getOutputFolder}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{getOutputFolder()}{getOutputFolder()}}
+{\footnotesize\ttfamily static File org.\+mitre.\+synthea.\+export.\+Exporter.\+get\+Output\+Folder (\begin{DoxyParamCaption}\item[{String}]{folder\+Name,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the folder where the patient record should be stored. 
+
+See the configuration settings \char`\"{}exporter.\+subfolders\+\_\+by\+\_\+id\+\_\+substring\char`\"{} and \char`\"{}exporter.\+base\+Directory\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder\+Name} & The base folder to use. \\
+\hline
+{\em person} & The person being exported. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Either the base folder provided, or a subdirectory, depending on configuration settings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a7530fbc80ec8964e8400dde10f16c825}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a7530fbc80ec8964e8400dde10f16c825}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!overwriteFile@{overwriteFile}}
+\index{overwriteFile@{overwriteFile}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{overwriteFile()}{overwriteFile()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Exporter.\+overwrite\+File (\begin{DoxyParamCaption}\item[{Path}]{file,  }\item[{String}]{contents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Overwrite a file with the given contents. 
+
+If the file doesn\textquotesingle{}t exist it will be created. 
+\begin{DoxyParams}{Parameters}
+{\em file} & Path to the new file. \\
+\hline
+{\em contents} & The contents of the file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a17ea16eee80cb2641d94957d13e144ac}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_a17ea16eee80cb2641d94957d13e144ac}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!runPostCompletionExports@{runPostCompletionExports}}
+\index{runPostCompletionExports@{runPostCompletionExports}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{runPostCompletionExports()}{runPostCompletionExports()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Exporter.\+run\+Post\+Completion\+Exports (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}}]{generator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Run any exporters that require the full dataset to be generated prior to exporting. 
+
+(E.\+g., an aggregate statistical exporter)
+
+
+\begin{DoxyParams}{Parameters}
+{\em generator} & Generator that generated the patients \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_afa7edc69eac20498a729f159f21899f0}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter_afa7edc69eac20498a729f159f21899f0}} 
+\index{org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}!runPostCompletionExports@{runPostCompletionExports}}
+\index{runPostCompletionExports@{runPostCompletionExports}!org.mitre.synthea.export.Exporter@{org.mitre.synthea.export.Exporter}}
+\doxysubsubsection{\texorpdfstring{runPostCompletionExports()}{runPostCompletionExports()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Exporter.\+run\+Post\+Completion\+Exports (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}}}]{generator,  }\item[{Exporter\+Runtime\+Options}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Run any exporters that require the full dataset to be generated prior to exporting. 
+
+(E.\+g., an aggregate statistical exporter)
+
+
+\begin{DoxyParams}{Parameters}
+{\em generator} & Generator that generated the patients \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Exporter.\+java\end{DoxyCompactItemize}

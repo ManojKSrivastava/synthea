@@ -1,0 +1,85 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Costs Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs}\index{org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Cost\+Data}
+\begin{DoxyCompactList}\small\item\em Helper class to store a grouping of cost data for a single concept. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a16aaa873258a475d63f942ef95988a87}{determine\+Cost\+Of\+Entry}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Return the cost of the given entry (Encounter/\+Procedure/\+Immunization/\+Medication). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a70c2c8ceff824bbb6c29a3af7466f28a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a70c2c8ceff824bbb6c29a3af7466f28a}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a70c2c8ceff824bbb6c29a3af7466f28a}{load\+Cost\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Load all cost data needed by the system. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a95e6740d105439cf65bfade5dc3b6a86}{has\+Cost}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Whether or not this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Health\+Record.\+Entry}} has an associated cost on a claim. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_ad983effa832ee8670ba8560ed0f1438b}{has\+Specified\+Cost}} (String code)
+\begin{DoxyCompactList}\small\item\em Returns Whether or not this code has an ossociated specified cost in one of the cost CSVs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a16aaa873258a475d63f942ef95988a87}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a16aaa873258a475d63f942ef95988a87}} 
+\index{org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}!determineCostOfEntry@{determineCostOfEntry}}
+\index{determineCostOfEntry@{determineCostOfEntry}!org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}}
+\doxysubsubsection{\texorpdfstring{determineCostOfEntry()}{determineCostOfEntry()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+world.\+concepts.\+Costs.\+determine\+Cost\+Of\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the cost of the given entry (Encounter/\+Procedure/\+Immunization/\+Medication). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & the entry to calculate the cost for. \\
+\hline
+{\em person} & the person associated with the entry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the total cost of the entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a95e6740d105439cf65bfade5dc3b6a86}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_a95e6740d105439cf65bfade5dc3b6a86}} 
+\index{org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}!hasCost@{hasCost}}
+\index{hasCost@{hasCost}!org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}}
+\doxysubsubsection{\texorpdfstring{hasCost()}{hasCost()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Costs.\+has\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Whether or not this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Health\+Record.\+Entry}} has an associated cost on a claim. 
+
+Billing cost is not necessarily reimbursed cost or paid cost.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Health\+Record.\+Entry}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the entry has a cost; false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_ad983effa832ee8670ba8560ed0f1438b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Costs_ad983effa832ee8670ba8560ed0f1438b}} 
+\index{org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}!hasSpecifiedCost@{hasSpecifiedCost}}
+\index{hasSpecifiedCost@{hasSpecifiedCost}!org.mitre.synthea.world.concepts.Costs@{org.mitre.synthea.world.concepts.Costs}}
+\doxysubsubsection{\texorpdfstring{hasSpecifiedCost()}{hasSpecifiedCost()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+world.\+concepts.\+Costs.\+has\+Specified\+Cost (\begin{DoxyParamCaption}\item[{String}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns Whether or not this code has an ossociated specified cost in one of the cost CSVs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the code has a specified cost; false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Costs.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Qualifying\+Condition\+Codes\+Eligibility Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility}\index{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}}
+
+
+An algorithm that defines the logic for eligibility based on a set of qualifying condition codes.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Qualifying\+Condition\+Codes\+Eligibility\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConf0be765f9e4ebad6b23cd2af94322627}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Qualifying\+Condition\+Codes\+Eligibility\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingCon4ada9e4b32fff555c247070b0ece28d2}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_abd49a444c5c1a45703efc70ea2c4f547}{Qualifying\+Condition\+Codes\+Eligibility}} (String codes)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_a0a2582daf85d782ed869f12da421390d}{is\+Person\+Eligible}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Returns whether the given person meets the eligibility criteria of this algorithm at the given time. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_a7032b7e7f9ad0718e2f0beb9f58679ef}{get\+Earliest\+Diagnosis}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Gets the earliest occurrence of a qualifying condition that is active/present on the person. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An algorithm that defines the logic for eligibility based on a set of qualifying condition codes. 
+
+The codes can either be input as seperated by \char`\"{}xxx$\vert$xxx\char`\"{} or can be input in a file with a heading \char`\"{}codes\char`\"{}. This can be used to define Social Security eligibility, as described by\+: \href{https://www.ssa.gov/disability/professionals/bluebook/AdultListings.htm}{\texttt{ https\+://www.\+ssa.\+gov/disability/professionals/bluebook/\+Adult\+Listings.\+htm}} Note that the SSD file (ssd\+\_\+dsiabilities.\+csv) list is incomplete, some condtions are not currently simulated in Synthea. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_abd49a444c5c1a45703efc70ea2c4f547}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_abd49a444c5c1a45703efc70ea2c4f547}} 
+\index{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}!QualifyingConditionCodesEligibility@{QualifyingConditionCodesEligibility}}
+\index{QualifyingConditionCodesEligibility@{QualifyingConditionCodesEligibility}!org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}}
+\doxysubsubsection{\texorpdfstring{QualifyingConditionCodesEligibility()}{QualifyingConditionCodesEligibility()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Qualifying\+Condition\+Codes\+Eligibility.\+Qualifying\+Condition\+Codes\+Eligibility (\begin{DoxyParamCaption}\item[{String}]{codes }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codes} & The \char`\"{}$\vert$\char`\"{} delimited string or file of qualifying attributes. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_a7032b7e7f9ad0718e2f0beb9f58679ef}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_a7032b7e7f9ad0718e2f0beb9f58679ef}} 
+\index{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}!getEarliestDiagnosis@{getEarliestDiagnosis}}
+\index{getEarliestDiagnosis@{getEarliestDiagnosis}!org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}}
+\doxysubsubsection{\texorpdfstring{getEarliestDiagnosis()}{getEarliestDiagnosis()}}
+{\footnotesize\ttfamily long org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Qualifying\+Condition\+Codes\+Eligibility.\+get\+Earliest\+Diagnosis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Gets the earliest occurrence of a qualifying condition that is active/present on the person. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Start time of the earliest qualifying condition, or Long.\+MAX\+\_\+\+VALUE if not present. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_a0a2582daf85d782ed869f12da421390d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility_a0a2582daf85d782ed869f12da421390d}} 
+\index{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}!isPersonEligible@{isPersonEligible}}
+\index{isPersonEligible@{isPersonEligible}!org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility@{org.mitre.synthea.world.agents.behaviors.planeligibility.QualifyingConditionCodesEligibility}}
+\doxysubsubsection{\texorpdfstring{isPersonEligible()}{isPersonEligible()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Qualifying\+Condition\+Codes\+Eligibility.\+is\+Person\+Eligible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Returns whether the given person meets the eligibility criteria of this algorithm at the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to check against. \\
+\hline
+{\em time} & The time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the person is eligible. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IPlanEligibility_a4c73d7c8a24783e92a978c49e6eca638}{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+IPlan\+Eligibility}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/behaviors/planeligibility/Qualifying\+Condition\+Codes\+Eligibility.\+java\end{DoxyCompactItemize}

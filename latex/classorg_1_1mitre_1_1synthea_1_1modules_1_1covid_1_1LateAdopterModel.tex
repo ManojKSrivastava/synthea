@@ -1,0 +1,126 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+covid.\+Late\+Adopter\+Model Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel}\index{org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}}
+
+
+The COVID-\/19 Immunization Module uses actual data to predict whether someone will get a vaccine during the time period for which data is available.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+modules.\+covid.\+Late\+Adopter\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+covid.\+Late\+Adopter\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_ab0e48be3445c815830d06bc3e4fcebb0}{Late\+Adopter\+Model}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Create a new model for the person at a given time in the simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a598f4cf93084221ffb8c87978a4136de}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a598f4cf93084221ffb8c87978a4136de}} 
+double {\bfseries get\+Chance\+Of\+Getting\+Shot} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a24f7f07d712e65df96e8d74790f6877b}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a24f7f07d712e65df96e8d74790f6877b}} 
+void {\bfseries set\+Chance\+Of\+Getting\+Shot} (double chance\+Of\+Getting\+Shot)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a39094182d5a62c77d1c5b4a0734e94fe}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a39094182d5a62c77d1c5b4a0734e94fe}} 
+long {\bfseries get\+Last\+Updated} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a36b25c33e0b43551d099489a0b75694c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a36b25c33e0b43551d099489a0b75694c}} 
+void {\bfseries set\+Last\+Updated} (long last\+Updated)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_ac603c18d21bc0e07779ce2d4de316319}{will\+Get\+Shot}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines if the person will attempt to get vaccinated at the given time in the simulation. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_af18e2e5e82de26934be61e856a3f4267}{is\+Not\+Getting\+Shot}} ()
+\begin{DoxyCompactList}\small\item\em At some point, the model will stop trying to see if the person will get vaccination. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a3a10e2ceb9ee4d3003701e96cbb0822b}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_a3a10e2ceb9ee4d3003701e96cbb0822b}} 
+static double {\bfseries LOWEST\+\_\+\+CHANCE\+\_\+\+THRESHOLD} = 0.\+001
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The COVID-\/19 Immunization Module uses actual data to predict whether someone will get a vaccine during the time period for which data is available. 
+
+As of writing, this is December 2020 through July 2021. The data provides administration information for particular age ranges. This is used to model the likelihood that an individual will get the vaccine. 
+
+What is unknown is the likelihood that someone will get the vaccine for the period after which we have data. Just because someone who is 70 years old has not been vaccinated by July of 2021 does not mean that they will never be vaccinated. 
+
+This class models those individuals. Chance of vaccination is again based on age, with the chance of vaccination declining by half every two week. Eventually, the chance of vaccination hits a threshold where the individual will move into a state where they will never attempt to get the vaccine. 
+
+This model assigns a much higher chance for those 15 and younger to attempt to get the vaccine as that population has not been eligible for very long at the time of writing. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_ab0e48be3445c815830d06bc3e4fcebb0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_ab0e48be3445c815830d06bc3e4fcebb0}} 
+\index{org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}!LateAdopterModel@{LateAdopterModel}}
+\index{LateAdopterModel@{LateAdopterModel}!org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}}
+\doxysubsubsection{\texorpdfstring{LateAdopterModel()}{LateAdopterModel()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+modules.\+covid.\+Late\+Adopter\+Model.\+Late\+Adopter\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Create a new model for the person at a given time in the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to model \\
+\hline
+{\em time} & current time in the simulation \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_af18e2e5e82de26934be61e856a3f4267}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_af18e2e5e82de26934be61e856a3f4267}} 
+\index{org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}!isNotGettingShot@{isNotGettingShot}}
+\index{isNotGettingShot@{isNotGettingShot}!org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}}
+\doxysubsubsection{\texorpdfstring{isNotGettingShot()}{isNotGettingShot()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+covid.\+Late\+Adopter\+Model.\+is\+Not\+Getting\+Shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+At some point, the model will stop trying to see if the person will get vaccination. 
+
+This will return if the simulation should stop trying to run will\+Get\+Shot. \begin{DoxyReturn}{Returns}
+true if the person is never going to get vaccinated and the simulation should stop calling will\+Get\+Shot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_ac603c18d21bc0e07779ce2d4de316319}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel_ac603c18d21bc0e07779ce2d4de316319}} 
+\index{org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}!willGetShot@{willGetShot}}
+\index{willGetShot@{willGetShot}!org.mitre.synthea.modules.covid.LateAdopterModel@{org.mitre.synthea.modules.covid.LateAdopterModel}}
+\doxysubsubsection{\texorpdfstring{willGetShot()}{willGetShot()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+covid.\+Late\+Adopter\+Model.\+will\+Get\+Shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Determines if the person will attempt to get vaccinated at the given time in the simulation. 
+
+Returns true if they will. Otherwise, cuts the chance that they will get vaccinated in their model in half. 
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check \\
+\hline
+{\em time} & the current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are going to seek vaccination 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/covid/Late\+Adopter\+Model.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.export.rif.CarrierExporter" name="org.mitre.synthea.export.rif.CarrierExporter">
+<area shape="rect" id="node1" title="Exporter for RIF Carrier File." alt="" coords="5,95,211,136"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter.html" title="Base class for all of the type&#45;specific exporters." alt="" coords="5,5,211,47"/>
+</map>

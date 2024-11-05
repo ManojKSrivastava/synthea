@@ -1,0 +1,214 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV}\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+
+
+Helper class to translate CSV data back and forth between raw string data and a simple data structure.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Linked\+Hash\+Map$<$ String, String $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a31b111834d8a6ebcb1bc7cb9695dfafa}{parse}} (String csv\+Data)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Parse the data from the given CSV file into a List of Maps, where the key is the column name. \end{DoxyCompactList}\item 
+static List$<$ Linked\+Hash\+Map$<$ String, String $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a6c7eb5cca9e20499a619aab198c6b2cd}{parse}} (String csv\+Data, char field\+Separator)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Parse the data from the given CSV file into a List of Maps, where the key is the column name. \end{DoxyCompactList}\item 
+static Iterator$<$ Linked\+Hash\+Map$<$ String, String $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a5b873ad148d85bc05899eef690854bbb}{parse\+Line\+By\+Line}} (String csv\+Data)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Parse the data from the given CSV file into an Iterator of Maps, where the key is the column name. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_ad46df731a5748946afc0a2cff28b8631}{unparse}} (List$<$? extends Map$<$ String, String $>$$>$ data)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Convert the data in the given List of Maps to a String of CSV data. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a256a857d52d1eb3cc677ff391d484d7b}{unparse}} (List$<$? extends Map$<$ String, String $>$$>$ data, char separator)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Convert the data in the given List of Maps to a String of CSV data. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a71a2e30b4e7d1f6128b62ab5727eb3b8}{is\+Valid}} (String csv\+Data)
+\begin{DoxyCompactList}\small\item\em Simple CSV validator that ensures the number of columns in each file matches the number of elements in each row. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a4278e141b1493f6feba8747a96ce6150}{is\+Valid}} (String csv\+Data, char separator)
+\begin{DoxyCompactList}\small\item\em Simple CSV validator that ensures the number of columns in each file matches the number of elements in each row. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to translate CSV data back and forth between raw string data and a simple data structure. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a71a2e30b4e7d1f6128b62ab5727eb3b8}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a71a2e30b4e7d1f6128b62ab5727eb3b8}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!isValid@{isValid}}
+\index{isValid@{isValid}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+is\+Valid (\begin{DoxyParamCaption}\item[{String}]{csv\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Simple CSV validator that ensures the number of columns in each file matches the number of elements in each row. 
+
+csv\+Data is split based on NEWLINE into a stream of strings.
+
+The stream is converted to a string of longs equaling the number of commas found for each csv line.
+
+Finally each distinct counts are taken from the stream. If the number of distinct counts is only one, we can confirm the CSV is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Data} & Raw CSV data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if number of commas is consistent for each line Otherwise returns False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a4278e141b1493f6feba8747a96ce6150}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a4278e141b1493f6feba8747a96ce6150}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!isValid@{isValid}}
+\index{isValid@{isValid}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+is\+Valid (\begin{DoxyParamCaption}\item[{String}]{csv\+Data,  }\item[{char}]{separator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Simple CSV validator that ensures the number of columns in each file matches the number of elements in each row. 
+
+csv\+Data is split based on NEWLINE into a stream of strings.
+
+The stream is converted to a string of longs equaling the number of commas found for each csv line.
+
+Finally each distinct counts are taken from the stream. If the number of distinct counts is only one, we can confirm the CSV is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Data} & Raw CSV data \\
+\hline
+{\em separator} & The separator used in the CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if number of commas is consistent for each line Otherwise returns False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a31b111834d8a6ebcb1bc7cb9695dfafa}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a31b111834d8a6ebcb1bc7cb9695dfafa}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!parse@{parse}}
+\index{parse@{parse}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$Linked\+Hash\+Map$<$String, String$>$ $>$ org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+parse (\begin{DoxyParamCaption}\item[{String}]{csv\+Data }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse the data from the given CSV file into a List of Maps, where the key is the column name. 
+
+Uses a Linked\+Hash\+Map specifically to ensure the order of columns is preserved in the resulting maps.
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Data} & Raw CSV data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any exception occurs while parsing the data \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a6c7eb5cca9e20499a619aab198c6b2cd}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a6c7eb5cca9e20499a619aab198c6b2cd}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!parse@{parse}}
+\index{parse@{parse}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$Linked\+Hash\+Map$<$String, String$>$ $>$ org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+parse (\begin{DoxyParamCaption}\item[{String}]{csv\+Data,  }\item[{char}]{field\+Separator }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse the data from the given CSV file into a List of Maps, where the key is the column name. 
+
+Uses a Linked\+Hash\+Map specifically to ensure the order of columns is preserved in the resulting maps.
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Data} & Raw CSV data \\
+\hline
+{\em field\+Separator} & The separator used in the CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any exception occurs while parsing the data \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a5b873ad148d85bc05899eef690854bbb}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a5b873ad148d85bc05899eef690854bbb}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!parseLineByLine@{parseLineByLine}}
+\index{parseLineByLine@{parseLineByLine}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{parseLineByLine()}{parseLineByLine()}}
+{\footnotesize\ttfamily static Iterator$<$Linked\+Hash\+Map$<$String, String$>$ $>$ org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+parse\+Line\+By\+Line (\begin{DoxyParamCaption}\item[{String}]{csv\+Data }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse the data from the given CSV file into an Iterator of Maps, where the key is the column name. 
+
+Uses a Linked\+Hash\+Map specifically to ensure the order of columns is preserved in the resulting maps. Uses an Iterator, as opposed to a list, in order to parse line by line and avoid memory overload.
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Data} & Raw CSV data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any exception occurs while parsing the data \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_ad46df731a5748946afc0a2cff28b8631}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_ad46df731a5748946afc0a2cff28b8631}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!unparse@{unparse}}
+\index{unparse@{unparse}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{unparse()}{unparse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+unparse (\begin{DoxyParamCaption}\item[{List$<$? extends Map$<$ String, String $>$$>$}]{data }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the data in the given List of Maps to a String of CSV data. 
+
+Each Map in the List represents one line of the resulting CSV. Uses the key\+Set from the first Map to populate the set of columns. This means that the first Map must contain all the columns desired in the final CSV. The order of the columns is specified by the order provided by the first Map\textquotesingle{}s key\+Set, so using an ordered Map implementation (such as Linked\+Hash\+Map) is recommended.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & List of Map data. CSV data read/modified from Simple\+CSV.\+parse(...) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data formatted as a String containing raw CSV data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & on file IO write errors. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a256a857d52d1eb3cc677ff391d484d7b}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SimpleCSV_a256a857d52d1eb3cc677ff391d484d7b}} 
+\index{org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}!unparse@{unparse}}
+\index{unparse@{unparse}!org.mitre.synthea.helpers.SimpleCSV@{org.mitre.synthea.helpers.SimpleCSV}}
+\doxysubsubsection{\texorpdfstring{unparse()}{unparse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+helpers.\+Simple\+CSV.\+unparse (\begin{DoxyParamCaption}\item[{List$<$? extends Map$<$ String, String $>$$>$}]{data,  }\item[{char}]{separator }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the data in the given List of Maps to a String of CSV data. 
+
+Each Map in the List represents one line of the resulting CSV. Uses the key\+Set from the first Map to populate the set of columns. This means that the first Map must contain all the columns desired in the final CSV. The order of the columns is specified by the order provided by the first Map\textquotesingle{}s key\+Set, so using an ordered Map implementation (such as Linked\+Hash\+Map) is recommended.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & List of Map data. CSV data read/modified from Simple\+CSV.\+parse(...) \\
+\hline
+{\em separator} & The separator used in the CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data formatted as a String containing raw CSV data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & on file IO write errors. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Simple\+CSV.\+java\end{DoxyCompactItemize}

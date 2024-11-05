@@ -1,0 +1,256 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+
+
+A \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator}{Value\+Generator}} for generation of values from a physiology simulation.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_ab6abbc1b0ccdc030a8907e3a385eb990}{Physiology\+Value\+Generator}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}} config, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1SimRunner}{Sim\+Runner}} runner, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1VitalSign}{Vital\+Sign}} vital\+Sign, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, double output\+Variance)
+\begin{DoxyCompactList}\small\item\em A generator of Vital\+Sign values from a physiology simulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1VitalSign}{Vital\+Sign}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a0b006e21232f605e21a59e0a67b5424d}{get\+Vital\+Sign}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Vital\+Sign this generator targets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a9da61162aca219cb510248cc3aaec76c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a9da61162aca219cb510248cc3aaec76c}} 
+String {\bfseries to\+String} ()
+\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a06dddfa3eead2fbc04957991a6642a94}{get\+Value}} (long time)
+\begin{DoxyCompactList}\small\item\em Get a value at a given point in time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a4fa3a44087cf97dc8b2dc2979ea309ef}{set\+Output\+Variance}} (double variance)
+\begin{DoxyCompactList}\small\item\em Sets the amount of variance to generate for the output Vital\+Sign. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a3178cf47a4e5ac72f8c4023b5024193e}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a3178cf47a4e5ac72f8c4023b5024193e}} 
+static void {\bfseries set\+Generators\+Path} (Path new\+Path)
+\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a7def54f64840d4c543007414ca105667}{load\+All}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Returns a List of all Physiology\+Value\+Generators defined in the configuration directory. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a5cebfd9a8083640bba652dd62e6bf68c}{load\+All}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String subfolder)
+\begin{DoxyCompactList}\small\item\em Loads all Physiology\+Value\+Generators defined in the given generator configuration subdirectory. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_acd8db6a554ae208e9c5f997e70acf7b7}{from\+Config}} (File config\+File, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Instantiates Physiology\+Value\+Generators for each Vital\+Sign output in the generator configuration at the provided path. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_af70477324b04febf1733316cd0e70f8b}{from\+Config}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}} generator\+Config, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Instantiates Physiology\+Value\+Generators for each Vital\+Sign output in the generator configuration. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a31249c9ba6bdf9623ffae4207c5a0449}{get\+Config}} (String config\+Path)
+\begin{DoxyCompactList}\small\item\em Retrieves the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} configuration from the given path. \end{DoxyCompactList}\item 
+static synchronized \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a453368869620f03eba258ac027dc52f8}{get\+Config}} (File config\+File)
+\begin{DoxyCompactList}\small\item\em Retrieves the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} configuration from the given file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_af4677e92975e137471ae45c9118bb64f}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_af4677e92975e137471ae45c9118bb64f}} 
+static Path {\bfseries GENERATORS\+\_\+\+PATH}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator}{Value\+Generator}} for generation of values from a physiology simulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_ab6abbc1b0ccdc030a8907e3a385eb990}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_ab6abbc1b0ccdc030a8907e3a385eb990}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!PhysiologyValueGenerator@{PhysiologyValueGenerator}}
+\index{PhysiologyValueGenerator@{PhysiologyValueGenerator}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{PhysiologyValueGenerator()}{PhysiologyValueGenerator()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+Physiology\+Value\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}}}]{config,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1SimRunner}{Sim\+Runner}}}]{runner,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1VitalSign}{Vital\+Sign}}}]{vital\+Sign,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{double}]{output\+Variance }\end{DoxyParamCaption})}
+
+
+
+A generator of Vital\+Sign values from a physiology simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & physiology configuration file \\
+\hline
+{\em person} & Person instance to generate Vital\+Signs for \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_acd8db6a554ae208e9c5f997e70acf7b7}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_acd8db6a554ae208e9c5f997e70acf7b7}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!fromConfig@{fromConfig}}
+\index{fromConfig@{fromConfig}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{fromConfig()}{fromConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}}$>$ org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+from\+Config (\begin{DoxyParamCaption}\item[{File}]{config\+File,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Instantiates Physiology\+Value\+Generators for each Vital\+Sign output in the generator configuration at the provided path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+File} & generator configuration file \\
+\hline
+{\em person} & Person to generate Vital\+Signs for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} instances 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_af70477324b04febf1733316cd0e70f8b}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_af70477324b04febf1733316cd0e70f8b}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!fromConfig@{fromConfig}}
+\index{fromConfig@{fromConfig}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{fromConfig()}{fromConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}}$>$ org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+from\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}}}]{generator\+Config,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Instantiates Physiology\+Value\+Generators for each Vital\+Sign output in the generator configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em generator\+Config} & generator configuration object \\
+\hline
+{\em person} & Person to generate Vital\+Signs for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} instances 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a453368869620f03eba258ac027dc52f8}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a453368869620f03eba258ac027dc52f8}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{getConfig()}{getConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static synchronized \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}} org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+get\+Config (\begin{DoxyParamCaption}\item[{File}]{config\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} configuration from the given file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+File} & generator configuration file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generator configuration object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a31249c9ba6bdf9623ffae4207c5a0449}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a31249c9ba6bdf9623ffae4207c5a0449}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{getConfig()}{getConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PhysiologyGeneratorConfig}{Physiology\+Generator\+Config}} org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+get\+Config (\begin{DoxyParamCaption}\item[{String}]{config\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} configuration from the given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+Path} & path to the generator configuration file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+generator configuration object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a06dddfa3eead2fbc04957991a6642a94}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a06dddfa3eead2fbc04957991a6642a94}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!getValue@{getValue}}
+\index{getValue@{getValue}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+get\+Value (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Get a value at a given point in time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time, needs to be current or in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a numerical value 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator_a6671b856e0738d8f8b566b8ded182a74}{org.\+mitre.\+synthea.\+helpers.\+Value\+Generator}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a0b006e21232f605e21a59e0a67b5424d}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a0b006e21232f605e21a59e0a67b5424d}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!getVitalSign@{getVitalSign}}
+\index{getVitalSign@{getVitalSign}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{getVitalSign()}{getVitalSign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1VitalSign}{Vital\+Sign}} org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+get\+Vital\+Sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Vital\+Sign this generator targets. 
+
+\begin{DoxyReturn}{Returns}
+Vital\+Sign target 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a7def54f64840d4c543007414ca105667}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a7def54f64840d4c543007414ca105667}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!loadAll@{loadAll}}
+\index{loadAll@{loadAll}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{loadAll()}{loadAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}}$>$ org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+load\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a List of all Physiology\+Value\+Generators defined in the configuration directory. 
+
+\begin{DoxyReturn}{Returns}
+List of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a5cebfd9a8083640bba652dd62e6bf68c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a5cebfd9a8083640bba652dd62e6bf68c}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!loadAll@{loadAll}}
+\index{loadAll@{loadAll}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{loadAll()}{loadAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}}$>$ org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+load\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{subfolder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all Physiology\+Value\+Generators defined in the given generator configuration subdirectory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to generate values for \\
+\hline
+{\em subfolder} & generator sub directory to load configurations from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator}{Physiology\+Value\+Generator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a4fa3a44087cf97dc8b2dc2979ea309ef}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator_a4fa3a44087cf97dc8b2dc2979ea309ef}} 
+\index{org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}!setOutputVariance@{setOutputVariance}}
+\index{setOutputVariance@{setOutputVariance}!org.mitre.synthea.helpers.PhysiologyValueGenerator@{org.mitre.synthea.helpers.PhysiologyValueGenerator}}
+\doxysubsubsection{\texorpdfstring{setOutputVariance()}{setOutputVariance()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Physiology\+Value\+Generator.\+set\+Output\+Variance (\begin{DoxyParamCaption}\item[{double}]{variance }\end{DoxyParamCaption})}
+
+
+
+Sets the amount of variance to generate for the output Vital\+Sign. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variance} & amount of variance \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Physiology\+Value\+Generator.\+java\end{DoxyCompactItemize}

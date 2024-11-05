@@ -1,0 +1,84 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Reaction\+Probabilities Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities}\index{org.mitre.synthea.engine.ReactionProbabilities@{org.mitre.synthea.engine.ReactionProbabilities}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities}{Reaction\+Probabilities}} is a structure to capture the kind and severity of reaction for a given Allergy\+Intolerance.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+engine.\+Reaction\+Probabilities\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+Reaction\+Probabilities\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Severity\+Probability}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a3012e10a8693412f1aa437d19996eac7}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a3012e10a8693412f1aa437d19996eac7}} 
+Health\+Record.\+Code {\bfseries get\+Reaction} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a9e0ce5bbb1871ca253c7ace7ecb06ce5}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a9e0ce5bbb1871ca253c7ace7ecb06ce5}} 
+void {\bfseries set\+Reaction} (Health\+Record.\+Code reaction)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a828d9f9380f0538218c53bb899365b34}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a828d9f9380f0538218c53bb899365b34}} 
+{\bfseries Reaction\+Probabilities} (Health\+Record.\+Code code, List$<$ Severity\+Probability $>$ possible\+Reactions)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a13862a880f01b6fe3744d00ed4b2b896}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a13862a880f01b6fe3744d00ed4b2b896}} 
+boolean {\bfseries is\+Populated} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a374d27748da10bd8dc94deaeb9bd3bf8}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a374d27748da10bd8dc94deaeb9bd3bf8}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a374d27748da10bd8dc94deaeb9bd3bf8}{build\+Reaction\+Distributions}} ()
+\begin{DoxyCompactList}\small\item\em This will validate the reaction probabilities and generate the underlying objects used to get weighted samples of reaction severities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_ac307068d27f1b2aa154d9b1d7ca2e568}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_ac307068d27f1b2aa154d9b1d7ca2e568}} 
+boolean {\bfseries validate} ()
+\item 
+Health\+Record.\+Reaction\+Severity \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a77decd893a8f6710b51a43fde8b33dc5}{generate\+Severity}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Generate a severity for the reaction of an allergy or intolerance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities}{Reaction\+Probabilities}} is a structure to capture the kind and severity of reaction for a given Allergy\+Intolerance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a77decd893a8f6710b51a43fde8b33dc5}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities_a77decd893a8f6710b51a43fde8b33dc5}} 
+\index{org.mitre.synthea.engine.ReactionProbabilities@{org.mitre.synthea.engine.ReactionProbabilities}!generateSeverity@{generateSeverity}}
+\index{generateSeverity@{generateSeverity}!org.mitre.synthea.engine.ReactionProbabilities@{org.mitre.synthea.engine.ReactionProbabilities}}
+\doxysubsubsection{\texorpdfstring{generateSeverity()}{generateSeverity()}}
+{\footnotesize\ttfamily Health\+Record.\+Reaction\+Severity org.\+mitre.\+synthea.\+engine.\+Reaction\+Probabilities.\+generate\+Severity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Generate a severity for the reaction of an allergy or intolerance. 
+
+This uses the passed in person for the random seed. There is a possibility that the reaction will not be selected for an individual. In that case, the method returns null. 
+\begin{DoxyParams}{Parameters}
+{\em person} & used for random seed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Reaction\+Severity value to indicate severity or null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Reaction\+Probabilities.\+java\end{DoxyCompactItemize}

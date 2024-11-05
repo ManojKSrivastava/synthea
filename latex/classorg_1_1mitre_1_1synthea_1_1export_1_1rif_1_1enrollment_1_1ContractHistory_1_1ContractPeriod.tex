@@ -1,0 +1,277 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History$<$ T extends Fixed\+Length\+Identifier $>$.Contract\+Period Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+
+
+Utility class that represents a period of time and an associated contract id.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ac4ad2022a96c2cb0e5f2741669d42892}{Contract\+Period}} (Local\+Date start, Local\+Date end, T contract\+ID, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PlanBenefitPackageID}{Plan\+Benefit\+Package\+ID}} plan\+Benefit\+Package\+ID)
+\begin{DoxyCompactList}\small\item\em Create a new contract period. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a159b5a4125257f5327d0053e284d4ded}{Contract\+Period}} (Local\+Date start, Local\+Date end, T contract\+ID, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Create a new contract period. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a47c353d9d1d221eda23b931843e151ac}{Contract\+Period}} (int year, int month, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Create a new contract period starting on the first days of the specified month. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_aa66c0d9e0ce22a08e236f545abb74fd1}{Contract\+Period}} (int year, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Create a new contract period starting on the first days of the specified year. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_abd3b19a4fcf0eeeeac7f08a418f171af}{get\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Get the start of the period as epoch millis. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ada481257c8835d16722deae7dea269d7}{get\+End}} ()
+\begin{DoxyCompactList}\small\item\em Get the end of the period as epoch millis. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a6fac2249b9735a533d8f24ad7ae606b7}{get\+Contract\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the contract id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ad9ee03ee52d105f4f4290e88ec5b48d7}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ad9ee03ee52d105f4f4290e88ec5b48d7}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PlanBenefitPackageID}{Plan\+Benefit\+Package\+ID}} {\bfseries get\+Plan\+Benefit\+Package\+ID} ()
+\item 
+List$<$ Integer $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a48d753d217c8508fe982d5959028a234}{get\+Covered\+Years}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of years covered by this period. \end{DoxyCompactList}\item 
+List$<$ Integer $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a7233f3960dfaa7f207633b512c911890}{get\+Covered\+Months}} (int year)
+\begin{DoxyCompactList}\small\item\em Get the list of months that are covered by this contract period in the specified year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a0a5ecdc60c326a5b15f3dde84830a7fc}{set\+End\+Before}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}{Contract\+Period}} new\+Contract\+Period)
+\begin{DoxyCompactList}\small\item\em Set the end of this period to occur the month before the start of the specified period. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ae3ce14b25d6dfef56f5efa666d7fc55f}{set\+End}} (long stop\+Time)
+\begin{DoxyCompactList}\small\item\em Set the end of this period to the supplied point in time (in ms since the epoch). \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_af5039835985568dca68977a84ad5faa7}{covers}} (long time\+Stamp)
+\begin{DoxyCompactList}\small\item\em Check whether this period includes the specified point in time. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a49609f180365dff485913294fedfb33a}{covers\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em Check if this period has any overlap with the specified year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class that represents a period of time and an associated contract id. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ac4ad2022a96c2cb0e5f2741669d42892}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ac4ad2022a96c2cb0e5f2741669d42892}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!ContractPeriod@{ContractPeriod}}
+\index{ContractPeriod@{ContractPeriod}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{ContractPeriod()}{ContractPeriod()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+Contract\+Period (\begin{DoxyParamCaption}\item[{Local\+Date}]{start,  }\item[{Local\+Date}]{end,  }\item[{T}]{contract\+ID,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1PlanBenefitPackageID}{Plan\+Benefit\+Package\+ID}}}]{plan\+Benefit\+Package\+ID }\end{DoxyParamCaption})}
+
+
+
+Create a new contract period. 
+
+Contract periods have a one month granularity so the supplied start and end are adjusted to the first day of the start month and last day of the end month. 
+\begin{DoxyParams}{Parameters}
+{\em start} & the start of the contract period \\
+\hline
+{\em end} & the end of the contract period \\
+\hline
+{\em contract\+ID} & the contract id \\
+\hline
+{\em plan\+Benefit\+Package\+ID} & the plan benefit package id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a159b5a4125257f5327d0053e284d4ded}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a159b5a4125257f5327d0053e284d4ded}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!ContractPeriod@{ContractPeriod}}
+\index{ContractPeriod@{ContractPeriod}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{ContractPeriod()}{ContractPeriod()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+Contract\+Period (\begin{DoxyParamCaption}\item[{Local\+Date}]{start,  }\item[{Local\+Date}]{end,  }\item[{T}]{contract\+ID,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})}
+
+
+
+Create a new contract period. 
+
+Contract periods have a one month granularity so the supplied start and end are adjusted to the first day of the start month and last day of the end month. A random plan benefit package ID is chosen 
+\begin{DoxyParams}{Parameters}
+{\em start} & the start of the contract period \\
+\hline
+{\em end} & the end of the contract period \\
+\hline
+{\em contract\+ID} & the contract id \\
+\hline
+{\em rand} & source of randomness \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a47c353d9d1d221eda23b931843e151ac}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a47c353d9d1d221eda23b931843e151ac}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!ContractPeriod@{ContractPeriod}}
+\index{ContractPeriod@{ContractPeriod}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{ContractPeriod()}{ContractPeriod()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+Contract\+Period (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})}
+
+
+
+Create a new contract period starting on the first days of the specified month. 
+
+A contract id is randomly assigned. 
+\begin{DoxyParams}{Parameters}
+{\em year} & the year \\
+\hline
+{\em month} & the month \\
+\hline
+{\em rand} & source of randomness \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_aa66c0d9e0ce22a08e236f545abb74fd1}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_aa66c0d9e0ce22a08e236f545abb74fd1}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!ContractPeriod@{ContractPeriod}}
+\index{ContractPeriod@{ContractPeriod}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{ContractPeriod()}{ContractPeriod()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+Contract\+Period (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})}
+
+
+
+Create a new contract period starting on the first days of the specified year. 
+
+A contract id is randomly assigned. 
+\begin{DoxyParams}{Parameters}
+{\em year} & the year \\
+\hline
+{\em rand} & source of randomness \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_af5039835985568dca68977a84ad5faa7}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_af5039835985568dca68977a84ad5faa7}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!covers@{covers}}
+\index{covers@{covers}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{covers()}{covers()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+covers (\begin{DoxyParamCaption}\item[{long}]{time\+Stamp }\end{DoxyParamCaption})}
+
+
+
+Check whether this period includes the specified point in time. 
+
+Unbounded periods are assumed to cover all times before, after or both. 
+\begin{DoxyParams}{Parameters}
+{\em time\+Stamp} & point in time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true of the period covers the point in time, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a49609f180365dff485913294fedfb33a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a49609f180365dff485913294fedfb33a}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!coversYear@{coversYear}}
+\index{coversYear@{coversYear}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{coversYear()}{coversYear()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+covers\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Check if this period has any overlap with the specified year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & the year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the period overlap with any point in the year, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a6fac2249b9735a533d8f24ad7ae606b7}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a6fac2249b9735a533d8f24ad7ae606b7}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!getContractID@{getContractID}}
+\index{getContractID@{getContractID}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{getContractID()}{getContractID()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+get\+Contract\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the contract id. 
+
+\begin{DoxyReturn}{Returns}
+the contract id or null if not enrolled during this period 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a7233f3960dfaa7f207633b512c911890}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a7233f3960dfaa7f207633b512c911890}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!getCoveredMonths@{getCoveredMonths}}
+\index{getCoveredMonths@{getCoveredMonths}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{getCoveredMonths()}{getCoveredMonths()}}
+{\footnotesize\ttfamily List$<$Integer$>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+get\+Covered\+Months (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+Get the list of months that are covered by this contract period in the specified year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & the year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a48d753d217c8508fe982d5959028a234}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a48d753d217c8508fe982d5959028a234}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!getCoveredYears@{getCoveredYears}}
+\index{getCoveredYears@{getCoveredYears}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{getCoveredYears()}{getCoveredYears()}}
+{\footnotesize\ttfamily List$<$Integer$>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+get\+Covered\+Years (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of years covered by this period. 
+
+\begin{DoxyReturn}{Returns}
+list of years 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+State\+Exception} & if the period has a null start and end \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ada481257c8835d16722deae7dea269d7}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ada481257c8835d16722deae7dea269d7}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!getEnd@{getEnd}}
+\index{getEnd@{getEnd}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{getEnd()}{getEnd()}}
+{\footnotesize\ttfamily long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the end of the period as epoch millis. 
+
+\begin{DoxyReturn}{Returns}
+the start of the period 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_abd3b19a4fcf0eeeeac7f08a418f171af}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_abd3b19a4fcf0eeeeac7f08a418f171af}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!getStart@{getStart}}
+\index{getStart@{getStart}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{getStart()}{getStart()}}
+{\footnotesize\ttfamily long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the start of the period as epoch millis. 
+
+\begin{DoxyReturn}{Returns}
+the start of the period 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ae3ce14b25d6dfef56f5efa666d7fc55f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_ae3ce14b25d6dfef56f5efa666d7fc55f}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!setEnd@{setEnd}}
+\index{setEnd@{setEnd}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{setEnd()}{setEnd()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+set\+End (\begin{DoxyParamCaption}\item[{long}]{stop\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the end of this period to the supplied point in time (in ms since the epoch). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stop\+Time} & the point in time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a0a5ecdc60c326a5b15f3dde84830a7fc}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod_a0a5ecdc60c326a5b15f3dde84830a7fc}} 
+\index{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}!setEndBefore@{setEndBefore}}
+\index{setEndBefore@{setEndBefore}!org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod@{org.mitre.synthea.export.rif.enrollment.ContractHistory$<$ T extends FixedLengthIdentifier $>$.ContractPeriod}}
+\doxysubsubsection{\texorpdfstring{setEndBefore()}{setEndBefore()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory}{org.\+mitre.\+synthea.\+export.\+rif.\+enrollment.\+Contract\+History}}$<$ T extends \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier}{Fixed\+Length\+Identifier}} $>$.Contract\+Period.\+set\+End\+Before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1enrollment_1_1ContractHistory_1_1ContractPeriod}{Contract\+Period}}}]{new\+Contract\+Period }\end{DoxyParamCaption})}
+
+
+
+Set the end of this period to occur the month before the start of the specified period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Contract\+Period} & the period to end one before \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+State\+Exception} & if the supplied period has a null start \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/enrollment/Contract\+History.\+java\end{DoxyCompactItemize}

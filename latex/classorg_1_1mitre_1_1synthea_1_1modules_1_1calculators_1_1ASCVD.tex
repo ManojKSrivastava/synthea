@@ -1,0 +1,60 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+calculators.\+ASCVD Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}\index{org.mitre.synthea.modules.calculators.ASCVD@{org.mitre.synthea.modules.calculators.ASCVD}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_aa2b3d452df709f906ba2831735e4bb22}{ascvd10\+Year}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean per\+Timestep)
+\begin{DoxyCompactList}\small\item\em Calculates the 10-\/year \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}{ASCVD}} Risk Estimates, based on the Pooled Cohort Equations for Estimation of 10-\/Year Risk of Hard \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}{ASCVD}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_add1141f697d54c6eff00be23438d6b4b}{inventory\+Attributes}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_a078a188cec0ea714289df93d98aa0667}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_a078a188cec0ea714289df93d98aa0667}} 
+static final long {\bfseries TEN\+\_\+\+YEARS\+\_\+\+IN\+\_\+\+MS} = Time\+Unit.\+DAYS.\+to\+Millis(3650)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_aa2b3d452df709f906ba2831735e4bb22}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_aa2b3d452df709f906ba2831735e4bb22}} 
+\index{org.mitre.synthea.modules.calculators.ASCVD@{org.mitre.synthea.modules.calculators.ASCVD}!ascvd10Year@{ascvd10Year}}
+\index{ascvd10Year@{ascvd10Year}!org.mitre.synthea.modules.calculators.ASCVD@{org.mitre.synthea.modules.calculators.ASCVD}}
+\doxysubsubsection{\texorpdfstring{ascvd10Year()}{ascvd10Year()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+calculators.\+ASCVD.\+ascvd10\+Year (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{per\+Timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the 10-\/year \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}{ASCVD}} Risk Estimates, based on the Pooled Cohort Equations for Estimation of 10-\/Year Risk of Hard \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}{ASCVD}}. 
+
+\href{https://doi.org/10.1161/01.cir.0000437741.48606.98}{\texttt{ https\+://doi.\+org/10.\+1161/01.\+cir.\+0000437741.\+48606.\+98}} 
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient. \\
+\hline
+{\em time} & Time to calculate risk as of \\
+\hline
+{\em per\+Timestep} & Whether to return the risk per timestep (default 7 days) or per 10 years \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the patient\textquotesingle{}s \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD}{ASCVD}} risk score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_add1141f697d54c6eff00be23438d6b4b}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1calculators_1_1ASCVD_add1141f697d54c6eff00be23438d6b4b}} 
+\index{org.mitre.synthea.modules.calculators.ASCVD@{org.mitre.synthea.modules.calculators.ASCVD}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.calculators.ASCVD@{org.mitre.synthea.modules.calculators.ASCVD}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+calculators.\+ASCVD.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/calculators/ASCVD.\+java\end{DoxyCompactItemize}

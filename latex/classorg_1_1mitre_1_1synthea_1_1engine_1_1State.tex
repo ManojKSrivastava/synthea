@@ -1,0 +1,258 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+State Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}\index{org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+engine.\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1State__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1State__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Allergy\+End}
+\begin{DoxyCompactList}\small\item\em The Allergy\+End state type indicates a point in the module where a currently active allergy should be ended, for example if the patient\textquotesingle{}s allergy subsides with time. \end{DoxyCompactList}\item 
+class {\bfseries Allergy\+Onset}
+\begin{DoxyCompactList}\small\item\em The Allergy\+Onset state type indicates a point in the module where the patient acquires an allergy. \end{DoxyCompactList}\item 
+class {\bfseries Call\+Submodule}
+\begin{DoxyCompactList}\small\item\em The Call\+Submodule state immediately processes a reusable series of states contained in a submodule. \end{DoxyCompactList}\item 
+class {\bfseries Care\+Plan\+End}
+\begin{DoxyCompactList}\small\item\em The Care\+Plan\+End state type indicates a point in the module where a currently prescribed care plan should be ended. \end{DoxyCompactList}\item 
+class {\bfseries Care\+Plan\+Start}
+\begin{DoxyCompactList}\small\item\em The Care\+Plan\+Start state type indicates a point in the module where a care plan should be prescribed. \end{DoxyCompactList}\item 
+class {\bfseries Condition\+End}
+\begin{DoxyCompactList}\small\item\em The Condition\+End state type indicates a point in the module where a currently active condition should be ended, for example if the patient has been cured of a disease. \end{DoxyCompactList}\item 
+class {\bfseries Condition\+Onset}
+\begin{DoxyCompactList}\small\item\em The Condition\+Onset state type indicates a point in the module where the patient acquires a condition. \end{DoxyCompactList}\item 
+class {\bfseries Counter}
+\begin{DoxyCompactList}\small\item\em The Counter state type increments or decrements a specified numeric attribute on the patient entity. \end{DoxyCompactList}\item 
+class {\bfseries Death}
+\begin{DoxyCompactList}\small\item\em The Death state type indicates a point in the module at which the patient dies or the patient is given a terminal diagnosis (e.\+g. \end{DoxyCompactList}\item 
+class {\bfseries Delay}
+\begin{DoxyCompactList}\small\item\em The Delay state type introduces a pre-\/configured temporal delay in the module\textquotesingle{}s timeline. \end{DoxyCompactList}\item 
+class {\bfseries Delayable}
+\item 
+class {\bfseries Device}
+\begin{DoxyCompactList}\small\item\em The Device state indicates the point that a permanent or semi-\/permanent device (for example, a prosthetic, or pacemaker) is associated to a person. \end{DoxyCompactList}\item 
+class {\bfseries Device\+End}
+\begin{DoxyCompactList}\small\item\em The Device\+End state indicates the point that a permanent or semi-\/permanent device (for example, a prosthetic, or pacemaker) is removed from a person. \end{DoxyCompactList}\item 
+class {\bfseries Diagnostic\+Report}
+\begin{DoxyCompactList}\small\item\em The Diagnostic\+Report state indicates that some number of Observations should be grouped together within a single Diagnostic Report. \end{DoxyCompactList}\item 
+class {\bfseries Encounter}
+\begin{DoxyCompactList}\small\item\em The Encounter state type indicates a point in the module where an encounter should take place. \end{DoxyCompactList}\item 
+class {\bfseries Encounter\+End}
+\begin{DoxyCompactList}\small\item\em The Encounter\+End state type indicates the end of the encounter the patient is currently in, for example when the patient leaves a clinician\textquotesingle{}s office, or is discharged from a hospital. \end{DoxyCompactList}\item 
+class {\bfseries Guard}
+\begin{DoxyCompactList}\small\item\em The Guard state type indicates a point in the module through which a patient can only pass if they meet certain logical conditions. \end{DoxyCompactList}\item 
+class {\bfseries Imaging\+Study}
+\begin{DoxyCompactList}\small\item\em The Imaging\+Study state indicates a point in the module when an imaging study was performed. \end{DoxyCompactList}\item 
+class {\bfseries Initial}
+\begin{DoxyCompactList}\small\item\em The Initial state type is the first state that is processed in a generic module. \end{DoxyCompactList}\item 
+class {\bfseries Legacy\+State\+With\+Unitless\+RV}
+\item 
+class {\bfseries Medication\+End}
+\begin{DoxyCompactList}\small\item\em The Medication\+End state type indicates a point in the module where a currently prescribed medication should be ended. \end{DoxyCompactList}\item 
+class {\bfseries Medication\+Order}
+\begin{DoxyCompactList}\small\item\em The Medication\+Order state type indicates a point in the module where a medication is prescribed. \end{DoxyCompactList}\item 
+class {\bfseries Multi\+Observation}
+\begin{DoxyCompactList}\small\item\em The Multi\+Observation state indicates that some number of Observations should be grouped together as a single observation. \end{DoxyCompactList}\item 
+class {\bfseries Observation}
+\begin{DoxyCompactList}\small\item\em The Observation state type indicates a point in the module where an observation is recorded. \end{DoxyCompactList}\item 
+class {\bfseries Physiology}
+\begin{DoxyCompactList}\small\item\em The Physiology state executes a physiology simulation according to the provided configuration options. \end{DoxyCompactList}\item 
+class {\bfseries Procedure}
+\begin{DoxyCompactList}\small\item\em The Procedure state type indicates a point in the module where a procedure should be performed. \end{DoxyCompactList}\item 
+class {\bfseries Set\+Attribute}
+\begin{DoxyCompactList}\small\item\em The Set\+Attribute state type sets a specified attribute on the patient entity. \end{DoxyCompactList}\item 
+class {\bfseries Simple}
+\begin{DoxyCompactList}\small\item\em The Simple state type indicates a state that performs no additional actions, adds no additional information to the patient entity, and just transitions to the next state. \end{DoxyCompactList}\item 
+class {\bfseries Supply\+List}
+\begin{DoxyCompactList}\small\item\em The Supply\+List state includes a list of supplies that are needed for the current encounter. \end{DoxyCompactList}\item 
+class {\bfseries Symptom}
+\begin{DoxyCompactList}\small\item\em The Symptom state type adds or updates a patient\textquotesingle{}s symptom. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1engine_1_1State_1_1TelemedicinePossibility}{Telemedicine\+Possibility}}
+\item 
+class {\bfseries Terminal}
+\begin{DoxyCompactList}\small\item\em The Terminal state type indicates the end of the module progression. \end{DoxyCompactList}\item 
+class {\bfseries Vaccine}
+\begin{DoxyCompactList}\small\item\em The Vaccine state type indicates a point in the module where the patient is vaccinated. \end{DoxyCompactList}\item 
+class {\bfseries Vital\+Sign}
+\begin{DoxyCompactList}\small\item\em The Vital\+Sign state type indicates a point in the module where a patient\textquotesingle{}s vital sign is set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a749d7f6b479faa32d6110592a7029a36}{clone}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a749d7f6b479faa32d6110592a7029a36}{clone()}} should copy all the necessary variables of this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} so that it can be correctly executed and modified without altering the original copy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a8fa27b2d4d51f75f489a1f9b11701bca}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a8fa27b2d4d51f75f489a1f9b11701bca}} 
+String {\bfseries transition} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_aceffdab4751205dd4b9fc140c6fe45fd}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_aceffdab4751205dd4b9fc140c6fe45fd}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition}{Transition}} {\bfseries get\+Transition} ()
+\item 
+abstract boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a35bf169ba609d87b10db0c5fe7e35b92}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} with the given Person at the specified time within the simulation. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a31987191cb51f121ac5094d851484bcf}{run}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean terminate\+On\+Death)
+\begin{DoxyCompactList}\small\item\em Run the state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_af966fe13298237834c8b606339e281fd}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_af966fe13298237834c8b606339e281fd}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a08b3da72ff4b6b99daf5e789e5cba581}{build}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} module, String name, Json\+Object definition)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Construct a state object from the given definitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_aa1e260f3f8e2e5ac04255518c93737e2}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_aa1e260f3f8e2e5ac04255518c93737e2}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} {\bfseries module}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_ad01b0dde1d76b5a92598037d42a0dac8}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_ad01b0dde1d76b5a92598037d42a0dac8}} 
+String {\bfseries name}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a2c857567988d1794e1c45673e615d874}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a2c857567988d1794e1c45673e615d874}} 
+Long {\bfseries entered}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a57dc9fbc1594bab36859c25a3f2423c0}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a57dc9fbc1594bab36859c25a3f2423c0}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} {\bfseries entry}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_acc586464dc2b239563ebf16702db2db1}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_acc586464dc2b239563ebf16702db2db1}} 
+Long {\bfseries exited}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a237e4a6587172b6e5f7c2335f48e66b5}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a237e4a6587172b6e5f7c2335f48e66b5}} 
+List$<$ String $>$ {\bfseries remarks}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bfseries ENABLE\+\_\+\+PHYSIOLOGY\+\_\+\+STATE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_ad6c6674fd5340c50415b504a3d845a2b}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_ad6c6674fd5340c50415b504a3d845a2b}} 
+void {\bfseries initialize} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} module, String name, Json\+Object definition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a08b3da72ff4b6b99daf5e789e5cba581}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a08b3da72ff4b6b99daf5e789e5cba581}} 
+\index{org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}!build@{build}}
+\index{build@{build}!org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} org.\+mitre.\+synthea.\+engine.\+State.\+build (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}}}]{module,  }\item[{String}]{name,  }\item[{Json\+Object}]{definition }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Construct a state object from the given definitions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & The module this state belongs to \\
+\hline
+{\em name} & The name of the state \\
+\hline
+{\em definition} & The JSON definition of the state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} object. The returned object will be of the appropriate subclass of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}}, based on the \char`\"{}type\char`\"{} parameter in the JSON definition. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the state type does not exist \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a749d7f6b479faa32d6110592a7029a36}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a749d7f6b479faa32d6110592a7029a36}} 
+\index{org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} org.\+mitre.\+synthea.\+engine.\+State.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a749d7f6b479faa32d6110592a7029a36}{clone()}} should copy all the necessary variables of this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} so that it can be correctly executed and modified without altering the original copy. 
+
+So for example, \textquotesingle{}entered\textquotesingle{} and \textquotesingle{}exited\textquotesingle{} times should not be copied so the clone can be cleanly executed. Implementation note\+: the base Object.\+clone() copies over all fields automatically (as a shallow copy), so we don\textquotesingle{}t need to do that ourselves. Instead, we should
+\begin{DoxyEnumerate}
+\item explicitly null out any fields that should not be copied, such as entered/exited
+\item deep copy mutable reference types, if necessary. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a35bf169ba609d87b10db0c5fe7e35b92}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a35bf169ba609d87b10db0c5fe7e35b92}} 
+\index{org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}!process@{process}}
+\index{process@{process}!org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily abstract boolean org.\+mitre.\+synthea.\+engine.\+State.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Process this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} with the given Person at the specified time within the simulation. 
+
+If this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} generates a Health\+Record.\+Entry during processing, then the resulting data will reside in the State.\+entry field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if processing should continue to the next state, {\ttfamily false} if the processing should halt for this time step. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a31987191cb51f121ac5094d851484bcf}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a31987191cb51f121ac5094d851484bcf}} 
+\index{org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}!run@{run}}
+\index{run@{run}!org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+engine.\+State.\+run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{terminate\+On\+Death }\end{DoxyParamCaption})}
+
+
+
+Run the state. 
+
+This processes the state, setting entered and exit times. This will terminate immediately if the patient is dead and {\ttfamily terminate\+On\+Death} is true.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person being simulated \\
+\hline
+{\em time} & the date within the simulated world \\
+\hline
+{\em terminate\+On\+Death} & whether to terminate immediately and not process the state if the patient is dead (has no effect on patients that are alive) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if processing should continue to the next state, {\ttfamily false} if the processing should halt for this time step. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a8fa1f54a64775256a2aff2d112a10f98}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1State_a8fa1f54a64775256a2aff2d112a10f98}} 
+\index{org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}!ENABLE\_PHYSIOLOGY\_STATE@{ENABLE\_PHYSIOLOGY\_STATE}}
+\index{ENABLE\_PHYSIOLOGY\_STATE@{ENABLE\_PHYSIOLOGY\_STATE}!org.mitre.synthea.engine.State@{org.mitre.synthea.engine.State}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_PHYSIOLOGY\_STATE}{ENABLE\_PHYSIOLOGY\_STATE}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+engine.\+State.\+ENABLE\+\_\+\+PHYSIOLOGY\+\_\+\+STATE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}physiology.state.enabled"{}}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/State.\+java\end{DoxyCompactItemize}

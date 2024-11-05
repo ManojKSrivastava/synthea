@@ -1,0 +1,186 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator}\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+
+
+Executes simulations of physiology models represented in SBML files.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Sim\+Config}
+\begin{DoxyCompactList}\small\item\em POJO configuration for the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_aba509c38fe563ab727e9357efdfc7dd7}{Physiology\+Simulator}} (String model\+Path, String solver\+Name, double step\+Size, double sim\+Duration)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator}{Physiology\+Simulator}} constructor. \end{DoxyCompactList}\item 
+List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_ac21f38b67d3036f1ac10da487cf8be04}{get\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em Returns a list of all model parameters. \end{DoxyCompactList}\item 
+Multi\+Table \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a89c8c89f89a5ebc28ef34ce8cd84a862}{run}} (Map$<$ String, Double $>$ inputs)  throws Derivative\+Exception 
+\begin{DoxyCompactList}\small\item\em Solves the model at each time step for the specified duration using the provided inputs as initial parameters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a0dea8ad171e580afb12757f3c7532166}{get\+Param\+Default}} (String param)
+\begin{DoxyCompactList}\small\item\em Retrieves the default value for a model parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a3d5bde4c5ac837e7410222d21955a872}{set\+Output\+Path}} (Path new\+Path)
+\begin{DoxyCompactList}\small\item\em Sets the path to place main simulation results in. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_ac76c58d1c62dcf201c4bf836d8f29235}{check\+Valid\+Solver}} (String solver\+Name)
+\begin{DoxyCompactList}\small\item\em Checks whether a string is a valid solver name. \end{DoxyCompactList}\item 
+static Set$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a02163aa71879ee1b4ef4c057189e6054}{get\+Solvers}} ()
+\begin{DoxyCompactList}\small\item\em Gets the set of valid solver names. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a489786974064644d44ea16656dfc0682}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Executes a physiology simulation according to a given configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Executes simulations of physiology models represented in SBML files. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_aba509c38fe563ab727e9357efdfc7dd7}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_aba509c38fe563ab727e9357efdfc7dd7}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!PhysiologySimulator@{PhysiologySimulator}}
+\index{PhysiologySimulator@{PhysiologySimulator}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{PhysiologySimulator()}{PhysiologySimulator()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+Physiology\+Simulator (\begin{DoxyParamCaption}\item[{String}]{model\+Path,  }\item[{String}]{solver\+Name,  }\item[{double}]{step\+Size,  }\item[{double}]{sim\+Duration }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator}{Physiology\+Simulator}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Path} & Path to the SBML file to load relative to resources/physiology \\
+\hline
+{\em solver\+Name} & Name of the solver to use \\
+\hline
+{\em step\+Size} & Time step for the simulation \\
+\hline
+{\em sim\+Duration} & Amount of time to simulate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_ac76c58d1c62dcf201c4bf836d8f29235}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_ac76c58d1c62dcf201c4bf836d8f29235}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!checkValidSolver@{checkValidSolver}}
+\index{checkValidSolver@{checkValidSolver}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{checkValidSolver()}{checkValidSolver()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+check\+Valid\+Solver (\begin{DoxyParamCaption}\item[{String}]{solver\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks whether a string is a valid solver name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solver\+Name} & solver name string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if valid false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a0dea8ad171e580afb12757f3c7532166}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a0dea8ad171e580afb12757f3c7532166}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!getParamDefault@{getParamDefault}}
+\index{getParamDefault@{getParamDefault}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{getParamDefault()}{getParamDefault()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+get\+Param\+Default (\begin{DoxyParamCaption}\item[{String}]{param }\end{DoxyParamCaption})}
+
+
+
+Retrieves the default value for a model parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & parameter to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+initial value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_ac21f38b67d3036f1ac10da487cf8be04}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_ac21f38b67d3036f1ac10da487cf8be04}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!getParameters@{getParameters}}
+\index{getParameters@{getParameters}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{getParameters()}{getParameters()}}
+{\footnotesize\ttfamily List$<$String$>$ org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+get\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a list of all model parameters. 
+
+\begin{DoxyReturn}{Returns}
+list of model parameters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a02163aa71879ee1b4ef4c057189e6054}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a02163aa71879ee1b4ef4c057189e6054}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!getSolvers@{getSolvers}}
+\index{getSolvers@{getSolvers}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{getSolvers()}{getSolvers()}}
+{\footnotesize\ttfamily static Set$<$String$>$ org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+get\+Solvers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the set of valid solver names. 
+
+\begin{DoxyReturn}{Returns}
+set of valid solver name strings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a489786974064644d44ea16656dfc0682}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a489786974064644d44ea16656dfc0682}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!main@{main}}
+\index{main@{main}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Executes a physiology simulation according to a given configuration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & command line arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a89c8c89f89a5ebc28ef34ce8cd84a862}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a89c8c89f89a5ebc28ef34ce8cd84a862}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!run@{run}}
+\index{run@{run}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily Multi\+Table org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+run (\begin{DoxyParamCaption}\item[{Map$<$ String, Double $>$}]{inputs }\end{DoxyParamCaption}) throws Derivative\+Exception}
+
+
+
+Solves the model at each time step for the specified duration using the provided inputs as initial parameters. 
+
+Provides the results as a map of value lists where each key is a model parameter. In addition to the model parameters is a \char`\"{}\+Time\char`\"{} field which provides a list of all simulated time points.
+
+Note that this method will throw a Derivative\+Exception if the model encounters an error while attempting to solve the system. 
+\begin{DoxyParams}{Parameters}
+{\em inputs} & Map of model parameter inputs. For any parameters which are not provided the default value from the model will be used. If null, all default parameter values will be used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+map of parameter names to value lists 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Derivative\+Exception} & Exception if the solver encounters errors while computing the solution to differential equations \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a3d5bde4c5ac837e7410222d21955a872}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1PhysiologySimulator_a3d5bde4c5ac837e7410222d21955a872}} 
+\index{org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}!setOutputPath@{setOutputPath}}
+\index{setOutputPath@{setOutputPath}!org.mitre.synthea.engine.PhysiologySimulator@{org.mitre.synthea.engine.PhysiologySimulator}}
+\doxysubsubsection{\texorpdfstring{setOutputPath()}{setOutputPath()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+engine.\+Physiology\+Simulator.\+set\+Output\+Path (\begin{DoxyParamCaption}\item[{Path}]{new\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the path to place main simulation results in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Path} & new path to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Physiology\+Simulator.\+java\end{DoxyCompactItemize}

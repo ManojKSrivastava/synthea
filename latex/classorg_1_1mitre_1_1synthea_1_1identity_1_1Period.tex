@@ -1,0 +1,55 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period}{}\doxysection{org.\+mitre.\+synthea.\+identity.\+Period Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period}\index{org.mitre.synthea.identity.Period@{org.mitre.synthea.identity.Period}}
+
+
+A simple representation of a time period with a start and end date.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_aeb093bde36a322304fc4aac991640c1b}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_aeb093bde36a322304fc4aac991640c1b}} 
+{\bfseries Period} (Local\+Date start, Local\+Date end)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_a3f2edcd3d08e5dab13bcaae38e71f951}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_a3f2edcd3d08e5dab13bcaae38e71f951}} 
+boolean {\bfseries contains} (Local\+Date date)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_a34a27a30da7f441331e4db246cf2fc38}{contains}} (long timestamp)
+\begin{DoxyCompactList}\small\item\em Determines whether the timestamp is within this period. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_ae72fc6d7034eb0c392b3314d9e531c8f}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_ae72fc6d7034eb0c392b3314d9e531c8f}} 
+Local\+Date {\bfseries get\+Start} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_aff7c6fe9db647a317edc934e1424ae26}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_aff7c6fe9db647a317edc934e1424ae26}} 
+Local\+Date {\bfseries get\+End} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple representation of a time period with a start and end date. 
+
+End date may be null for usage with Seeds to represent an open-\/ended range, if it is the last \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Seed}{Seed}} for an \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_a34a27a30da7f441331e4db246cf2fc38}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Period_a34a27a30da7f441331e4db246cf2fc38}} 
+\index{org.mitre.synthea.identity.Period@{org.mitre.synthea.identity.Period}!contains@{contains}}
+\index{contains@{contains}!org.mitre.synthea.identity.Period@{org.mitre.synthea.identity.Period}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+identity.\+Period.\+contains (\begin{DoxyParamCaption}\item[{long}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+Determines whether the timestamp is within this period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is a part of this period inclusive of start and end 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/identity/Period.\+java\end{DoxyCompactItemize}

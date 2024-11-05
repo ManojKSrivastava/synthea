@@ -1,0 +1,6 @@
+<map id="org.mitre.synthea.export.CSVExporter.ClaimTransaction" name="org.mitre.synthea.export.CSVExporter.ClaimTransaction">
+<area shape="rect" id="node1" title=" " alt="" coords="380,71,599,112"/>
+<area shape="rect" id="node2" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_1_1PaymentMethod.html" title=" " alt="" coords="23,5,235,47"/>
+<area shape="rect" id="node3" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_1_1ClaimTransactionType.html" title=" " alt="" coords="5,71,253,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="81,182,178,209"/>
+</map>

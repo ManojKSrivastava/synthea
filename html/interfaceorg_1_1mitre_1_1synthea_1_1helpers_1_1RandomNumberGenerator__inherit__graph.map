@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.helpers.RandomNumberGenerator" name="org.mitre.synthea.helpers.RandomNumberGenerator">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,200,80"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1DefaultRandomNumberGenerator.html" title="A default implementation of the RandomNumberGenerator interface." alt="" coords="248,5,489,47"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person.html" title=" " alt="" coords="253,71,484,112"/>
+</map>

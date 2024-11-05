@@ -1,0 +1,106 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils}{}\doxysection{org.\+mitre.\+synthea.\+export.\+flexporter.\+Fhir\+Path\+Utils Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils}\index{org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Base $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a8e3efef6688673d0f807d59f58016ac2}{evaluate\+Resource}} (Resource resource, String fhirpath)
+\begin{DoxyCompactList}\small\item\em Execute the given FHIRPath against the given resource and return the results. \end{DoxyCompactList}\item 
+static List$<$ Base $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a95b1cf5251e8fbcfcaf69c4aa9478fcd}{evaluate\+Bundle}} (Bundle bundle, String fhirpath, boolean return\+Resources)
+\begin{DoxyCompactList}\small\item\em Execute the given FHIRPath against the given Bundle and return the results. \end{DoxyCompactList}\item 
+static List$<$ Base $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a5be547bb0a244127a489d5116adc15c8}{evaluate\+Bundle}} (Bundle bundle, String fhirpath, Map$<$ String, Object $>$ variables, boolean return\+Resources)
+\begin{DoxyCompactList}\small\item\em Execute the given FHIRPath against the given Bundle and return the results. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a42e6723878f77429ea3a4d7a6e437413}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a42e6723878f77429ea3a4d7a6e437413}} 
+static boolean {\bfseries applies\+To\+Resource} (Resource resource, String fhirpath)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a68bd3749224f370d14ec8bc36fbfbaa1}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a68bd3749224f370d14ec8bc36fbfbaa1}} 
+static boolean {\bfseries applies\+To\+Bundle} (Bundle bundle, String fhirpath)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_aa14e5040a7eb8f0dd1c57a605667007a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_aa14e5040a7eb8f0dd1c57a605667007a}} 
+static boolean {\bfseries applies\+To\+Bundle} (Bundle bundle, String fhirpath, Map$<$ String, Object $>$ variables)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a95b1cf5251e8fbcfcaf69c4aa9478fcd}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a95b1cf5251e8fbcfcaf69c4aa9478fcd}} 
+\index{org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}!evaluateBundle@{evaluateBundle}}
+\index{evaluateBundle@{evaluateBundle}!org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}}
+\doxysubsubsection{\texorpdfstring{evaluateBundle()}{evaluateBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$Base$>$ org.\+mitre.\+synthea.\+export.\+flexporter.\+Fhir\+Path\+Utils.\+evaluate\+Bundle (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{String}]{fhirpath,  }\item[{boolean}]{return\+Resources }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Execute the given FHIRPath against the given Bundle and return the results. 
+
+There are a few different possibilities in how this works.
+\begin{DoxyItemize}
+\item If the FHIRPath string starts with \char`\"{}\+Bundle\char`\"{} then this will execute the FHIRPath once against the Bundle as a whole, otherwise it will be executed against each resource.
+\item If \char`\"{}return\+Resources\char`\"{} is true, then resources from the Bundle that return a truthy value will be returned, otherwise the raw value from the FHIRpath engine will be returned.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & FHIR bundle to evaluate FHIRpath against \\
+\hline
+{\em fhirpath} & FHIRPath string \\
+\hline
+{\em return\+Resources} & If true, return resources from bundle matching FHIRPath; if false, return raw values from FHIRPath engine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Differs based on input -\/ see above 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a5be547bb0a244127a489d5116adc15c8}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a5be547bb0a244127a489d5116adc15c8}} 
+\index{org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}!evaluateBundle@{evaluateBundle}}
+\index{evaluateBundle@{evaluateBundle}!org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}}
+\doxysubsubsection{\texorpdfstring{evaluateBundle()}{evaluateBundle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$Base$>$ org.\+mitre.\+synthea.\+export.\+flexporter.\+Fhir\+Path\+Utils.\+evaluate\+Bundle (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{String}]{fhirpath,  }\item[{Map$<$ String, Object $>$}]{variables,  }\item[{boolean}]{return\+Resources }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Execute the given FHIRPath against the given Bundle and return the results. 
+
+There are a few different possibilities in how this works.
+\begin{DoxyItemize}
+\item If the FHIRPath string starts with \char`\"{}\+Bundle\char`\"{} then this will execute the FHIRPath once against the Bundle as a whole, otherwise it will be executed against each resource.
+\item If \char`\"{}return\+Resources\char`\"{} is true, then resources from the Bundle that return a truthy value will be returned, otherwise the raw value from the FHIRpath engine will be returned. This version allows for specifying variables to inject into the FHIRPath.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & FHIR bundle to evaluate FHIRpath against \\
+\hline
+{\em fhirpath} & FHIRPath string \\
+\hline
+{\em variables} & FHIRPath variables to inject \\
+\hline
+{\em return\+Resources} & If true, return resources from bundle matching FHIRPath; if false, return raw values from FHIRPath engine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Differs based on input -\/ see above 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a8e3efef6688673d0f807d59f58016ac2}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FhirPathUtils_a8e3efef6688673d0f807d59f58016ac2}} 
+\index{org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}!evaluateResource@{evaluateResource}}
+\index{evaluateResource@{evaluateResource}!org.mitre.synthea.export.flexporter.FhirPathUtils@{org.mitre.synthea.export.flexporter.FhirPathUtils}}
+\doxysubsubsection{\texorpdfstring{evaluateResource()}{evaluateResource()}}
+{\footnotesize\ttfamily static List$<$Base$>$ org.\+mitre.\+synthea.\+export.\+flexporter.\+Fhir\+Path\+Utils.\+evaluate\+Resource (\begin{DoxyParamCaption}\item[{Resource}]{resource,  }\item[{String}]{fhirpath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Execute the given FHIRPath against the given resource and return the results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & FHIR resource to execute FHIRPath against \\
+\hline
+{\em fhirpath} & FHIRPath string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Raw values from FHIRPath engine evaluating the string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/flexporter/Fhir\+Path\+Utils.\+java\end{DoxyCompactItemize}

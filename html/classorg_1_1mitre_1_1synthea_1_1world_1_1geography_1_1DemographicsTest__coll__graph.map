@@ -1,0 +1,9 @@
+<map id="org.mitre.synthea.world.geography.DemographicsTest" name="org.mitre.synthea.world.geography.DemographicsTest">
+<area shape="rect" id="node1" title=" " alt="" coords="700,81,953,123"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1DefaultRandomNumberGenerator.html" title="A default implementation of the RandomNumberGenerator interface." alt="" coords="350,48,591,89"/>
+<area shape="rect" id="node3" href="$interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator.html" title=" " alt="" coords="21,5,215,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="69,71,167,98"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics.html" title="Demographics class holds the information from the towns.json and associated county config files." alt="" coords="344,113,597,155"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,122,231,149"/>
+<area shape="rect" id="node7" title=" " alt="" coords="32,215,204,242"/>
+</map>

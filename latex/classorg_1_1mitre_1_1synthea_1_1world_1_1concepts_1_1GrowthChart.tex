@@ -1,0 +1,176 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart}{}\doxysection{org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart}\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+
+
+Represents a growth chart for a particular measure.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_1_1ChartType}{Chart\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ae4da28264e1347aea67beace8250bd5e}{Growth\+Chart}} (\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_1_1ChartType}{Chart\+Type}} chart\+Type, Map$<$ String, Map$<$ String, Map$<$ String, String $>$$>$$>$ raw\+Chart)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart}{Growth\+Chart}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a2a8c97af7995bcc72df92ba195480be8}{look\+Up}} (int age\+In\+Months, String gender, double percentile)
+\begin{DoxyCompactList}\small\item\em Lookup and calculate values from the CDC growth charts, using the LMS values to calculate the intermediate values. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ac3be2b1ba2654d5c2538d682eed0ad3c}{percentile\+For}} (int age\+In\+Months, String gender, double value)
+\begin{DoxyCompactList}\small\item\em Given a value, find the percentile of the individual based on sex and age in months. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a79949ead11ecc7a78b16de1b7ec32ee5}{calculate\+ZScore}} (double percentile)
+\begin{DoxyCompactList}\small\item\em Z is the z-\/score that corresponds to the percentile. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a48afc1d4a75ea55932b8160fbcb9c204}{zscore\+To\+Percentile}} (double zscore)
+\begin{DoxyCompactList}\small\item\em Convert a z-\/score into a percentile. \end{DoxyCompactList}\item 
+static Map$<$ \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_1_1ChartType}{Chart\+Type}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart}{Growth\+Chart}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ad7db1af460a3db2e8df57740a5a55225}{load\+Charts}} ()
+\begin{DoxyCompactList}\small\item\em Load all of the charts in the cdc\+\_\+growth\+\_\+charts.\+json file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a growth chart for a particular measure. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ae4da28264e1347aea67beace8250bd5e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ae4da28264e1347aea67beace8250bd5e}} 
+\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}!GrowthChart@{GrowthChart}}
+\index{GrowthChart@{GrowthChart}!org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+\doxysubsubsection{\texorpdfstring{GrowthChart()}{GrowthChart()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart.\+Growth\+Chart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_1_1ChartType}{Chart\+Type}}}]{chart\+Type,  }\item[{Map$<$ String, Map$<$ String, Map$<$ String, String $>$$>$$>$}]{raw\+Chart }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart}{Growth\+Chart}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chart\+Type} & What kind of chart it is. \\
+\hline
+{\em raw\+Chart} & One of the raw Hash\+Maps pulled from the JSON file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a79949ead11ecc7a78b16de1b7ec32ee5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a79949ead11ecc7a78b16de1b7ec32ee5}} 
+\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}!calculateZScore@{calculateZScore}}
+\index{calculateZScore@{calculateZScore}!org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+\doxysubsubsection{\texorpdfstring{calculateZScore()}{calculateZScore()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart.\+calculate\+ZScore (\begin{DoxyParamCaption}\item[{double}]{percentile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Z is the z-\/score that corresponds to the percentile. 
+
+z-\/scores correspond exactly to percentiles, e.\+g., z-\/scores of\+: -\/1.\+881, // 3rd -\/1.\+645, // 5th -\/1.\+282, // 10th -\/0.\+674, // 25th 0, // 50th 0.\+674, // 75th 1.\+036, // 85th 1.\+282, // 90th 1.\+645, // 95th 1.\+881 // 97th 
+\begin{DoxyParams}{Parameters}
+{\em percentile} & 0.\+0 -\/ 1.\+0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+z-\/score that corresponds to the percentile. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ad7db1af460a3db2e8df57740a5a55225}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ad7db1af460a3db2e8df57740a5a55225}} 
+\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}!loadCharts@{loadCharts}}
+\index{loadCharts@{loadCharts}!org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+\doxysubsubsection{\texorpdfstring{loadCharts()}{loadCharts()}}
+{\footnotesize\ttfamily static Map$<$\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_1_1ChartType}{Chart\+Type}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart}{Growth\+Chart}}$>$ org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart.\+load\+Charts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load all of the charts in the cdc\+\_\+growth\+\_\+charts.\+json file. 
+
+\begin{DoxyReturn}{Returns}
+a map of chart type to growth chart 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a2a8c97af7995bcc72df92ba195480be8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a2a8c97af7995bcc72df92ba195480be8}} 
+\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}!lookUp@{lookUp}}
+\index{lookUp@{lookUp}!org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+\doxysubsubsection{\texorpdfstring{lookUp()}{lookUp()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart.\+look\+Up (\begin{DoxyParamCaption}\item[{int}]{age\+In\+Months,  }\item[{String}]{gender,  }\item[{double}]{percentile }\end{DoxyParamCaption})}
+
+
+
+Lookup and calculate values from the CDC growth charts, using the LMS values to calculate the intermediate values. 
+
+Reference \+: \href{https://www.cdc.gov/growthcharts/percentile_data_files.htm}{\texttt{ https\+://www.\+cdc.\+gov/growthcharts/percentile\+\_\+data\+\_\+files.\+htm}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em gender} & \char`\"{}\+M\char`\"{} $\vert$ \char`\"{}\+F\char`\"{} \\
+\hline
+{\em age\+In\+Months} & 0 -\/ 240 \\
+\hline
+{\em percentile} & 0.\+0 -\/ 1.\+0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The height (cm) or weight (kg) or \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ac3be2b1ba2654d5c2538d682eed0ad3c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_ac3be2b1ba2654d5c2538d682eed0ad3c}} 
+\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}!percentileFor@{percentileFor}}
+\index{percentileFor@{percentileFor}!org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+\doxysubsubsection{\texorpdfstring{percentileFor()}{percentileFor()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart.\+percentile\+For (\begin{DoxyParamCaption}\item[{int}]{age\+In\+Months,  }\item[{String}]{gender,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Given a value, find the percentile of the individual based on sex and age in months. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gender} & \char`\"{}\+M\char`\"{} $\vert$ \char`\"{}\+F\char`\"{} \\
+\hline
+{\em age\+In\+Months} & 0 -\/ 240 \\
+\hline
+{\em value} & the weight, height or \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BMI}{BMI}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ 1.\+0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a48afc1d4a75ea55932b8160fbcb9c204}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart_a48afc1d4a75ea55932b8160fbcb9c204}} 
+\index{org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}!zscoreToPercentile@{zscoreToPercentile}}
+\index{zscoreToPercentile@{zscoreToPercentile}!org.mitre.synthea.world.concepts.GrowthChart@{org.mitre.synthea.world.concepts.GrowthChart}}
+\doxysubsubsection{\texorpdfstring{zscoreToPercentile()}{zscoreToPercentile()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+world.\+concepts.\+Growth\+Chart.\+zscore\+To\+Percentile (\begin{DoxyParamCaption}\item[{double}]{zscore }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a z-\/score into a percentile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zscore} & The ZScore to find the percentile for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+percentile -\/ 0.\+0 -\/ 1.\+0 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/concepts/Growth\+Chart.\+java\end{DoxyCompactItemize}

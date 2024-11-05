@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.world.concepts.GrowthChart" name="org.mitre.synthea.world.concepts.GrowthChart">
+<area shape="rect" id="node1" title="Represents a growth chart for a particular measure." alt="" coords="5,80,249,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="78,5,177,32"/>
+</map>

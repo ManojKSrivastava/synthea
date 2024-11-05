@@ -1,0 +1,109 @@
+Synthea\textsuperscript{TM} is a Synthetic Patient Population Simulator. The goal is to output synthetic, realistic (but not real), patient data and associated health records in a variety of formats.
+
+Read our \href{https://github.com/synthetichealth/synthea/wiki}{\texttt{ wiki}} and \href{https://github.com/synthetichealth/synthea/wiki/Frequently-Asked-Questions}{\texttt{ Frequently Asked Questions}} for more information.
+
+Currently, Synthea\textsuperscript{TM} features include\+:
+\begin{DoxyItemize}
+\item Birth to Death Lifecycle
+\item Configuration-\/based statistics and demographics (defaults with Massachusetts Census data)
+\item Modular Rule System
+\begin{DoxyItemize}
+\item Drop in \href{https://github.com/synthetichealth/synthea/wiki/Generic-Module-Framework}{\texttt{ Generic Modules}}
+\item Custom Java rules modules for additional capabilities
+\end{DoxyItemize}
+\item Primary Care Encounters, Emergency Room Encounters, and Symptom-\/\+Driven Encounters
+\item Conditions, Allergies, Medications, Vaccinations, Observations/\+Vitals, Labs, Procedures, Care\+Plans
+\item Formats
+\begin{DoxyItemize}
+\item HL7 FHIR (R4, STU3 v3.\+0.\+1, and DSTU2 v1.\+0.\+2)
+\item Bulk FHIR in ndjson format (set {\ttfamily exporter.\+fhir.\+bulk\+\_\+data = true} to activate)
+\item C-\/\+CDA (set {\ttfamily exporter.\+ccda.\+export = true} to activate)
+\item CSV (set {\ttfamily exporter.\+csv.\+export = true} to activate)
+\item CPCDS (set {\ttfamily exporter.\+cpcds.\+export = true} to activate)
+\end{DoxyItemize}
+\item Rendering Rules and Disease Modules with \mbox{\hyperlink{classGraphviz}{Graphviz}}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md10}{}\doxysection{Developer Quick Start}\label{md_README_autotoc_md10}
+These instructions are intended for those wishing to examine the Synthea source code, extend it or build the code locally. Those just wishing to run Synthea should follow the \href{https://github.com/synthetichealth/synthea/wiki/Basic-Setup-and-Running}{\texttt{ Basic Setup and Running}} instructions instead.\hypertarget{md_README_autotoc_md11}{}\doxysubsection{Installation}\label{md_README_autotoc_md11}
+{\bfseries{System Requirements\+:}} Synthea\textsuperscript{TM} requires Java JDK 11 or newer. We strongly recommend using a Long-\/\+Term Support (LTS) release of Java, 11 or 17, as issues may occur with more recent non-\/\+LTS versions.
+
+To clone the Synthea\textsuperscript{TM} repo, then build and run the test suite\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/synthetichealth/synthea.git}
+\DoxyCodeLine{cd synthea}
+\DoxyCodeLine{./gradlew build check test}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md12}{}\doxysubsection{Changing the default properties}\label{md_README_autotoc_md12}
+The default properties file values can be found at {\ttfamily src/main/resources/synthea.\+properties}. By default, synthea does not generate CCDA, CPCDA, CSV, or Bulk FHIR (ndjson). You\textquotesingle{}ll need to adjust this file to activate these features. See the \href{https://github.com/synthetichealth/synthea/wiki}{\texttt{ wiki}} for more details, or use our \href{https://synthetichealth.github.io/spt/\#/customizer}{\texttt{ guided customizer tool}}.\hypertarget{md_README_autotoc_md13}{}\doxysubsection{Generate Synthetic Patients}\label{md_README_autotoc_md13}
+Generating the population one at a time... 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./run\_synthea}
+
+\end{DoxyCode}
+
+
+Command-\/line arguments may be provided to specify a state, city, population size, or seed for randomization. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{run\_synthea [-\/s seed] [-\/p populationSize] [state [city]]}
+
+\end{DoxyCode}
+
+
+Full usage info can be printed by passing the {\ttfamily -\/h} option. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./run\_synthea -\/h     }
+\DoxyCodeLine{}
+\DoxyCodeLine{> Task :run}
+\DoxyCodeLine{Usage: run\_synthea [options] [state [city]]}
+\DoxyCodeLine{Options: [-\/s seed]}
+\DoxyCodeLine{         [-\/cs clinicianSeed]}
+\DoxyCodeLine{         [-\/p populationSize]}
+\DoxyCodeLine{         [-\/r referenceDate as YYYYMMDD]}
+\DoxyCodeLine{         [-\/g gender]}
+\DoxyCodeLine{         [-\/a minAge-\/maxAge]}
+\DoxyCodeLine{         [-\/o overflowPopulation]}
+\DoxyCodeLine{         [-\/c localConfigFilePath]}
+\DoxyCodeLine{         [-\/d localModulesDirPath]}
+\DoxyCodeLine{         [-\/i initialPopulationSnapshotPath]}
+\DoxyCodeLine{         [-\/u updatedPopulationSnapshotPath]}
+\DoxyCodeLine{         [-\/t updateTimePeriodInDays]}
+\DoxyCodeLine{         [-\/f fixedRecordPath]}
+\DoxyCodeLine{         [-\/k keepMatchingPatientsPath]}
+\DoxyCodeLine{         [-\/-\/config*=value]}
+\DoxyCodeLine{          * any setting from src/main/resources/synthea.properties}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{run\_synthea Massachusetts}
+\DoxyCodeLine{run\_synthea Alaska Juneau}
+\DoxyCodeLine{run\_synthea -\/s 12345}
+\DoxyCodeLine{run\_synthea -\/p 1000}
+\DoxyCodeLine{run\_synthea -\/s 987 Washington Seattle}
+\DoxyCodeLine{run\_synthea -\/s 21 -\/p 100 Utah "{}Salt Lake City"{}}
+\DoxyCodeLine{run\_synthea -\/g M -\/a 60-\/65}
+\DoxyCodeLine{run\_synthea -\/p 10 -\/-\/exporter.fhir.export=true}
+\DoxyCodeLine{run\_synthea -\/-\/exporter.baseDirectory="{}./output\_tx/"{} Texas}
+
+\end{DoxyCode}
+
+
+Some settings can be changed in {\ttfamily ./src/main/resources/synthea.properties}.
+
+Synthea\textsuperscript{TM} will output patient records in C-\/\+CDA and FHIR formats in {\ttfamily ./output}.\hypertarget{md_README_autotoc_md14}{}\doxysubsection{Synthea$<$sup$>$\+TM$<$/sup$>$ Graph\+Viz}\label{md_README_autotoc_md14}
+Generate graphical visualizations of Synthea\textsuperscript{TM} rules and modules. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./gradlew graphviz}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md15}{}\doxysubsection{Concepts and Attributes}\label{md_README_autotoc_md15}
+Generate a list of concepts (used in the records) or attributes (variables on each patient). 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./gradlew concepts}
+\DoxyCodeLine{./gradlew attributes}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md16}{}\doxysection{License}\label{md_README_autotoc_md16}
+Copyright 2017-\/2023 The MITRE Corporation
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

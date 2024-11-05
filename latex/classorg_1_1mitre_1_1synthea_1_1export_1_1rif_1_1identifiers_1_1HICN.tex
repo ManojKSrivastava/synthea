@@ -1,0 +1,98 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+HICN Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}\index{org.mitre.synthea.export.rif.identifiers.HICN@{org.mitre.synthea.export.rif.identifiers.HICN}}
+
+
+Utility class for working with CMS HICNs.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+HICN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+HICN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_aee81336bfc6ff0b46410a5f7e1be900a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_aee81336bfc6ff0b46410a5f7e1be900a}} 
+{\bfseries HICN} (long value)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a09b32fc99e2476c8fe64eae3592c8f2f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a09b32fc99e2476c8fe64eae3592c8f2f}} 
+{\bfseries HICN} (long value, boolean fake)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a3d95c21c745c48ef4a44d7a2e7242a14}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a3d95c21c745c48ef4a44d7a2e7242a14}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} {\bfseries next} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_acde8f584f7243ee70fac182d464b1501}{parse}} (String str)
+\begin{DoxyCompactList}\small\item\em Parse a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} from a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_ab3f26123f62177e521bf025eb758bb42}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_ab3f26123f62177e521bf025eb758bb42}} 
+static final long {\bfseries MIN\+\_\+\+HICN} = 0
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a20bc2037e3925efcbe435385b1a71f76}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a20bc2037e3925efcbe435385b1a71f76}} 
+static final long {\bfseries MAX\+\_\+\+FAKE\+\_\+\+HICN} = max\+Value(FAKE\+\_\+\+HICN\+\_\+\+FORMAT)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a5f64e8ba6af1a4547c29c136a0b9e52c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_a5f64e8ba6af1a4547c29c136a0b9e52c}} 
+static final long {\bfseries MAX\+\_\+\+REAL\+\_\+\+HICN} = max\+Value(REAL\+\_\+\+HICN\+\_\+\+FORMAT)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Utility class for working with CMS HICNs. 
+
+Note that, when used for fake HICNs, this class fixes the value of character position 1 to be \textquotesingle{}T\textquotesingle{}.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/CMSgov/beneficiary-fhir-data/blob/master/apps/bfd-model/bfd-model-rif-samples/dev/design-sample-data-sets.md}{\texttt{ https\+://github.\+com/\+CMSgov/beneficiary-\/fhir-\/data/blob/master/apps/bfd-\/model/bfd-\/model-\/rif-\/samples/dev/design-\/sample-\/data-\/sets.\+md}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_acde8f584f7243ee70fac182d464b1501}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN_acde8f584f7243ee70fac182d464b1501}} 
+\index{org.mitre.synthea.export.rif.identifiers.HICN@{org.mitre.synthea.export.rif.identifiers.HICN}!parse@{parse}}
+\index{parse@{parse}!org.mitre.synthea.export.rif.identifiers.HICN@{org.mitre.synthea.export.rif.identifiers.HICN}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+HICN.\+parse (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if st isn\textquotesingle{}t a valid \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1HICN}{HICN}} \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/identifiers/HICN.\+java\end{DoxyCompactItemize}

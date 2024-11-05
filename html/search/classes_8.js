@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['identityrecord_1205',['IdentityRecord',['../interfaceorg_1_1mitre_1_1synthea_1_1identity_1_1IdentityRecord.html',1,'org::mitre::synthea::identity']]],
+  ['imagingstudy_1206',['ImagingStudy',['../classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy.html',1,'org::mitre::synthea::world::concepts::HealthRecord']]],
+  ['immunization_1207',['Immunization',['../classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Immunization.html',1,'org::mitre::synthea::world::concepts::HealthRecord']]],
+  ['immunizations_1208',['Immunizations',['../classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations.html',1,'org::mitre::synthea::modules']]],
+  ['immunizationstest_1209',['ImmunizationsTest',['../classorg_1_1mitre_1_1synthea_1_1modules_1_1ImmunizationsTest.html',1,'org::mitre::synthea::modules']]],
+  ['incomespenddowneligibility_1210',['IncomeSpenddownEligibility',['../classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IncomeSpenddownEligibility.html',1,'org::mitre::synthea::world::agents::behaviors::planeligibility']]],
+  ['innerclasstypeadapterfactory_1211',['InnerClassTypeAdapterFactory',['../classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory.html',1,'org::mitre::synthea::helpers']]],
+  ['inpatient_1212',['INPATIENT',['../enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1INPATIENT.html',1,'org::mitre::synthea::export::rif::BB2RIFStructure']]],
+  ['inpatientexporter_1213',['InpatientExporter',['../classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1InpatientExporter.html',1,'org::mitre::synthea::export::rif']]],
+  ['instance_1214',['Instance',['../classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy_1_1Instance.html',1,'org::mitre::synthea::world::concepts::HealthRecord::ImagingStudy']]],
+  ['insuranceplan_1215',['InsurancePlan',['../classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan.html',1,'org::mitre::synthea::world::concepts::healthinsurance']]],
+  ['inventory_1216',['Inventory',['../classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory.html',1,'org::mitre::synthea::helpers::Attributes']]],
+  ['iomapper_1217',['IoMapper',['../classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1IoMapper.html',1,'org::mitre::synthea::helpers::physiology']]],
+  ['iomappertest_1218',['IoMapperTest',['../classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1IoMapperTest.html',1,'org::mitre::synthea::helpers::physiology']]],
+  ['iotype_1219',['IoType',['../enumorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1IoMapper_1_1IoType.html',1,'org::mitre::synthea::helpers::physiology::IoMapper']]],
+  ['ipayeradjustment_1220',['IPayerAdjustment',['../interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1IPayerAdjustment.html',1,'org::mitre::synthea::world::agents::behaviors::payeradjustment']]],
+  ['iplaneligibility_1221',['IPlanEligibility',['../interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IPlanEligibility.html',1,'org::mitre::synthea::world::agents::behaviors::planeligibility']]],
+  ['iplanfinder_1222',['IPlanFinder',['../interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planfinder_1_1IPlanFinder.html',1,'org::mitre::synthea::world::agents::behaviors::planfinder']]],
+  ['iproviderfinder_1223',['IProviderFinder',['../interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1providerfinder_1_1IProviderFinder.html',1,'org::mitre::synthea::world::agents::behaviors::providerfinder']]]
+];

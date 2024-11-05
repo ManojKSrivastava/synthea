@@ -1,0 +1,150 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{}\doxysection{org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}\index{org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}}
+
+
+Simple \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} class that is optimized for query speed.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a2747dbb85afca8a128b90fbc6481777d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a2747dbb85afca8a128b90fbc6481777d}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a2747dbb85afca8a128b90fbc6481777d}{Quad\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor creates a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} centered around (0, 0) with bounds around the center point of 180. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a30d268867dac90426583fe9080566785}{has\+Bounds\+Around}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}} item)
+\begin{DoxyCompactList}\small\item\em Check if this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} should contain this item. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_ae3a67171997c6f418aa0a0b1a2a51437}{has\+Bounds\+Around}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}} item, double error)
+\begin{DoxyCompactList}\small\item\em Check if this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} should contain this item, given some error (in distance) around the item location. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a7f35fcfcdd09561362136b22f173d9e0}{insert}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}} item)
+\begin{DoxyCompactList}\small\item\em Insert an item into this tree. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a28b01fc6f8e8dd62e50d8450e150c3b6}{query}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}} query\+Point, double radius)
+\begin{DoxyCompactList}\small\item\em Query this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} for elements around a given point. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a7c147cbb6b16dc9f1982f898bddd9057}{size}} ()
+\begin{DoxyCompactList}\small\item\em Get the count of elements within this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} including all branches. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a84172478e619acf6c94760657771a403}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a84172478e619acf6c94760657771a403}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a19c7e7e57257c1f139c39078d71bb324}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a19c7e7e57257c1f139c39078d71bb324}} 
+boolean {\bfseries is\+Leaf} = true
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_aad3c67cfa57ad17e2be5aec17fc69f96}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_aad3c67cfa57ad17e2be5aec17fc69f96}} 
+List$<$ \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_aad3c67cfa57ad17e2be5aec17fc69f96}{data}} = new Array\+List$<$\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}}$>$()
+\begin{DoxyCompactList}\small\item\em local data before split. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_abdd7045d1c00b66ac3129505aeb27d97}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_abdd7045d1c00b66ac3129505aeb27d97}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}}\mbox{[}$\,$\mbox{]} {\bfseries branches}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} class that is optimized for query speed. 
+
+The query is simplified, because it only takes into account Euclidean distance and does not take into account the elevation, altitude, curvature of the Earth, or features such as roads, mountains, or bodies of water. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a30d268867dac90426583fe9080566785}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a30d268867dac90426583fe9080566785}} 
+\index{org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}!hasBoundsAround@{hasBoundsAround}}
+\index{hasBoundsAround@{hasBoundsAround}!org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}}
+\doxysubsubsection{\texorpdfstring{hasBoundsAround()}{hasBoundsAround()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree.\+has\+Bounds\+Around (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Check if this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} should contain this item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the item should be within the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}}, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_ae3a67171997c6f418aa0a0b1a2a51437}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_ae3a67171997c6f418aa0a0b1a2a51437}} 
+\index{org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}!hasBoundsAround@{hasBoundsAround}}
+\index{hasBoundsAround@{hasBoundsAround}!org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}}
+\doxysubsubsection{\texorpdfstring{hasBoundsAround()}{hasBoundsAround()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree.\+has\+Bounds\+Around (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}}}]{item,  }\item[{double}]{error }\end{DoxyParamCaption})}
+
+
+
+Check if this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} should contain this item, given some error (in distance) around the item location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to check. \\
+\hline
+{\em error} & The error around the item in distance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the item should be within the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}}, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a7f35fcfcdd09561362136b22f173d9e0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a7f35fcfcdd09561362136b22f173d9e0}} 
+\index{org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}!insert@{insert}}
+\index{insert@{insert}!org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree.\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Insert an item into this tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the item was inserted, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a28b01fc6f8e8dd62e50d8450e150c3b6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a28b01fc6f8e8dd62e50d8450e150c3b6}} 
+\index{org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}!query@{query}}
+\index{query@{query}!org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}}$>$ org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree.\+query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement}{Quad\+Tree\+Element}}}]{query\+Point,  }\item[{double}]{radius }\end{DoxyParamCaption})}
+
+
+
+Query this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} for elements around a given point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+Point} & The query point to search around. \\
+\hline
+{\em radius} & The radius to search. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A non-\/null list of elements within the radius around the query\+Point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a7c147cbb6b16dc9f1982f898bddd9057}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree_a7c147cbb6b16dc9f1982f898bddd9057}} 
+\index{org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}!size@{size}}
+\index{size@{size}!org.mitre.synthea.world.geography.quadtree.QuadTree@{org.mitre.synthea.world.geography.quadtree.QuadTree}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+geography.\+quadtree.\+Quad\+Tree.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the count of elements within this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} including all branches. 
+
+\begin{DoxyReturn}{Returns}
+The count of elements within this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTree}{Quad\+Tree}} including all branches. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/geography/quadtree/Quad\+Tree.\+java\end{DoxyCompactItemize}

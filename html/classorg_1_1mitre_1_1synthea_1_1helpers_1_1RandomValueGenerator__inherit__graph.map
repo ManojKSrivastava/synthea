@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.helpers.RandomValueGenerator" name="org.mitre.synthea.helpers.RandomValueGenerator">
+<area shape="rect" id="node1" title="Generate random values within a defined range." alt="" coords="5,169,200,211"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator.html" title="The base for all value generators." alt="" coords="5,80,200,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="53,5,152,32"/>
+</map>

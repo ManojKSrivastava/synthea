@@ -1,0 +1,112 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+CSVExporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}\index{org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}}
+
+
+Researchers have requested a simple table-\/based format that could easily be imported into any database for analysis.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_1_1ClaimTransaction}{Claim\+Transaction}}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_1_1ClaimTransactionType}{Claim\+Transaction\+Type}}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_1_1PaymentMethod}{Payment\+Method}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a9b4016185a5b82e8eb4a3deb5240a9c6}{export\+Organizations\+And\+Providers}} ()  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export the organizations.\+csv and providers.\+csv files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a0f4de1cc77d66f3942c42503c69c505d}{export\+Payers}} ()  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export the payers.\+csv file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a5904825ecba7fcf384f257565746ff99}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Add a single Person\textquotesingle{}s health record info to the CSV records. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_afab8116b55dd81f92a1db774957f0189}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Researchers have requested a simple table-\/based format that could easily be imported into any database for analysis. 
+
+Unlike other formats which export a single record per patient, this format generates 9 total files, and adds lines to each based on the clinical events for each patient. These files are intended to be analogous to database tables, with the patient UUID being a foreign key. Files include\+: patients.\+csv, encounters.\+csv, allergies.\+csv, medications.\+csv, conditions.\+csv, careplans.\+csv, observations.\+csv, procedures.\+csv, and immunizations.\+csv. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a5904825ecba7fcf384f257565746ff99}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a5904825ecba7fcf384f257565746ff99}} 
+\index{org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+CSVExporter.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Add a single Person\textquotesingle{}s health record info to the CSV records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to write record data for \\
+\hline
+{\em time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any IO error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a9b4016185a5b82e8eb4a3deb5240a9c6}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a9b4016185a5b82e8eb4a3deb5240a9c6}} 
+\index{org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}!exportOrganizationsAndProviders@{exportOrganizationsAndProviders}}
+\index{exportOrganizationsAndProviders@{exportOrganizationsAndProviders}!org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}}
+\doxysubsubsection{\texorpdfstring{exportOrganizationsAndProviders()}{exportOrganizationsAndProviders()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+CSVExporter.\+export\+Organizations\+And\+Providers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export the organizations.\+csv and providers.\+csv files. 
+
+This method should be called once after all the Patient records have been exported using the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a5904825ecba7fcf384f257565746ff99}{export(\+Person,long)}} method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any IO errors occur. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a0f4de1cc77d66f3942c42503c69c505d}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a0f4de1cc77d66f3942c42503c69c505d}} 
+\index{org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}!exportPayers@{exportPayers}}
+\index{exportPayers@{exportPayers}!org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}}
+\doxysubsubsection{\texorpdfstring{exportPayers()}{exportPayers()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+CSVExporter.\+export\+Payers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export the payers.\+csv file. 
+
+This method should be called once after all the Patient records have been exported using the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_a5904825ecba7fcf384f257565746ff99}{export(\+Person,long)}} method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any IO errors occur. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_afab8116b55dd81f92a1db774957f0189}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter_afab8116b55dd81f92a1db774957f0189}} 
+\index{org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!org.mitre.synthea.export.CSVExporter@{org.mitre.synthea.export.CSVExporter}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}} org.\+mitre.\+synthea.\+export.\+CSVExporter.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}}. 
+
+\begin{DoxyReturn}{Returns}
+the current instance of the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CSVExporter}{CSVExporter}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/CSVExporter.\+java\end{DoxyCompactItemize}

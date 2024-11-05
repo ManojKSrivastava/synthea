@@ -1,0 +1,23 @@
+\hypertarget{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PostCompletionExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Post\+Completion\+Exporter Interface Reference}
+\label{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PostCompletionExporter}\index{org.mitre.synthea.export.PostCompletionExporter@{org.mitre.synthea.export.PostCompletionExporter}}
+
+
+This interface defines an exporter that will be invoked after the entire population has been generated.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PostCompletionExporter_a7525292a8a2fee05f05926ccbd33fca3}\label{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PostCompletionExporter_a7525292a8a2fee05f05926ccbd33fca3}} 
+void \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PostCompletionExporter_a7525292a8a2fee05f05926ccbd33fca3}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Generator}{Generator}} generator, Exporter\+Runtime\+Options options)
+\begin{DoxyCompactList}\small\item\em Export data based on the given Generator and options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface defines an exporter that will be invoked after the entire population has been generated. 
+
+Example uses for this type of exporter include metadata, Payer-\/ or Provider-\/based data, or working in combination with a separate \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1export_1_1PatientExporter}{Patient\+Exporter}} where a final step is only performed once every patient has been handled. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Post\+Completion\+Exporter.\+java\end{DoxyCompactItemize}

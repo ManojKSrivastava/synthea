@@ -1,0 +1,126 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+Immunizations Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations}\index{org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}}
+
+
+This is a complete, but fairly simplistic approach to synthesizing immunizations.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_ad38806196b7ec347b2159d6bc0504751}{perform\+Encounter}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Administer vaccines to the person at the state time according to the required immunization schedule. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a9123cb9b7cb482a1a95fe27d0ecf4ef7}{immunization\+Due}} (String immunization, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, Map$<$ String, List$<$ Long $>$$>$ immunizations\+Given)
+\begin{DoxyCompactList}\small\item\em Return whether or not the specified immunization is due. \end{DoxyCompactList}\item 
+static Collection$<$ Code $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_ac6d1164b95aa54a5d2b43f458fe04113}{get\+All\+Codes}} ()
+\begin{DoxyCompactList}\small\item\em Get all of the Codes this module uses, for inventory purposes. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a82f11778a5252223af1f5bfb3a5c3f79}{get\+Maximum\+Doses}} (String code)
+\begin{DoxyCompactList}\small\item\em Get the maximum number of vaccine doses for a particular code. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_aed6cb7949be84f5210c2fcbe204b7ec3}{inventory\+Attributes}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a440a45487ab1fae75197946350acb53e}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a440a45487ab1fae75197946350acb53e}} 
+static final String {\bfseries IMMUNIZATIONS} = \char`\"{}immunizations\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a complete, but fairly simplistic approach to synthesizing immunizations. 
+
+It is encounter driven; whenever an encounter occurs, the doctor checks for due immunizations and gives them. In at least one case (HPV) this means that the immunization schedule isn\textquotesingle{}t strictly followed since the encounter schedule doesn\textquotesingle{}t match the immunization schedule (e.\+g., 11yrs, 11yrs2mo, 11yrs6mo) -- but in most cases they do line up. This module also assumes perfect doctors and compliant patients. Every patient eventually receives every recommended immunization (unless they die first). This module also does not implement any deviations or contraindications based on patient conditions. For now, we\textquotesingle{}ve avoided specific brand names, preferring the general CVX codes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_ac6d1164b95aa54a5d2b43f458fe04113}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_ac6d1164b95aa54a5d2b43f458fe04113}} 
+\index{org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}!getAllCodes@{getAllCodes}}
+\index{getAllCodes@{getAllCodes}!org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}}
+\doxysubsubsection{\texorpdfstring{getAllCodes()}{getAllCodes()}}
+{\footnotesize\ttfamily static Collection$<$Code$>$ org.\+mitre.\+synthea.\+modules.\+Immunizations.\+get\+All\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all of the Codes this module uses, for inventory purposes. 
+
+\begin{DoxyReturn}{Returns}
+Collection of all codes and concepts this module uses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a82f11778a5252223af1f5bfb3a5c3f79}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a82f11778a5252223af1f5bfb3a5c3f79}} 
+\index{org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}!getMaximumDoses@{getMaximumDoses}}
+\index{getMaximumDoses@{getMaximumDoses}!org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}}
+\doxysubsubsection{\texorpdfstring{getMaximumDoses()}{getMaximumDoses()}}
+{\footnotesize\ttfamily static int org.\+mitre.\+synthea.\+modules.\+Immunizations.\+get\+Maximum\+Doses (\begin{DoxyParamCaption}\item[{String}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the maximum number of vaccine doses for a particular code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The vaccine code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The maximum number of doses to be administered. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a9123cb9b7cb482a1a95fe27d0ecf4ef7}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_a9123cb9b7cb482a1a95fe27d0ecf4ef7}} 
+\index{org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}!immunizationDue@{immunizationDue}}
+\index{immunizationDue@{immunizationDue}!org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}}
+\doxysubsubsection{\texorpdfstring{immunizationDue()}{immunizationDue()}}
+{\footnotesize\ttfamily static int org.\+mitre.\+synthea.\+modules.\+Immunizations.\+immunization\+Due (\begin{DoxyParamCaption}\item[{String}]{immunization,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{Map$<$ String, List$<$ Long $>$$>$}]{immunizations\+Given }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return whether or not the specified immunization is due. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em immunization} & The immunization to give \\
+\hline
+{\em person} & The person to receive the immunization \\
+\hline
+{\em time} & The time the immunization would be given \\
+\hline
+{\em immunizations\+Given} & The history of immunizations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if the immunization should not be given, otherwise a positive integer, where the value is the series. For example, 1 if this is the first time the vaccine was administered; 2 if this is the second time, et cetera. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_aed6cb7949be84f5210c2fcbe204b7ec3}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_aed6cb7949be84f5210c2fcbe204b7ec3}} 
+\index{org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Immunizations.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_ad38806196b7ec347b2159d6bc0504751}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations_ad38806196b7ec347b2159d6bc0504751}} 
+\index{org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}!performEncounter@{performEncounter}}
+\index{performEncounter@{performEncounter}!org.mitre.synthea.modules.Immunizations@{org.mitre.synthea.modules.Immunizations}}
+\doxysubsubsection{\texorpdfstring{performEncounter()}{performEncounter()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Immunizations.\+perform\+Encounter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Administer vaccines to the person at the state time according to the required immunization schedule. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & -\/ the person to vaccinate. \\
+\hline
+{\em time} & -\/ the current simulation time. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/Immunizations.\+java\end{DoxyCompactItemize}

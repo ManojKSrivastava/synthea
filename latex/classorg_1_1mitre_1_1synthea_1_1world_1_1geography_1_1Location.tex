@@ -1,0 +1,363 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{}\doxysection{org.\+mitre.\+synthea.\+world.\+geography.\+Location Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+geography.\+Location\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+geography.\+Location\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_ac76defa1fb0e89f20e710050153f9bb0}{Location}} (String state, String city)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} is a set of demographic and place information. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a939a1c299b9410ca03601185b221eb93}{get\+Zip\+Code}} (String city\+Name, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Get the zip code for the given city name. \end{DoxyCompactList}\item 
+List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_af4571774b243e6687f489430599bf574}{get\+Zip\+Codes}} (String city\+Name)
+\begin{DoxyCompactList}\small\item\em Get the list of zip codes (or postal codes) by city name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a79e1974e11d1e2a077a251f48b4a26eb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a79e1974e11d1e2a077a251f48b4a26eb}} 
+long {\bfseries get\+Population} (String city\+Name)
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a4082f8914740650f11319cc2966cf90e}{random\+City}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick the name of a random city from the current \char`\"{}world\char`\"{}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a8d1447373f3cb4642bd97893319558f1}{random\+City\+Name}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick a random city name, weighted by population. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a203471d2898f5aca6d0fa8ddc01587ef}{random\+Birth\+Place}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick a random birth place, weighted by population. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a151f3f32b572bab9f9c1d2799655e106}{random\+Birthplace\+By\+Language}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random, String language)
+\begin{DoxyCompactList}\small\item\em Method which returns a city from the foreign\+Places\+Of\+Birth map if the map contains values for an language. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_aac9b23a78bd7037f211064c0a029ea69}{assign\+Point}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String city\+Name)
+\begin{DoxyCompactList}\small\item\em Assign a geographic location to the given Person. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_ad2e4c3ba57105b07fdf79188bbbb2fa9}{set\+Social\+Determinants}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Set social determinants of health attributes on the patient, as defined by the optional social determinants of health county-\/level file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a125b13a2a59d3bb2f8612da09b9bd985}{get\+Abbreviation}} (String state)
+\begin{DoxyCompactList}\small\item\em Get the abbreviation for a state. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a439d525a098689f698f4536c686020c5}{get\+Index}} (String state)
+\begin{DoxyCompactList}\small\item\em Get the index for a state. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a0705444c0d0c4a8e5942ad4f39c5c80f}{get\+State\+Name}} (String abbreviation)
+\begin{DoxyCompactList}\small\item\em Get the state name from an abbreviation. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a54ff1f95a6db42739c22c7574b54db24}{get\+Timezone\+By\+State}} (String state)
+\begin{DoxyCompactList}\small\item\em Get the full name of the timezone by the full name of the state. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a096d5239b9b12cc62c6086254ad9002e}{get\+Fips\+Code\+By\+Zip\+Code}} (String zip\+Code)
+\begin{DoxyCompactList}\small\item\em Get the FIPS code, if it exists, for a given zip code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a3d5d05131311e047e4ee27b50a838012}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a3d5d05131311e047e4ee27b50a838012}} 
+final String {\bfseries city}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a81618fff4f7a210c677c0b1a22ae873f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a81618fff4f7a210c677c0b1a22ae873f}} 
+final String {\bfseries state}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Map$<$ String, List$<$ String $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a244110a49399f580d13dfcf38cca38cf}{load\+Cities\+By\+Language}} (String resource)
+\begin{DoxyCompactList}\small\item\em Load a resource which contains foreign places of birth based on ethnicity in json format\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_ac76defa1fb0e89f20e710050153f9bb0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_ac76defa1fb0e89f20e710050153f9bb0}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!Location@{Location}}
+\index{Location@{Location}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{Location()}{Location()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+Location (\begin{DoxyParamCaption}\item[{String}]{state,  }\item[{String}]{city }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} is a set of demographic and place information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The full name of the state. e.\+g. \char`\"{}\+Ohio\char`\"{} and not an abbreviation. \\
+\hline
+{\em city} & The full name of the city. e.\+g. \char`\"{}\+Columbus\char`\"{} or null for an entire state. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_aac9b23a78bd7037f211064c0a029ea69}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_aac9b23a78bd7037f211064c0a029ea69}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!assignPoint@{assignPoint}}
+\index{assignPoint@{assignPoint}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{assignPoint()}{assignPoint()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+assign\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{city\+Name }\end{DoxyParamCaption})}
+
+
+
+Assign a geographic location to the given Person. 
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} includes City, State, Zip, and Coordinate. If city\+Name is given, then Zip and Coordinate are restricted to valid values for that city. If city\+Name is not given, then picks a random city from the list of all cities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to assign location information \\
+\hline
+{\em city\+Name} & Name of the city, or null to choose one randomly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a125b13a2a59d3bb2f8612da09b9bd985}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a125b13a2a59d3bb2f8612da09b9bd985}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getAbbreviation@{getAbbreviation}}
+\index{getAbbreviation@{getAbbreviation}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getAbbreviation()}{getAbbreviation()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+Abbreviation (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the abbreviation for a state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & State name. e.\+g. \char`\"{}\+Massachusetts\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state abbreviation. e.\+g. \char`\"{}\+MA\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a096d5239b9b12cc62c6086254ad9002e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a096d5239b9b12cc62c6086254ad9002e}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getFipsCodeByZipCode@{getFipsCodeByZipCode}}
+\index{getFipsCodeByZipCode@{getFipsCodeByZipCode}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getFipsCodeByZipCode()}{getFipsCodeByZipCode()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+Fips\+Code\+By\+Zip\+Code (\begin{DoxyParamCaption}\item[{String}]{zip\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the FIPS code, if it exists, for a given zip code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zip\+Code} & The zip code of the location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The FIPS county code of the location. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a439d525a098689f698f4536c686020c5}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a439d525a098689f698f4536c686020c5}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily static int org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+Index (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the index for a state. 
+
+This maybe useful for exporters where you want to generate a list of unique identifiers that do not collide across state-\/boundaries. 
+\begin{DoxyParams}{Parameters}
+{\em state} & State name. e.\+g. \char`\"{}\+Massachusetts\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state index. e.\+g. 1 or 50 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a0705444c0d0c4a8e5942ad4f39c5c80f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a0705444c0d0c4a8e5942ad4f39c5c80f}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getStateName@{getStateName}}
+\index{getStateName@{getStateName}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getStateName()}{getStateName()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+State\+Name (\begin{DoxyParamCaption}\item[{String}]{abbreviation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the state name from an abbreviation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abbreviation} & State abbreviation. e.\+g. \char`\"{}\+MA\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+state name. e.\+g. \char`\"{}\+Massachusetts\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a54ff1f95a6db42739c22c7574b54db24}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a54ff1f95a6db42739c22c7574b54db24}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getTimezoneByState@{getTimezoneByState}}
+\index{getTimezoneByState@{getTimezoneByState}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getTimezoneByState()}{getTimezoneByState()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+Timezone\+By\+State (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the full name of the timezone by the full name of the state. 
+
+Timezones are approximate. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The full name of the state (e.\+g. \char`\"{}\+Massachusetts\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The full name of the timezone (e.\+g. \char`\"{}\+Eastern Standard Time\char`\"{}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a939a1c299b9410ca03601185b221eb93}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a939a1c299b9410ca03601185b221eb93}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getZipCode@{getZipCode}}
+\index{getZipCode@{getZipCode}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getZipCode()}{getZipCode()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+Zip\+Code (\begin{DoxyParamCaption}\item[{String}]{city\+Name,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Get the zip code for the given city name. 
+
+If a city has more than one zip code, this picks a random one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em city\+Name} & Name of the city \\
+\hline
+{\em random} & Used for a source of repeatable randomness when selecting a zipcode when multiple exist for a location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a zip code for the given city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_af4571774b243e6687f489430599bf574}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_af4571774b243e6687f489430599bf574}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!getZipCodes@{getZipCodes}}
+\index{getZipCodes@{getZipCodes}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{getZipCodes()}{getZipCodes()}}
+{\footnotesize\ttfamily List$<$String$>$ org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+get\+Zip\+Codes (\begin{DoxyParamCaption}\item[{String}]{city\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the list of zip codes (or postal codes) by city name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city\+Name} & Name of the city. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of legal zip codes or postal codes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a244110a49399f580d13dfcf38cca38cf}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a244110a49399f580d13dfcf38cca38cf}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!loadCitiesByLanguage@{loadCitiesByLanguage}}
+\index{loadCitiesByLanguage@{loadCitiesByLanguage}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{loadCitiesByLanguage()}{loadCitiesByLanguage()}}
+{\footnotesize\ttfamily static Map$<$String, List$<$String$>$ $>$ org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+load\+Cities\+By\+Language (\begin{DoxyParamCaption}\item[{String}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Load a resource which contains foreign places of birth based on ethnicity in json format\+: 
+
+\{\char`\"{}ethnicity\char`\"{}\+:\mbox{[}\char`\"{}city1,state1,country1\char`\"{}, \char`\"{}city2,state2,country2\char`\"{}..., \char`\"{}city\+N,state\+N,country\+N\char`\"{}\mbox{]}\} 
+
+see src/main/resources/foreign\+\_\+birthplace.\+json for a working example package protected for testing 
+\begin{DoxyParams}{Parameters}
+{\em resource} & A json file listing foreign places of birth by ethnicity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map of ethnicity to Lists of Strings \char`\"{}city,state,country\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a203471d2898f5aca6d0fa8ddc01587ef}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a203471d2898f5aca6d0fa8ddc01587ef}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!randomBirthPlace@{randomBirthPlace}}
+\index{randomBirthPlace@{randomBirthPlace}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{randomBirthPlace()}{randomBirthPlace()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+random\+Birth\+Place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick a random birth place, weighted by population. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & the source of randomness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of Strings\+: \mbox{[}city, state, country, \char`\"{}city, state, country\char`\"{}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a151f3f32b572bab9f9c1d2799655e106}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a151f3f32b572bab9f9c1d2799655e106}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!randomBirthplaceByLanguage@{randomBirthplaceByLanguage}}
+\index{randomBirthplaceByLanguage@{randomBirthplaceByLanguage}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{randomBirthplaceByLanguage()}{randomBirthplaceByLanguage()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+random\+Birthplace\+By\+Language (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random,  }\item[{String}]{language }\end{DoxyParamCaption})}
+
+
+
+Method which returns a city from the foreign\+Places\+Of\+Birth map if the map contains values for an language. 
+
+In the case an language is not present the method returns the value from a call to \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a8d1447373f3cb4642bd97893319558f1}{random\+City\+Name()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & the source of randomness \\
+\hline
+{\em language} & the language to look for cities in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A String representing the place of birth 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a4082f8914740650f11319cc2966cf90e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a4082f8914740650f11319cc2966cf90e}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!randomCity@{randomCity}}
+\index{randomCity@{randomCity}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{randomCity()}{randomCity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+random\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick the name of a random city from the current \char`\"{}world\char`\"{}. 
+
+If only one city was selected, this will return that one city.
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & The source of randomness. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} of a random city. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a8d1447373f3cb4642bd97893319558f1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_a8d1447373f3cb4642bd97893319558f1}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!randomCityName@{randomCityName}}
+\index{randomCityName@{randomCityName}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{randomCityName()}{randomCityName()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+random\+City\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick a random city name, weighted by population. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & the source of randomness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a city name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_ad2e4c3ba57105b07fdf79188bbbb2fa9}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location_ad2e4c3ba57105b07fdf79188bbbb2fa9}} 
+\index{org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}!setSocialDeterminants@{setSocialDeterminants}}
+\index{setSocialDeterminants@{setSocialDeterminants}!org.mitre.synthea.world.geography.Location@{org.mitre.synthea.world.geography.Location}}
+\doxysubsubsection{\texorpdfstring{setSocialDeterminants()}{setSocialDeterminants()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+geography.\+Location.\+set\+Social\+Determinants (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Set social determinants of health attributes on the patient, as defined by the optional social determinants of health county-\/level file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to assign attributes. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/geography/Location.\+java\end{DoxyCompactItemize}

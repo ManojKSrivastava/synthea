@@ -1,0 +1,370 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor}{}\doxysection{org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor}\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+
+
+This editor simulates errors that occur in growth data as it would be collected in a clinical setting.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_1_1Config}{Config}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_adc0d3e276d07b437c13c16baaf87ef63}{should\+Run}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}} record, long time)
+\begin{DoxyCompactList}\small\item\em Checks to see if the person is under MAX\+\_\+\+AGE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a30859411da6ecc9ca44acb9bcc54cdea}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, List$<$ Health\+Record.\+Encounter $>$ encounters, long time)
+\begin{DoxyCompactList}\small\item\em Potentially mess up heights and weights in the encounters. \end{DoxyCompactList}\item 
+List$<$ Health\+Record.\+Encounter $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_af8b196f2c61d49f349e37a4bf39a193f}{encounters\+With\+Observations\+Of\+Code}} (List$<$ Health\+Record.\+Encounter $>$ encounters, String code)
+\begin{DoxyCompactList}\small\item\em Filter a list of encounters to find all that have an observation with a particular code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_acd987869dd5ff6e6e22fc52b065d0f0c}{introduce\+Weight\+Unit\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Convert the weight observation value from kg to lbs. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a4f635199320e3fb807d88a4a1e4cc143}{introduce\+Height\+Unit\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Convert the height observation from cm to in. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a2a6bcc062832b783b56f30c540e4c6c3}{introduce\+Transpose\+Error}} (Health\+Record.\+Encounter encounter, String obs\+Type)
+\begin{DoxyCompactList}\small\item\em Flip the tens and ones place in the desired observation value. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a6d8612f5e4346d2070352882135f09f9}{introduce\+Weight\+Switch\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Swap weight and height. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a8c02996cb71477c1f2922d7103b82914}{introduce\+Height\+Switch\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Swap height and weight. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a5603fa97b351032df121b7b94dc6e893}{introduce\+Weight\+Extreme\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Shift the decimal place for the weight observation once place to the right. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a75deb7defa750a4fb1500e23e7011a59}{introduce\+Height\+Extreme\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Shift the decimal place for the height observation once place to the right. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a2b469a9b234d9ccc28fb42c797fb1c9c}{introduce\+Height\+Absolute\+Error}} (Health\+Record.\+Encounter encounter, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Reduce the height observation by 3 to 6 cm. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_af01a2bcd34ea594c62d9cd73b094853d}{introduce\+Weight\+Duplicate\+Error}} (Health\+Record.\+Encounter encounter, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Create a duplicate weight observation in the encounter that is off slightly. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ab4a0c12819220bc63ccccb19a060c08a}{introduce\+Height\+Duplicate\+Error}} (Health\+Record.\+Encounter encounter, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Create a duplicate height observation in the encounter that is off slightly. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ad733cf6325dd3bdae52e07b13af8fcd6}{introduce\+Weight\+Carried\+Forward\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Replace the weight observation in this encounter with the value from the person\textquotesingle{}s last encounter. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a80ff878fde2e514a07e7c853ccfe96d3}{introduce\+Height\+Carried\+Forward\+Error}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Replace the height observation in this encounter with the value from the person\textquotesingle{}s last encounter. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ae58e468fab307bd2d0c159b4c46073d7}{recalculate\+BMI}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Recalculate the BMI based on the existing height and weigh observations in the encounter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a1c6ac5cda58df581de37b530b73267a7}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a1c6ac5cda58df581de37b530b73267a7}} 
+static final String {\bfseries HEIGHT\+\_\+\+LOINC\+\_\+\+CODE} = \char`\"{}8302-\/2\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a9c62637b3daaffde6cb9cc0b1f059e99}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a9c62637b3daaffde6cb9cc0b1f059e99}} 
+static final String {\bfseries WEIGHT\+\_\+\+LOINC\+\_\+\+CODE} = \char`\"{}29463-\/7\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a7bd25c86a318b0fb0d65954a00422ebb}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a7bd25c86a318b0fb0d65954a00422ebb}} 
+static final String {\bfseries BMI\+\_\+\+LOINC\+\_\+\+CODE} = \char`\"{}39156-\/5\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a3552fa3093de1f2266c0c82173513cf3}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a3552fa3093de1f2266c0c82173513cf3}} 
+static int {\bfseries MAX\+\_\+\+AGE} = 65
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a5485ed7585f9e47bdbc308713be16131}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a5485ed7585f9e47bdbc308713be16131}} 
+static double {\bfseries POUNDS\+\_\+\+PER\+\_\+\+KG} = 2.\+205
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a9eb7b47fc475a1f4cc784dc3649eef02}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a9eb7b47fc475a1f4cc784dc3649eef02}} 
+static double {\bfseries INCHES\+\_\+\+PER\+\_\+\+CM} = 0.\+394
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This editor simulates errors that occur in growth data as it would be collected in a clinical setting. 
+
+This editor is an implementation of the protocol for simulating growth data errors as specified in Supplemental File 5 in the paper \char`\"{}\+Automated identification of implausible values in growth data from pediatric electronic health records\char`\"{}\+: \href{https://academic.oup.com/jamia/article/24/6/1080/3767271}{\texttt{ https\+://academic.\+oup.\+com/jamia/article/24/6/1080/3767271}} 
+
+If a height or weight is changed, if the Encounter has an associated BMI, it will be recomputed based on the new, error values. 
+
+This module will only operate on Observations that take place while the patient is less than MAX\+\_\+\+AGE. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_af8b196f2c61d49f349e37a4bf39a193f}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_af8b196f2c61d49f349e37a4bf39a193f}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!encountersWithObservationsOfCode@{encountersWithObservationsOfCode}}
+\index{encountersWithObservationsOfCode@{encountersWithObservationsOfCode}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{encountersWithObservationsOfCode()}{encountersWithObservationsOfCode()}}
+{\footnotesize\ttfamily List$<$Health\+Record.\+Encounter$>$ org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+encounters\+With\+Observations\+Of\+Code (\begin{DoxyParamCaption}\item[{List$<$ Health\+Record.\+Encounter $>$}]{encounters,  }\item[{String}]{code }\end{DoxyParamCaption})}
+
+
+
+Filter a list of encounters to find all that have an observation with a particular code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounters} & The list to filter \\
+\hline
+{\em code} & The code to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The filtered list. If there are no matching encounters, then an empty list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a2b469a9b234d9ccc28fb42c797fb1c9c}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a2b469a9b234d9ccc28fb42c797fb1c9c}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceHeightAbsoluteError@{introduceHeightAbsoluteError}}
+\index{introduceHeightAbsoluteError@{introduceHeightAbsoluteError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceHeightAbsoluteError()}{introduceHeightAbsoluteError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Height\+Absolute\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reduce the height observation by 3 to 6 cm. 
+
+It looks like someone forgot to take off their shoes before getting measured. 
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a80ff878fde2e514a07e7c853ccfe96d3}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a80ff878fde2e514a07e7c853ccfe96d3}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceHeightCarriedForwardError@{introduceHeightCarriedForwardError}}
+\index{introduceHeightCarriedForwardError@{introduceHeightCarriedForwardError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceHeightCarriedForwardError()}{introduceHeightCarriedForwardError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Height\+Carried\+Forward\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Replace the height observation in this encounter with the value from the person\textquotesingle{}s last encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ab4a0c12819220bc63ccccb19a060c08a}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ab4a0c12819220bc63ccccb19a060c08a}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceHeightDuplicateError@{introduceHeightDuplicateError}}
+\index{introduceHeightDuplicateError@{introduceHeightDuplicateError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceHeightDuplicateError()}{introduceHeightDuplicateError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Height\+Duplicate\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a duplicate height observation in the encounter that is off slightly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a75deb7defa750a4fb1500e23e7011a59}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a75deb7defa750a4fb1500e23e7011a59}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceHeightExtremeError@{introduceHeightExtremeError}}
+\index{introduceHeightExtremeError@{introduceHeightExtremeError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceHeightExtremeError()}{introduceHeightExtremeError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Height\+Extreme\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shift the decimal place for the height observation once place to the right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a8c02996cb71477c1f2922d7103b82914}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a8c02996cb71477c1f2922d7103b82914}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceHeightSwitchError@{introduceHeightSwitchError}}
+\index{introduceHeightSwitchError@{introduceHeightSwitchError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceHeightSwitchError()}{introduceHeightSwitchError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Height\+Switch\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Swap height and weight. 
+
+This will work even if weight is null. It will set height to null and weight to height. 
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a4f635199320e3fb807d88a4a1e4cc143}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a4f635199320e3fb807d88a4a1e4cc143}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceHeightUnitError@{introduceHeightUnitError}}
+\index{introduceHeightUnitError@{introduceHeightUnitError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceHeightUnitError()}{introduceHeightUnitError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Height\+Unit\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the height observation from cm to in. 
+
+Again, we\textquotesingle{}re intentionally messing things up here. 
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a2a6bcc062832b783b56f30c540e4c6c3}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a2a6bcc062832b783b56f30c540e4c6c3}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceTransposeError@{introduceTransposeError}}
+\index{introduceTransposeError@{introduceTransposeError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceTransposeError()}{introduceTransposeError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Transpose\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter,  }\item[{String}]{obs\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flip the tens and ones place in the desired observation value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+{\em obs\+Type} & \char`\"{}height\char`\"{} or \char`\"{}weight\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ad733cf6325dd3bdae52e07b13af8fcd6}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ad733cf6325dd3bdae52e07b13af8fcd6}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceWeightCarriedForwardError@{introduceWeightCarriedForwardError}}
+\index{introduceWeightCarriedForwardError@{introduceWeightCarriedForwardError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceWeightCarriedForwardError()}{introduceWeightCarriedForwardError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Weight\+Carried\+Forward\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Replace the weight observation in this encounter with the value from the person\textquotesingle{}s last encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_af01a2bcd34ea594c62d9cd73b094853d}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_af01a2bcd34ea594c62d9cd73b094853d}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceWeightDuplicateError@{introduceWeightDuplicateError}}
+\index{introduceWeightDuplicateError@{introduceWeightDuplicateError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceWeightDuplicateError()}{introduceWeightDuplicateError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Weight\+Duplicate\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a duplicate weight observation in the encounter that is off slightly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a5603fa97b351032df121b7b94dc6e893}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a5603fa97b351032df121b7b94dc6e893}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceWeightExtremeError@{introduceWeightExtremeError}}
+\index{introduceWeightExtremeError@{introduceWeightExtremeError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceWeightExtremeError()}{introduceWeightExtremeError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Weight\+Extreme\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shift the decimal place for the weight observation once place to the right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a6d8612f5e4346d2070352882135f09f9}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a6d8612f5e4346d2070352882135f09f9}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceWeightSwitchError@{introduceWeightSwitchError}}
+\index{introduceWeightSwitchError@{introduceWeightSwitchError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceWeightSwitchError()}{introduceWeightSwitchError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Weight\+Switch\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Swap weight and height. 
+
+This will work even if height is null. It will set weight to null and height to the weight value. 
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_acd987869dd5ff6e6e22fc52b065d0f0c}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_acd987869dd5ff6e6e22fc52b065d0f0c}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!introduceWeightUnitError@{introduceWeightUnitError}}
+\index{introduceWeightUnitError@{introduceWeightUnitError}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{introduceWeightUnitError()}{introduceWeightUnitError()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+introduce\+Weight\+Unit\+Error (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the weight observation value from kg to lbs. 
+
+The unit is not updated because we are intentionally messing things up. 
+\begin{DoxyParams}{Parameters}
+{\em encounter} & The encounter that contains the observation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a30859411da6ecc9ca44acb9bcc54cdea}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_a30859411da6ecc9ca44acb9bcc54cdea}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!process@{process}}
+\index{process@{process}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{List$<$ Health\+Record.\+Encounter $>$}]{encounters,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Potentially mess up heights and weights in the encounters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The Synthea person to check on whether the module should be run \\
+\hline
+{\em encounters} & The encounters that took place during the last time step of the simulation \\
+\hline
+{\em time} & The current time in the simulation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ae58e468fab307bd2d0c159b4c46073d7}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_ae58e468fab307bd2d0c159b4c46073d7}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!recalculateBMI@{recalculateBMI}}
+\index{recalculateBMI@{recalculateBMI}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{recalculateBMI()}{recalculateBMI()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+recalculate\+BMI (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Recalculate the BMI based on the existing height and weigh observations in the encounter. 
+
+Only recreates a BMI if one already exists. Otherwise, it does nothing. 
+\begin{DoxyParams}{Parameters}
+{\em encounter} & to recalculate BMI on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_adc0d3e276d07b437c13c16baaf87ef63}\label{classorg_1_1mitre_1_1synthea_1_1editors_1_1GrowthDataErrorsEditor_adc0d3e276d07b437c13c16baaf87ef63}} 
+\index{org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}!shouldRun@{shouldRun}}
+\index{shouldRun@{shouldRun}!org.mitre.synthea.editors.GrowthDataErrorsEditor@{org.mitre.synthea.editors.GrowthDataErrorsEditor}}
+\doxysubsubsection{\texorpdfstring{shouldRun()}{shouldRun()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+editors.\+Growth\+Data\+Errors\+Editor.\+should\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord}{Health\+Record}}}]{record,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Checks to see if the person is under MAX\+\_\+\+AGE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The Synthea person to check on whether the module should be run \\
+\hline
+{\em record} & The person\textquotesingle{}s Health\+Record \\
+\hline
+{\em time} & The current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the person is under MAX\+\_\+\+AGE 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor_a9660a9029bf03b8405d302717fabc0df}{org.\+mitre.\+synthea.\+engine.\+Health\+Record\+Editor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/editors/Growth\+Data\+Errors\+Editor.\+java\end{DoxyCompactItemize}

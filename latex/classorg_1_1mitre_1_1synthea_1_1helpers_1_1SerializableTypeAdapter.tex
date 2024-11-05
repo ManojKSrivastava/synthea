@@ -1,0 +1,57 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Serializable\+Type\+Adapter$<$ E extends Serializable $>$ Class Template Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter}\index{org.mitre.synthea.helpers.SerializableTypeAdapter$<$ E extends Serializable $>$@{org.mitre.synthea.helpers.SerializableTypeAdapter$<$ E extends Serializable $>$}}
+
+
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter}{Serializable\+Type\+Adapter}} is a GSON Type\+Adapter used to allow GSON to handle classes that are Serializable, but can\textquotesingle{}t be instrumented by GSON for whatever reason.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+helpers.\+Serializable\+Type\+Adapter$<$ E extends Serializable $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Serializable\+Type\+Adapter$<$ E extends Serializable $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter_aec1d5a16682c2075eb5ed1e844ad6d4e}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter_aec1d5a16682c2075eb5ed1e844ad6d4e}} 
+void {\bfseries write} (Json\+Writer out, E value)  throws IOException 
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter_abd6e7b93917f84560f552fa6cbeb4cc7}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter_abd6e7b93917f84560f552fa6cbeb4cc7}} 
+E {\bfseries read} (Json\+Reader in)  throws IOException 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1SerializableTypeAdapter}{Serializable\+Type\+Adapter}} is a GSON Type\+Adapter used to allow GSON to handle classes that are Serializable, but can\textquotesingle{}t be instrumented by GSON for whatever reason. 
+
+This is primarily used for core Java classes (java.$\ast$.$\ast$) which as of JDK16 no longer allow access via reflection. See\+: \href{https://github.com/google/gson/issues/1216}{\texttt{ https\+://github.\+com/google/gson/issues/1216}}
+
+The internal approach is to write the object to a string using Object\+Output\+Stream, then base64 it. Reading the object reverses the base64 then turns it back into an Object via Object\+Input\+Stream.
+
+This class is based on Stack\+Overflow answer \href{https://stackoverflow.com/a/33097652}{\texttt{ https\+://stackoverflow.\+com/a/33097652}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+E$>$} & Serializable class that cannot be natively deserialized by Gson. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Serializable\+Type\+Adapter.\+java\end{DoxyCompactItemize}

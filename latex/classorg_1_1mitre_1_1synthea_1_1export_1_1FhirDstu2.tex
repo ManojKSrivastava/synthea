@@ -1,0 +1,127 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Fhir\+Dstu2 Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2}\index{org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a1412be03ce7243ee73b79768b8c45dfc}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a1412be03ce7243ee73b79768b8c45dfc}} 
+static Fhir\+Context {\bfseries get\+Context} ()
+\item 
+static Bundle \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a54a7f4abe37f0928d22324c683748356}{convert\+To\+FHIR}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time)
+\begin{DoxyCompactList}\small\item\em Convert the given Person into a FHIR Bundle with the Patient and the associated entries from their health record. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a71d3a40d9cbc434aa2dd6f93937b5907}{convert\+To\+FHIRJson}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time)
+\begin{DoxyCompactList}\small\item\em Convert the given Person into a JSON String, containing a FHIR Bundle of the Person and the associated entries from their health record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_aac1cb556f28c483f8147e547d63d6623}{provider}} (Bundle bundle, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} provider)
+\begin{DoxyCompactList}\small\item\em Map the Provider into a FHIR Organization resource, and add it to the given Bundle. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a1b39ab03d181595cf8d5df242a35938f}{practitioner}} (Bundle bundle, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}} clinician)
+\begin{DoxyCompactList}\small\item\em Map the clinician into a FHIR Practitioner resource, and add it to the given Bundle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bfseries TRANSACTION\+\_\+\+BUNDLE}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a54a7f4abe37f0928d22324c683748356}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a54a7f4abe37f0928d22324c683748356}} 
+\index{org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}!convertToFHIR@{convertToFHIR}}
+\index{convertToFHIR@{convertToFHIR}!org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}}
+\doxysubsubsection{\texorpdfstring{convertToFHIR()}{convertToFHIR()}}
+{\footnotesize\ttfamily static Bundle org.\+mitre.\+synthea.\+export.\+Fhir\+Dstu2.\+convert\+To\+FHIR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given Person into a FHIR Bundle with the Patient and the associated entries from their health record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to generate the FHIR Bundle \\
+\hline
+{\em stop\+Time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String containing a FHIR Bundle containing the Person\textquotesingle{}s health record 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a71d3a40d9cbc434aa2dd6f93937b5907}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a71d3a40d9cbc434aa2dd6f93937b5907}} 
+\index{org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}!convertToFHIRJson@{convertToFHIRJson}}
+\index{convertToFHIRJson@{convertToFHIRJson}!org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}}
+\doxysubsubsection{\texorpdfstring{convertToFHIRJson()}{convertToFHIRJson()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+Fhir\+Dstu2.\+convert\+To\+FHIRJson (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert the given Person into a JSON String, containing a FHIR Bundle of the Person and the associated entries from their health record. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to generate the FHIR JSON for \\
+\hline
+{\em stop\+Time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String containing a JSON representation of a FHIR Bundle containing the Person\textquotesingle{}s health record 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a1b39ab03d181595cf8d5df242a35938f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a1b39ab03d181595cf8d5df242a35938f}} 
+\index{org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}!practitioner@{practitioner}}
+\index{practitioner@{practitioner}!org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}}
+\doxysubsubsection{\texorpdfstring{practitioner()}{practitioner()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} org.\+mitre.\+synthea.\+export.\+Fhir\+Dstu2.\+practitioner (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician}{Clinician}}}]{clinician }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Map the clinician into a FHIR Practitioner resource, and add it to the given Bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & The Bundle to add to \\
+\hline
+{\em clinician} & The clinician \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The added Entry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_aac1cb556f28c483f8147e547d63d6623}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_aac1cb556f28c483f8147e547d63d6623}} 
+\index{org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}!provider@{provider}}
+\index{provider@{provider}!org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}}
+\doxysubsubsection{\texorpdfstring{provider()}{provider()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} org.\+mitre.\+synthea.\+export.\+Fhir\+Dstu2.\+provider (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}}}]{provider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Map the Provider into a FHIR Organization resource, and add it to the given Bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & The Bundle to add to \\
+\hline
+{\em provider} & The Provider \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The added Entry 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a85682bf1461dd11da8686cc5b10e43a1}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1FhirDstu2_a85682bf1461dd11da8686cc5b10e43a1}} 
+\index{org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}!TRANSACTION\_BUNDLE@{TRANSACTION\_BUNDLE}}
+\index{TRANSACTION\_BUNDLE@{TRANSACTION\_BUNDLE}!org.mitre.synthea.export.FhirDstu2@{org.mitre.synthea.export.FhirDstu2}}
+\doxysubsubsection{\texorpdfstring{TRANSACTION\_BUNDLE}{TRANSACTION\_BUNDLE}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+export.\+Fhir\+Dstu2.\+TRANSACTION\+\_\+\+BUNDLE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}exporter.fhir.transaction\_bundle"{}})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Fhir\+Dstu2.\+java\end{DoxyCompactItemize}

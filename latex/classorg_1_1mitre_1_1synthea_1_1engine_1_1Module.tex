@@ -1,0 +1,395 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Module Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} represents the entry point of a generic module.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+engine.\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Module\+Supplier}
+\begin{DoxyCompactList}\small\item\em Module\+Supplier allows for lazy loading of Modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a2ff8d51343ec999a30e4dba1d36342cb}{Module}} (Json\+Object definition, boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3067414fd086c6537cc7d0dcd1851344}{submodule}})  throws Exception 
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone this module. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} with the given Person at the specified time within the simulation. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a97c7c2184fa34ad158b31f60a870b336}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, boolean terminate\+On\+Death)
+\begin{DoxyCompactList}\small\item\em Process this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} with the given Person at the specified time within the simulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ae4a668de55b0d70bd136397269cbb927}{get\+State}} (String name)
+\begin{DoxyCompactList}\small\item\em Get a state by name. \end{DoxyCompactList}\item 
+Collection$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a0f98ff4ca3dba512a18268dea12040be}{get\+State\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Get a collection of the names of all the states this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} contains. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Path $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aad14e9cea608c6412d51be17c014bce7}{get\+Module\+Paths}} ()  throws URISyntax\+Exception, IOException 
+\begin{DoxyCompactList}\small\item\em Get the paths to the modules directories, ensuring the right file system support is loaded if we are running from a jar file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a82357265fa2e2a89a722d07865c3facf}{add\+Modules}} (File dir)
+\begin{DoxyCompactList}\small\item\em Recursively adds a folder or directory of module files to the static list of modules. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3eda0f379254dcac76f0de0977ffe5d3}{relative\+Path}} (Path file\+Path, Path modules\+Folder)
+\begin{DoxyCompactList}\small\item\em Create a relative path from a folder to a file, removing the file extension and normalizing path segment separators. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a5721b9e837a432ddc1694f9d5541371a}{load\+File}} (Path path, boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3067414fd086c6537cc7d0dcd1851344}{submodule}}, Properties overrides, boolean local\+Files)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Loads the module defined from the file at the given path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a80962fb1ea093489a7c6c0b751e193f2}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a80962fb1ea093489a7c6c0b751e193f2}} 
+static String\mbox{[}$\,$\mbox{]} {\bfseries get\+Module\+Names} ()
+\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aea78ad027708c212d495bc73eabcccef}{get\+Modules}} ()
+\begin{DoxyCompactList}\small\item\em Get the top-\/level modules. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aa780b9ea70c511bf95c38a5a3908ac66}{get\+Modules}} (Predicate$<$ String $>$ path\+Predicate)
+\begin{DoxyCompactList}\small\item\em Get a list of top-\/level modules including core and submodules. \end{DoxyCompactList}\item 
+static List$<$ Module\+Supplier $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a2686fb56ffa610721c5f54578d0e991b}{get\+Module\+Suppliers}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of Module\+Suppliers. \end{DoxyCompactList}\item 
+static List$<$ Module\+Supplier $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a0d1d5316a0828113dac3a26dcfd971b7}{get\+Module\+Suppliers}} (Predicate$<$ Module\+Supplier $>$ predicate)
+\begin{DoxyCompactList}\small\item\em Get a list of Module\+Suppliers, given a path predicate. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aad3d6c376bbfd8661bcdee422a4a1bff}{get\+Module\+By\+Path}} (String path)
+\begin{DoxyCompactList}\small\item\em Get a module by path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a835f892efdab61d7bd1e1a455968143d}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a835f892efdab61d7bd1e1a455968143d}} 
+String {\bfseries name}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ac5953304523922a5f8a9988836b9567b}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ac5953304523922a5f8a9988836b9567b}} 
+String {\bfseries specialty}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3067414fd086c6537cc7d0dcd1851344}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3067414fd086c6537cc7d0dcd1851344}} 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3067414fd086c6537cc7d0dcd1851344}{submodule}}
+\begin{DoxyCompactList}\small\item\em true if this is a submodule, false otherwise. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_accf9ab6c4dd0d4f635c0437214247a68}{submodule\+Name}}
+\begin{DoxyCompactList}\small\item\em if a submodule, the original name of this submodule. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ac351242e4fd3e88de82e3f80c392bd35}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ac351242e4fd3e88de82e3f80c392bd35}} 
+Double {\bfseries gmf\+Version}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a508b2783da8e318060b8f52e8f6d9c39}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a508b2783da8e318060b8f52e8f6d9c39}} 
+List$<$ String $>$ {\bfseries remarks}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a76f526a44bc7002c27b85510d2920810}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a76f526a44bc7002c27b85510d2920810}} 
+static final Double {\bfseries GMF\+\_\+\+VERSION} = 2.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} represents the entry point of a generic module. 
+
+The {\ttfamily modules} map is the static list of generic modules. It is loaded once per process, and the list of modules is shared between the generated population. Because we share modules across the population, it is important that States are cloned before they are executed. This keeps the \char`\"{}master\char`\"{} copy of the module clean. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a2ff8d51343ec999a30e4dba1d36342cb}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a2ff8d51343ec999a30e4dba1d36342cb}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!Module@{Module}}
+\index{Module@{Module}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{Module()}{Module()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+engine.\+Module.\+Module (\begin{DoxyParamCaption}\item[{Json\+Object}]{definition,  }\item[{boolean}]{submodule }\end{DoxyParamCaption}) throws Exception}
+
+
+
+Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em definition} & JSON definition of the module. \\
+\hline
+{\em submodule} & Whether or not this is a shared or reusable submodule. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & when an error occurs inflating the module. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a82357265fa2e2a89a722d07865c3facf}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a82357265fa2e2a89a722d07865c3facf}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!addModules@{addModules}}
+\index{addModules@{addModules}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{addModules()}{addModules()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+engine.\+Module.\+add\+Modules (\begin{DoxyParamCaption}\item[{File}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Recursively adds a folder or directory of module files to the static list of modules. 
+
+This does not need to be executed by the core software. It only is used when the user wants to add another local module folder or during unit tests. 
+\begin{DoxyParams}{Parameters}
+{\em dir} & -\/ the folder or directory to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+engine.\+Module.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this module. 
+
+Never provide the original. 
+
+Reimplemented in \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_add71c1dc920de80955f11de0865af1a0}{org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a7807d029ddcbdadb32ab4af26b68999e}{org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab5ccc0f1e1995907cc6e682b5b180f5c}{org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1HealthInsuranceModule_aac312de4633171c57a72cc290daee48c}{org.\+mitre.\+synthea.\+modules.\+Health\+Insurance\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a91514efafc955048c7828ae9fe37aabb}{org.\+mitre.\+synthea.\+modules.\+Encounter\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acc795f65f43726ec6ffd9a4db3f82d9f}{org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module}}, and \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1CardiovascularDiseaseModule_a3cea9f923726c236b1ca4bee46524aed}{org.\+mitre.\+synthea.\+modules.\+Cardiovascular\+Disease\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aad3d6c376bbfd8661bcdee422a4a1bff}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aad3d6c376bbfd8661bcdee422a4a1bff}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getModuleByPath@{getModuleByPath}}
+\index{getModuleByPath@{getModuleByPath}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getModuleByPath()}{getModuleByPath()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+engine.\+Module.\+get\+Module\+By\+Path (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a module by path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \+: the relative path of the module, without the root or \char`\"{}.\+json\char`\"{} file extension. For example, \char`\"{}medications/otc\+\_\+antihistamine\char`\"{} or \char`\"{}appendicitis\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+module \+: the given module 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aad14e9cea608c6412d51be17c014bce7}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aad14e9cea608c6412d51be17c014bce7}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getModulePaths@{getModulePaths}}
+\index{getModulePaths@{getModulePaths}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getModulePaths()}{getModulePaths()}}
+{\footnotesize\ttfamily static List$<$Path$>$ org.\+mitre.\+synthea.\+engine.\+Module.\+get\+Module\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws URISyntax\+Exception, IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the paths to the modules directories, ensuring the right file system support is loaded if we are running from a jar file. 
+
+\begin{DoxyReturn}{Returns}
+the path 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em URISyntax\+Exception} & if something goes wrong \\
+\hline
+{\em IOException} & if something goes wrong \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aea78ad027708c212d495bc73eabcccef}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aea78ad027708c212d495bc73eabcccef}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getModules@{getModules}}
+\index{getModules@{getModules}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getModules()}{getModules()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}}$>$ org.\+mitre.\+synthea.\+engine.\+Module.\+get\+Modules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the top-\/level modules. 
+
+\begin{DoxyReturn}{Returns}
+a list of top-\/level modules. Submodules are not included. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aa780b9ea70c511bf95c38a5a3908ac66}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_aa780b9ea70c511bf95c38a5a3908ac66}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getModules@{getModules}}
+\index{getModules@{getModules}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getModules()}{getModules()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}}$>$ org.\+mitre.\+synthea.\+engine.\+Module.\+get\+Modules (\begin{DoxyParamCaption}\item[{Predicate$<$ String $>$}]{path\+Predicate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of top-\/level modules including core and submodules. 
+
+\begin{DoxyReturn}{Returns}
+a list of top-\/level modules, only including core modules and those allowed by the supplied predicate. Submodules are loaded, but not included. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a2686fb56ffa610721c5f54578d0e991b}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a2686fb56ffa610721c5f54578d0e991b}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getModuleSuppliers@{getModuleSuppliers}}
+\index{getModuleSuppliers@{getModuleSuppliers}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getModuleSuppliers()}{getModuleSuppliers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$Module\+Supplier$>$ org.\+mitre.\+synthea.\+engine.\+Module.\+get\+Module\+Suppliers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the list of Module\+Suppliers. 
+
+\begin{DoxyReturn}{Returns}
+a list of Module\+Suppliers. Submodules are included. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a0d1d5316a0828113dac3a26dcfd971b7}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a0d1d5316a0828113dac3a26dcfd971b7}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getModuleSuppliers@{getModuleSuppliers}}
+\index{getModuleSuppliers@{getModuleSuppliers}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getModuleSuppliers()}{getModuleSuppliers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$Module\+Supplier$>$ org.\+mitre.\+synthea.\+engine.\+Module.\+get\+Module\+Suppliers (\begin{DoxyParamCaption}\item[{Predicate$<$ Module\+Supplier $>$}]{predicate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of Module\+Suppliers, given a path predicate. 
+
+No other filtering applies, so this list could include both core and submodules. 
+\begin{DoxyParams}{Parameters}
+{\em predicate} & A predicate to filter a module based on path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of Module\+Suppliers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ae4a668de55b0d70bd136397269cbb927}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_ae4a668de55b0d70bd136397269cbb927}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getState@{getState}}
+\index{getState@{getState}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} org.\+mitre.\+synthea.\+engine.\+Module.\+get\+State (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Get a state by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ case-\/sensitive state name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1State}{State}} if it exists, otherwise null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a0f98ff4ca3dba512a18268dea12040be}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a0f98ff4ca3dba512a18268dea12040be}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!getStateNames@{getStateNames}}
+\index{getStateNames@{getStateNames}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{getStateNames()}{getStateNames()}}
+{\footnotesize\ttfamily Collection$<$String$>$ org.\+mitre.\+synthea.\+engine.\+Module.\+get\+State\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a collection of the names of all the states this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} contains. 
+
+\begin{DoxyReturn}{Returns}
+set of all state names, or empty set if this is a non-\/\+GMF module 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a5721b9e837a432ddc1694f9d5541371a}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a5721b9e837a432ddc1694f9d5541371a}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+engine.\+Module.\+load\+File (\begin{DoxyParamCaption}\item[{Path}]{path,  }\item[{boolean}]{submodule,  }\item[{Properties}]{overrides,  }\item[{boolean}]{local\+Files }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the module defined from the file at the given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the module file \\
+\hline
+{\em submodule} & whether or not this module is a submodule \\
+\hline
+{\em overrides} & module overrides to apply \\
+\hline
+{\em local\+Files} & true if the file is external to the src/main/resources folder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the loaded \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!process@{process}}
+\index{process@{process}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+engine.\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Process this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} with the given Person at the specified time within the simulation. 
+
+Processing will complete if the person dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} completed. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_af1363ef345dc63e556e57e205a85b25f}{org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a3e8ed8953d7ca3ee029f246010381dc8}{org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_aaf579a270c022744154225aad9a2523d}{org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1HealthInsuranceModule_aae58a8a006d9f26b08bcc557a08a8b82}{org.\+mitre.\+synthea.\+modules.\+Health\+Insurance\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af2892643cea3345a65df3702af13930c}{org.\+mitre.\+synthea.\+modules.\+Encounter\+Module}}, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a06843f69b6679cdb8d247202d679970f}{org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module}}, and \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1CardiovascularDiseaseModule_a04659b495260538e6461a62815418739}{org.\+mitre.\+synthea.\+modules.\+Cardiovascular\+Disease\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a97c7c2184fa34ad158b31f60a870b336}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a97c7c2184fa34ad158b31f60a870b336}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!process@{process}}
+\index{process@{process}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+engine.\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{boolean}]{terminate\+On\+Death }\end{DoxyParamCaption})}
+
+
+
+Process this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} with the given Person at the specified time within the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+{\em terminate\+On\+Death} & \+: whether or not to terminate if the patient is dead \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} completed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3eda0f379254dcac76f0de0977ffe5d3}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a3eda0f379254dcac76f0de0977ffe5d3}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!relativePath@{relativePath}}
+\index{relativePath@{relativePath}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{relativePath()}{relativePath()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+engine.\+Module.\+relative\+Path (\begin{DoxyParamCaption}\item[{Path}]{file\+Path,  }\item[{Path}]{modules\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a relative path from a folder to a file, removing the file extension and normalizing path segment separators. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & path to a file \\
+\hline
+{\em modules\+Folder} & path to the folder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+relative path to file from the folder 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_accf9ab6c4dd0d4f635c0437214247a68}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_accf9ab6c4dd0d4f635c0437214247a68}} 
+\index{org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}!submoduleName@{submoduleName}}
+\index{submoduleName@{submoduleName}!org.mitre.synthea.engine.Module@{org.mitre.synthea.engine.Module}}
+\doxysubsubsection{\texorpdfstring{submoduleName}{submoduleName}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+engine.\+Module.\+submodule\+Name}
+
+
+
+if a submodule, the original name of this submodule. 
+
+Otherwise null. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Module.\+java\end{DoxyCompactItemize}

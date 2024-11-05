@@ -1,0 +1,100 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Transition\+Metrics Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics}\index{org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}}
+
+
+Class to track state and transition metrics from the modules.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Metric}
+\begin{DoxyCompactList}\small\item\em Helper class to track the metrics of a single State. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a16452ca212b5a28b34f603ea5d832fc5}{enter}} (String module, String state, boolean first\+Time)
+\begin{DoxyCompactList}\small\item\em Track entering a state within a given module. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a1ad594e6725500a5161df626f93c21b4}{exit}} (String module, String state, String destination, long duration)
+\begin{DoxyCompactList}\small\item\em Track exiting a state and the resulting destination. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_ad2023aa7c2f17a24d914f1d60be2f393}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_ad2023aa7c2f17a24d914f1d60be2f393}} 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_ad2023aa7c2f17a24d914f1d60be2f393}{export\+Metrics}} ()
+\begin{DoxyCompactList}\small\item\em Exports the metrics as JSON in the exporter base directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bfseries enabled}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to track state and transition metrics from the modules. 
+
+At the end of the simulation this class can print out debugging statistics for each module/state\+:
+\begin{DoxyItemize}
+\item How many people hit that state
+\item What states they transitioned to
+\item How long they were in that state (ex, Guard, Delay) 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a16452ca212b5a28b34f603ea5d832fc5}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a16452ca212b5a28b34f603ea5d832fc5}} 
+\index{org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}!enter@{enter}}
+\index{enter@{enter}!org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}}
+\doxysubsubsection{\texorpdfstring{enter()}{enter()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Transition\+Metrics.\+enter (\begin{DoxyParamCaption}\item[{String}]{module,  }\item[{String}]{state,  }\item[{boolean}]{first\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Track entering a state within a given module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & The name of the module. \\
+\hline
+{\em state} & The name of the state. \\
+\hline
+{\em first\+Time} & Whether or not this state was previously entered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a1ad594e6725500a5161df626f93c21b4}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a1ad594e6725500a5161df626f93c21b4}} 
+\index{org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}!exit@{exit}}
+\index{exit@{exit}!org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Transition\+Metrics.\+exit (\begin{DoxyParamCaption}\item[{String}]{module,  }\item[{String}]{state,  }\item[{String}]{destination,  }\item[{long}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Track exiting a state and the resulting destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & The name of the module. \\
+\hline
+{\em state} & The name of the state. \\
+\hline
+{\em destination} & Target state that was transitioned to. \\
+\hline
+{\em duration} & The time in milliseconds spent within the state. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a476f6b4577ea5f70075f7ee3ed1db9eb}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1TransitionMetrics_a476f6b4577ea5f70075f7ee3ed1db9eb}} 
+\index{org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}!enabled@{enabled}}
+\index{enabled@{enabled}!org.mitre.synthea.helpers.TransitionMetrics@{org.mitre.synthea.helpers.TransitionMetrics}}
+\doxysubsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+helpers.\+Transition\+Metrics.\+enabled\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}generate.track\_detailed\_transition\_metrics"{}}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Transition\+Metrics.\+java\end{DoxyCompactItemize}

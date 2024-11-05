@@ -1,0 +1,6 @@
+<map id="org.mitre.synthea.engine.Distribution" name="org.mitre.synthea.engine.Distribution">
+<area shape="rect" id="node1" title="Representation of different types of distributions that can be used to represent random variables use..." alt="" coords="135,109,326,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,104,39"/>
+<area shape="rect" id="node3" title=" " alt="" coords="128,13,333,39"/>
+<area shape="rect" id="node4" href="$enumorg_1_1mitre_1_1synthea_1_1engine_1_1Distribution_1_1Kind.html" title=" " alt="" coords="358,5,549,47"/>
+</map>

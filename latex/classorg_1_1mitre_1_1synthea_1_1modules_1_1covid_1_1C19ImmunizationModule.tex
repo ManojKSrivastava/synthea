@@ -1,0 +1,362 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule}\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+
+
+A module to simulate COVID19 \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations}{Immunizations}} in the United States.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_1_1VaccinationStatus}{Vaccination\+Status}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_aba22e8d769c8d89be53d568f781892fd}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_aba22e8d769c8d89be53d568f781892fd}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_aba22e8d769c8d89be53d568f781892fd}{C19\+Immunization\+Module}} ()
+\begin{DoxyCompactList}\small\item\em Create and initialize an instance of the module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acc795f65f43726ec6ffd9a4db3f82d9f}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone this module. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a06843f69b6679cdb8d247202d679970f}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this Module with the given Person at the specified time within the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a50b8651ad0f415219fcde989554d96cd}{currently\+Has\+COVID}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Checks a person\textquotesingle{}s health record to see if they currently have COVID-\/19. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acad25332ca074d1cbfc9606893b3f966}{eligible\+For\+Shot}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Check to see if a person is eligible for a COVID-\/19 vaccine at the time in the simulation. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a200e73c47deddeedf9f7dd0334b46b8f}{decide\+On\+Shot}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Given an individual, randomly select whether they will get vaccinated, with the selection weighted by the proportion of individuals in their age group who have been vaccinated according to national statistics. \end{DoxyCompactList}\item 
+static C19\+Vaccine.\+EUASet \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a23b503868f57965aaf6b39b3674dfb14}{select\+Vaccine}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Select a vaccine for an individual based on national distribution statistics and whether the vaccine was eligible for the time in simulation. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a87dc406cc7b55154d566fdd0d5f725f4}{vaccinate}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, int series)
+\begin{DoxyCompactList}\small\item\em Provide a COVID-\/19 vaccine to the person. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_af1b719ca63a1e28240ec0d31b3cdcab0}{inventory\+Attributes}} (Map$<$ String, Attributes.\+Inventory $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_ac749e982369fe62a34fac95e4464026f}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_ac749e982369fe62a34fac95e4464026f}} 
+static final String {\bfseries COVID\+\_\+\+CODE} = \char`\"{}840539006\char`\"{}
+\item 
+static final long {\bfseries FIRST\+\_\+\+POSSIBLE\+\_\+\+SHOT\+\_\+\+TIME}
+\item 
+static final long {\bfseries MODERNA\+\_\+\+APPROVED}
+\item 
+static final long {\bfseries JANSSEN\+\_\+\+APPROVED}
+\item 
+static final long {\bfseries EXPAND\+\_\+\+AGE\+\_\+\+TO\+\_\+\+TWELVE}
+\item 
+static final long {\bfseries LATE\+\_\+\+ADOPTION\+\_\+\+START\+\_\+\+TIME}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a398c05796b5d842222ac8a5f0499d262}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a398c05796b5d842222ac8a5f0499d262}} 
+static final int {\bfseries FIRST\+\_\+\+ELIGIBLE\+\_\+\+AGE} = 16
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a7390b19538439b13a54650d954a8cd6a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a7390b19538439b13a54650d954a8cd6a}} 
+static final int {\bfseries EXPANDED\+\_\+\+ELIGIBLE\+\_\+\+AGE} = 12
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_afb80093a49008e5d2226c5412f4f2257}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_afb80093a49008e5d2226c5412f4f2257}} 
+static final String {\bfseries C19\+\_\+\+VACCINE\+\_\+\+STATUS} = \char`\"{}C19\+\_\+\+VACCINE\+\_\+\+STATUS\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a0d5e769efed54442eaac7ca47f32cdce}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a0d5e769efed54442eaac7ca47f32cdce}} 
+static final String {\bfseries C19\+\_\+\+VACCINE} = \char`\"{}C19\+\_\+\+VACCINE\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a8c123f041dd68c9bd16cee711b3abe6a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a8c123f041dd68c9bd16cee711b3abe6a}} 
+static final String {\bfseries C19\+\_\+\+SCHEDULED\+\_\+\+FIRST\+\_\+\+SHOT} = \char`\"{}C19\+\_\+\+SCHEDULED\+\_\+\+FIRST\+\_\+\+SHOT\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_adb345fdfc12b009fa9a7e98033f37c07}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_adb345fdfc12b009fa9a7e98033f37c07}} 
+static final String {\bfseries C19\+\_\+\+SCHEDULED\+\_\+\+SECOND\+\_\+\+SHOT} = \char`\"{}C19\+\_\+\+SCHEDULED\+\_\+\+SECOND\+\_\+\+SHOT\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a1babd34a1f047b5f74fd158bdce4fd82}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a1babd34a1f047b5f74fd158bdce4fd82}} 
+static final String {\bfseries C19\+\_\+\+LATE\+\_\+\+ADOPTER\+\_\+\+MODEL} = \char`\"{}C19\+\_\+\+LATE\+\_\+\+ADOPTER\+\_\+\+MODEL\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_ac5c728b014d04cbec71962c8fc86ed1a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_ac5c728b014d04cbec71962c8fc86ed1a}} 
+static final String {\bfseries C19\+\_\+\+FULLY\+\_\+\+VACCINATED} = \char`\"{}C19\+\_\+\+FULLY\+\_\+\+VACCINATED\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a4f7368da2cc9b6631def60ca3c883e51}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a4f7368da2cc9b6631def60ca3c883e51}} 
+static final String {\bfseries C19\+\_\+\+PERSON\+\_\+\+ATTRS\+\_\+\+KEY} = \char`\"{}covid19\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A module to simulate COVID19 \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1Immunizations}{Immunizations}} in the United States. 
+
+People meeting the criteria for vaccination may get one as soon as it it available. A percentage of the population will opt not to get vaccinated and drop out. For individuals in the simulation who \char`\"{}want\char`\"{} the vaccine, they will have a randomly weighted delay based on their age, as vaccines were typically made available to older age groups before the entire public. 
+
+Pfizer-\/\+Bio\+NTech COVID-\/19 Vaccine emergency use authorization on December 11, 2020 for people over 16. Expanded to 12+ on May 10, 2021. \href{https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/pfizer-biontech-covid-19-vaccine}{\texttt{ https\+://www.\+fda.\+gov/emergency-\/preparedness-\/and-\/response/coronavirus-\/disease-\/2019-\/covid-\/19/pfizer-\/biontech-\/covid-\/19-\/vaccine}} 
+
+Moderna COVID-\/19 Vaccine emergency use authorization on December 18, 2020 for people over 18 \href{https://www.fda.gov/news-events/press-announcements/fda-takes-additional-action-fight-against-covid-19-issuing-emergency-use-authorization-second-covid}{\texttt{ https\+://www.\+fda.\+gov/news-\/events/press-\/announcements/fda-\/takes-\/additional-\/action-\/fight-\/against-\/covid-\/19-\/issuing-\/emergency-\/use-\/authorization-\/second-\/covid}} 
+
+Johnson \& Johnson (Janssen) COVID-\/19 Vaccine emergency use authorization on February 27, 2021 for people over 18. \href{https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/janssen-covid-19-vaccine}{\texttt{ https\+://www.\+fda.\+gov/emergency-\/preparedness-\/and-\/response/coronavirus-\/disease-\/2019-\/covid-\/19/janssen-\/covid-\/19-\/vaccine}} 
+
+From December 11, 2020 through December 17, 2020, only the Pfizer-\/\+Bio\+NTech COVID-\/19 Vaccine is available. From December 18, 2020 through February 26, 2021, the Pfizer-\/\+Bio\+NTech COVID-\/19 Vaccine and Moderna COVID-\/19 Vaccine will be available, with them being distributed equally. 
+
+On February 27, 2021 all three vaccines are distributed. Distribution has the following weights\+:
+\begin{DoxyItemize}
+\item Pfizer-\/\+Bio\+NTech COVID-\/19 Vaccine -\/ 53.\+1\%
+\item Moderna COVID-\/19 Vaccine -\/ 39.\+8\%
+\item Johnson \& Johnson (Janssen) COVID-\/19 -\/ 7.\+1\% 
+\end{DoxyItemize}
+
+Distribution ratios were calculated using doses administered information from Our World in Data on June 23, 2021. \href{https://ourworldindata.org/grapher/covid-vaccine-doses-by-manufacturer?country=~USA}{\texttt{ https\+://ourworldindata.\+org/grapher/covid-\/vaccine-\/doses-\/by-\/manufacturer?country=$\sim$\+USA}} 
+
+Doses of two shot vaccines were divided by 1.\+956 to determine the number of individuals vaccinated. These results were combined with the Janssen vaccine doses to determine ratios. 
+
+The factor of 1.\+956 was chosen as a CDC MMWR showed that 95.\+6\% of individuals were returning for their second dose, if they had a two dose vaccine. \href{https://www.cdc.gov/mmwr/volumes/70/wr/mm7011e2.htm}{\texttt{ https\+://www.\+cdc.\+gov/mmwr/volumes/70/wr/mm7011e2.\+htm}} 
+
+This module does not represent the \char`\"{}pause\char`\"{} of the Janssen vaccine. 
+
+When people get vaccinated is based on data from the CDC COVID Data Tracker. \href{https://covid.cdc.gov/covid-data-tracker}{\texttt{ https\+://covid.\+cdc.\+gov/covid-\/data-\/tracker}} 
+
+Distributions are created for each age group based on actual doses per day. The weight of each day being selected is based on the number of doses given that day divided by the overall number of doses for the age group. This will have the effect of shifting the doses a little later, as the data does not reflect the difference between first and second dose, but it should be close enough to mirror the general trends by age group. 
+
+The chance that someone gets vaccinated is based on vaccination percentage for age group as of June 25, 2021. There are kids under 12 who have received a dose of COVID Vaccine in the US. The number is small and currently ignored by this module. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acc795f65f43726ec6ffd9a4db3f82d9f}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acc795f65f43726ec6ffd9a4db3f82d9f}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this module. 
+
+Never provide the original. 
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a50b8651ad0f415219fcde989554d96cd}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a50b8651ad0f415219fcde989554d96cd}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!currentlyHasCOVID@{currentlyHasCOVID}}
+\index{currentlyHasCOVID@{currentlyHasCOVID}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{currentlyHasCOVID()}{currentlyHasCOVID()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+currently\+Has\+COVID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks a person\textquotesingle{}s health record to see if they currently have COVID-\/19. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is an active COVID-\/19 condition on the record. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a200e73c47deddeedf9f7dd0334b46b8f}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a200e73c47deddeedf9f7dd0334b46b8f}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!decideOnShot@{decideOnShot}}
+\index{decideOnShot@{decideOnShot}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{decideOnShot()}{decideOnShot()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+decide\+On\+Shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Given an individual, randomly select whether they will get vaccinated, with the selection weighted by the proportion of individuals in their age group who have been vaccinated according to national statistics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check \\
+\hline
+{\em time} & current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the person should proceed to vaccination 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acad25332ca074d1cbfc9606893b3f966}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_acad25332ca074d1cbfc9606893b3f966}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!eligibleForShot@{eligibleForShot}}
+\index{eligibleForShot@{eligibleForShot}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{eligibleForShot()}{eligibleForShot()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+eligible\+For\+Shot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check to see if a person is eligible for a COVID-\/19 vaccine at the time in the simulation. 
+
+The check is based on date (when a vaccine was given an EUA) and age
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check \\
+\hline
+{\em time} & current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the person would be eligible for a vaccine at the point in the simulation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_af1b719ca63a1e28240ec0d31b3cdcab0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_af1b719ca63a1e28240ec0d31b3cdcab0}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, Attributes.\+Inventory $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a06843f69b6679cdb8d247202d679970f}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a06843f69b6679cdb8d247202d679970f}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!process@{process}}
+\index{process@{process}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Process this Module with the given Person at the specified time within the simulation. 
+
+Processing will complete if the person dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this Module completed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a23b503868f57965aaf6b39b3674dfb14}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a23b503868f57965aaf6b39b3674dfb14}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!selectVaccine@{selectVaccine}}
+\index{selectVaccine@{selectVaccine}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{selectVaccine()}{selectVaccine()}}
+{\footnotesize\ttfamily static C19\+Vaccine.\+EUASet org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+select\+Vaccine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Select a vaccine for an individual based on national distribution statistics and whether the vaccine was eligible for the time in simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check \\
+\hline
+{\em time} & current time in the simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vaccine that should be administered to the person 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a87dc406cc7b55154d566fdd0d5f725f4}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a87dc406cc7b55154d566fdd0d5f725f4}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!vaccinate@{vaccinate}}
+\index{vaccinate@{vaccinate}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{vaccinate()}{vaccinate()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+vaccinate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{int}]{series }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Provide a COVID-\/19 vaccine to the person. 
+
+Add an Immunization to their health record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check \\
+\hline
+{\em time} & current time in the simulation \\
+\hline
+{\em series} & 1 -\/ for first shot, 2 -\/ for second shot \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_aa6a84fc0beea96169324129d8c4442e0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_aa6a84fc0beea96169324129d8c4442e0}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!EXPAND\_AGE\_TO\_TWELVE@{EXPAND\_AGE\_TO\_TWELVE}}
+\index{EXPAND\_AGE\_TO\_TWELVE@{EXPAND\_AGE\_TO\_TWELVE}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{EXPAND\_AGE\_TO\_TWELVE}{EXPAND\_AGE\_TO\_TWELVE}}
+{\footnotesize\ttfamily final long org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+EXPAND\+\_\+\+AGE\+\_\+\+TO\+\_\+\+TWELVE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= LocalDateTime.of(2021, 5, 10, 12, 0)}
+\DoxyCodeLine{      .toInstant(ZoneOffset.UTC).toEpochMilli()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a28cc2196206e81ee14bc2e339dfe6aff}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a28cc2196206e81ee14bc2e339dfe6aff}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!FIRST\_POSSIBLE\_SHOT\_TIME@{FIRST\_POSSIBLE\_SHOT\_TIME}}
+\index{FIRST\_POSSIBLE\_SHOT\_TIME@{FIRST\_POSSIBLE\_SHOT\_TIME}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{FIRST\_POSSIBLE\_SHOT\_TIME}{FIRST\_POSSIBLE\_SHOT\_TIME}}
+{\footnotesize\ttfamily final long org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+FIRST\+\_\+\+POSSIBLE\+\_\+\+SHOT\+\_\+\+TIME\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= LocalDateTime.of(2020, 12, 11, 12, 0)}
+\DoxyCodeLine{      .toInstant(ZoneOffset.UTC).toEpochMilli()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_af15c3534d3edec08054a553573890618}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_af15c3534d3edec08054a553573890618}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!JANSSEN\_APPROVED@{JANSSEN\_APPROVED}}
+\index{JANSSEN\_APPROVED@{JANSSEN\_APPROVED}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{JANSSEN\_APPROVED}{JANSSEN\_APPROVED}}
+{\footnotesize\ttfamily final long org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+JANSSEN\+\_\+\+APPROVED\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= LocalDateTime.of(2021, 2, 27, 12, 0)}
+\DoxyCodeLine{      .toInstant(ZoneOffset.UTC).toEpochMilli()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a25fbc4af169856e86825b41c995bf557}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a25fbc4af169856e86825b41c995bf557}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!LATE\_ADOPTION\_START\_TIME@{LATE\_ADOPTION\_START\_TIME}}
+\index{LATE\_ADOPTION\_START\_TIME@{LATE\_ADOPTION\_START\_TIME}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{LATE\_ADOPTION\_START\_TIME}{LATE\_ADOPTION\_START\_TIME}}
+{\footnotesize\ttfamily final long org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+LATE\+\_\+\+ADOPTION\+\_\+\+START\+\_\+\+TIME\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= LocalDateTime.of(2021, 9, 14, 12, 0)}
+\DoxyCodeLine{      .toInstant(ZoneOffset.UTC).toEpochMilli()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a3f61a3565a3bd6b09174dc385bb72860}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule_a3f61a3565a3bd6b09174dc385bb72860}} 
+\index{org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}!MODERNA\_APPROVED@{MODERNA\_APPROVED}}
+\index{MODERNA\_APPROVED@{MODERNA\_APPROVED}!org.mitre.synthea.modules.covid.C19ImmunizationModule@{org.mitre.synthea.modules.covid.C19ImmunizationModule}}
+\doxysubsubsection{\texorpdfstring{MODERNA\_APPROVED}{MODERNA\_APPROVED}}
+{\footnotesize\ttfamily final long org.\+mitre.\+synthea.\+modules.\+covid.\+C19\+Immunization\+Module.\+MODERNA\+\_\+\+APPROVED\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= LocalDateTime.of(2020, 12, 18, 12, 0)}
+\DoxyCodeLine{      .toInstant(ZoneOffset.UTC).toEpochMilli()}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/covid/C19\+Immunization\+Module.\+java\end{DoxyCompactItemize}

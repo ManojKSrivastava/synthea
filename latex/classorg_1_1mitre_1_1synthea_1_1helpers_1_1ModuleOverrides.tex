@@ -1,0 +1,90 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Module\+Overrides Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides}\index{org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}}
+
+
+Task class to generate a properties list of \char`\"{}overridable\char`\"{} fields within the modules, which includes the name of the file, the JSONPath to the field, and the original value.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_ab080551a360c50333246438e19d33552}{Module\+Overrides}} (List$<$ String $>$ include\+Fields, List$<$ String $>$ include\+Modules\+List, List$<$ String $>$ exclude\+Fields, List$<$ String $>$ exclude\+Modules\+List)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides}{Module\+Overrides}} object which will process the modules according to the given options. \end{DoxyCompactList}\item 
+List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_a3752118aefa6dff0a8ad2d6543ba76f4}{generate\+Overrides}} ()  throws Exception 
+\begin{DoxyCompactList}\small\item\em Perform the actual processing to generate the list of properties, per the given settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_a8e1c959ff19fcda775c4fea3cf368ae9}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Main method, not to be invoked directly\+: should always be called via gradle task {\ttfamily overrides}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Task class to generate a properties list of \char`\"{}overridable\char`\"{} fields within the modules, which includes the name of the file, the JSONPath to the field, and the original value. 
+
+By default this is expected to be the set of all distributions, within all transitions, in all modules, but there are 4 configuration options\+:
+\begin{DoxyItemize}
+\item include\+Fields\+: (defaults to \mbox{[}\char`\"{}distribution\char`\"{}\mbox{]} ) -- numeric fields that match one of the given name will be written to the properties file
+\item exclude\+Fields\+: (defaults to null) -- if provided, all numeric fields except those that match the given names will be written to the properties file -- note\+: if both include\+Fields and exclude\+Fields are given, include\+Fields will be ignored
+\item include\+Modules\+: (defaults to null) -- if provided, only modules that match the given file names will be processed -- wildcards are allowed, ex \char`\"{}metabolic$\ast$\char`\"{}
+\item exclude\+Modules\+: (defaults to null) -- if provided, all modules except those that match the given file names will be processed -- wildcards are allowed, ex \char`\"{}metabolic$\ast$\char`\"{} The format of the properties file is\+: (module file name)\textbackslash{}\+:\textbackslash{}\+:(JSONPath to numeric field within module) = original value Sample Line\+: osteoporosis.\+json\textbackslash{}\+:\textbackslash{}\+:\$\mbox{[}\textquotesingle{}states\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}Male\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}distributed\+\_\+transition\textquotesingle{}\mbox{]}\mbox{[}1\mbox{]}\mbox{[}\textquotesingle{}distribution\textquotesingle{}\mbox{]} = 0.\+02 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_ab080551a360c50333246438e19d33552}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_ab080551a360c50333246438e19d33552}} 
+\index{org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}!ModuleOverrides@{ModuleOverrides}}
+\index{ModuleOverrides@{ModuleOverrides}!org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}}
+\doxysubsubsection{\texorpdfstring{ModuleOverrides()}{ModuleOverrides()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+helpers.\+Module\+Overrides.\+Module\+Overrides (\begin{DoxyParamCaption}\item[{List$<$ String $>$}]{include\+Fields,  }\item[{List$<$ String $>$}]{include\+Modules\+List,  }\item[{List$<$ String $>$}]{exclude\+Fields,  }\item[{List$<$ String $>$}]{exclude\+Modules\+List }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides}{Module\+Overrides}} object which will process the modules according to the given options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Fields} & -\/ List of field names to include \\
+\hline
+{\em include\+Modules\+List} & -\/ list of module filename rules to include \\
+\hline
+{\em exclude\+Fields} & -\/ list of field names to exclude \\
+\hline
+{\em exclude\+Modules\+List} & -\/ list of module filename rules to exclude \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_a3752118aefa6dff0a8ad2d6543ba76f4}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_a3752118aefa6dff0a8ad2d6543ba76f4}} 
+\index{org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}!generateOverrides@{generateOverrides}}
+\index{generateOverrides@{generateOverrides}!org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}}
+\doxysubsubsection{\texorpdfstring{generateOverrides()}{generateOverrides()}}
+{\footnotesize\ttfamily List$<$String$>$ org.\+mitre.\+synthea.\+helpers.\+Module\+Overrides.\+generate\+Overrides (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+
+
+Perform the actual processing to generate the list of properties, per the given settings. 
+
+\begin{DoxyReturn}{Returns}
+List of strings to be written to file. Strings are of format\+: (module file name)\textbackslash{}\+:\textbackslash{}\+:(JSONPath to numeric field within module) = original value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_a8e1c959ff19fcda775c4fea3cf368ae9}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ModuleOverrides_a8e1c959ff19fcda775c4fea3cf368ae9}} 
+\index{org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}!main@{main}}
+\index{main@{main}!org.mitre.synthea.helpers.ModuleOverrides@{org.mitre.synthea.helpers.ModuleOverrides}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Module\+Overrides.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Main method, not to be invoked directly\+: should always be called via gradle task {\ttfamily overrides}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & -- format is \mbox{[}include\+Fields, include\+Modules, exclude\+Fields, exclude\+Modules\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Module\+Overrides.\+java\end{DoxyCompactItemize}

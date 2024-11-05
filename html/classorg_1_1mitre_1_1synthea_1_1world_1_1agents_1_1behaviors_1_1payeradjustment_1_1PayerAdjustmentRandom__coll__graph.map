@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.world.agents.behaviors.payeradjustment.PayerAdjustmentRandom" name="org.mitre.synthea.world.agents.behaviors.payeradjustment.PayerAdjustmentRandom">
+<area shape="rect" id="node1" title="Randomized payment adjustment strategy." alt="" coords="467,35,880,76"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1IPayerAdjustment.html" title="Interface to abstract various claim adjustment strategies." alt="" coords="5,5,419,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="163,71,261,98"/>
+</map>

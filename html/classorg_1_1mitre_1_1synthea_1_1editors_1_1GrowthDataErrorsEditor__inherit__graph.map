@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.editors.GrowthDataErrorsEditor" name="org.mitre.synthea.editors.GrowthDataErrorsEditor">
+<area shape="rect" id="node1" title="This editor simulates errors that occur in growth data as it would be collected in a clinical setting..." alt="" coords="5,95,196,136"/>
+<area shape="rect" id="node2" href="$interfaceorg_1_1mitre_1_1synthea_1_1engine_1_1HealthRecordEditor.html" title="The HealthRecordEditor offers an interface that can be implemented to modify a Synthea Person&#39;s Healt..." alt="" coords="5,5,196,47"/>
+</map>

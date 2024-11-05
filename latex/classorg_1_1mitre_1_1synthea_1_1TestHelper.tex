@@ -1,0 +1,173 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper}{}\doxysection{org.\+mitre.\+synthea.\+Test\+Helper Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1TestHelper}\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_a2fc0bbb225d17067d945ceb703dae5ca}{get\+Fixture}} (String filename)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Returns a test fixture Module by filename. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_a29a2e9c037964506ee5d649d4994bc16}{load\+Test\+Properties}} ()  throws Exception 
+\begin{DoxyCompactList}\small\item\em Load the test.\+properties file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_aa271ceb3741d6c0a7df98820ca585e30}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_aa271ceb3741d6c0a7df98820ca585e30}} 
+static Wire\+Mock\+Configuration {\bfseries wiremock\+Options} ()
+\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_a299775cc690c9b55d2df637d1aeb8dcd}{is\+Http\+Recording\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em Check whether the {\ttfamily synthea.\+test.\+http\+Recording} property is set to enable HTTP recording, for tests with HTTP mocking. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_abd46b532d9605b68527f6ae847ba3e85}{get\+Tx\+Recording\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Return the configured URL for recording terminology HTTP responses. \end{DoxyCompactList}\item 
+static Response\+Definition\+Builder \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_aae2932a07df57ea5e2059481bd1fc0f0}{fhir\+Response}} ()
+\begin{DoxyCompactList}\small\item\em Returns a Wire\+Mock response builder representing a response from a FHIR server. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_a752ef5c476cca47e25c234e96d4d530b}{export\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Helper method to disable export of all data formats and database output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a59d35a3b5a2bab783377803c0430c2e1}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a59d35a3b5a2bab783377803c0430c2e1}} 
+static long {\bfseries timestamp} (int year, int month, int day, int hr, int min, int sec)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a57c7073cf93bafd7dec029150b35856c}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a57c7073cf93bafd7dec029150b35856c}} 
+static long {\bfseries years} (long num\+Years)
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_a02ddbb64ea273d5a8bb0cb025e532333}{build\+Mock\+Provider}} ()
+\begin{DoxyCompactList}\small\item\em Create a provider that can assigned to Patients. \end{DoxyCompactList}\item 
+static synchronized \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1TestHelper_a85f0321cb8465af464ef833043f28a41}{get\+Generated\+People}} ()  throws IOException,       Class\+Not\+Found\+Exception 
+\begin{DoxyCompactList}\small\item\em This method generates 10 people and then serializes them out into memory as byte arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_af65ce1d916fbc3066a9ff7cfe8076593}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_af65ce1d916fbc3066a9ff7cfe8076593}} 
+static final String {\bfseries SNOMED\+\_\+\+URI} = \char`\"{}http\+://snomed.\+info/sct\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a64b87c4c84c4ac3749e7549a6992ff3a}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a64b87c4c84c4ac3749e7549a6992ff3a}} 
+static final String {\bfseries LOINC\+\_\+\+URI} = \char`\"{}http\+://loinc.\+org\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a94ac3c6ab8ca873de72b76d32438b479}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a94ac3c6ab8ca873de72b76d32438b479}} 
+static final String {\bfseries SNOMED\+\_\+\+OID} = \char`\"{}2.\+16.\+840.\+1.\+113883.\+6.\+96\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_ae6f326ea7e147d73080934e91ac8c1a0}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_ae6f326ea7e147d73080934e91ac8c1a0}} 
+static final String {\bfseries LOINC\+\_\+\+OID} = \char`\"{}2.\+16.\+840.\+1.\+113883.\+6.\+1\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a02ddbb64ea273d5a8bb0cb025e532333}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a02ddbb64ea273d5a8bb0cb025e532333}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!buildMockProvider@{buildMockProvider}}
+\index{buildMockProvider@{buildMockProvider}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{buildMockProvider()}{buildMockProvider()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider}{Provider}} org.\+mitre.\+synthea.\+Test\+Helper.\+build\+Mock\+Provider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a provider that can assigned to Patients. 
+
+\begin{DoxyReturn}{Returns}
+General practice provider with all services. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a752ef5c476cca47e25c234e96d4d530b}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a752ef5c476cca47e25c234e96d4d530b}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!exportOff@{exportOff}}
+\index{exportOff@{exportOff}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{exportOff()}{exportOff()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+Test\+Helper.\+export\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper method to disable export of all data formats and database output. 
+
+Ensures that unit tests do not pollute the output folders. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_aae2932a07df57ea5e2059481bd1fc0f0}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_aae2932a07df57ea5e2059481bd1fc0f0}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!fhirResponse@{fhirResponse}}
+\index{fhirResponse@{fhirResponse}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{fhirResponse()}{fhirResponse()}}
+{\footnotesize\ttfamily static Response\+Definition\+Builder org.\+mitre.\+synthea.\+Test\+Helper.\+fhir\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a Wire\+Mock response builder representing a response from a FHIR server. 
+
+\begin{DoxyReturn}{Returns}
+a Response\+Definition\+Builder object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a2fc0bbb225d17067d945ceb703dae5ca}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a2fc0bbb225d17067d945ceb703dae5ca}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!getFixture@{getFixture}}
+\index{getFixture@{getFixture}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{getFixture()}{getFixture()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+Test\+Helper.\+get\+Fixture (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a test fixture Module by filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the test fixture Module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Module. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & On errors. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a85f0321cb8465af464ef833043f28a41}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a85f0321cb8465af464ef833043f28a41}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!getGeneratedPeople@{getGeneratedPeople}}
+\index{getGeneratedPeople@{getGeneratedPeople}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{getGeneratedPeople()}{getGeneratedPeople()}}
+{\footnotesize\ttfamily static synchronized \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} \mbox{[}$\,$\mbox{]} org.\+mitre.\+synthea.\+Test\+Helper.\+get\+Generated\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException,       Class\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method generates 10 people and then serializes them out into memory as byte arrays. 
+
+For tests that need a generated patient, they can call this method to grab a fresh copy of a person which is rehydrated from the byte array to ensure an unmodified copy of the original. This eliminates regeneration of people in the test suite for many of the exporters. \begin{DoxyReturn}{Returns}
+the people array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & when there is a problem rehydrating a person \\
+\hline
+{\em Class\+Not\+Found\+Exception} & when there is a problem rehydrating a person \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_abd46b532d9605b68527f6ae847ba3e85}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_abd46b532d9605b68527f6ae847ba3e85}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!getTxRecordingSource@{getTxRecordingSource}}
+\index{getTxRecordingSource@{getTxRecordingSource}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{getTxRecordingSource()}{getTxRecordingSource()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+Test\+Helper.\+get\+Tx\+Recording\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the configured URL for recording terminology HTTP responses. 
+
+\begin{DoxyReturn}{Returns}
+the configured terminology service URL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a299775cc690c9b55d2df637d1aeb8dcd}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a299775cc690c9b55d2df637d1aeb8dcd}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!isHttpRecordingEnabled@{isHttpRecordingEnabled}}
+\index{isHttpRecordingEnabled@{isHttpRecordingEnabled}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{isHttpRecordingEnabled()}{isHttpRecordingEnabled()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+Test\+Helper.\+is\+Http\+Recording\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check whether the {\ttfamily synthea.\+test.\+http\+Recording} property is set to enable HTTP recording, for tests with HTTP mocking. 
+
+\begin{DoxyReturn}{Returns}
+true if HTTP recording is enabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1TestHelper_a29a2e9c037964506ee5d649d4994bc16}\label{classorg_1_1mitre_1_1synthea_1_1TestHelper_a29a2e9c037964506ee5d649d4994bc16}} 
+\index{org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}!loadTestProperties@{loadTestProperties}}
+\index{loadTestProperties@{loadTestProperties}!org.mitre.synthea.TestHelper@{org.mitre.synthea.TestHelper}}
+\doxysubsubsection{\texorpdfstring{loadTestProperties()}{loadTestProperties()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+Test\+Helper.\+load\+Test\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the test.\+properties file. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & on configuration loading errors. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/test/java/org/mitre/synthea/Test\+Helper.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{}\doxysection{org.\+mitre.\+synthea.\+identity.\+Entity Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}\index{org.mitre.synthea.identity.Entity@{org.mitre.synthea.identity.Entity}}
+
+
+This class represents a set of desired demographic information about a Person to be simulated.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a5deae246f285d34da49cffa390e4489f}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a5deae246f285d34da49cffa390e4489f}} 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Seed}{Seed}} $>$ {\bfseries get\+Seeds} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a4c1cea5388c4cf7429967e615f3691fa}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a4c1cea5388c4cf7429967e615f3691fa}} 
+void {\bfseries set\+Seeds} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Seed}{Seed}} $>$ seeds)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a1499ca58613c7bdbf05ec8b12a028e2c}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a1499ca58613c7bdbf05ec8b12a028e2c}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Seed}{Seed}} {\bfseries seed\+At} (Local\+Date date)
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Seed}{Seed}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a77916e25a792927b9fee486b8bcb6252}{seed\+At}} (long timestamp)
+\begin{DoxyCompactList}\small\item\em Find the seed at a particular time. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a28c7bd14e815d955793491bbea5fc719}{valid\+Seed\+Periods}} ()
+\begin{DoxyCompactList}\small\item\em Checks to see whether the seeds for this entity are valid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a8e93a3d656d3467163acb337adcca80d}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a8e93a3d656d3467163acb337adcca80d}} 
+Local\+Date {\bfseries get\+Date\+Of\+Birth} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_ac1429080074452589d894c2131b5504a}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_ac1429080074452589d894c2131b5504a}} 
+void {\bfseries set\+Date\+Of\+Birth} (Local\+Date date\+Of\+Birth)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a2251cd134662f679eb87a0a2360aa292}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a2251cd134662f679eb87a0a2360aa292}} 
+String {\bfseries get\+Gender} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a0b9c359608e8690c9d7e57268bc02b5e}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a0b9c359608e8690c9d7e57268bc02b5e}} 
+void {\bfseries set\+Gender} (String gender)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a1dc6a3d9d204431a53cd1265020725b8}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a1dc6a3d9d204431a53cd1265020725b8}} 
+String {\bfseries get\+Individual\+Id} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_af443721347d05f6fdf6170f63b2a3bc8}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_af443721347d05f6fdf6170f63b2a3bc8}} 
+void {\bfseries set\+Individual\+Id} (String individual\+Id)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_aa095e1a7bc9fe572cf9cd5b2a25c0974}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_aa095e1a7bc9fe572cf9cd5b2a25c0974}} 
+String {\bfseries get\+Housing\+Status} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_af38e6d8ab9a3c860d0f057f77653bd53}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_af38e6d8ab9a3c860d0f057f77653bd53}} 
+void {\bfseries set\+Housing\+Status} (String housing\+Status)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a set of desired demographic information about a Person to be simulated. 
+
+Typically in Synthea, a person\textquotesingle{}s demographic information is made via random weighted selections and an individual stays in the same place for their entire life. An \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} can be used to specify demographic information. Additionally, information can be supplied that allows the simulation to mimic someone moving their primary place of residence.
+
+This class contains basic-\/level demographic information, such as date of birth and gender. More detailed information is contained in Seeds. Each \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity}{Entity}} is made up of a list of Seeds, which represent the demographic information for a Person over a specified time range. 
+
+As an example, a Person can have a seed to represent their birthplace. 10 years later, their family moves, so another seed would be added to their record reflecting their new address 
+
+Seeds have one or more Variants. This is a representation of have the demographic information will be when placed in the exported health record. It can be used to represent data errors or variations typically seen in demographic information, such as nicknames, typos, old addresses, etc. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a77916e25a792927b9fee486b8bcb6252}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a77916e25a792927b9fee486b8bcb6252}} 
+\index{org.mitre.synthea.identity.Entity@{org.mitre.synthea.identity.Entity}!seedAt@{seedAt}}
+\index{seedAt@{seedAt}!org.mitre.synthea.identity.Entity@{org.mitre.synthea.identity.Entity}}
+\doxysubsubsection{\texorpdfstring{seedAt()}{seedAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1identity_1_1Seed}{Seed}} org.\+mitre.\+synthea.\+identity.\+Entity.\+seed\+At (\begin{DoxyParamCaption}\item[{long}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+Find the seed at a particular time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & the time to find a seed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The seed that covers the time. If before the first seed, will still return the first seed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a28c7bd14e815d955793491bbea5fc719}\label{classorg_1_1mitre_1_1synthea_1_1identity_1_1Entity_a28c7bd14e815d955793491bbea5fc719}} 
+\index{org.mitre.synthea.identity.Entity@{org.mitre.synthea.identity.Entity}!validSeedPeriods@{validSeedPeriods}}
+\index{validSeedPeriods@{validSeedPeriods}!org.mitre.synthea.identity.Entity@{org.mitre.synthea.identity.Entity}}
+\doxysubsubsection{\texorpdfstring{validSeedPeriods()}{validSeedPeriods()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+identity.\+Entity.\+valid\+Seed\+Periods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks to see whether the seeds for this entity are valid. 
+
+This means that there are no gaps in time between all seeds. Also ensures that seeds do no overlap in time. \begin{DoxyReturn}{Returns}
+true if the seed periods are valid, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/identity/Entity.\+java\end{DoxyCompactItemize}

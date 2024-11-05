@@ -1,0 +1,93 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Random\+Value\+Generator Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator}\index{org.mitre.synthea.helpers.RandomValueGenerator@{org.mitre.synthea.helpers.RandomValueGenerator}}
+
+
+Generate random values within a defined range.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+helpers.\+Random\+Value\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Random\+Value\+Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a63a9357b87f3784190b73d05ce04dfbe}{Random\+Value\+Generator}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, double low, double high)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator}{Random\+Value\+Generator}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a3c5b839941fe5b07fa2fd83cabad6337}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a3c5b839941fe5b07fa2fd83cabad6337}} 
+{\bfseries Random\+Value\+Generator} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Distribution}{Distribution}} distribution)
+\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a90cfe3d980bad00b37f3ffd736b46b88}{get\+Value}} (long time)
+\begin{DoxyCompactList}\small\item\em Get a value at a given point in time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Generate random values within a defined range. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a63a9357b87f3784190b73d05ce04dfbe}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a63a9357b87f3784190b73d05ce04dfbe}} 
+\index{org.mitre.synthea.helpers.RandomValueGenerator@{org.mitre.synthea.helpers.RandomValueGenerator}!RandomValueGenerator@{RandomValueGenerator}}
+\index{RandomValueGenerator@{RandomValueGenerator}!org.mitre.synthea.helpers.RandomValueGenerator@{org.mitre.synthea.helpers.RandomValueGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomValueGenerator()}{RandomValueGenerator()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+helpers.\+Random\+Value\+Generator.\+Random\+Value\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{double}]{low,  }\item[{double}]{high }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator}{Random\+Value\+Generator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to generate data for. \\
+\hline
+{\em low} & The lower bound for the generator. \\
+\hline
+{\em high} & The upper bound for the generator. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a90cfe3d980bad00b37f3ffd736b46b88}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator_a90cfe3d980bad00b37f3ffd736b46b88}} 
+\index{org.mitre.synthea.helpers.RandomValueGenerator@{org.mitre.synthea.helpers.RandomValueGenerator}!getValue@{getValue}}
+\index{getValue@{getValue}!org.mitre.synthea.helpers.RandomValueGenerator@{org.mitre.synthea.helpers.RandomValueGenerator}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+helpers.\+Random\+Value\+Generator.\+get\+Value (\begin{DoxyParamCaption}\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Get a value at a given point in time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time, needs to be current or in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a numerical value 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator_a6671b856e0738d8f8b566b8ded182a74}{org.\+mitre.\+synthea.\+helpers.\+Value\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Random\+Value\+Generator.\+java\end{DoxyCompactItemize}

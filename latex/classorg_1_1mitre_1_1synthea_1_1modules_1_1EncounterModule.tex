@@ -1,0 +1,299 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+Encounter\+Module Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule}\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+modules.\+Encounter\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+Encounter\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a91514efafc955048c7828ae9fe37aabb}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone this module. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af2892643cea3345a65df3702af13930c}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this Module with the given Person at the specified time within the simulation. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae3f1d4636755327e7603a5208e362dee}{recommended\+Time\+Between\+Wellness\+Visits}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Recommended time between Wellness Visits by age of patient and whether they have chronic medications. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a3bb4f5ca261004715734b1c023b1382c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a3bb4f5ca261004715734b1c023b1382c}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a3bb4f5ca261004715734b1c023b1382c}{end\+Encounter\+Module\+Encounters}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em End a wellness encounter if currently active. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae4167c3eb1043ccb5522a822f4a16a6c}{create\+Encounter}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time, \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}} type, String specialty, Code code, String module)
+\begin{DoxyCompactList}\small\item\em Create an Encounter that is coded, with a provider organization, and a clinician. \end{DoxyCompactList}\item 
+static Code \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af26e782c63259015e2e0b68393667ef5}{get\+Wellness\+Visit\+Code}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Get the correct Wellness Visit Code by age of patient. \end{DoxyCompactList}\item 
+static Collection$<$ Code $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a8ddc956566add71840fbd830c7f7963d}{get\+All\+Codes}} ()
+\begin{DoxyCompactList}\small\item\em Get all of the Codes this module uses, for inventory purposes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0623fdd8d67d63e990751d5d9c0a5f0a}{inventory\+Attributes}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a44e8868d730cea65420a18690f408b13}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a44e8868d730cea65420a18690f408b13}} 
+static final String {\bfseries ACTIVE\+\_\+\+WELLNESS\+\_\+\+ENCOUNTER} = \char`\"{}active\+\_\+wellness\+\_\+encounter\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0d7df3963cc4f3c29d85070883be07e0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0d7df3963cc4f3c29d85070883be07e0}} 
+static final String {\bfseries ACTIVE\+\_\+\+URGENT\+\_\+\+CARE\+\_\+\+ENCOUNTER} = \char`\"{}active\+\_\+urgent\+\_\+care\+\_\+encounter\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a2960315418b9ff63d26b152127c3f992}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a2960315418b9ff63d26b152127c3f992}} 
+static final String {\bfseries ACTIVE\+\_\+\+EMERGENCY\+\_\+\+ENCOUNTER} = \char`\"{}active\+\_\+emergency\+\_\+encounter\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_aa9979ac61cb3d0527983637332f768c9}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_aa9979ac61cb3d0527983637332f768c9}} 
+static final String {\bfseries NAME} = \char`\"{}Encounter\char`\"{}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a86240c6dcbb031cae6dbc7aa0a422b7c}{PCP\+\_\+\+SYMPTOM\+\_\+\+THRESHOLD}} = 300
+\begin{DoxyCompactList}\small\item\em These are thresholds for patients to seek symptom-\/driven care -\/ they\textquotesingle{}ll go to the appropriate provider based on which threshold they meet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a10739776a7f51062362248923da3d0fe}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a10739776a7f51062362248923da3d0fe}} 
+static final int {\bfseries URGENT\+\_\+\+CARE\+\_\+\+SYMPTOM\+\_\+\+THRESHOLD} = 350
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a79f937c63ddcad078b5eae18d701bdc8}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a79f937c63ddcad078b5eae18d701bdc8}} 
+static final int {\bfseries EMERGENCY\+\_\+\+SYMPTOM\+\_\+\+THRESHOLD} = 500
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae565ab7c0a9d44870197f175df50f037}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae565ab7c0a9d44870197f175df50f037}} 
+static final String {\bfseries LAST\+\_\+\+VISIT\+\_\+\+SYMPTOM\+\_\+\+TOTAL} = \char`\"{}last\+\_\+visit\+\_\+symptom\+\_\+total\char`\"{}
+\item 
+static final Code {\bfseries ENCOUNTER\+\_\+\+CHECKUP}
+\item 
+static final Code {\bfseries ENCOUNTER\+\_\+\+EMERGENCY}
+\item 
+static final Code {\bfseries WELL\+\_\+\+CHILD\+\_\+\+VISIT}
+\item 
+static final Code {\bfseries GENERAL\+\_\+\+EXAM}
+\item 
+static final Code {\bfseries ENCOUNTER\+\_\+\+URGENTCARE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a91514efafc955048c7828ae9fe37aabb}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a91514efafc955048c7828ae9fe37aabb}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this module. 
+
+Never provide the original. 
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae4167c3eb1043ccb5522a822f4a16a6c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae4167c3eb1043ccb5522a822f4a16a6c}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!createEncounter@{createEncounter}}
+\index{createEncounter@{createEncounter}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{createEncounter()}{createEncounter()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter}{Encounter}} org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+create\+Encounter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time,  }\item[{\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EncounterType}{Encounter\+Type}}}]{type,  }\item[{String}]{specialty,  }\item[{Code}]{code,  }\item[{String}]{module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create an Encounter that is coded, with a provider organization, and a clinician. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient. \\
+\hline
+{\em time} & The time of the encounter. \\
+\hline
+{\em type} & The type of encounter (e.\+g. emergency). \\
+\hline
+{\em specialty} & The clinician specialty (e.\+g. \char`\"{}\+General Practice\char`\"{}) \\
+\hline
+{\em code} & The code to assign to the encounter. \\
+\hline
+{\em module} & The module creating this encounter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The encounter, or null if the person is already in an active encounter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a8ddc956566add71840fbd830c7f7963d}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a8ddc956566add71840fbd830c7f7963d}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!getAllCodes@{getAllCodes}}
+\index{getAllCodes@{getAllCodes}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{getAllCodes()}{getAllCodes()}}
+{\footnotesize\ttfamily static Collection$<$Code$>$ org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+get\+All\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all of the Codes this module uses, for inventory purposes. 
+
+\begin{DoxyReturn}{Returns}
+Collection of all codes and concepts this module uses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af26e782c63259015e2e0b68393667ef5}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af26e782c63259015e2e0b68393667ef5}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!getWellnessVisitCode@{getWellnessVisitCode}}
+\index{getWellnessVisitCode@{getWellnessVisitCode}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{getWellnessVisitCode()}{getWellnessVisitCode()}}
+{\footnotesize\ttfamily static Code org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+get\+Wellness\+Visit\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the correct Wellness Visit Code by age of patient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient. \\
+\hline
+{\em time} & The time of the encounter which we translate to age of patient. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SNOMED-\/\+CT code for Wellness Visit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0623fdd8d67d63e990751d5d9c0a5f0a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0623fdd8d67d63e990751d5d9c0a5f0a}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af2892643cea3345a65df3702af13930c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_af2892643cea3345a65df3702af13930c}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!process@{process}}
+\index{process@{process}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Process this Module with the given Person at the specified time within the simulation. 
+
+Processing will complete if the person dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this Module completed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae3f1d4636755327e7603a5208e362dee}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ae3f1d4636755327e7603a5208e362dee}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!recommendedTimeBetweenWellnessVisits@{recommendedTimeBetweenWellnessVisits}}
+\index{recommendedTimeBetweenWellnessVisits@{recommendedTimeBetweenWellnessVisits}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{recommendedTimeBetweenWellnessVisits()}{recommendedTimeBetweenWellnessVisits()}}
+{\footnotesize\ttfamily long org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+recommended\+Time\+Between\+Wellness\+Visits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Recommended time between Wellness Visits by age of patient and whether they have chronic medications. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient. \\
+\hline
+{\em time} & The time of the encounter which we translate to age of patient. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Recommended time between Wellness Visits in milliseconds 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a63bc4cc7fb5a46790b28cfc7bfcc07ce}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a63bc4cc7fb5a46790b28cfc7bfcc07ce}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!ENCOUNTER\_CHECKUP@{ENCOUNTER\_CHECKUP}}
+\index{ENCOUNTER\_CHECKUP@{ENCOUNTER\_CHECKUP}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{ENCOUNTER\_CHECKUP}{ENCOUNTER\_CHECKUP}}
+{\footnotesize\ttfamily final Code org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+ENCOUNTER\+\_\+\+CHECKUP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Code(\textcolor{stringliteral}{"{}SNOMED-\/CT"{}}, \textcolor{stringliteral}{"{}185349003"{}},}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}Encounter for check up (procedure)"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a60fb9c15d8bcdfaa4e311d89dc312511}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a60fb9c15d8bcdfaa4e311d89dc312511}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!ENCOUNTER\_EMERGENCY@{ENCOUNTER\_EMERGENCY}}
+\index{ENCOUNTER\_EMERGENCY@{ENCOUNTER\_EMERGENCY}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{ENCOUNTER\_EMERGENCY}{ENCOUNTER\_EMERGENCY}}
+{\footnotesize\ttfamily final Code org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+ENCOUNTER\+\_\+\+EMERGENCY\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Code(\textcolor{stringliteral}{"{}SNOMED-\/CT"{}}, \textcolor{stringliteral}{"{}50849002"{}},}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}Emergency room admission (procedure)"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ab5e90e633f5653afad8ddb6098508dce}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_ab5e90e633f5653afad8ddb6098508dce}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!ENCOUNTER\_URGENTCARE@{ENCOUNTER\_URGENTCARE}}
+\index{ENCOUNTER\_URGENTCARE@{ENCOUNTER\_URGENTCARE}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{ENCOUNTER\_URGENTCARE}{ENCOUNTER\_URGENTCARE}}
+{\footnotesize\ttfamily final Code org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+ENCOUNTER\+\_\+\+URGENTCARE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Code(\textcolor{stringliteral}{"{}SNOMED-\/CT"{}}, \textcolor{stringliteral}{"{}702927004"{}},}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}Urgent care clinic (environment)"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0f161b1197843479afaeebb0b2d22fb3}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a0f161b1197843479afaeebb0b2d22fb3}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!GENERAL\_EXAM@{GENERAL\_EXAM}}
+\index{GENERAL\_EXAM@{GENERAL\_EXAM}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{GENERAL\_EXAM}{GENERAL\_EXAM}}
+{\footnotesize\ttfamily final Code org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+GENERAL\+\_\+\+EXAM\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Code(\textcolor{stringliteral}{"{}SNOMED-\/CT"{}}, \textcolor{stringliteral}{"{}162673000"{}},}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}General examination of patient (procedure)"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a86240c6dcbb031cae6dbc7aa0a422b7c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a86240c6dcbb031cae6dbc7aa0a422b7c}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!PCP\_SYMPTOM\_THRESHOLD@{PCP\_SYMPTOM\_THRESHOLD}}
+\index{PCP\_SYMPTOM\_THRESHOLD@{PCP\_SYMPTOM\_THRESHOLD}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{PCP\_SYMPTOM\_THRESHOLD}{PCP\_SYMPTOM\_THRESHOLD}}
+{\footnotesize\ttfamily final int org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+PCP\+\_\+\+SYMPTOM\+\_\+\+THRESHOLD = 300\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+These are thresholds for patients to seek symptom-\/driven care -\/ they\textquotesingle{}ll go to the appropriate provider based on which threshold they meet. 
+
+By CDC statistics (\href{https://www.cdc.gov/nchs/data/ahcd/namcs_summary/2015_namcs_web_tables.pdf}{\texttt{ https\+://www.\+cdc.\+gov/nchs/data/ahcd/namcs\+\_\+summary/2015\+\_\+namcs\+\_\+web\+\_\+tables.\+pdf}}), a person goes to an average of 24,904,00/(US adult population = 249485228) = .0998 urgent visits per year. The goal for the number of symptom-\/driven encounters (urgent care, PCP, and ER) is .0998 $\ast$ age. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a34747422fce5883209b115afee91c4a6}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule_a34747422fce5883209b115afee91c4a6}} 
+\index{org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}!WELL\_CHILD\_VISIT@{WELL\_CHILD\_VISIT}}
+\index{WELL\_CHILD\_VISIT@{WELL\_CHILD\_VISIT}!org.mitre.synthea.modules.EncounterModule@{org.mitre.synthea.modules.EncounterModule}}
+\doxysubsubsection{\texorpdfstring{WELL\_CHILD\_VISIT}{WELL\_CHILD\_VISIT}}
+{\footnotesize\ttfamily final Code org.\+mitre.\+synthea.\+modules.\+Encounter\+Module.\+WELL\+\_\+\+CHILD\+\_\+\+VISIT\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Code(\textcolor{stringliteral}{"{}SNOMED-\/CT"{}}, \textcolor{stringliteral}{"{}410620009"{}},}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}Well child visit (procedure)"{}})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/Encounter\+Module.\+java\end{DoxyCompactItemize}

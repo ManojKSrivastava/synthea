@@ -1,0 +1,337 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule}\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+
+
+This module allows patients in Synthea to lose weight.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_add71c1dc920de80955f11de0865af1a0}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone this module. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_af1363ef345dc63e556e57e205a85b25f}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this Module with the given Person at the specified time within the simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ae06fcff9b5dac2857f794a788491c850}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ae06fcff9b5dac2857f794a788491c850}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ae06fcff9b5dac2857f794a788491c850}{manage\+First\+Year\+Weight}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em This method handles all weight management cases (adherent and non-\/adherent) for the first year of weight management. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_acec5937d6c41c60a8395642e2104282c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_acec5937d6c41c60a8395642e2104282c}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_acec5937d6c41c60a8395642e2104282c}{manage\+Year\+Two\+Through\+Five}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em This method handles all weight management cases (adherent and non-\/adherent) for the year two through year five of weight management. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa958ae774bf9f353a31d88af7a7d7234}{stop\+Weight\+Management}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Person stops weight management. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aeec6e5260b3f663d8f48dd5edcbcb362}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aeec6e5260b3f663d8f48dd5edcbcb362}} 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aeec6e5260b3f663d8f48dd5edcbcb362}{first\+Year\+Of\+Management}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines whether the person is currently within their first year of active weight management based on the WEIGHT\+\_\+\+MANAGEMENT\+\_\+\+START attribute. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aeccdd7e4df71d4735bd32140aa6c4e14}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aeccdd7e4df71d4735bd32140aa6c4e14}} 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aeccdd7e4df71d4735bd32140aa6c4e14}{first\+Five\+Years\+Of\+Management}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines whether the person is currently within their first five years of active weight management based on the WEIGHT\+\_\+\+MANAGEMENT\+\_\+\+START attribute. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a509c9a606107563023a35a388eb804fa}{adult\+Weight\+Loss}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Weight loss is linear from the person\textquotesingle{}s start weight to their target weight (start -\/ percentage loss) over the first year of active weight management. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa54389ab42e528822ec17de83eb78485}{adult\+Regression}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Weight regression is linear from a person\textquotesingle{}s current weight to their original weight over the second through fifth year of active weight management. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a2e2b251a1a73a98dd14c86f74ce6f2b4}{pediatric\+Regression}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em This will regress a pediatric patient back to their BMI percentile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a39b2c5e8f92c47faaf2bf2ba55641cab}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a39b2c5e8f92c47faaf2bf2ba55641cab}} 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a39b2c5e8f92c47faaf2bf2ba55641cab}{transition\+Regression}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Revert the person to their 240 month weight percentile following the same procedure as pediatric regression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_adca3e0f59251ed9b284cc9d43881cf9a}{adjust\+BMIVector\+For\+Successful\+Management}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Change the BMI vector to reflect successful management of weight. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad35192a185917bcf1258bdeb1c4cb53c}{maintain\+BMIPercentile}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em For patients under 20 that have successful weight management and long term success, they will maintain their BMI until they reach age 20. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a7d9a25b289790e076167ecf22defad8d}{start\+Weight\+Management}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Starts active weight management for the person. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a03e71320ef8058dd29e81d0502d6219a}{will\+Start\+Weight\+Management}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines whether a person will start weight management. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa15f2a51d439b75c3ce3770581916a58}{meets\+Weight\+Management\+Thresholds}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines whether a person meets the thresholds for starting weight management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a146465456accff76d41893dac37d66eb}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a146465456accff76d41893dac37d66eb}} 
+static long {\bfseries ONE\+\_\+\+YEAR} = \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Utilities_a182480a0770b00c6382484863f48bb60}{Utilities.\+convert\+Time}}(\char`\"{}years\char`\"{}, 1)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a5589df5ed886e505f0fd0c4fdf19c1ef}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a5589df5ed886e505f0fd0c4fdf19c1ef}} 
+static int {\bfseries TW0\+\_\+\+YEARS\+\_\+\+IN\+\_\+\+MONTHS} = 24
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a98cfc263e25493c8b342664aacdcc982}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a98cfc263e25493c8b342664aacdcc982}} 
+static int {\bfseries TWENTY\+\_\+\+YEARS\+\_\+\+IN\+\_\+\+MONTHS} = 240
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a187ecebffbee25d3a4fed203796e0557}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a187ecebffbee25d3a4fed203796e0557}} 
+static final String {\bfseries ACTIVE\+\_\+\+WEIGHT\+\_\+\+MANAGEMENT} = \char`\"{}active\+\_\+weight\+\_\+management\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa347b6b87dd70f28aa5dd794c01aaee2}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa347b6b87dd70f28aa5dd794c01aaee2}} 
+static final String {\bfseries PRE\+\_\+\+MANAGEMENT\+\_\+\+WEIGHT} = \char`\"{}pre\+\_\+management\+\_\+weight\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad8f35e7bb50cd0bd7861b1b64dedafff}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad8f35e7bb50cd0bd7861b1b64dedafff}} 
+static final String {\bfseries WEIGHT\+\_\+\+MANAGEMENT\+\_\+\+START} = \char`\"{}weight\+\_\+management\+\_\+start\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a5f95d992adf3f827621fd795efa73836}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a5f95d992adf3f827621fd795efa73836}} 
+static final String {\bfseries WEIGHT\+\_\+\+LOSS\+\_\+\+PERCENTAGE} = \char`\"{}weight\+\_\+loss\+\_\+percentage\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a6f28b06f2e062b1d036fda8e9bcdfc84}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a6f28b06f2e062b1d036fda8e9bcdfc84}} 
+static final String {\bfseries WEIGHT\+\_\+\+LOSS\+\_\+\+BMI\+\_\+\+PERCENTILE\+\_\+\+CHANGE} = \char`\"{}weight\+\_\+loss\+\_\+bmi\+\_\+percentile\+\_\+change\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ac6e8ac96d0eedb13b2167e307fb6f17e}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ac6e8ac96d0eedb13b2167e307fb6f17e}} 
+static final String {\bfseries LONG\+\_\+\+TERM\+\_\+\+WEIGHT\+\_\+\+LOSS} = \char`\"{}long\+\_\+term\+\_\+weight\+\_\+loss\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a085b38b3c825462a963da7a49f5602c8}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a085b38b3c825462a963da7a49f5602c8}} 
+static final String {\bfseries WEIGHT\+\_\+\+LOSS\+\_\+\+ADHERENCE} = \char`\"{}weight\+\_\+loss\+\_\+adherence\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aed326734ef657716d33d8819696debb4}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aed326734ef657716d33d8819696debb4}} 
+static final String {\bfseries TRIGGER\+\_\+\+WEIGHT\+\_\+\+LOSS} = \char`\"{}trigger\+\_\+weight\+\_\+loss\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a96219f74c9a4375d3a051faf13d9e9c0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a96219f74c9a4375d3a051faf13d9e9c0}} 
+static final int {\bfseries management\+Start\+Age} = (int) \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}{Biometrics\+Config.\+get}}(\char`\"{}min\+\_\+age\char`\"{}, 5)
+\item 
+static final double {\bfseries start\+Weight\+Management\+Prob}
+\item 
+static final double {\bfseries adherence}
+\item 
+static final double {\bfseries start\+BMI}
+\item 
+static final double {\bfseries start\+Percentile}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ab0d56ce6a1ed89cea6eb62b18749c9cf}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ab0d56ce6a1ed89cea6eb62b18749c9cf}} 
+static final double {\bfseries min\+Loss} = (double) \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}{Biometrics\+Config.\+get}}(\char`\"{}min\+\_\+loss\char`\"{}, 0.\+07)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa6b76222b81e66fe03fdc4b433826822}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa6b76222b81e66fe03fdc4b433826822}} 
+static final double {\bfseries max\+Loss} = (double) \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}{Biometrics\+Config.\+get}}(\char`\"{}max\+\_\+loss\char`\"{}, 0.\+1)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a9f42c0013adff3e8e530617a54f01618}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a9f42c0013adff3e8e530617a54f01618}} 
+static final double {\bfseries maintenance} = (double) \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1BiometricsConfig_a600b8d9200227cd84e6c48a221ae8763}{Biometrics\+Config.\+get}}(\char`\"{}maintenance\char`\"{}, 0.\+2)
+\item 
+static final double {\bfseries max\+Ped\+Percentile\+Change}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This module allows patients in Synthea to lose weight. 
+
+It will be triggered when patients hit a specified age and weight threshold. At that point, patients may chose to manage their weight. If they do, it will suspend any weight adjustments from the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule}{Lifecycle\+Module}}. Patients will then lose weight based on adherence generated by this module. Given successful weight loss, the patients have the chance to later regain all of their weight (very likely given the default probabilities). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_adca3e0f59251ed9b284cc9d43881cf9a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_adca3e0f59251ed9b284cc9d43881cf9a}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!adjustBMIVectorForSuccessfulManagement@{adjustBMIVectorForSuccessfulManagement}}
+\index{adjustBMIVectorForSuccessfulManagement@{adjustBMIVectorForSuccessfulManagement}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{adjustBMIVectorForSuccessfulManagement()}{adjustBMIVectorForSuccessfulManagement()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+adjust\+BMIVector\+For\+Successful\+Management (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Change the BMI vector to reflect successful management of weight. 
+
+This will add a new point at the end of the trajectory that will result in the BMI percentile change selected for the person. The change will take place 12 months after the current tail of the trajectory. If that will take the person past 20 years old, the time frame will be cut short to end at 240 months of age. 
+\begin{DoxyParams}{Parameters}
+{\em person} & to adjust the trajectory for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa54389ab42e528822ec17de83eb78485}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa54389ab42e528822ec17de83eb78485}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!adultRegression@{adultRegression}}
+\index{adultRegression@{adultRegression}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{adultRegression()}{adultRegression()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+adult\+Regression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Weight regression is linear from a person\textquotesingle{}s current weight to their original weight over the second through fifth year of active weight management. 
+
+Returns the new weight for the person. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a509c9a606107563023a35a388eb804fa}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a509c9a606107563023a35a388eb804fa}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!adultWeightLoss@{adultWeightLoss}}
+\index{adultWeightLoss@{adultWeightLoss}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{adultWeightLoss()}{adultWeightLoss()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+adult\+Weight\+Loss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Weight loss is linear from the person\textquotesingle{}s start weight to their target weight (start -\/ percentage loss) over the first year of active weight management. 
+
+Returns the new weight for the person. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_add71c1dc920de80955f11de0865af1a0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_add71c1dc920de80955f11de0865af1a0}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this module. 
+
+Never provide the original. 
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad35192a185917bcf1258bdeb1c4cb53c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad35192a185917bcf1258bdeb1c4cb53c}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!maintainBMIPercentile@{maintainBMIPercentile}}
+\index{maintainBMIPercentile@{maintainBMIPercentile}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{maintainBMIPercentile()}{maintainBMIPercentile()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+maintain\+BMIPercentile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+For patients under 20 that have successful weight management and long term success, they will maintain their BMI until they reach age 20. 
+
+This means that they will gain weight as they are gaining height, but it will be in a more healthy range. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa15f2a51d439b75c3ce3770581916a58}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa15f2a51d439b75c3ce3770581916a58}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!meetsWeightManagementThresholds@{meetsWeightManagementThresholds}}
+\index{meetsWeightManagementThresholds@{meetsWeightManagementThresholds}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{meetsWeightManagementThresholds()}{meetsWeightManagementThresholds()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+meets\+Weight\+Management\+Thresholds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Determines whether a person meets the thresholds for starting weight management. 
+
+With the default settings\+: Children under 5 do not ever meet the threshold. Patients from ages 5 to 20 meet the threshold if their BMI is at or over the 95th percentile for their age in months Patients 20 and older meet the threshold if their BMI is 30 or over. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a2e2b251a1a73a98dd14c86f74ce6f2b4}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a2e2b251a1a73a98dd14c86f74ce6f2b4}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!pediatricRegression@{pediatricRegression}}
+\index{pediatricRegression@{pediatricRegression}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{pediatricRegression()}{pediatricRegression()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+pediatric\+Regression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+This will regress a pediatric patient back to their BMI percentile. 
+
+Weight gain will not necessarily be linear. It will approach the BMI based on percentile at age as a function of time in the regression period. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_af1363ef345dc63e556e57e205a85b25f}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_af1363ef345dc63e556e57e205a85b25f}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!process@{process}}
+\index{process@{process}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Process this Module with the given Person at the specified time within the simulation. 
+
+Processing will complete if the person dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this Module completed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a7d9a25b289790e076167ecf22defad8d}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a7d9a25b289790e076167ecf22defad8d}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!startWeightManagement@{startWeightManagement}}
+\index{startWeightManagement@{startWeightManagement}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{startWeightManagement()}{startWeightManagement()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+start\+Weight\+Management (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Starts active weight management for the person. 
+
+It will select if a person adheres to their weight management plan. If they do, it will select the percentage of their body weight that they will lose and whether they will keep it off long term. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa958ae774bf9f353a31d88af7a7d7234}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aa958ae774bf9f353a31d88af7a7d7234}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!stopWeightManagement@{stopWeightManagement}}
+\index{stopWeightManagement@{stopWeightManagement}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{stopWeightManagement()}{stopWeightManagement()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+stop\+Weight\+Management (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Person stops weight management. 
+
+The module will remove all weight management related attributes. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a03e71320ef8058dd29e81d0502d6219a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a03e71320ef8058dd29e81d0502d6219a}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!willStartWeightManagement@{willStartWeightManagement}}
+\index{willStartWeightManagement@{willStartWeightManagement}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{willStartWeightManagement()}{willStartWeightManagement()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+will\+Start\+Weight\+Management (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Determines whether a person will start weight management. 
+
+If they meet the weight management thresholds, there is a 49.\+3\% chance that they will start weight management. This does not mean that they will adhere to the management plan. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad8ca360e0d7033192db8faf11ff0e9dd}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad8ca360e0d7033192db8faf11ff0e9dd}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!adherence@{adherence}}
+\index{adherence@{adherence}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{adherence}{adherence}}
+{\footnotesize\ttfamily final double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+adherence\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      (double) BiometricsConfig.get(\textcolor{stringliteral}{"{}adherence"{}}, 0.605)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad8c0226245a64b3e100e8eba03631c7a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ad8c0226245a64b3e100e8eba03631c7a}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!maxPedPercentileChange@{maxPedPercentileChange}}
+\index{maxPedPercentileChange@{maxPedPercentileChange}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{maxPedPercentileChange}{maxPedPercentileChange}}
+{\footnotesize\ttfamily final double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+max\+Ped\+Percentile\+Change\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      (double) BiometricsConfig.get(\textcolor{stringliteral}{"{}max\_ped\_percentile\_change"{}}, 0.1)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aecc20ab4fbb2f0851094c56399728493}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_aecc20ab4fbb2f0851094c56399728493}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!startBMI@{startBMI}}
+\index{startBMI@{startBMI}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{startBMI}{startBMI}}
+{\footnotesize\ttfamily final double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+start\+BMI\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      (double) BiometricsConfig.get(\textcolor{stringliteral}{"{}start\_bmi"{}}, 30d)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ae87c756d4b54da3e08364494ec0750a2}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_ae87c756d4b54da3e08364494ec0750a2}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!startPercentile@{startPercentile}}
+\index{startPercentile@{startPercentile}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{startPercentile}{startPercentile}}
+{\footnotesize\ttfamily final double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+start\+Percentile\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      (double) BiometricsConfig.get(\textcolor{stringliteral}{"{}start\_percentile"{}}, 0.95d)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a2ecdafdcc93c44be2c4d3c3cc96b05a7}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule_a2ecdafdcc93c44be2c4d3c3cc96b05a7}} 
+\index{org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}!startWeightManagementProb@{startWeightManagementProb}}
+\index{startWeightManagementProb@{startWeightManagementProb}!org.mitre.synthea.modules.WeightLossModule@{org.mitre.synthea.modules.WeightLossModule}}
+\doxysubsubsection{\texorpdfstring{startWeightManagementProb}{startWeightManagementProb}}
+{\footnotesize\ttfamily final double org.\+mitre.\+synthea.\+modules.\+Weight\+Loss\+Module.\+start\+Weight\+Management\+Prob\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      (double) BiometricsConfig.get(\textcolor{stringliteral}{"{}start\_prob"{}}, 0.493)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/Weight\+Loss\+Module.\+java\end{DoxyCompactItemize}

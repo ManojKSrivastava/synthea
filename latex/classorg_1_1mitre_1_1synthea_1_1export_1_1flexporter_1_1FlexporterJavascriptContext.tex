@@ -1,0 +1,117 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{}\doxysection{org.\+mitre.\+synthea.\+export.\+flexporter.\+Flexporter\+Javascript\+Context Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}\index{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_af5b4d7596c3b0995b62ff2e44dcf9bbf}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_af5b4d7596c3b0995b62ff2e44dcf9bbf}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_af5b4d7596c3b0995b62ff2e44dcf9bbf}{Flexporter\+Javascript\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for a Javascript Context. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a8f01bb440e096e3a0b6fdd415912ebea}{load\+File}} (String filename)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Load the JS file referenced by the given file path into the JS context. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a8f1bbd2f0f0ae284d09d46e092cd66ee}{load\+Function}} (String function\+Def)
+\begin{DoxyCompactList}\small\item\em Load a JS function from string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_aae5e0fc06525c6e7b1418ce1dd5ace16}{load\+Bundle}} (String bundle\+As\+String)
+\begin{DoxyCompactList}\small\item\em Load a Bundle as the JS context\textquotesingle{}s working bundle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_afef4080adba15a62e4b8a01ed432432c}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_afef4080adba15a62e4b8a01ed432432c}} 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_afef4080adba15a62e4b8a01ed432432c}{get\+Bundle}} ()
+\begin{DoxyCompactList}\small\item\em Get the current working Bundle as a JSON string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a7f0896c33273969255f13222ed1ae250}{apply\+Function\+To\+Bundle}} (String fn\+Name)
+\begin{DoxyCompactList}\small\item\em Applies a function to the working Bundle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a829bacc43df4b20c867f2de38986fae2}{apply\+Function\+To\+Resources}} (String fn\+Name, String resource\+Type)
+\begin{DoxyCompactList}\small\item\em Applies a function to each resource within the Bundle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a7f0896c33273969255f13222ed1ae250}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a7f0896c33273969255f13222ed1ae250}} 
+\index{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}!applyFunctionToBundle@{applyFunctionToBundle}}
+\index{applyFunctionToBundle@{applyFunctionToBundle}!org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}}
+\doxysubsubsection{\texorpdfstring{applyFunctionToBundle()}{applyFunctionToBundle()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+flexporter.\+Flexporter\+Javascript\+Context.\+apply\+Function\+To\+Bundle (\begin{DoxyParamCaption}\item[{String}]{fn\+Name }\end{DoxyParamCaption})}
+
+
+
+Applies a function to the working Bundle. 
+
+Invoked as {\ttfamily fn\+Name(bundle)} The function must have already been loaded by load\+File or load\+Function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn\+Name} & Function name to invoke \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a829bacc43df4b20c867f2de38986fae2}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a829bacc43df4b20c867f2de38986fae2}} 
+\index{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}!applyFunctionToResources@{applyFunctionToResources}}
+\index{applyFunctionToResources@{applyFunctionToResources}!org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}}
+\doxysubsubsection{\texorpdfstring{applyFunctionToResources()}{applyFunctionToResources()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+flexporter.\+Flexporter\+Javascript\+Context.\+apply\+Function\+To\+Resources (\begin{DoxyParamCaption}\item[{String}]{fn\+Name,  }\item[{String}]{resource\+Type }\end{DoxyParamCaption})}
+
+
+
+Applies a function to each resource within the Bundle. 
+
+Invoked as {\ttfamily fn\+Name(resource, bundle)}. (i.\+e., the bundle itself is also passed to the function as context) The function must have already been loaded by load\+File or load\+Function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn\+Name} & Function name to invoke \\
+\hline
+{\em resource\+Type} & Resource Type to apply the function to, other resources will be ignored \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_aae5e0fc06525c6e7b1418ce1dd5ace16}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_aae5e0fc06525c6e7b1418ce1dd5ace16}} 
+\index{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}!loadBundle@{loadBundle}}
+\index{loadBundle@{loadBundle}!org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}}
+\doxysubsubsection{\texorpdfstring{loadBundle()}{loadBundle()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+flexporter.\+Flexporter\+Javascript\+Context.\+load\+Bundle (\begin{DoxyParamCaption}\item[{String}]{bundle\+As\+String }\end{DoxyParamCaption})}
+
+
+
+Load a Bundle as the JS context\textquotesingle{}s working bundle. 
+
+All executed functions will use the bundle as an argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle\+As\+String} & Bundle as JSON string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a8f01bb440e096e3a0b6fdd415912ebea}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a8f01bb440e096e3a0b6fdd415912ebea}} 
+\index{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+flexporter.\+Flexporter\+Javascript\+Context.\+load\+File (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Load the JS file referenced by the given file path into the JS context. 
+
+Globals registered in the given file will be accessible to other loaded functions. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path to a JS file \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if the file doesn\textquotesingle{}t exist, can\textquotesingle{}t be read, or can\textquotesingle{}t be parsed as JS \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a8f1bbd2f0f0ae284d09d46e092cd66ee}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext_a8f1bbd2f0f0ae284d09d46e092cd66ee}} 
+\index{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}!loadFunction@{loadFunction}}
+\index{loadFunction@{loadFunction}!org.mitre.synthea.export.flexporter.FlexporterJavascriptContext@{org.mitre.synthea.export.flexporter.FlexporterJavascriptContext}}
+\doxysubsubsection{\texorpdfstring{loadFunction()}{loadFunction()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+flexporter.\+Flexporter\+Javascript\+Context.\+load\+Function (\begin{DoxyParamCaption}\item[{String}]{function\+Def }\end{DoxyParamCaption})}
+
+
+
+Load a JS function from string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+Def} & Java\+Script code \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/flexporter/Flexporter\+Javascript\+Context.\+java\end{DoxyCompactItemize}

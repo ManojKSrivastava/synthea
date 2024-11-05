@@ -1,0 +1,11 @@
+<map id="org.mitre.synthea.export.rif.BB2RIFStructure" name="org.mitre.synthea.export.rif.BB2RIFStructure">
+<area shape="rect" id="node1" title="A collection of enums and related that describe the structure of RIF files." alt="" coords="493,318,699,359"/>
+<area shape="rect" id="node2" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1OUTPATIENT.html" title=" " alt="" coords="7,31,219,73"/>
+<area shape="rect" id="node3" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1HHA.html" title=" " alt="" coords="11,97,216,138"/>
+<area shape="rect" id="node4" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1SNF.html" title=" " alt="" coords="11,162,216,203"/>
+<area shape="rect" id="node5" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1HOSPICE.html" title=" " alt="" coords="11,227,216,269"/>
+<area shape="rect" id="node6" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1BENEFICIARY.html" title=" " alt="" coords="5,409,221,450"/>
+<area shape="rect" id="node7" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1DME.html" title=" " alt="" coords="11,474,216,515"/>
+<area shape="rect" id="node8" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1CARRIER.html" title=" " alt="" coords="11,539,216,581"/>
+<area shape="rect" id="node9" href="$enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFStructure_1_1INPATIENT.html" title=" " alt="" coords="11,605,216,646"/>
+</map>

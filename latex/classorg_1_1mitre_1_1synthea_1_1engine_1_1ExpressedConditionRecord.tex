@@ -1,0 +1,89 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Expressed\+Condition\+Record Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord}\index{org.mitre.synthea.engine.ExpressedConditionRecord@{org.mitre.synthea.engine.ExpressedConditionRecord}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+engine.\+Expressed\+Condition\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+Expressed\+Condition\+Record\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ConditionPeriod}{Condition\+Period}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ConditionWithSymptoms}{Condition\+With\+Symptoms}}
+\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ModuleConditions}{Module\+Conditions}}
+\begin{DoxyCompactList}\small\item\em Used to record condition onset by modules. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1OnsetCondition}{Onset\+Condition}}
+\begin{DoxyCompactList}\small\item\em A condition with a set of onset and end time entries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a3fa399bd9c24125fadb530588a413653}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a3fa399bd9c24125fadb530588a413653}} 
+{\bfseries Expressed\+Condition\+Record} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_ac280f0817811cea108b16fa4b7ba34bc}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_ac280f0817811cea108b16fa4b7ba34bc}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord}{Expressed\+Condition\+Record}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_ac280f0817811cea108b16fa4b7ba34bc}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Create a shallow clone of this instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a0565fbc0944a493342602d64f1c0d0c3}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a0565fbc0944a493342602d64f1c0d0c3}} 
+Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ModuleConditions}{Module\+Conditions}} $>$ {\bfseries get\+Sources} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_af2bdcd14bcc35166c78dc3497537525f}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_af2bdcd14bcc35166c78dc3497537525f}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_af2bdcd14bcc35166c78dc3497537525f}{on\+Condition\+Onset}} (String module, String state, String condition, long time)
+\begin{DoxyCompactList}\small\item\em Method that is used to update the onset\+Conditions field when a Condition\+Onset state is processed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_acc26296ed08d15f1975d5b24774f3884}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_acc26296ed08d15f1975d5b24774f3884}} 
+Long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_acc26296ed08d15f1975d5b24774f3884}{get\+Condition\+Last\+Onset\+Time\+From\+Module}} (String module, String condition)
+\begin{DoxyCompactList}\small\item\em Method that is used to retrieve the last time a condition has been onset from a given module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_afa8c64d6dc94a3ad29d3d24cd5c968ca}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_afa8c64d6dc94a3ad29d3d24cd5c968ca}} 
+Long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_afa8c64d6dc94a3ad29d3d24cd5c968ca}{get\+Condition\+Last\+End\+Time\+From\+Module}} (String module, String condition)
+\begin{DoxyCompactList}\small\item\em Method that is used to retrieve the last time a Condition\+End state has been processed for a given condition from a given module. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a1544fd188231216e190d3ecf426f7063}{get\+Condition\+From\+State}} (String module, String state)
+\begin{DoxyCompactList}\small\item\em Method for retrieving the condition name from a state name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a869153c77988fd1de38b720b30e3f251}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a869153c77988fd1de38b720b30e3f251}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a869153c77988fd1de38b720b30e3f251}{on\+Condition\+End}} (String module, String condition, long time)
+\begin{DoxyCompactList}\small\item\em Method that is used to update the onset\+Conditions field when a Condition\+End state is processed. \end{DoxyCompactList}\item 
+Map$<$ Long, List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ConditionWithSymptoms}{Condition\+With\+Symptoms}} $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_af8faba3ec9798480ae9765d5b27d1858}{get\+Condition\+Symptoms}} ()
+\begin{DoxyCompactList}\small\item\em Get the symptoms that were expressed as parts of the conditions the person suffers from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a1544fd188231216e190d3ecf426f7063}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_a1544fd188231216e190d3ecf426f7063}} 
+\index{org.mitre.synthea.engine.ExpressedConditionRecord@{org.mitre.synthea.engine.ExpressedConditionRecord}!getConditionFromState@{getConditionFromState}}
+\index{getConditionFromState@{getConditionFromState}!org.mitre.synthea.engine.ExpressedConditionRecord@{org.mitre.synthea.engine.ExpressedConditionRecord}}
+\doxysubsubsection{\texorpdfstring{getConditionFromState()}{getConditionFromState()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+engine.\+Expressed\+Condition\+Record.\+get\+Condition\+From\+State (\begin{DoxyParamCaption}\item[{String}]{module,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+Method for retrieving the condition name from a state name. 
+
+Useful when dealing with Condition\+End.\+condition\+On\+Set attribute. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_af8faba3ec9798480ae9765d5b27d1858}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_af8faba3ec9798480ae9765d5b27d1858}} 
+\index{org.mitre.synthea.engine.ExpressedConditionRecord@{org.mitre.synthea.engine.ExpressedConditionRecord}!getConditionSymptoms@{getConditionSymptoms}}
+\index{getConditionSymptoms@{getConditionSymptoms}!org.mitre.synthea.engine.ExpressedConditionRecord@{org.mitre.synthea.engine.ExpressedConditionRecord}}
+\doxysubsubsection{\texorpdfstring{getConditionSymptoms()}{getConditionSymptoms()}}
+{\footnotesize\ttfamily Map$<$Long, List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ConditionWithSymptoms}{Condition\+With\+Symptoms}}$>$ $>$ org.\+mitre.\+synthea.\+engine.\+Expressed\+Condition\+Record.\+get\+Condition\+Symptoms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the symptoms that were expressed as parts of the conditions the person suffers from. 
+
+The returned data is a map of \mbox{[}time\+: List of Condition\+With\+Symtoms\mbox{]}. It captures the conditions a person has suffered from together with the related symptoms at different age/time. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Expressed\+Condition\+Record.\+java\end{DoxyCompactItemize}

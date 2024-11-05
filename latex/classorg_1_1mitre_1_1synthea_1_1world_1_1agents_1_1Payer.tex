@@ -1,0 +1,603 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+Payer Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+agents.\+Payer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Utilization\+Bean}
+\begin{DoxyCompactList}\small\item\em Simple bean used to add Java Serialization support to com.\+google.\+common.\+collect.\+Table$<$Integer, String, Atomic\+Integer$>$ which doesn\textquotesingle{}t natively support Serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aaafc1093a5db39d0cc9d9734945a9372}{Payer}} (String name, int id, Set$<$ String $>$ states\+Covered, String ownership)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ad7e0ef78190eecd79d82c0ff1572d09b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ad7e0ef78190eecd79d82c0ff1572d09b}} 
+void {\bfseries add\+Plan} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} new\+Plan)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ab12a3b53aa1f3e14e6f6a29716e227ff}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ab12a3b53aa1f3e14e6f6a29716e227ff}} 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ab12a3b53aa1f3e14e6f6a29716e227ff}{get\+Resource\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Returns the payer\textquotesingle{}s unique ID. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_abb18fde0bf13287901cfe645bdd6537c}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the payer. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aed96d4bb83b2d6200d3ebc111aa746d6}{get\+Ownership}} ()
+\begin{DoxyCompactList}\small\item\em Returns the ownership type of the payer (Government/\+Private). \end{DoxyCompactList}\item 
+Map$<$ String, Object $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aeda5eca0693629b7b5ff66bc38416fe6}{get\+Attributes}} ()
+\begin{DoxyCompactList}\small\item\em Returns the Map of the payer\textquotesingle{}s second class attributes. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8e66c1dcccd866451386e3d68b02fbcf}{get\+Plans}} ()
+\begin{DoxyCompactList}\small\item\em Returns the set of plans offered by this payer. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a27da244448c0540c722ff9a01f106c6e}{covers\+Care}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Returns whether or not this payer will cover the given entry. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a6b5aa08b8d52ce1f140c8d054cf78e71}{adjust\+Claim}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}} claim\+Entry, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Determines whether or not this payer will adjust this claim, and by how much. \end{DoxyCompactList}\item 
+synchronized void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a998eac7159b039981e962ed7be46b2fe}{increment\+Customers}} (String person\+Id)
+\begin{DoxyCompactList}\small\item\em Increments the number of unique users. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a08d488fa7dea82b287f7715b1342ae5f}{increment\+Covered\+Entries}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Increments the entries covered by this payer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ace1f2dbe057384aca3f7f54126be0522}{increment\+Uncovered\+Entries}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} entry)
+\begin{DoxyCompactList}\small\item\em Increments the entries not covered by this payer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a1a0e1f086c123c1a426d3fd9b8b099fa}{add\+Covered\+Cost}} (Big\+Decimal cost\+To\+Payer)
+\begin{DoxyCompactList}\small\item\em Increases the total costs incurred by the payer by the given amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a95a91028bebf81ad944d105242bee29a}{add\+Uncovered\+Cost}} (Big\+Decimal cost\+To\+Patient)
+\begin{DoxyCompactList}\small\item\em Increases the costs the payer did not cover by the given amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8e4597c5a42afda7a6d8605b12828ef8}{add\+Qols}} (double qols)
+\begin{DoxyCompactList}\small\item\em Adds the Quality of Life Score (QOLS) of a patient of the current (past?) year. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a77f75c5f6a394d6293110aea21bc32f0}{get\+Revenue}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total amount of money received from patients. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adb3c4ba713281a79f19bbefb6542a259}{get\+Customer\+Utilization}} (String person\+Id)
+\begin{DoxyCompactList}\small\item\em Returns the number of years the given customer was with this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a76fc6dd3ea170c8a65f7ba4d9178a864}{get\+Unique\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total number of unique customers of this payer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ab84e9d7849c090808c918a1d37642d0e}{get\+Num\+Years\+Covered}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total number of member years covered by this payer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ad2020662f7d5fa6a8100178669ebe234}{get\+Encounters\+Covered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of encounters this payer paid for. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a71b58cdea24855a75e93b4607a98030c}{get\+Encounters\+Uncovered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of encounters this payer did not cover for their customers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8d0c7aeb737793cbcb93e536bc86bb00}{get\+Medications\+Covered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of medications this payer paid for. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a36782b32210061dda8352c7b13760492}{get\+Medications\+Uncovered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of medications this payer did not cover for their customers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a749f368cc5abdb28060cd0396fb1374d}{get\+Procedures\+Covered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of procedures this payer paid for. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a216cbb01a34f287594c1401be8128127}{get\+Procedures\+Uncovered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of procedures this payer did not cover for their customers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ac59d04ac1ee69f864919d253d34c8df8}{get\+Immunizations\+Covered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of immunizations this payer paid for. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a4aaafbccec929aa2c8f1476b91c34d37}{get\+Immunizations\+Uncovered\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of immunizations this payer did not cover for their customers. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aaec0114a060d3e92e456b4ec77ff7273}{get\+Amount\+Covered}} ()
+\begin{DoxyCompactList}\small\item\em Returns the amount of money the payer paid for healthcare. \end{DoxyCompactList}\item 
+Big\+Decimal \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a9a48eba655f70ea7e22f1eea124c1500}{get\+Amount\+Uncovered}} ()
+\begin{DoxyCompactList}\small\item\em Returns the amount of money the payer did not cover. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a543a243fe37782495228790e930c618e}{get\+Qols\+Average}} ()
+\begin{DoxyCompactList}\small\item\em Returns the average of the payer\textquotesingle{}s QOLS of customers over the number of years covered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a15468050a1d514615016701ef575571b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a15468050a1d514615016701ef575571b}} 
+int {\bfseries hash\+Code} ()
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a043e3d14b218052f8e6bdace8ffbe1e1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a043e3d14b218052f8e6bdace8ffbe1e1}} 
+boolean {\bfseries equals} (Object obj)
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adc9db7cfd916c3d02dca064ecd545353}{set\+Payer\+Adjustment}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1IPayerAdjustment}{IPayer\+Adjustment}} payer\+Adjustment)
+\begin{DoxyCompactList}\small\item\em Sets the payer claim adjustment strategy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ac78eb8b90fc9921034bcfdd88ce1b05b}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ac78eb8b90fc9921034bcfdd88ce1b05b}} 
+boolean {\bfseries is\+Government\+Payer} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_afbf05ca53dbceeddcd88eeed9c5a6739}{add\+Revenue}} (Big\+Decimal additional\+Revenue)
+\begin{DoxyCompactList}\small\item\em Adds the given revenue to the payer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8d5ac74b9cd46bbaabe6207df33b56f1}{get\+Government\+Payer\+Plan}} ()
+\begin{DoxyCompactList}\small\item\em Returns the government payer plan if this is a government payer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a16705d65b1d661e82fd5a65528f4361a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a16705d65b1d661e82fd5a65528f4361a}} 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a16705d65b1d661e82fd5a65528f4361a}{add\+Attribute}} (String key, String value)
+\begin{DoxyCompactList}\small\item\em Add additional attributes to \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a2a5e62bfdb15fb85cec5a7d6dbd61f83}{is\+No\+Insurance}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether this is the no insurance payer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adda1d52e1fab349e583961b5ad884e8c}{get\+Plan\+Link\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the plan link id for this payer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a6c9dd4d7626cdf4510ece59a8f7254eb}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a6c9dd4d7626cdf4510ece59a8f7254eb}} 
+final String {\bfseries uuid}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aaafc1093a5db39d0cc9d9734945a9372}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aaafc1093a5db39d0cc9d9734945a9372}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!Payer@{Payer}}
+\index{Payer@{Payer}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{Payer()}{Payer()}}
+{\footnotesize\ttfamily org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+Payer (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{int}]{id,  }\item[{Set$<$ String $>$}]{states\+Covered,  }\item[{String}]{ownership }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the payer. \\
+\hline
+{\em id} & The payer ID. \\
+\hline
+{\em states\+Covered} & The list of states covered. \\
+\hline
+{\em ownership} & The type of ownership (private/government). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a1a0e1f086c123c1a426d3fd9b8b099fa}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a1a0e1f086c123c1a426d3fd9b8b099fa}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!addCoveredCost@{addCoveredCost}}
+\index{addCoveredCost@{addCoveredCost}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{addCoveredCost()}{addCoveredCost()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+add\+Covered\+Cost (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{cost\+To\+Payer }\end{DoxyParamCaption})}
+
+
+
+Increases the total costs incurred by the payer by the given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost\+To\+Payer} & the cost of the current encounter, after the patient\textquotesingle{}s copay. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8e4597c5a42afda7a6d8605b12828ef8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8e4597c5a42afda7a6d8605b12828ef8}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!addQols@{addQols}}
+\index{addQols@{addQols}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{addQols()}{addQols()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+add\+Qols (\begin{DoxyParamCaption}\item[{double}]{qols }\end{DoxyParamCaption})}
+
+
+
+Adds the Quality of Life Score (QOLS) of a patient of the current (past?) year. 
+
+Increments the total number of years covered (for averaging out purposes).
+
+
+\begin{DoxyParams}{Parameters}
+{\em qols} & the Quality of Life Score to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_afbf05ca53dbceeddcd88eeed9c5a6739}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_afbf05ca53dbceeddcd88eeed9c5a6739}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!addRevenue@{addRevenue}}
+\index{addRevenue@{addRevenue}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{addRevenue()}{addRevenue()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+add\+Revenue (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{additional\+Revenue }\end{DoxyParamCaption})}
+
+
+
+Adds the given revenue to the payer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em additional\+Revenue} & The revenue to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a95a91028bebf81ad944d105242bee29a}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a95a91028bebf81ad944d105242bee29a}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!addUncoveredCost@{addUncoveredCost}}
+\index{addUncoveredCost@{addUncoveredCost}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{addUncoveredCost()}{addUncoveredCost()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+add\+Uncovered\+Cost (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{cost\+To\+Patient }\end{DoxyParamCaption})}
+
+
+
+Increases the costs the payer did not cover by the given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost\+To\+Patient} & the costs that the payer did not cover. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a6b5aa08b8d52ce1f140c8d054cf78e71}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a6b5aa08b8d52ce1f140c8d054cf78e71}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!adjustClaim@{adjustClaim}}
+\index{adjustClaim@{adjustClaim}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{adjustClaim()}{adjustClaim()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+adjust\+Claim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry}{Claim\+Entry}}}]{claim\+Entry,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+
+
+Determines whether or not this payer will adjust this claim, and by how much. 
+
+This determination is based on the claim adjustment strategy configuration, which defaults to none. 
+\begin{DoxyParams}{Parameters}
+{\em claim\+Entry} & The claim entry to be adjusted. \\
+\hline
+{\em person} & The person making the claim. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dollar amount the claim entry was adjusted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a27da244448c0540c722ff9a01f106c6e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a27da244448c0540c722ff9a01f106c6e}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!coversCare@{coversCare}}
+\index{coversCare@{coversCare}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{coversCare()}{coversCare()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+covers\+Care (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Returns whether or not this payer will cover the given entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & the entry that needs covering. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether this payer covers the care of the entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aaec0114a060d3e92e456b4ec77ff7273}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aaec0114a060d3e92e456b4ec77ff7273}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getAmountCovered@{getAmountCovered}}
+\index{getAmountCovered@{getAmountCovered}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getAmountCovered()}{getAmountCovered()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Amount\+Covered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the amount of money the payer paid for healthcare. 
+
+\begin{DoxyReturn}{Returns}
+the total value of coverage paid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a9a48eba655f70ea7e22f1eea124c1500}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a9a48eba655f70ea7e22f1eea124c1500}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getAmountUncovered@{getAmountUncovered}}
+\index{getAmountUncovered@{getAmountUncovered}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getAmountUncovered()}{getAmountUncovered()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Amount\+Uncovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the amount of money the payer did not cover. 
+
+\textquotesingle{} \begin{DoxyReturn}{Returns}
+the total value of uncovered patient healthcare. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aeda5eca0693629b7b5ff66bc38416fe6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aeda5eca0693629b7b5ff66bc38416fe6}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily Map$<$String, Object$>$ org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Map of the payer\textquotesingle{}s second class attributes. 
+
+\begin{DoxyReturn}{Returns}
+any second-\/class attributes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adb3c4ba713281a79f19bbefb6542a259}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adb3c4ba713281a79f19bbefb6542a259}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getCustomerUtilization@{getCustomerUtilization}}
+\index{getCustomerUtilization@{getCustomerUtilization}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getCustomerUtilization()}{getCustomerUtilization()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Customer\+Utilization (\begin{DoxyParamCaption}\item[{String}]{person\+Id }\end{DoxyParamCaption})}
+
+
+
+Returns the number of years the given customer was with this \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & The person to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of years the person was with the payer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ad2020662f7d5fa6a8100178669ebe234}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ad2020662f7d5fa6a8100178669ebe234}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getEncountersCoveredCount@{getEncountersCoveredCount}}
+\index{getEncountersCoveredCount@{getEncountersCoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getEncountersCoveredCount()}{getEncountersCoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Encounters\+Covered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of encounters this payer paid for. 
+
+\begin{DoxyReturn}{Returns}
+the number of covered encounters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a71b58cdea24855a75e93b4607a98030c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a71b58cdea24855a75e93b4607a98030c}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getEncountersUncoveredCount@{getEncountersUncoveredCount}}
+\index{getEncountersUncoveredCount@{getEncountersUncoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getEncountersUncoveredCount()}{getEncountersUncoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Encounters\+Uncovered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of encounters this payer did not cover for their customers. 
+
+\begin{DoxyReturn}{Returns}
+the number of uncovered patient encounters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8d5ac74b9cd46bbaabe6207df33b56f1}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8d5ac74b9cd46bbaabe6207df33b56f1}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getGovernmentPayerPlan@{getGovernmentPayerPlan}}
+\index{getGovernmentPayerPlan@{getGovernmentPayerPlan}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getGovernmentPayerPlan()}{getGovernmentPayerPlan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}} org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Government\+Payer\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the government payer plan if this is a government payer. 
+
+\begin{DoxyReturn}{Returns}
+This payer\textquotesingle{}s government payer plan. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ac59d04ac1ee69f864919d253d34c8df8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ac59d04ac1ee69f864919d253d34c8df8}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getImmunizationsCoveredCount@{getImmunizationsCoveredCount}}
+\index{getImmunizationsCoveredCount@{getImmunizationsCoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getImmunizationsCoveredCount()}{getImmunizationsCoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Immunizations\+Covered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of immunizations this payer paid for. 
+
+\begin{DoxyReturn}{Returns}
+the number of covered immunizations. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a4aaafbccec929aa2c8f1476b91c34d37}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a4aaafbccec929aa2c8f1476b91c34d37}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getImmunizationsUncoveredCount@{getImmunizationsUncoveredCount}}
+\index{getImmunizationsUncoveredCount@{getImmunizationsUncoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getImmunizationsUncoveredCount()}{getImmunizationsUncoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Immunizations\+Uncovered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of immunizations this payer did not cover for their customers. 
+
+\begin{DoxyReturn}{Returns}
+the number of uncovered patient immunizations. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8d0c7aeb737793cbcb93e536bc86bb00}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8d0c7aeb737793cbcb93e536bc86bb00}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getMedicationsCoveredCount@{getMedicationsCoveredCount}}
+\index{getMedicationsCoveredCount@{getMedicationsCoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getMedicationsCoveredCount()}{getMedicationsCoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Medications\+Covered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of medications this payer paid for. 
+
+\begin{DoxyReturn}{Returns}
+the number of covered medications. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a36782b32210061dda8352c7b13760492}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a36782b32210061dda8352c7b13760492}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getMedicationsUncoveredCount@{getMedicationsUncoveredCount}}
+\index{getMedicationsUncoveredCount@{getMedicationsUncoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getMedicationsUncoveredCount()}{getMedicationsUncoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Medications\+Uncovered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of medications this payer did not cover for their customers. 
+
+\begin{DoxyReturn}{Returns}
+the number of uncovered patient medications. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_abb18fde0bf13287901cfe645bdd6537c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_abb18fde0bf13287901cfe645bdd6537c}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getName@{getName}}
+\index{getName@{getName}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the payer. 
+
+\begin{DoxyReturn}{Returns}
+the name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ab84e9d7849c090808c918a1d37642d0e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ab84e9d7849c090808c918a1d37642d0e}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getNumYearsCovered@{getNumYearsCovered}}
+\index{getNumYearsCovered@{getNumYearsCovered}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getNumYearsCovered()}{getNumYearsCovered()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Num\+Years\+Covered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the total number of member years covered by this payer. 
+
+\begin{DoxyReturn}{Returns}
+the number of years covered. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aed96d4bb83b2d6200d3ebc111aa746d6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_aed96d4bb83b2d6200d3ebc111aa746d6}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getOwnership@{getOwnership}}
+\index{getOwnership@{getOwnership}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getOwnership()}{getOwnership()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Ownership (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the ownership type of the payer (Government/\+Private). 
+
+\begin{DoxyReturn}{Returns}
+the ownership type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adda1d52e1fab349e583961b5ad884e8c}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adda1d52e1fab349e583961b5ad884e8c}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getPlanLinkId@{getPlanLinkId}}
+\index{getPlanLinkId@{getPlanLinkId}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getPlanLinkId()}{getPlanLinkId()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Plan\+Link\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the plan link id for this payer. 
+
+\begin{DoxyReturn}{Returns}
+The plan link id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8e66c1dcccd866451386e3d68b02fbcf}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a8e66c1dcccd866451386e3d68b02fbcf}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getPlans@{getPlans}}
+\index{getPlans@{getPlans}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getPlans()}{getPlans()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan}{Insurance\+Plan}}$>$ org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Plans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the set of plans offered by this payer. 
+
+\begin{DoxyReturn}{Returns}
+the set of plans. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a749f368cc5abdb28060cd0396fb1374d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a749f368cc5abdb28060cd0396fb1374d}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getProceduresCoveredCount@{getProceduresCoveredCount}}
+\index{getProceduresCoveredCount@{getProceduresCoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getProceduresCoveredCount()}{getProceduresCoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Procedures\+Covered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of procedures this payer paid for. 
+
+\begin{DoxyReturn}{Returns}
+the number of covered procedures. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a216cbb01a34f287594c1401be8128127}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a216cbb01a34f287594c1401be8128127}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getProceduresUncoveredCount@{getProceduresUncoveredCount}}
+\index{getProceduresUncoveredCount@{getProceduresUncoveredCount}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getProceduresUncoveredCount()}{getProceduresUncoveredCount()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Procedures\+Uncovered\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the number of procedures this payer did not cover for their customers. 
+
+\begin{DoxyReturn}{Returns}
+the number of uncovered patient procedures. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a543a243fe37782495228790e930c618e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a543a243fe37782495228790e930c618e}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getQolsAverage@{getQolsAverage}}
+\index{getQolsAverage@{getQolsAverage}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getQolsAverage()}{getQolsAverage()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Qols\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the average of the payer\textquotesingle{}s QOLS of customers over the number of years covered. 
+
+\begin{DoxyReturn}{Returns}
+the average QOLS of the payer\textquotesingle{}s patients. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a77f75c5f6a394d6293110aea21bc32f0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a77f75c5f6a394d6293110aea21bc32f0}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getRevenue@{getRevenue}}
+\index{getRevenue@{getRevenue}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getRevenue()}{getRevenue()}}
+{\footnotesize\ttfamily Big\+Decimal org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Revenue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the total amount of money received from patients. 
+
+Consists of monthly premium payments. \begin{DoxyReturn}{Returns}
+the total revenue. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a76fc6dd3ea170c8a65f7ba4d9178a864}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a76fc6dd3ea170c8a65f7ba4d9178a864}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!getUniqueCustomers@{getUniqueCustomers}}
+\index{getUniqueCustomers@{getUniqueCustomers}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{getUniqueCustomers()}{getUniqueCustomers()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+get\+Unique\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the total number of unique customers of this payer. 
+
+\begin{DoxyReturn}{Returns}
+the number of unique customers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a08d488fa7dea82b287f7715b1342ae5f}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a08d488fa7dea82b287f7715b1342ae5f}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!incrementCoveredEntries@{incrementCoveredEntries}}
+\index{incrementCoveredEntries@{incrementCoveredEntries}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{incrementCoveredEntries()}{incrementCoveredEntries()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+increment\+Covered\+Entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Increments the entries covered by this payer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & the entry covered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a998eac7159b039981e962ed7be46b2fe}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a998eac7159b039981e962ed7be46b2fe}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!incrementCustomers@{incrementCustomers}}
+\index{incrementCustomers@{incrementCustomers}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{incrementCustomers()}{incrementCustomers()}}
+{\footnotesize\ttfamily synchronized void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+increment\+Customers (\begin{DoxyParamCaption}\item[{String}]{person\+Id }\end{DoxyParamCaption})}
+
+
+
+Increments the number of unique users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & the person id who utilized the payer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ace1f2dbe057384aca3f7f54126be0522}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_ace1f2dbe057384aca3f7f54126be0522}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!incrementUncoveredEntries@{incrementUncoveredEntries}}
+\index{incrementUncoveredEntries@{incrementUncoveredEntries}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{incrementUncoveredEntries()}{incrementUncoveredEntries()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+increment\+Uncovered\+Entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}}]{entry }\end{DoxyParamCaption})}
+
+
+
+Increments the entries not covered by this payer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & the entry covered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a2a5e62bfdb15fb85cec5a7d6dbd61f83}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_a2a5e62bfdb15fb85cec5a7d6dbd61f83}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!isNoInsurance@{isNoInsurance}}
+\index{isNoInsurance@{isNoInsurance}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{isNoInsurance()}{isNoInsurance()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+is\+No\+Insurance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether this is the no insurance payer. 
+
+\begin{DoxyReturn}{Returns}
+Returns whether this is no insurance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adc9db7cfd916c3d02dca064ecd545353}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer_adc9db7cfd916c3d02dca064ecd545353}} 
+\index{org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}!setPayerAdjustment@{setPayerAdjustment}}
+\index{setPayerAdjustment@{setPayerAdjustment}!org.mitre.synthea.world.agents.Payer@{org.mitre.synthea.world.agents.Payer}}
+\doxysubsubsection{\texorpdfstring{setPayerAdjustment()}{setPayerAdjustment()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+world.\+agents.\+Payer.\+set\+Payer\+Adjustment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1IPayerAdjustment}{IPayer\+Adjustment}}}]{payer\+Adjustment }\end{DoxyParamCaption})}
+
+
+
+Sets the payer claim adjustment strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payer\+Adjustment} & The payer adjustment algorithm. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/Payer.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1SymptomTextExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+Symptom\+Text\+Exporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1SymptomTextExporter}\index{org.mitre.synthea.export.SymptomTextExporter@{org.mitre.synthea.export.SymptomTextExporter}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for a simple human-\/readable text format per person.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1SymptomTextExporter_a6fb58db46acd7b8367bdc8d3ad09b112}{export\+All}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String file\+Tag, long end\+Time)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Produce and export a person\textquotesingle{}s symptom record in the text format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1Exporter}{Exporter}} for a simple human-\/readable text format per person. 
+
+Sample\+: 
+\begin{DoxyPre}
+Colleen Wilkinson
+=================
+Race:                White
+Ethnicity:           Non-\/Hispanic
+Gender:              M
+Birth Date:          1966-\/10-\/26
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+CONDITIONS WITH SYMPTOMS:
+10 | 10 | Ottitis | 2 | Symptom1:val1, Symptom2:val2
+23 | 25 | Appendicitis | 3 | Symptom3:val3, Symptom4:val4, Symptom5:val5
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+\end{DoxyPre}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1SymptomTextExporter_a6fb58db46acd7b8367bdc8d3ad09b112}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1SymptomTextExporter_a6fb58db46acd7b8367bdc8d3ad09b112}} 
+\index{org.mitre.synthea.export.SymptomTextExporter@{org.mitre.synthea.export.SymptomTextExporter}!exportAll@{exportAll}}
+\index{exportAll@{exportAll}!org.mitre.synthea.export.SymptomTextExporter@{org.mitre.synthea.export.SymptomTextExporter}}
+\doxysubsubsection{\texorpdfstring{exportAll()}{exportAll()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+Symptom\+Text\+Exporter.\+export\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{file\+Tag,  }\item[{long}]{end\+Time }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Produce and export a person\textquotesingle{}s symptom record in the text format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to export \\
+\hline
+{\em file\+Tag} & Tag to add to the filename \\
+\hline
+{\em end\+Time} & Time the simulation ended \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any error occurs writing to the standard export location \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/Symptom\+Text\+Exporter.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="org.mitre.synthea.export.rif.identifiers.PlanBenefitPackageID" name="org.mitre.synthea.export.rif.identifiers.PlanBenefitPackageID">
+<area shape="rect" id="node1" title="Utility class for working with CMS Plan Benefit Package IDs." alt="" coords="5,95,280,136"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1FixedLengthIdentifier.html" title="Base class for fixed length, alphanumeric identifiers." alt="" coords="5,5,280,47"/>
+</map>

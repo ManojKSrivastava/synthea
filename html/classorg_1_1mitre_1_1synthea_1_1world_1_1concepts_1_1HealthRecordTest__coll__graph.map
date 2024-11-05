@@ -1,0 +1,11 @@
+<map id="org.mitre.synthea.world.concepts.HealthRecordTest" name="org.mitre.synthea.world.concepts.HealthRecordTest">
+<area shape="rect" id="node1" title=" " alt="" coords="968,98,1212,139"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan.html" title="A class that defines an insurance plan." alt="" coords="484,31,836,73"/>
+<area shape="rect" id="node3" title=" " alt="" coords="113,5,212,32"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider.html" title=" " alt="" coords="545,130,775,171"/>
+<area shape="rect" id="node5" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement.html" title=" " alt="" coords="5,57,320,98"/>
+<area shape="rect" id="node6" title=" " alt="" coords="40,123,285,179"/>
+<area shape="rect" id="node7" title=" " alt="" coords="79,203,247,229"/>
+<area shape="rect" id="node8" title=" " alt="" coords="23,254,303,295"/>
+<area shape="rect" id="node9" href="$enumorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider_1_1ProviderType.html" title=" " alt="" coords="47,319,278,361"/>
+</map>

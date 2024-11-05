@@ -1,0 +1,12 @@
+<map id="org.mitre.synthea.export.rif.RIFExporter" name="org.mitre.synthea.export.rif.RIFExporter">
+<area shape="rect" id="node1" title="Base class for all of the type&#45;specific exporters." alt="" coords="5,267,211,308"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BeneficiaryExporter.html" title="Export beneficiary and beneficiary history files." alt="" coords="259,5,464,47"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1CarrierExporter.html" title="Exporter for RIF Carrier File." alt="" coords="259,71,464,112"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1DMEExporter.html" title="Exporter for RIF DME (durable medical equipment) file." alt="" coords="259,136,464,177"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1HHAExporter.html" title="Exporter for RIF HHA (home health agency) file." alt="" coords="259,201,464,243"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1HospiceExporter.html" title="Exporter for RIF Hospice file." alt="" coords="259,267,464,308"/>
+<area shape="rect" id="node7" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1InpatientExporter.html" title="Exporter for RIF Inpatient File." alt="" coords="259,332,464,373"/>
+<area shape="rect" id="node8" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1OutpatientExporter.html" title="Exporter for RIF Outpatient File." alt="" coords="259,397,464,439"/>
+<area shape="rect" id="node9" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1PDEExporter.html" title="Exporter for RIF PDE (prescription) file." alt="" coords="259,463,464,504"/>
+<area shape="rect" id="node10" href="$classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1SNFExporter.html" title="Exporter for RIF SNF File." alt="" coords="259,528,464,569"/>
+</map>

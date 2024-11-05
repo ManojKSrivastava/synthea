@@ -1,0 +1,410 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter}\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+
+
+Base class for all of the type-\/specific exporters.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_1_1ClaimType}{Claim\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a6bc1cf5d885861ab6898070f64d9150e}{has\+Part\+ABCoverage}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long timestamp)
+\begin{DoxyCompactList}\small\item\em Test whether a person has part A and B coverage at the specified timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Set$<$ \mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_1_1ClaimType}{Claim\+Type}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a515e73bdda93ec999341ef60893862ee}{get\+Claim\+Types}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Get the types of claim for the supplied encounter. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a2c29035cf4764a0dc590ccc2d28e41e2}{bb2\+Tax\+Id}} (String ssn)
+\begin{DoxyCompactList}\small\item\em Remove dashes from a non-\/null SSN, turn null SSN into empty string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ae86f39c876c0b4a674420079426e92eb}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ae86f39c876c0b4a674420079426e92eb}} 
+static final String {\bfseries BB2\+\_\+\+HIC\+\_\+\+ID} = \char`\"{}BB2\+\_\+\+HIC\+\_\+\+ID\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a28d54ad526082f1f6e12fbcde667e5c7}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a28d54ad526082f1f6e12fbcde667e5c7}} 
+static final String {\bfseries BB2\+\_\+\+MBI} = \char`\"{}BB2\+\_\+\+MBI\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a01d8bb02c2e3289f2534228c39fbc209}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a01d8bb02c2e3289f2534228c39fbc209}} 
+static final String {\bfseries COVERAGE\+\_\+\+START\+\_\+\+DATE} = \char`\"{}BB2\+\_\+\+COVERAGE\+\_\+\+START\+\_\+\+DATE\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a22a7e1e3a9a8c5288cb2b42386799970}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a22a7e1e3a9a8c5288cb2b42386799970}} 
+{\bfseries RIFExporter} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{BB2\+RIFExporter}} exporter)
+\item 
+List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aaf5a529b42d249639da8e19ff9f0ae2d}{get\+Diagnoses\+Codes}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Returns the list of active diagnoses at a point in time. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_abd629489453dfe2a565a9758cca5a89f}{get\+Earliest\+Diagnosis}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String\mbox{[}$\,$\mbox{]} codes)
+\begin{DoxyCompactList}\small\item\em Returns the earliest diagnosis time stamp for a set of conditions. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aa2862b936c92493272b96a0665f22067}{get\+Earliest\+Diagnosis}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String code)
+\begin{DoxyCompactList}\small\item\em Returns the earliest diagnosis time stamp for a particular condition. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aa22404a14321075773dc35f2b87ab535}{get\+First\+Mapped\+HCPCSCode}} (List$<$ Health\+Record.\+Code $>$ codes, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} rand)
+\begin{DoxyCompactList}\small\item\em Get the first code that can be mapped to HCPCS. \end{DoxyCompactList}\item 
+List$<$ Claim.\+Claim\+Entry $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a34811ac99dc9c982a0353d1c6ab13f30}{get\+Billable\+Procedure\+And\+Med\+Admin\+Items}} (Health\+Record.\+Encounter encounter)
+\begin{DoxyCompactList}\small\item\em Get a list of claim entries for procedures with mappable codes and medication administrations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a06ccefddf7e37053285bf9afedcd2b72}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a06ccefddf7e37053285bf9afedcd2b72}} 
+static long {\bfseries parse\+Simple\+Date} (String date\+Str)
+\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ab9fd46562a5e3c37cdd9f5d4e1aa6b41}{get\+Earliest\+Unmapped\+Diagnosis}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String\mbox{[}$\,$\mbox{]} codes)
+\begin{DoxyCompactList}\small\item\em Returns the earliest unmapped diagnosis time stamp for a set of conditions. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a84852f7978d38cc532ea9be7196bd009}{get\+Earliest\+Unmapped\+Diagnosis}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, String code)
+\begin{DoxyCompactList}\small\item\em Returns the earliest unmapped diagnosis time stamp for a particular condition. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a535b2366b138568b370735342a64db43}{is\+Disabled}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Was the person disabled at any time. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a865f83fc544ae35f3ef9a5ed512ad77f}{get\+Date\+Of\+Disability}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Get the date of disability. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a73f5be6feb2bebe14f7c995f8d956ece}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a73f5be6feb2bebe14f7c995f8d956ece}} 
+final \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{BB2\+RIFExporter}} {\bfseries exporter}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a4ee0f964285b39ece66ea6af0bbb5349}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a4ee0f964285b39ece66ea6af0bbb5349}} 
+static final String {\bfseries BB2\+\_\+\+PARTD\+\_\+\+CONTRACTS} = \char`\"{}BB2\+\_\+\+PARTD\+\_\+\+CONTRACTS\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aea3196b20c3c6f200a01e3dfb08ecd1a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aea3196b20c3c6f200a01e3dfb08ecd1a}} 
+static final String {\bfseries BB2\+\_\+\+PARTB\+\_\+\+ENROLLEE} = \char`\"{}BB2\+\_\+\+PARTB\+\_\+\+ENROLLEE\char`\"{}
+\item 
+static final Atomic\+Long {\bfseries next\+Fi\+Doc\+Cntl\+Num}
+\item 
+static final Atomic\+Long {\bfseries next\+Claim\+Id}
+\item 
+static final Atomic\+Long {\bfseries next\+Claim\+Group\+Id}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a778b435c3f8218ba51772a46adf2ff1b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a778b435c3f8218ba51772a46adf2ff1b}} 
+static final String {\bfseries BB2\+\_\+\+BENE\+\_\+\+ID} = \char`\"{}BB2\+\_\+\+BENE\+\_\+\+ID\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ae66158a75126cf977369b4449662cf88}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ae66158a75126cf977369b4449662cf88}} 
+static final \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1CLIA}{CLIA}}\mbox{[}$\,$\mbox{]} {\bfseries clia\+Lab\+Numbers} = init\+Clia\+Lab\+Numbers()
+\item 
+static final long {\bfseries CLAIM\+\_\+\+CUTOFF}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a12def650b8ab5b057fcd32129d6dcf2a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a12def650b8ab5b057fcd32129d6dcf2a}} 
+static final String\mbox{[}$\,$\mbox{]} {\bfseries ESRD\+\_\+\+CODES} = new String\mbox{[}$\,$\mbox{]} \{\char`\"{}N18.\+6\char`\"{}, \char`\"{}N18.\+4\char`\"{}, \char`\"{}Q61.\+4\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all of the type-\/specific exporters. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a2c29035cf4764a0dc590ccc2d28e41e2}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a2c29035cf4764a0dc590ccc2d28e41e2}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!bb2TaxId@{bb2TaxId}}
+\index{bb2TaxId@{bb2TaxId}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{bb2TaxId()}{bb2TaxId()}}
+{\footnotesize\ttfamily static String org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+bb2\+Tax\+Id (\begin{DoxyParamCaption}\item[{String}]{ssn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove dashes from a non-\/null SSN, turn null SSN into empty string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ssn} & the SSN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+formatted SSN or empty string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a34811ac99dc9c982a0353d1c6ab13f30}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a34811ac99dc9c982a0353d1c6ab13f30}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getBillableProcedureAndMedAdminItems@{getBillableProcedureAndMedAdminItems}}
+\index{getBillableProcedureAndMedAdminItems@{getBillableProcedureAndMedAdminItems}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getBillableProcedureAndMedAdminItems()}{getBillableProcedureAndMedAdminItems()}}
+{\footnotesize\ttfamily List$<$Claim.\+Claim\+Entry$>$ org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Billable\+Procedure\+And\+Med\+Admin\+Items (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get a list of claim entries for procedures with mappable codes and medication administrations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & the encounter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of claim entries that are billable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a515e73bdda93ec999341ef60893862ee}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a515e73bdda93ec999341ef60893862ee}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getClaimTypes@{getClaimTypes}}
+\index{getClaimTypes@{getClaimTypes}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getClaimTypes()}{getClaimTypes()}}
+{\footnotesize\ttfamily static Set$<$\mbox{\hyperlink{enumorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_1_1ClaimType}{Claim\+Type}}$>$ org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Claim\+Types (\begin{DoxyParamCaption}\item[{Health\+Record.\+Encounter}]{encounter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the types of claim for the supplied encounter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encounter} & the encounter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the applicable types of claim 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a865f83fc544ae35f3ef9a5ed512ad77f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a865f83fc544ae35f3ef9a5ed512ad77f}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getDateOfDisability@{getDateOfDisability}}
+\index{getDateOfDisability@{getDateOfDisability}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getDateOfDisability()}{getDateOfDisability()}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Date\+Of\+Disability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Get the date of disability. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the date of disability or Long.\+MAX\+\_\+\+VALUE if never disabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aaf5a529b42d249639da8e19ff9f0ae2d}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aaf5a529b42d249639da8e19ff9f0ae2d}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getDiagnosesCodes@{getDiagnosesCodes}}
+\index{getDiagnosesCodes@{getDiagnosesCodes}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getDiagnosesCodes()}{getDiagnosesCodes()}}
+{\footnotesize\ttfamily List$<$String$>$ org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Diagnoses\+Codes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the list of active diagnoses at a point in time. 
+
+Diagnoses are sorted by onset time with most recent first and oldest last. 
+\begin{DoxyParams}{Parameters}
+{\em person} & patient with the diagnoses. \\
+\hline
+{\em time} & the point in time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of active diagnoses, sorted by most recent first and oldest last. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aa2862b936c92493272b96a0665f22067}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aa2862b936c92493272b96a0665f22067}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getEarliestDiagnosis@{getEarliestDiagnosis}}
+\index{getEarliestDiagnosis@{getEarliestDiagnosis}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getEarliestDiagnosis()}{getEarliestDiagnosis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Earliest\+Diagnosis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the earliest diagnosis time stamp for a particular condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & patient with the diagnoses \\
+\hline
+{\em code} & the condition code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the diagnosis time stamp or Long.\+MAX\+\_\+\+VALUE if not diagnosed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_abd629489453dfe2a565a9758cca5a89f}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_abd629489453dfe2a565a9758cca5a89f}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getEarliestDiagnosis@{getEarliestDiagnosis}}
+\index{getEarliestDiagnosis@{getEarliestDiagnosis}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getEarliestDiagnosis()}{getEarliestDiagnosis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Earliest\+Diagnosis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String\mbox{[}$\,$\mbox{]}}]{codes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns the earliest diagnosis time stamp for a set of conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & patient with the diagnoses \\
+\hline
+{\em codes} & the condition codes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the earliest diagnosis time stamp or Long.\+MAX\+\_\+\+VALUE if not diagnosed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a84852f7978d38cc532ea9be7196bd009}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a84852f7978d38cc532ea9be7196bd009}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getEarliestUnmappedDiagnosis@{getEarliestUnmappedDiagnosis}}
+\index{getEarliestUnmappedDiagnosis@{getEarliestUnmappedDiagnosis}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getEarliestUnmappedDiagnosis()}{getEarliestUnmappedDiagnosis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Earliest\+Unmapped\+Diagnosis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Returns the earliest unmapped diagnosis time stamp for a particular condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & patient with the diagnoses \\
+\hline
+{\em code} & the condition code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the diagnosis time stamp or Long.\+MAX\+\_\+\+VALUE if not diagnosed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ab9fd46562a5e3c37cdd9f5d4e1aa6b41}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ab9fd46562a5e3c37cdd9f5d4e1aa6b41}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getEarliestUnmappedDiagnosis@{getEarliestUnmappedDiagnosis}}
+\index{getEarliestUnmappedDiagnosis@{getEarliestUnmappedDiagnosis}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getEarliestUnmappedDiagnosis()}{getEarliestUnmappedDiagnosis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+Earliest\+Unmapped\+Diagnosis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{String\mbox{[}$\,$\mbox{]}}]{codes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Returns the earliest unmapped diagnosis time stamp for a set of conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & patient with the diagnoses \\
+\hline
+{\em codes} & the condition codes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the earliest diagnosis time stamp or Long.\+MAX\+\_\+\+VALUE if not diagnosed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aa22404a14321075773dc35f2b87ab535}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_aa22404a14321075773dc35f2b87ab535}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!getFirstMappedHCPCSCode@{getFirstMappedHCPCSCode}}
+\index{getFirstMappedHCPCSCode@{getFirstMappedHCPCSCode}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getFirstMappedHCPCSCode()}{getFirstMappedHCPCSCode()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+get\+First\+Mapped\+HCPCSCode (\begin{DoxyParamCaption}\item[{List$<$ Health\+Record.\+Code $>$}]{codes,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{rand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get the first code that can be mapped to HCPCS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codes} & a list of codes, assumed to be SNOMED \\
+\hline
+{\em rand} & a source of randomness \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the mapped HCPCS code or null if no mapping could be found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a6bc1cf5d885861ab6898070f64d9150e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a6bc1cf5d885861ab6898070f64d9150e}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!hasPartABCoverage@{hasPartABCoverage}}
+\index{hasPartABCoverage@{hasPartABCoverage}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{hasPartABCoverage()}{hasPartABCoverage()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+has\+Part\+ABCoverage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+Test whether a person has part A and B coverage at the specified timestamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person \\
+\hline
+{\em timestamp} & the timestamp to check coverage at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if covered, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a535b2366b138568b370735342a64db43}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a535b2366b138568b370735342a64db43}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!isDisabled@{isDisabled}}
+\index{isDisabled@{isDisabled}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{isDisabled()}{isDisabled()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+is\+Disabled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Was the person disabled at any time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if disabled, false if not 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a805b9e8f41cec42d479921b4248d510a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a805b9e8f41cec42d479921b4248d510a}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!CLAIM\_CUTOFF@{CLAIM\_CUTOFF}}
+\index{CLAIM\_CUTOFF@{CLAIM\_CUTOFF}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{CLAIM\_CUTOFF}{CLAIM\_CUTOFF}}
+{\footnotesize\ttfamily final long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+CLAIM\+\_\+\+CUTOFF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= parseSimpleDate(}
+\DoxyCodeLine{          Config.get(\textcolor{stringliteral}{"{}exporter.bfd.cutoff\_date"{}}, \textcolor{stringliteral}{"{}20140529"{}}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a93d34307419aaaeb602ef27e5df19cd3}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a93d34307419aaaeb602ef27e5df19cd3}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!nextClaimGroupId@{nextClaimGroupId}}
+\index{nextClaimGroupId@{nextClaimGroupId}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{nextClaimGroupId}{nextClaimGroupId}}
+{\footnotesize\ttfamily final Atomic\+Long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+next\+Claim\+Group\+Id\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} AtomicLong(}
+\DoxyCodeLine{          Config.getAsLong(\textcolor{stringliteral}{"{}exporter.bfd.clm\_grp\_id\_start"{}}, -\/1))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a3ed1f1351d1ba8c48f2ea6578fc067b8}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_a3ed1f1351d1ba8c48f2ea6578fc067b8}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!nextClaimId@{nextClaimId}}
+\index{nextClaimId@{nextClaimId}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{nextClaimId}{nextClaimId}}
+{\footnotesize\ttfamily final Atomic\+Long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+next\+Claim\+Id\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} AtomicLong(}
+\DoxyCodeLine{          Config.getAsLong(\textcolor{stringliteral}{"{}exporter.bfd.clm\_id\_start"{}}, -\/1))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ac24027ea44edeeff8f0419be638fb178}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1RIFExporter_ac24027ea44edeeff8f0419be638fb178}} 
+\index{org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}!nextFiDocCntlNum@{nextFiDocCntlNum}}
+\index{nextFiDocCntlNum@{nextFiDocCntlNum}!org.mitre.synthea.export.rif.RIFExporter@{org.mitre.synthea.export.rif.RIFExporter}}
+\doxysubsubsection{\texorpdfstring{nextFiDocCntlNum}{nextFiDocCntlNum}}
+{\footnotesize\ttfamily final Atomic\+Long org.\+mitre.\+synthea.\+export.\+rif.\+RIFExporter.\+next\+Fi\+Doc\+Cntl\+Num\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} AtomicLong(}
+\DoxyCodeLine{          Config.getAsLong(\textcolor{stringliteral}{"{}exporter.bfd.fi\_doc\_cntl\_num\_start"{}}, -\/1))}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/RIFExporter.\+java\end{DoxyCompactItemize}

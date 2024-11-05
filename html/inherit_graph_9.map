@@ -1,0 +1,88 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="169,433,255,459"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord.html" title=" " alt="" coords="575,5,771,47"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ConditionPeriod.html" title=" " alt="" coords="542,71,805,127"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ConditionWithSymptoms.html" title=" " alt="" coords="542,151,805,207"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1ModuleConditions.html" title="Used to record condition onset by modules." alt="" coords="549,231,797,287"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedConditionRecord_1_1OnsetCondition.html" title="A condition with a set of onset and end time entries." alt="" coords="554,311,793,367"/>
+<area shape="rect" id="node7" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedSymptom.html" title=" " alt="" coords="578,392,769,433"/>
+<area shape="rect" id="node8" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedSymptom_1_1SymptomInfo.html" title=" " alt="" coords="551,457,795,499"/>
+<area shape="rect" id="node9" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ExpressedSymptom_1_1SymptomSource.html" title=" " alt="" coords="542,523,805,564"/>
+<area shape="rect" id="node10" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1Module.html" title="Module represents the entry point of a generic module." alt="" coords="578,588,769,629"/>
+<area shape="rect" id="node18" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1State.html" title=" " alt="" coords="578,653,769,695"/>
+<area shape="rect" id="node19" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy_1_1Instance.html" title="ImagingStudy.Instance represents a single imaging Instance taken as part of a Series of images." alt="" coords="543,719,804,760"/>
+<area shape="rect" id="node20" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy_1_1Series.html" title="ImagingStudy.Series represents a series of images that were taken of a specific part of the body." alt="" coords="550,784,797,825"/>
+<area shape="rect" id="node11" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1CardiovascularDiseaseModule.html" title=" " alt="" coords="1013,653,1232,695"/>
+<area shape="rect" id="node12" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1EncounterModule.html" title=" " alt="" coords="1021,719,1224,760"/>
+<area shape="rect" id="node13" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1HealthInsuranceModule.html" title=" " alt="" coords="1021,784,1224,825"/>
+<area shape="rect" id="node14" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule.html" title=" " alt="" coords="1021,392,1224,433"/>
+<area shape="rect" id="node15" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule.html" title=" " alt="" coords="1021,457,1224,499"/>
+<area shape="rect" id="node16" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1WeightLossModule.html" title="This module allows patients in Synthea to lose weight." alt="" coords="1021,523,1224,564"/>
+<area shape="rect" id="node17" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1C19ImmunizationModule.html" title="A module to simulate COVID19 Immunizations in the United States." alt="" coords="1002,588,1243,629"/>
+<area shape="rect" id="node21" title=" " alt="" coords="161,857,263,883"/>
+<area shape="rect" id="node22" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics.html" title="Demographics class holds the information from the towns.json and associated county config files." alt="" coords="547,849,800,891"/>
+<area shape="rect" id="node23" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1IPayerAdjustment.html" title="Interface to abstract various claim adjustment strategies." alt="" coords="5,980,419,1021"/>
+<area shape="rect" id="node24" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1PayerAdjustmentFixed.html" title="Fixed payment adjustment strategy." alt="" coords="467,915,880,956"/>
+<area shape="rect" id="node25" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1PayerAdjustmentNone.html" title="Default payer adjustment strategy – no adjustment." alt="" coords="467,980,880,1021"/>
+<area shape="rect" id="node26" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1payeradjustment_1_1PayerAdjustmentRandom.html" title="Randomized payment adjustment strategy." alt="" coords="467,1045,880,1087"/>
+<area shape="rect" id="node27" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1QuadTreeElement.html" title=" " alt="" coords="55,3071,369,3112"/>
+<area shape="rect" id="node28" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician.html" title=" " alt="" coords="558,2940,789,2981"/>
+<area shape="rect" id="node29" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person.html" title=" " alt="" coords="558,3136,789,3177"/>
+<area shape="rect" id="node30" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider.html" title=" " alt="" coords="558,3005,789,3047"/>
+<area shape="rect" id="node31" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Place.html" title="Place represents a named place with a postal code and coordinate." alt="" coords="547,3071,800,3112"/>
+<area shape="rect" id="node32" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1TestElement.html" title=" " alt="" coords="516,3267,831,3308"/>
+<area shape="rect" id="node33" href="$interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator.html" title=" " alt="" coords="115,3168,309,3209"/>
+<area shape="rect" id="node34" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1DefaultRandomNumberGenerator.html" title="A default implementation of the RandomNumberGenerator interface." alt="" coords="553,3201,794,3243"/>
+<area shape="rect" id="node35" title=" " alt="" coords="163,1641,261,1667"/>
+<area shape="rect" id="node36" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1Distribution.html" title="Representation of different types of distributions that can be used to represent random variables use..." alt="" coords="578,1764,769,1805"/>
+<area shape="rect" id="node37" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic.html" title="Logic represents any portion of a generic module that requires a logical expression." alt="" coords="578,1829,769,1871"/>
+<area shape="rect" id="node38" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1ReactionProbabilities.html" title="ReactionProbabilities is a structure to capture the kind and severity of reaction for a given Allergy..." alt="" coords="578,1895,769,1936"/>
+<area shape="rect" id="node39" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition.html" title="Transition represents all the transition types within the generic module framework." alt="" coords="578,1960,769,2001"/>
+<area shape="rect" id="node40" href="$classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_1_1LookupTableKey.html" title=" " alt="" coords="577,2025,770,2067"/>
+<area shape="rect" id="node41" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomCollection.html" title="Random collection of objects, with weightings." alt="" coords="576,2091,771,2132"/>
+<area shape="rect" id="node42" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1TimeSeriesData.html" title=" " alt="" coords="576,2156,771,2197"/>
+<area shape="rect" id="node43" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1ValueGenerator.html" title="The base for all value generators." alt="" coords="576,2221,771,2263"/>
+<area shape="rect" id="node49" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1IoMapper.html" title="Class for handling simulation inputs and outputs." alt="" coords="540,2287,807,2328"/>
+<area shape="rect" id="node50" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1physiology_1_1PreGenerator.html" title="Class for handling pre&#45;simulation outputs." alt="" coords="540,2352,807,2393"/>
+<area shape="rect" id="node51" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1covid_1_1LateAdopterModel.html" title="The COVID&#45;19 Immunization Module uses actual data to predict whether someone will get a vaccine durin..." alt="" coords="553,2417,794,2459"/>
+<area shape="rect" id="node52" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer.html" title=" " alt="" coords="558,2483,789,2524"/>
+<area shape="rect" id="node53" href="$interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IPlanEligibility.html" title=" " alt="" coords="479,2548,868,2589"/>
+<area shape="rect" id="node60" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim.html" title=" " alt="" coords="551,2613,795,2655"/>
+<area shape="rect" id="node61" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Claim_1_1ClaimEntry.html" title=" " alt="" coords="551,2679,795,2720"/>
+<area shape="rect" id="node62" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1Employment.html" title="A model of employment / unemployment that is expected to be run as a part of the LifecycleModule." alt="" coords="551,2744,795,2785"/>
+<area shape="rect" id="node63" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChart.html" title="Represents a growth chart for a particular measure." alt="" coords="551,2809,795,2851"/>
+<area shape="rect" id="node64" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1GrowthChartEntry.html" title="Represents the LMS parameters on the CDC growth chart for a particular sex and age in months." alt="" coords="551,2875,795,2916"/>
+<area shape="rect" id="node65" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord.html" title="HealthRecord contains all the coded entries in a person&#39;s health record." alt="" coords="551,1111,795,1152"/>
+<area shape="rect" id="node66" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry.html" title="All things within a HealthRecord are instances of Entry." alt="" coords="551,1176,795,1217"/>
+<area shape="rect" id="node79" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1NHANESSample.html" title="Representation of a sample of information from NHANES &#45; https://www.cdc.gov/nchs/nhanes/index...." alt="" coords="551,1241,795,1283"/>
+<area shape="rect" id="node80" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory.html" title="This class provides growth trajectories for individuals between 2 and 20." alt="" coords="551,1307,795,1348"/>
+<area shape="rect" id="node81" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1PediatricGrowthTrajectory_1_1Point.html" title="A representation of a point in the growth trajectory." alt="" coords="551,1372,795,1413"/>
+<area shape="rect" id="node82" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1TelemedicineConfig.html" title="Configuration that drives TypeOfCare transitions in Synthea." alt="" coords="551,1437,795,1479"/>
+<area shape="rect" id="node83" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1CoverageRecord.html" title="A class that manages a history of coverage." alt="" coords="497,1503,849,1544"/>
+<area shape="rect" id="node84" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1InsurancePlan.html" title="A class that defines an insurance plan." alt="" coords="497,1568,849,1609"/>
+<area shape="rect" id="node85" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1healthinsurance_1_1PlanRecord.html" title="A class that manages a person&#39;s record of plan uses and expenses for an enrollment period." alt="" coords="497,1633,849,1675"/>
+<area shape="rect" id="node86" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location.html" title=" " alt="" coords="547,1699,800,1740"/>
+<area shape="rect" id="node44" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1ConstantValueGenerator.html" title="A value generator that returns a set constant value for all eternity." alt="" coords="1025,2156,1220,2197"/>
+<area shape="rect" id="node45" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1PhysiologyValueGenerator.html" title="A ValueGenerator for generation of values from a physiology simulation." alt="" coords="1025,2221,1220,2263"/>
+<area shape="rect" id="node46" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomValueGenerator.html" title="Generate random values within a defined range." alt="" coords="1025,2287,1220,2328"/>
+<area shape="rect" id="node47" href="$classorg_1_1mitre_1_1synthea_1_1helpers_1_1TrendingValueGenerator.html" title="A ValueGenerator for generation of trending values." alt="" coords="1025,2352,1220,2393"/>
+<area shape="rect" id="node48" href="$classorg_1_1mitre_1_1synthea_1_1modules_1_1BloodPressureValueGenerator.html" title="Generate realistic blood pressure vital signs, with impacts from select medications." alt="" coords="1015,2091,1231,2132"/>
+<area shape="rect" id="node54" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1CSVEligibility.html" title=" " alt="" coords="928,2483,1317,2524"/>
+<area shape="rect" id="node55" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1DefaultPlanEligibility.html" title="DefaultPlanEligibility can be used for the No Insurance plan." alt="" coords="928,2548,1317,2589"/>
+<area shape="rect" id="node56" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IncomeSpenddownEligibility.html" title="A class that defines the elgibility logic for Income medical cost spenddowns (MNIL,..." alt="" coords="928,2613,1317,2655"/>
+<area shape="rect" id="node57" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PovertyMultiplierFileEligibility.html" title="An eligiblity type based on a file that dictates by&#45;age and by&#45;state poverty multiplier thresholds." alt="" coords="928,2679,1317,2720"/>
+<area shape="rect" id="node58" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingAttributesEligibility.html" title="An eligibility criteria based on whether a person has any of the given attributes." alt="" coords="928,2744,1317,2785"/>
+<area shape="rect" id="node59" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1QualifyingConditionCodesEligibility.html" title="An algorithm that defines the logic for eligibility based on a set of qualifying condition codes." alt="" coords="928,2417,1317,2459"/>
+<area shape="rect" id="node67" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Allergy.html" title=" " alt="" coords="1001,915,1245,956"/>
+<area shape="rect" id="node68" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Device.html" title="Device is an implantable device such as a coronary stent, artificial knee or hip, heart pacemaker,..." alt="" coords="1001,980,1245,1021"/>
+<area shape="rect" id="node69" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Encounter.html" title=" " alt="" coords="1001,1045,1245,1087"/>
+<area shape="rect" id="node70" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1EntryWithReasons.html" title=" " alt="" coords="1001,1111,1245,1152"/>
+<area shape="rect" id="node74" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1ImagingStudy.html" title=" " alt="" coords="1001,1176,1245,1217"/>
+<area shape="rect" id="node75" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Immunization.html" title=" " alt="" coords="1001,1241,1245,1283"/>
+<area shape="rect" id="node76" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Observation.html" title=" " alt="" coords="1001,1307,1245,1348"/>
+<area shape="rect" id="node77" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Report.html" title=" " alt="" coords="1001,1372,1245,1413"/>
+<area shape="rect" id="node78" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Supply.html" title=" " alt="" coords="1001,1437,1245,1479"/>
+<area shape="rect" id="node71" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1CarePlan.html" title=" " alt="" coords="1365,1045,1609,1087"/>
+<area shape="rect" id="node72" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication.html" title=" " alt="" coords="1365,1111,1609,1152"/>
+<area shape="rect" id="node73" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Procedure.html" title=" " alt="" coords="1365,1176,1609,1217"/>
+</map>

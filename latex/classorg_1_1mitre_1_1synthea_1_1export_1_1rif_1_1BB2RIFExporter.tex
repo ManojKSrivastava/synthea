@@ -1,0 +1,147 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+
+
+Blue\+Button 2 RIF format exporter.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a4e44b4bef2d3cacc99e80ff822658f4e}{export\+Manifest}} ()  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export a manifest file that lists all of the other BFD files (except the NPI file which is special). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a2c20487e46351c6abdc648ae09cdcf6d}{export\+NPIs}} ()  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export NPI writer with synthetic providers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a5d5d094822acf80aa1368dc793a230dd}{export\+End\+State}} ()  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export the current values of IDs so subsequent runs can use them as a starting point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_ad245ef5415bcae18cf51148b8b89f84a}{export\+Missing\+Codes}} ()  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export codes that were not mappable during export. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_aea5921e4a133b1a343ace955650525a3}{export}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop\+Time, int years\+Of\+History)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Export a single person. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{BB2\+RIFExporter}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_af4e0c09492a08517d5900cb3fdc0bddf}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the current instance of the BBExporter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Blue\+Button 2 RIF format exporter. 
+
+The data format is described here\+: \href{https://github.com/CMSgov/beneficiary-fhir-data/tree/master/apps/bfd-model}{\texttt{ https\+://github.\+com/\+CMSgov/beneficiary-\/fhir-\/data/tree/master/apps/bfd-\/model}}. Workflow\+: This exporter now takes advantage of an analyst-\/centered, config approach to setting exported data. Specifically,
+\begin{DoxyEnumerate}
+\item An analyst uses a spreadsheet to enter information from official documents (see syntax below)
+\item Spreadsheet is exported as a tab-\/separated values file (TSV)
+\item TSV file is copied to ./src/main/resources/export as bfd\+\_\+field\+\_\+values.\+tsv (or whatever is specified in synthea.\+properties)
+\item when this exporter runs, it will read in the config file to set the values needed for the export
+\item the resulting values are then written out to the export files in the order the export files require Syntax for TSV file\+: empty cell \+: Not yet analyzed, exporter prints a reminder N/A \+: Not applicable, ignored by exporter (ccccc) \+: General comments are enclosed in parenthesis, ignored by exporter \+: If this is the only content, exporter prints a reminder \+: If a value precedes the comment, exporter will use value, \+: and ignore the comment (e.\+g., 0001 (always 0001 for inpatient) will \+: result in just 0001) vvvvv \+: Literal replacement value to be used by exporter (e.\+g., INSERT) a,b,c,d \+: A \char`\"{}flat\char`\"{} distribution, exporter will randomly pick one \+: of the comma delimited values. E.\+g., B,G (B = brand, G = generic) \+: exporter randomly chooses either B or G and ignores comment Coded \+: Implementation in exporter source code, ignored \mbox{[}Blank\mbox{]} \+: Cell was analyzed and value should be empty 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_aea5921e4a133b1a343ace955650525a3}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_aea5921e4a133b1a343ace955650525a3}} 
+\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}!export@{export}}
+\index{export@{export}!org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter.\+export (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop\+Time,  }\item[{int}]{years\+Of\+History }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export a single person. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to export \\
+\hline
+{\em stop\+Time} & end time of simulation \\
+\hline
+{\em years\+Of\+History} & number of years of claims to export \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if something goes wrong \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a5d5d094822acf80aa1368dc793a230dd}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a5d5d094822acf80aa1368dc793a230dd}} 
+\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}!exportEndState@{exportEndState}}
+\index{exportEndState@{exportEndState}!org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+\doxysubsubsection{\texorpdfstring{exportEndState()}{exportEndState()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter.\+export\+End\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export the current values of IDs so subsequent runs can use them as a starting point. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if something goes wrong \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a4e44b4bef2d3cacc99e80ff822658f4e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a4e44b4bef2d3cacc99e80ff822658f4e}} 
+\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}!exportManifest@{exportManifest}}
+\index{exportManifest@{exportManifest}!org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+\doxysubsubsection{\texorpdfstring{exportManifest()}{exportManifest()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter.\+export\+Manifest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export a manifest file that lists all of the other BFD files (except the NPI file which is special). 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if something goes wrong \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_ad245ef5415bcae18cf51148b8b89f84a}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_ad245ef5415bcae18cf51148b8b89f84a}} 
+\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}!exportMissingCodes@{exportMissingCodes}}
+\index{exportMissingCodes@{exportMissingCodes}!org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+\doxysubsubsection{\texorpdfstring{exportMissingCodes()}{exportMissingCodes()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter.\+export\+Missing\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export codes that were not mappable during export. 
+
+These missing codes might be accidental, they may be intentional. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a2c20487e46351c6abdc648ae09cdcf6d}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_a2c20487e46351c6abdc648ae09cdcf6d}} 
+\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}!exportNPIs@{exportNPIs}}
+\index{exportNPIs@{exportNPIs}!org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+\doxysubsubsection{\texorpdfstring{exportNPIs()}{exportNPIs()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter.\+export\+NPIs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Export NPI writer with synthetic providers. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if something goes horribly wrong. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_af4e0c09492a08517d5900cb3fdc0bddf}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter_af4e0c09492a08517d5900cb3fdc0bddf}} 
+\index{org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!org.mitre.synthea.export.rif.BB2RIFExporter@{org.mitre.synthea.export.rif.BB2RIFExporter}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1BB2RIFExporter}{BB2\+RIFExporter}} org.\+mitre.\+synthea.\+export.\+rif.\+BB2\+RIFExporter.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the current instance of the BBExporter. 
+
+\begin{DoxyReturn}{Returns}
+the current instance of the BBExporter. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/BB2\+RIFExporter.\+java\end{DoxyCompactItemize}

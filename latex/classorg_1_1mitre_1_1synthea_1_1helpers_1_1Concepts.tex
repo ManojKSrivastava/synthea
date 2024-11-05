@@ -1,0 +1,122 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Concepts Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts}\index{org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}}
+
+
+Task class to export a report of all clinical concepts (aka Codes) that Synthea is aware of.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a67b36b202b4daeb9496112adae56bfd2}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Generate an output file containing all clinical concepts used in Synthea. \end{DoxyCompactList}\item 
+static List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a498933bba8d077e1c093d4761b421c1c}{get\+Concept\+Inventory}} (boolean only\+Missing\+Costs)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Get the list of all concepts in Synthea, as a list of CSV strings. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_aaa74b47fafa36ec8253d0b1b1710f636}{inventory\+Module}} (Map$<$ Code, Set$<$ String $>$$>$ concepts, Json\+Object module)
+\begin{DoxyCompactList}\small\item\em Catalog all concepts from the given module into the given Table. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a4c2e36c9fd5e91f46634ace8a9248658}{inventory\+State}} (Map$<$ Code, Set$<$ String $>$$>$ concepts, Json\+Object state, String module)
+\begin{DoxyCompactList}\small\item\em Catalog all concepts from the given state into the given Table. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a1820b78dce5a63fe35b3ca636cdc9e33}{inventory\+Codes}} (Map$<$ Code, Set$<$ String $>$$>$ concepts, Collection$<$ Code $>$ codes, String module)
+\begin{DoxyCompactList}\small\item\em Add the Codes in the given Collection to the given inventory of concepts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Task class to export a report of all clinical concepts (aka Codes) that Synthea is aware of. 
+
+Format is \char`\"{}system,code,display\char`\"{}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a498933bba8d077e1c093d4761b421c1c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a498933bba8d077e1c093d4761b421c1c}} 
+\index{org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}!getConceptInventory@{getConceptInventory}}
+\index{getConceptInventory@{getConceptInventory}!org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}}
+\doxysubsubsection{\texorpdfstring{getConceptInventory()}{getConceptInventory()}}
+{\footnotesize\ttfamily static List$<$String$>$ org.\+mitre.\+synthea.\+helpers.\+Concepts.\+get\+Concept\+Inventory (\begin{DoxyParamCaption}\item[{boolean}]{only\+Missing\+Costs }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the list of all concepts in Synthea, as a list of CSV strings. 
+
+\begin{DoxyReturn}{Returns}
+list of CSV strings 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if any exception occurs in reading the modules. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a1820b78dce5a63fe35b3ca636cdc9e33}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a1820b78dce5a63fe35b3ca636cdc9e33}} 
+\index{org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}!inventoryCodes@{inventoryCodes}}
+\index{inventoryCodes@{inventoryCodes}!org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}}
+\doxysubsubsection{\texorpdfstring{inventoryCodes()}{inventoryCodes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Concepts.\+inventory\+Codes (\begin{DoxyParamCaption}\item[{Map$<$ Code, Set$<$ String $>$$>$}]{concepts,  }\item[{Collection$<$ Code $>$}]{codes,  }\item[{String}]{module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add the Codes in the given Collection to the given inventory of concepts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em concepts} & Table of concepts to add to \\
+\hline
+{\em codes} & Collection of codes to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_aaa74b47fafa36ec8253d0b1b1710f636}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_aaa74b47fafa36ec8253d0b1b1710f636}} 
+\index{org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}!inventoryModule@{inventoryModule}}
+\index{inventoryModule@{inventoryModule}!org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}}
+\doxysubsubsection{\texorpdfstring{inventoryModule()}{inventoryModule()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Concepts.\+inventory\+Module (\begin{DoxyParamCaption}\item[{Map$<$ Code, Set$<$ String $>$$>$}]{concepts,  }\item[{Json\+Object}]{module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Catalog all concepts from the given module into the given Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em concepts} & Table of concepts to add to \\
+\hline
+{\em module} & Module to parse for concepts and codes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a4c2e36c9fd5e91f46634ace8a9248658}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a4c2e36c9fd5e91f46634ace8a9248658}} 
+\index{org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}!inventoryState@{inventoryState}}
+\index{inventoryState@{inventoryState}!org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}}
+\doxysubsubsection{\texorpdfstring{inventoryState()}{inventoryState()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Concepts.\+inventory\+State (\begin{DoxyParamCaption}\item[{Map$<$ Code, Set$<$ String $>$$>$}]{concepts,  }\item[{Json\+Object}]{state,  }\item[{String}]{module }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Catalog all concepts from the given state into the given Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em concepts} & Table of concepts to add to \\
+\hline
+{\em state} & State to parse for concepts and codes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a67b36b202b4daeb9496112adae56bfd2}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Concepts_a67b36b202b4daeb9496112adae56bfd2}} 
+\index{org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}!main@{main}}
+\index{main@{main}!org.mitre.synthea.helpers.Concepts@{org.mitre.synthea.helpers.Concepts}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+helpers.\+Concepts.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate an output file containing all clinical concepts used in Synthea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & unused \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if any error occurs in reading the module files \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Concepts.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest}{}\doxysection{org.\+mitre.\+synthea.\+export.\+CCDAExporter\+Test Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest}\index{org.mitre.synthea.export.CCDAExporterTest@{org.mitre.synthea.export.CCDAExporterTest}}
+
+
+This is a rudimentary check of the CCDA Export.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+CCDAExporter\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a39c59c171d273f53739e325bdf446502}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a39c59c171d273f53739e325bdf446502}} 
+void {\bfseries test\+CCDAExport} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a5e7f8604c148627c7969faaa5d3f04d6}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a5e7f8604c148627c7969faaa5d3f04d6}} 
+void {\bfseries test\+Export\+With\+No\+Preferred\+Wellness\+Provider} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a50fabe61ad166f088c22a93519360e27}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a50fabe61ad166f088c22a93519360e27}} 
+void {\bfseries test\+Failed\+CCDAExports} ()  throws Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a27c7c7e726f58a091bf90ea476843053}{load\+XPath\+Expressions}} ()  throws XPath\+Expression\+Exception 
+\begin{DoxyCompactList}\small\item\em Creates XPath expressions to find each mandatory section in the CCDA / CCD document. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a7c1f64384055425b9de32bafc50c33bb}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a7c1f64384055425b9de32bafc50c33bb}} 
+Temporary\+Folder {\bfseries temp\+Folder} = new Temporary\+Folder()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_aec78d98f7f4869beaf30e07a78fc4563}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_aec78d98f7f4869beaf30e07a78fc4563}} 
+static Hash\+Map$<$ String, XPath\+Expression $>$ {\bfseries section\+Expressions} = new Hash\+Map$<$$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a rudimentary check of the CCDA Export. 
+
+It uses XPath expressions to ensure that the mandatory sections for the Continuity of Care Document (CCD) (V3) are present as specified in HL7 Implementation Guide for CDA® Release 2\+: Consolidated CDA Templates for Clinical Notes Specification Version\+: 2.\+1.\+0.\+7 September 2022. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a27c7c7e726f58a091bf90ea476843053}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1CCDAExporterTest_a27c7c7e726f58a091bf90ea476843053}} 
+\index{org.mitre.synthea.export.CCDAExporterTest@{org.mitre.synthea.export.CCDAExporterTest}!loadXPathExpressions@{loadXPathExpressions}}
+\index{loadXPathExpressions@{loadXPathExpressions}!org.mitre.synthea.export.CCDAExporterTest@{org.mitre.synthea.export.CCDAExporterTest}}
+\doxysubsubsection{\texorpdfstring{loadXPathExpressions()}{loadXPathExpressions()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+CCDAExporter\+Test.\+load\+XPath\+Expressions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws XPath\+Expression\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates XPath expressions to find each mandatory section in the CCDA / CCD document. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em XPath\+Expression\+Exception} & should never happen \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/test/java/org/mitre/synthea/export/CCDAExporter\+Test.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Transition Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition}\index{org.mitre.synthea.engine.Transition@{org.mitre.synthea.engine.Transition}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition}{Transition}} represents all the transition types within the generic module framework.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+engine.\+Transition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+Transition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Complex\+Transition}
+\begin{DoxyCompactList}\small\item\em Complex transitions are a combination of direct, distributed, and conditional transitions. \end{DoxyCompactList}\item 
+class {\bfseries Complex\+Transition\+Option}
+\begin{DoxyCompactList}\small\item\em A Distributed\+Transition\+Option represents a transition option with any of\+: -\/ a single state to transition to, -\/ a condition that must be true, or -\/ a set of distributions and transitions. \end{DoxyCompactList}\item 
+class {\bfseries Conditional\+Transition}
+\begin{DoxyCompactList}\small\item\em Conditional transitions will transition to one of several possible states based on conditional logic. \end{DoxyCompactList}\item 
+class {\bfseries Conditional\+Transition\+Option}
+\begin{DoxyCompactList}\small\item\em A Conditional\+Transition\+Option represents a single destination state, with a given logical condition that must be true in order for the state to be transitioned to. \end{DoxyCompactList}\item 
+class {\bfseries Direct\+Transition}
+\begin{DoxyCompactList}\small\item\em Direct transitions are the simplest of transitions. \end{DoxyCompactList}\item 
+class {\bfseries Distributed\+Transition}
+\begin{DoxyCompactList}\small\item\em Distributed transitions will transition to one of several possible states based on the configured distribution. \end{DoxyCompactList}\item 
+class {\bfseries Distributed\+Transition\+Option}
+\begin{DoxyCompactList}\small\item\em A Distributed\+Transition\+Option represents a single destination state, with a given distribution percentage, or a named distribution representing an attribute containing the distribution percentage. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_1_1LookupTableKey}{Lookup\+Table\+Key}}
+\item 
+class {\bfseries Lookup\+Table\+Transition}
+\begin{DoxyCompactList}\small\item\em Lookup\+Table transitions will transition to one of any number of possible states based on probabilities for each state extacted from a table. \end{DoxyCompactList}\item 
+class {\bfseries Lookup\+Table\+Transition\+Option}
+\begin{DoxyCompactList}\small\item\em A Lookup\+Table\+Transition\+Option represents a destination state which will be compared with a table lookup to find its probability and attributes. \end{DoxyCompactList}\item 
+class {\bfseries Named\+Distribution}
+\begin{DoxyCompactList}\small\item\em Helper class for distributions, which may either be a double, or a Named\+Distribution with an attribute to fetch the desired probability from and a default. \end{DoxyCompactList}\item 
+class {\bfseries Type\+Of\+Care\+Transition}
+\begin{DoxyCompactList}\small\item\em A transition that is based on the type of care that will follow. \end{DoxyCompactList}\item 
+class {\bfseries Type\+Of\+Care\+Transition\+Options}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_a9c9a5e642e73826ef9ed21f2440d0f97}{follow}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Get the name of the next state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_a6c67393430df70e67151c08dd0d06745}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_a6c67393430df70e67151c08dd0d06745}} 
+List$<$ String $>$ {\bfseries remarks}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition}{Transition}} represents all the transition types within the generic module framework. 
+
+This class is stateless, and calling \textquotesingle{}follow\textquotesingle{} on an instance must not modify state as instances of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition}{Transition}} within States and Modules are shared across the population. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_a9c9a5e642e73826ef9ed21f2440d0f97}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Transition_a9c9a5e642e73826ef9ed21f2440d0f97}} 
+\index{org.mitre.synthea.engine.Transition@{org.mitre.synthea.engine.Transition}!follow@{follow}}
+\index{follow@{follow}!org.mitre.synthea.engine.Transition@{org.mitre.synthea.engine.Transition}}
+\doxysubsubsection{\texorpdfstring{follow()}{follow()}}
+{\footnotesize\ttfamily abstract String org.\+mitre.\+synthea.\+engine.\+Transition.\+follow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Get the name of the next state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: person being processed \\
+\hline
+{\em time} & \+: time of this transition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name \+: name of the next state 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Transition.\+java\end{DoxyCompactItemize}

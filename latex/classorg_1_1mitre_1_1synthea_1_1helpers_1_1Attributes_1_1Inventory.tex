@@ -1,0 +1,80 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Attributes.\+Inventory Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}\index{org.mitre.synthea.helpers.Attributes.Inventory@{org.mitre.synthea.helpers.Attributes.Inventory}}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Attributes.\+Inventory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_a44591203040b41ed8e4be80a37558b77}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_a44591203040b41ed8e4be80a37558b77}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_a44591203040b41ed8e4be80a37558b77}{Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} object with instantiated read, write, and example\+Values collections. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_a416e5231924d99a80ae395093b2b7324}{read}} (String module, String state)
+\begin{DoxyCompactList}\small\item\em Mark that the given \char`\"{}module\char`\"{} reads this attribute from the given \char`\"{}state\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_aca9f7c359810b216d6b4394bfbd3e35c}{write}} (String module, String state, String example)
+\begin{DoxyCompactList}\small\item\em Mark that the given \char`\"{}module\char`\"{} writes this attribute from the given \char`\"{}state\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_af7555e267b6db9db2a2a36dcd2b9bee6}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_af7555e267b6db9db2a2a36dcd2b9bee6}} 
+Map$<$ String, Set$<$ String $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_af7555e267b6db9db2a2a36dcd2b9bee6}{read}}
+\begin{DoxyCompactList}\small\item\em Key\+: Module Name, Values\+: State names that read this attribute. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_aced2fed92824c30b7a6cd0bbf91d5989}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_aced2fed92824c30b7a6cd0bbf91d5989}} 
+Map$<$ String, Set$<$ String $>$ $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_aced2fed92824c30b7a6cd0bbf91d5989}{write}}
+\begin{DoxyCompactList}\small\item\em Key\+: Module Name, Values\+: State names that write to this attribute. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_abb5608359a8c213c7327522a4d30720b}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_abb5608359a8c213c7327522a4d30720b}} 
+Set$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_abb5608359a8c213c7327522a4d30720b}{example\+Values}}
+\begin{DoxyCompactList}\small\item\em List of example values as strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_a416e5231924d99a80ae395093b2b7324}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_a416e5231924d99a80ae395093b2b7324}} 
+\index{org.mitre.synthea.helpers.Attributes.Inventory@{org.mitre.synthea.helpers.Attributes.Inventory}!read@{read}}
+\index{read@{read}!org.mitre.synthea.helpers.Attributes.Inventory@{org.mitre.synthea.helpers.Attributes.Inventory}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Attributes.\+Inventory.\+read (\begin{DoxyParamCaption}\item[{String}]{module,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+Mark that the given \char`\"{}module\char`\"{} reads this attribute from the given \char`\"{}state\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & The reading module. \\
+\hline
+{\em state} & The reading state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_aca9f7c359810b216d6b4394bfbd3e35c}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory_aca9f7c359810b216d6b4394bfbd3e35c}} 
+\index{org.mitre.synthea.helpers.Attributes.Inventory@{org.mitre.synthea.helpers.Attributes.Inventory}!write@{write}}
+\index{write@{write}!org.mitre.synthea.helpers.Attributes.Inventory@{org.mitre.synthea.helpers.Attributes.Inventory}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void org.\+mitre.\+synthea.\+helpers.\+Attributes.\+Inventory.\+write (\begin{DoxyParamCaption}\item[{String}]{module,  }\item[{String}]{state,  }\item[{String}]{example }\end{DoxyParamCaption})}
+
+
+
+Mark that the given \char`\"{}module\char`\"{} writes this attribute from the given \char`\"{}state\char`\"{}. 
+
+Non-\/null example values are recorded as examples.
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & The writing module. \\
+\hline
+{\em state} & The writing state. \\
+\hline
+{\em example} & A single example value as a string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Attributes.\+java\end{DoxyCompactItemize}

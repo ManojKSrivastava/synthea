@@ -1,0 +1,63 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService}{}\doxysection{org.\+mitre.\+synthea.\+Parallel\+Testing\+Service Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService}\index{org.mitre.synthea.ParallelTestingService@{org.mitre.synthea.ParallelTestingService}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService_a56cc8e0a2c24535e017e0b41403e76cf}{run\+In\+Parallel}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} pt)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Runs the provided \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} in parallel. \end{DoxyCompactList}\item 
+static List$<$ String $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService_a1da16cd3a63e33a8b9ce3083b74da2aa}{run\+In\+Parallel}} (int number\+Of\+People, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} pt)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Runs the provided \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} in parallel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService_a1da16cd3a63e33a8b9ce3083b74da2aa}\label{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService_a1da16cd3a63e33a8b9ce3083b74da2aa}} 
+\index{org.mitre.synthea.ParallelTestingService@{org.mitre.synthea.ParallelTestingService}!runInParallel@{runInParallel}}
+\index{runInParallel@{runInParallel}!org.mitre.synthea.ParallelTestingService@{org.mitre.synthea.ParallelTestingService}}
+\doxysubsubsection{\texorpdfstring{runInParallel()}{runInParallel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static List$<$String$>$ org.\+mitre.\+synthea.\+Parallel\+Testing\+Service.\+run\+In\+Parallel (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+People,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}}}]{pt }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Runs the provided \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} in parallel. 
+
+The \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} will be passed up to 10 people. Tests are run in a fixed thread pool with some of the tests having to wait until the first few tests complete. Tests can return a List of validation errors (in String form). 
+\begin{DoxyParams}{Parameters}
+{\em pt} & An implementation of \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of errors 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & when bad things happen during the test \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService_a56cc8e0a2c24535e017e0b41403e76cf}\label{classorg_1_1mitre_1_1synthea_1_1ParallelTestingService_a56cc8e0a2c24535e017e0b41403e76cf}} 
+\index{org.mitre.synthea.ParallelTestingService@{org.mitre.synthea.ParallelTestingService}!runInParallel@{runInParallel}}
+\index{runInParallel@{runInParallel}!org.mitre.synthea.ParallelTestingService@{org.mitre.synthea.ParallelTestingService}}
+\doxysubsubsection{\texorpdfstring{runInParallel()}{runInParallel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static List$<$String$>$ org.\+mitre.\+synthea.\+Parallel\+Testing\+Service.\+run\+In\+Parallel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}}}]{pt }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Runs the provided \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} in parallel. 
+
+The \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} will be supplied with 10 people. Tests are run in a fixed thread pool with some of the tests having to wait until the first few tests complete. Tests can return a List of validation errors (in String form). 
+\begin{DoxyParams}{Parameters}
+{\em pt} & An implementation of \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1PersonTester}{Person\+Tester}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of errors 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & when bad things happen during the test \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/test/java/org/mitre/synthea/Parallel\+Testing\+Service.\+java\end{DoxyCompactItemize}

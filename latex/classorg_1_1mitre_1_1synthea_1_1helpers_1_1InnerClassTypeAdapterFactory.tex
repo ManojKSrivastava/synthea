@@ -1,0 +1,173 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory}{}\doxysection{org.\+mitre.\+synthea.\+helpers.\+Inner\+Class\+Type\+Adapter\+Factory$<$ T $>$ Class Template Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory}\index{org.mitre.synthea.helpers.InnerClassTypeAdapterFactory$<$ T $>$@{org.mitre.synthea.helpers.InnerClassTypeAdapterFactory$<$ T $>$}}
+
+
+Adapts values whose runtime type may differ from their declaration type.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+helpers.\+Inner\+Class\+Type\+Adapter\+Factory$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+helpers.\+Inner\+Class\+Type\+Adapter\+Factory$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static$<$ T $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory}{Inner\+Class\+Type\+Adapter\+Factory}}$<$ T $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory_a248b2a073951c8e132802298e9e9bb0a}{of}} (Class$<$ T $>$ base\+Type, String type\+Field\+Name)
+\begin{DoxyCompactList}\small\item\em Creates a new runtime type adapter using for. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adapts values whose runtime type may differ from their declaration type. 
+
+This is necessary when a field\textquotesingle{}s type is not the same type that GSON should create when deserializing that field. For example, consider these types\+: 
+\begin{DoxyPre}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{abstract} \textcolor{keyword}{class }Shape \{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} x;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} y;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keyword}{class }Circle \textcolor{keyword}{extends} Shape \{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} radius;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keyword}{class }Rectangle \textcolor{keyword}{extends} Shape \{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} width;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} height;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keyword}{class }Diamond \textcolor{keyword}{extends} Shape \{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} width;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} height;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keyword}{class }Drawing \{}
+\DoxyCodeLine{  Shape bottomShape;}
+\DoxyCodeLine{  Shape topShape;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \end{DoxyPre}
+
+
+Without additional type information, the serialized JSON is ambiguous. Is the bottom shape in this drawing a rectangle or a diamond? 
+\begin{DoxyPre}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{stringliteral}{"{}bottomShape"{}}: \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}width"{}}: 10,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}height"{}}: 5,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}x"{}}: 0,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}y"{}}: 0}
+\DoxyCodeLine{  \},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"{}topShape"{}}: \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}radius"{}}: 2,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}x"{}}: 4,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}y"{}}: 1}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\} }
+
+\end{DoxyCode}
+ \end{DoxyPre}
+ This class addresses this problem by adding type information to the serialized JSON and honoring that type information when the JSON is deserialized\+: 
+\begin{DoxyPre}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{stringliteral}{"{}bottomShape"{}}: \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}type"{}}: \textcolor{stringliteral}{"{}Diamond"{}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}width"{}}: 10,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}height"{}}: 5,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}x"{}}: 0,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}y"{}}: 0}
+\DoxyCodeLine{  \},}
+\DoxyCodeLine{  \textcolor{stringliteral}{"{}topShape"{}}: \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}type"{}}: \textcolor{stringliteral}{"{}Circle"{}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}radius"{}}: 2,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}x"{}}: 4,}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}y"{}}: 1}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\} }
+
+\end{DoxyCode}
+ \end{DoxyPre}
+ Both the type field name (
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}type"{}} }
+
+\end{DoxyCode}
+ ) and the type labels (
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}Rectangle"{}} }
+
+\end{DoxyCode}
+ ) are configurable.
+
+\doxysubsubsection*{Registering Types}
+
+Create an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{InnerClassTypeAdapterFactory }
+
+\end{DoxyCode}
+ by passing the base type and type field name to the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory_a248b2a073951c8e132802298e9e9bb0a}{of}} factory method. If you don\textquotesingle{}t supply an explicit type field name,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}type"{}} }
+
+\end{DoxyCode}
+ will be used. 
+\begin{DoxyPre}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{InnerClassTypeAdapterFactory<Shape> shapeAdapterFactory}
+\DoxyCodeLine{    = InnerClassTypeAdapterFactory.of(Shape.class, \textcolor{stringliteral}{"{}type"{}});}
+
+\end{DoxyCode}
+ \end{DoxyPre}
+ Finally, register the type adapter factory in your application\textquotesingle{}s GSON builder\+: 
+\begin{DoxyPre}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gson gson = \textcolor{keyword}{new} GsonBuilder()}
+\DoxyCodeLine{    .registerTypeAdapterFactory(shapeAdapterFactory)}
+\DoxyCodeLine{    .create();}
+
+\end{DoxyCode}
+ \end{DoxyPre}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory_a248b2a073951c8e132802298e9e9bb0a}\label{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory_a248b2a073951c8e132802298e9e9bb0a}} 
+\index{org.mitre.synthea.helpers.InnerClassTypeAdapterFactory$<$ T $>$@{org.mitre.synthea.helpers.InnerClassTypeAdapterFactory$<$ T $>$}!of@{of}}
+\index{of@{of}!org.mitre.synthea.helpers.InnerClassTypeAdapterFactory$<$ T $>$@{org.mitre.synthea.helpers.InnerClassTypeAdapterFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily static $<$T$>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory}{Inner\+Class\+Type\+Adapter\+Factory}}$<$T$>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1InnerClassTypeAdapterFactory}{org.\+mitre.\+synthea.\+helpers.\+Inner\+Class\+Type\+Adapter\+Factory}}$<$ T $>$.of (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{base\+Type,  }\item[{String}]{type\+Field\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new runtime type adapter using for. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{baseType }
+
+\end{DoxyCode}
+ using
+\begin{DoxyCode}{0}
+\DoxyCodeLine{typeFieldName }
+
+\end{DoxyCode}
+ as the type field name. Type field names are case sensitive. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/helpers/Inner\+Class\+Type\+Adapter\+Factory.\+java\end{DoxyCompactItemize}

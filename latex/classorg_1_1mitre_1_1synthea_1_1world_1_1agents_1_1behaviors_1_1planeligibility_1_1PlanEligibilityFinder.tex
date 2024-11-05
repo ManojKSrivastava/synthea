@@ -1,0 +1,79 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder}{}\doxysection{org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Plan\+Eligibility\+Finder Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder}\index{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder@{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder}}
+
+
+Returns the requested \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} eligibility algorithm.  
+
+
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Plan\+Eligibility\+Finder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IPlanEligibility}{IPlan\+Eligibility}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_af59128dfdd1eb9ed9ea08f944c8a60f2}{get\+Eligibility\+Algorithm}} (String eligibility)
+\begin{DoxyCompactList}\small\item\em Returns the correct eligibility algorithm based on the given string. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_af26f8d04b9ba1d4f8c83065261c2a311}{build\+Plan\+Eligibilities}} (String state, String file\+Name)
+\begin{DoxyCompactList}\small\item\em Builds the plan eligibilities for the given state and CSV input file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_a8eb06e407243131a57d643cd34a21208}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_a8eb06e407243131a57d643cd34a21208}} 
+static final String {\bfseries GENERIC} = \char`\"{}GENERIC\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_ae6d6107f9c4a5aa43be3ce8128338600}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_ae6d6107f9c4a5aa43be3ce8128338600}} 
+static final \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IPlanEligibility}{IPlan\+Eligibility}} {\bfseries DEFAULT} = new \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1DefaultPlanEligibility}{Default\+Plan\+Eligibility}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Returns the requested \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Payer}{Payer}} eligibility algorithm. 
+
+This prevents redundant recreations of the same objects over and over. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_af26f8d04b9ba1d4f8c83065261c2a311}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_af26f8d04b9ba1d4f8c83065261c2a311}} 
+\index{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder@{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder}!buildPlanEligibilities@{buildPlanEligibilities}}
+\index{buildPlanEligibilities@{buildPlanEligibilities}!org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder@{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder}}
+\doxysubsubsection{\texorpdfstring{buildPlanEligibilities()}{buildPlanEligibilities()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Plan\+Eligibility\+Finder.\+build\+Plan\+Eligibilities (\begin{DoxyParamCaption}\item[{String}]{state,  }\item[{String}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Builds the plan eligibilities for the given state and CSV input file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_af59128dfdd1eb9ed9ea08f944c8a60f2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1PlanEligibilityFinder_af59128dfdd1eb9ed9ea08f944c8a60f2}} 
+\index{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder@{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder}!getEligibilityAlgorithm@{getEligibilityAlgorithm}}
+\index{getEligibilityAlgorithm@{getEligibilityAlgorithm}!org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder@{org.mitre.synthea.world.agents.behaviors.planeligibility.PlanEligibilityFinder}}
+\doxysubsubsection{\texorpdfstring{getEligibilityAlgorithm()}{getEligibilityAlgorithm()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1behaviors_1_1planeligibility_1_1IPlanEligibility}{IPlan\+Eligibility}} org.\+mitre.\+synthea.\+world.\+agents.\+behaviors.\+planeligibility.\+Plan\+Eligibility\+Finder.\+get\+Eligibility\+Algorithm (\begin{DoxyParamCaption}\item[{String}]{eligibility }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the correct eligibility algorithm based on the given string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em eligibility} & The name of the eligibility type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested payer eligibility algorithm. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/agents/behaviors/planeligibility/Plan\+Eligibility\+Finder.\+java\end{DoxyCompactItemize}

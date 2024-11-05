@@ -1,0 +1,198 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule}\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a7807d029ddcbdadb32ab4af26b68999e}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone this module. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a3e8ed8953d7ca3ee029f246010381dc8}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this Module with the given Person at the specified time within the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a2930d98cc43660c2e17a748ef063572c}{calculate}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long stop)
+\begin{DoxyCompactList}\small\item\em Calculate the HALYs for this person, at the given time. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_af0ffb0ed8de564a70f1d673e476a5d0a}{inventory\+Attributes}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a83754615556f9ac29cd41495a6f7c332}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a83754615556f9ac29cd41495a6f7c332}} 
+static final String {\bfseries QALY} = \char`\"{}QALY\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a2d94a1551e3394e1047f643478f9599a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a2d94a1551e3394e1047f643478f9599a}} 
+static final String {\bfseries DALY} = \char`\"{}DALY\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a535547d59934aac45cfeec8b60b69d85}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a535547d59934aac45cfeec8b60b69d85}} 
+static final String {\bfseries QOLS} = \char`\"{}QOLS\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Map$<$ String, Disability\+Weight $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a268c0d49d60c92162e4afe0ded4517ff}{load\+Disability\+Weights}} ()
+\begin{DoxyCompactList}\small\item\em Load the disability weights from the gbd\+\_\+disability\+\_\+weights.\+csv file. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a0b9e6887147e29156f9841528dbf7b74}{conditions\+In\+Year}} (List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} $>$ conditions, long start, long stop)
+\begin{DoxyCompactList}\small\item\em Given a list of conditions, return a subset that was active during a given time period indicated by stop and stop. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a13a6f6e96c489faa6b30cea5dd80c7d1}{weight}} (double disability\+Weight, int age)
+\begin{DoxyCompactList}\small\item\em Calculates the age-\/adjusted disability weight for a single year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a2930d98cc43660c2e17a748ef063572c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a2930d98cc43660c2e17a748ef063572c}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!calculate@{calculate}}
+\index{calculate@{calculate}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily static double \mbox{[}$\,$\mbox{]} org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+calculate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{stop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculate the HALYs for this person, at the given time. 
+
+HALYs include QALY and DALY.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to calculate \\
+\hline
+{\em stop} & current timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of \mbox{[}daly (cumulative), qaly (cumulative), current disability weight\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a7807d029ddcbdadb32ab4af26b68999e}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a7807d029ddcbdadb32ab4af26b68999e}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this module. 
+
+Never provide the original. 
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a0b9e6887147e29156f9841528dbf7b74}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a0b9e6887147e29156f9841528dbf7b74}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!conditionsInYear@{conditionsInYear}}
+\index{conditionsInYear@{conditionsInYear}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{conditionsInYear()}{conditionsInYear()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}}$>$ org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+conditions\+In\+Year (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry}{Entry}} $>$}]{conditions,  }\item[{long}]{start,  }\item[{long}]{stop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Given a list of conditions, return a subset that was active during a given time period indicated by stop and stop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conditions} & The given list of conditions. \\
+\hline
+{\em start} & The start of the time period the condition must be active. \\
+\hline
+{\em stop} & The stop or end of the time period the condition must be active. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Subset of input conditions that were active given the specified time period. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_af0ffb0ed8de564a70f1d673e476a5d0a}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_af0ffb0ed8de564a70f1d673e476a5d0a}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a268c0d49d60c92162e4afe0ded4517ff}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a268c0d49d60c92162e4afe0ded4517ff}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!loadDisabilityWeights@{loadDisabilityWeights}}
+\index{loadDisabilityWeights@{loadDisabilityWeights}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{loadDisabilityWeights()}{loadDisabilityWeights()}}
+{\footnotesize\ttfamily static Map$<$String, Disability\+Weight$>$ org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+load\+Disability\+Weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Load the disability weights from the gbd\+\_\+disability\+\_\+weights.\+csv file. 
+
+\begin{DoxyReturn}{Returns}
+Map of clinical terminology codes (e.\+g. \char`\"{}44054006\char`\"{}) to Disability\+Weight objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a3e8ed8953d7ca3ee029f246010381dc8}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a3e8ed8953d7ca3ee029f246010381dc8}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!process@{process}}
+\index{process@{process}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Process this Module with the given Person at the specified time within the simulation. 
+
+Processing will complete if the person dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this Module completed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a13a6f6e96c489faa6b30cea5dd80c7d1}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1QualityOfLifeModule_a13a6f6e96c489faa6b30cea5dd80c7d1}} 
+\index{org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}!weight@{weight}}
+\index{weight@{weight}!org.mitre.synthea.modules.QualityOfLifeModule@{org.mitre.synthea.modules.QualityOfLifeModule}}
+\doxysubsubsection{\texorpdfstring{weight()}{weight()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+Quality\+Of\+Life\+Module.\+weight (\begin{DoxyParamCaption}\item[{double}]{disability\+Weight,  }\item[{int}]{age }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Calculates the age-\/adjusted disability weight for a single year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disability\+Weight} & The unadjusted disability weight. \\
+\hline
+{\em age} & The age of the person during the year being adjusted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The age-\/adjusted disability weight during a specified age/year. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/Quality\+Of\+Life\+Module.\+java\end{DoxyCompactItemize}

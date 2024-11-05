@@ -1,0 +1,415 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule}{}\doxysection{org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule}\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab5ccc0f1e1995907cc6e682b5b180f5c}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone this module. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_aaf579a270c022744154225aad9a2523d}{process}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Process this Module with the given Person at the specified time within the simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a83fa9bcc46400b8283680eb96c883c11}{birth}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em For unto us a child is born. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_abae5df531991aa9ad6dc9f314dcf6237}{lookup\+Growth\+Chart}} (String chart\+Type, String gender, int age\+In\+Months, double percentile)
+\begin{DoxyCompactList}\small\item\em Lookup and calculate values from the CDC growth charts, using the LMS values to calculate the intermediate values. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ac952b46efb82f78f5d98a5b94fbced26}{percentile\+For\+BMI}} (double bmi, String gender, int age\+In\+Months)
+\begin{DoxyCompactList}\small\item\em Look up the percentile that a given BMI falls into based on gender and age in months. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a86225d9249600ad2fdb8c03b5d4515ec}{set\+Current\+Weight\+For\+Length\+Percentile}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em If the person is 36 months old or less, then the \char`\"{}weight for length\char`\"{} percentile attribute is set. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a5d6f63e982b14a5a500e4f2eb20ffdb7}{death\+From\+Loss\+Of\+Care}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Determines whether a person dies due to loss-\/of-\/care and lack of necessary treatment. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a83c73e0357ecee8484558a3a2a701563}{quit\+Smoking}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em If the person is a smoker, there is a small chance they will quit. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0008b9ec8391e20330ea099da044e462}{quit\+Alcoholism}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em If the person is an alcoholic, there is a small chance they will quit. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a12b9ac483cbc0f05dd9ec95c4bd36d57}{adherence}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Adjust the probability of a patients adherence to Doctor orders, whether medication, careplans, whatever. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a6c40502f0545ba6d932ffe986bc0d6da}{is\+Disabled}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Determines if the person is disabled according to input file criteria. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab1516e1ac49d27a59e686c5e199735b7}{get\+Earliest\+Disability\+Diagnosis\+Time}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person)
+\begin{DoxyCompactList}\small\item\em Determines earliest disability diagnosis time according to input file criteria. \end{DoxyCompactList}\item 
+static Collection$<$ Code $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a9278534b9e8df1a5841fb08963cac863}{get\+All\+Codes}} ()
+\begin{DoxyCompactList}\small\item\em Get all of the Codes this module uses, for inventory purposes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a873b6971b4f08d20877c7d9fbb06bfc0}{inventory\+Attributes}} (Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$ attributes)
+\begin{DoxyCompactList}\small\item\em Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a2d88338582dbc85f9ed48f3684fe45fe}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a2d88338582dbc85f9ed48f3684fe45fe}} 
+static final String {\bfseries DAYS\+\_\+\+UNTIL\+\_\+\+DEATH} = \char`\"{}days\+\_\+until\+\_\+death\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a29d71f6e650174ad19274b3ff77ea992}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a29d71f6e650174ad19274b3ff77ea992}} 
+static final String {\bfseries QUIT\+\_\+\+SMOKING\+\_\+\+PROBABILITY} = \char`\"{}quit smoking probability\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a2abc8928e874f751007fd42bfff7ac4b}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a2abc8928e874f751007fd42bfff7ac4b}} 
+static final String {\bfseries QUIT\+\_\+\+SMOKING\+\_\+\+AGE} = \char`\"{}quit smoking age\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a8498a6dbe5750dc81e35fed09fd04180}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a8498a6dbe5750dc81e35fed09fd04180}} 
+static final String {\bfseries QUIT\+\_\+\+ALCOHOLISM\+\_\+\+PROBABILITY} = \char`\"{}quit alcoholism probability\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_afd60bafee35c155a6d2821e2d38c7044}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_afd60bafee35c155a6d2821e2d38c7044}} 
+static final String {\bfseries QUIT\+\_\+\+ALCOHOLISM\+\_\+\+AGE} = \char`\"{}quit alcoholism age\char`\"{}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a8506905f1f5735f9513ca0e605dbd3cc}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a8506905f1f5735f9513ca0e605dbd3cc}} 
+static final String {\bfseries ADHERENCE\+\_\+\+PROBABILITY} = \char`\"{}adherence probability\char`\"{}
+\item 
+static boolean {\bfseries ENABLE\+\_\+\+PHYSIOLOGY\+\_\+\+GENERATORS}
+\item 
+static final Code {\bfseries LOSS\+\_\+\+OF\+\_\+\+CARE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0035eb47e872ce2442985f46bd7490f6}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0035eb47e872ce2442985f46bd7490f6}} 
+static void {\bfseries death} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a3b5d9e1654163d3718e7df786fb25fab}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a3b5d9e1654163d3718e7df786fb25fab}} 
+static double {\bfseries likelihood\+Of\+Death} (int age)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bfseries ENABLE\+\_\+\+DEATH\+\_\+\+BY\+\_\+\+NATURAL\+\_\+\+CAUSES}
+\item 
+static boolean {\bfseries ENABLE\+\_\+\+DEATH\+\_\+\+BY\+\_\+\+LOSS\+\_\+\+OF\+\_\+\+CARE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a12b9ac483cbc0f05dd9ec95c4bd36d57}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a12b9ac483cbc0f05dd9ec95c4bd36d57}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!adherence@{adherence}}
+\index{adherence@{adherence}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{adherence()}{adherence()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+adherence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adjust the probability of a patients adherence to Doctor orders, whether medication, careplans, whatever. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The patient to consider. \\
+\hline
+{\em time} & The time in the simulation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a83fa9bcc46400b8283680eb96c883c11}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a83fa9bcc46400b8283680eb96c883c11}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!birth@{birth}}
+\index{birth@{birth}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{birth()}{birth()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+birth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+For unto us a child is born. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The baby. \\
+\hline
+{\em time} & The time of birth. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab5ccc0f1e1995907cc6e682b5b180f5c}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab5ccc0f1e1995907cc6e682b5b180f5c}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!clone@{clone}}
+\index{clone@{clone}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module}{Module}} org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this module. 
+
+Never provide the original. 
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a1cebedcfb9ecbaf6c9916a60c8f02206}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a5d6f63e982b14a5a500e4f2eb20ffdb7}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a5d6f63e982b14a5a500e4f2eb20ffdb7}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!deathFromLossOfCare@{deathFromLossOfCare}}
+\index{deathFromLossOfCare@{deathFromLossOfCare}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{deathFromLossOfCare()}{deathFromLossOfCare()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+death\+From\+Loss\+Of\+Care (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines whether a person dies due to loss-\/of-\/care and lack of necessary treatment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & the person to check for loss of care death. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a9278534b9e8df1a5841fb08963cac863}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a9278534b9e8df1a5841fb08963cac863}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!getAllCodes@{getAllCodes}}
+\index{getAllCodes@{getAllCodes}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{getAllCodes()}{getAllCodes()}}
+{\footnotesize\ttfamily static Collection$<$Code$>$ org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+get\+All\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all of the Codes this module uses, for inventory purposes. 
+
+\begin{DoxyReturn}{Returns}
+Collection of all codes and concepts this module uses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab1516e1ac49d27a59e686c5e199735b7}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ab1516e1ac49d27a59e686c5e199735b7}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!getEarliestDisabilityDiagnosisTime@{getEarliestDisabilityDiagnosisTime}}
+\index{getEarliestDisabilityDiagnosisTime@{getEarliestDisabilityDiagnosisTime}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{getEarliestDisabilityDiagnosisTime()}{getEarliestDisabilityDiagnosisTime()}}
+{\footnotesize\ttfamily static long org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+get\+Earliest\+Disability\+Diagnosis\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines earliest disability diagnosis time according to input file criteria. 
+
+If the input file is unavailable, the default is Long.\+MAX\+\_\+\+VALUE. 
+\begin{DoxyParams}{Parameters}
+{\em person} & The person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time of earliest disability diagnosis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a873b6971b4f08d20877c7d9fbb06bfc0}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a873b6971b4f08d20877c7d9fbb06bfc0}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!inventoryAttributes@{inventoryAttributes}}
+\index{inventoryAttributes@{inventoryAttributes}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{inventoryAttributes()}{inventoryAttributes()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+inventory\+Attributes (\begin{DoxyParamCaption}\item[{Map$<$ String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1helpers_1_1Attributes_1_1Inventory}{Inventory}} $>$}]{attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Populate the given attribute map with the list of attributes that this module reads/writes with example values when appropriate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & Attribute map to populate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a6c40502f0545ba6d932ffe986bc0d6da}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a6c40502f0545ba6d932ffe986bc0d6da}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!isDisabled@{isDisabled}}
+\index{isDisabled@{isDisabled}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{isDisabled()}{isDisabled()}}
+{\footnotesize\ttfamily static boolean org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+is\+Disabled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines if the person is disabled according to input file criteria. 
+
+If the input file is unavailable, the default is false. 
+\begin{DoxyParams}{Parameters}
+{\em person} & The person. \\
+\hline
+{\em time} & The time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_abae5df531991aa9ad6dc9f314dcf6237}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_abae5df531991aa9ad6dc9f314dcf6237}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!lookupGrowthChart@{lookupGrowthChart}}
+\index{lookupGrowthChart@{lookupGrowthChart}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{lookupGrowthChart()}{lookupGrowthChart()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+lookup\+Growth\+Chart (\begin{DoxyParamCaption}\item[{String}]{chart\+Type,  }\item[{String}]{gender,  }\item[{int}]{age\+In\+Months,  }\item[{double}]{percentile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Lookup and calculate values from the CDC growth charts, using the LMS values to calculate the intermediate values. 
+
+Reference \+: \href{https://www.cdc.gov/growthcharts/percentile_data_files.htm}{\texttt{ https\+://www.\+cdc.\+gov/growthcharts/percentile\+\_\+data\+\_\+files.\+htm}}
+
+Note\+: BMI values only available for age\+In\+Months 24 -\/ 240 as BMI is not typically useful in patients under 24 months.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chart\+Type} & \char`\"{}height\char`\"{} $\vert$ \char`\"{}weight\char`\"{} $\vert$ \char`\"{}bmi\char`\"{} $\vert$ \char`\"{}head\char`\"{} \\
+\hline
+{\em gender} & \char`\"{}\+M\char`\"{} $\vert$ \char`\"{}\+F\char`\"{} \\
+\hline
+{\em age\+In\+Months} & 0 -\/ 240 \\
+\hline
+{\em percentile} & 0.\+0 -\/ 1.\+0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The height (cm), weight (kg), bmi (\%), or head (cm) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ac952b46efb82f78f5d98a5b94fbced26}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_ac952b46efb82f78f5d98a5b94fbced26}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!percentileForBMI@{percentileForBMI}}
+\index{percentileForBMI@{percentileForBMI}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{percentileForBMI()}{percentileForBMI()}}
+{\footnotesize\ttfamily static double org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+percentile\+For\+BMI (\begin{DoxyParamCaption}\item[{double}]{bmi,  }\item[{String}]{gender,  }\item[{int}]{age\+In\+Months }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Look up the percentile that a given BMI falls into based on gender and age in months. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bmi} & the BMI to find the percentile for \\
+\hline
+{\em gender} & \char`\"{}\+M\char`\"{} $\vert$ \char`\"{}\+F\char`\"{} \\
+\hline
+{\em age\+In\+Months} & 24 -\/ 240 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ 1.\+0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_aaf579a270c022744154225aad9a2523d}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_aaf579a270c022744154225aad9a2523d}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!process@{process}}
+\index{process@{process}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})}
+
+
+
+Process this Module with the given Person at the specified time within the simulation. 
+
+Processing will complete if the person dies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & \+: the person being simulated \\
+\hline
+{\em time} & \+: the date within the simulated world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+completed \+: whether or not this Module completed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Module_a08c8bde9e39267f80d568c98e19c9aa0}{org.\+mitre.\+synthea.\+engine.\+Module}}.
+
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0008b9ec8391e20330ea099da044e462}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0008b9ec8391e20330ea099da044e462}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!quitAlcoholism@{quitAlcoholism}}
+\index{quitAlcoholism@{quitAlcoholism}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{quitAlcoholism()}{quitAlcoholism()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+quit\+Alcoholism (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If the person is an alcoholic, there is a small chance they will quit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person who might quit drinking. \\
+\hline
+{\em time} & The current time in the simulation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a83c73e0357ecee8484558a3a2a701563}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a83c73e0357ecee8484558a3a2a701563}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!quitSmoking@{quitSmoking}}
+\index{quitSmoking@{quitSmoking}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{quitSmoking()}{quitSmoking()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+quit\+Smoking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If the person is a smoker, there is a small chance they will quit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person who might quit smoking. \\
+\hline
+{\em time} & The current time in the simulation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a86225d9249600ad2fdb8c03b5d4515ec}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a86225d9249600ad2fdb8c03b5d4515ec}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!setCurrentWeightForLengthPercentile@{setCurrentWeightForLengthPercentile}}
+\index{setCurrentWeightForLengthPercentile@{setCurrentWeightForLengthPercentile}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{setCurrentWeightForLengthPercentile()}{setCurrentWeightForLengthPercentile()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+set\+Current\+Weight\+For\+Length\+Percentile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If the person is 36 months old or less, then the \char`\"{}weight for length\char`\"{} percentile attribute is set. 
+
+Otherwise, it is removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & The person. \\
+\hline
+{\em time} & The time during the simulation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_aa33d42598b07280e07ed44e35179df5d}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_aa33d42598b07280e07ed44e35179df5d}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!ENABLE\_DEATH\_BY\_LOSS\_OF\_CARE@{ENABLE\_DEATH\_BY\_LOSS\_OF\_CARE}}
+\index{ENABLE\_DEATH\_BY\_LOSS\_OF\_CARE@{ENABLE\_DEATH\_BY\_LOSS\_OF\_CARE}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_DEATH\_BY\_LOSS\_OF\_CARE}{ENABLE\_DEATH\_BY\_LOSS\_OF\_CARE}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+ENABLE\+\_\+\+DEATH\+\_\+\+BY\+\_\+\+LOSS\+\_\+\+OF\+\_\+\+CARE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}lifecycle.death\_by\_loss\_of\_care"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a5ea7b207cbc5413a66fb6f687448b9d9}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a5ea7b207cbc5413a66fb6f687448b9d9}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!ENABLE\_DEATH\_BY\_NATURAL\_CAUSES@{ENABLE\_DEATH\_BY\_NATURAL\_CAUSES}}
+\index{ENABLE\_DEATH\_BY\_NATURAL\_CAUSES@{ENABLE\_DEATH\_BY\_NATURAL\_CAUSES}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_DEATH\_BY\_NATURAL\_CAUSES}{ENABLE\_DEATH\_BY\_NATURAL\_CAUSES}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+ENABLE\+\_\+\+DEATH\+\_\+\+BY\+\_\+\+NATURAL\+\_\+\+CAUSES\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}lifecycle.death\_by\_natural\_causes"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_abf77ebfec739b99fcceb1288e88d381f}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_abf77ebfec739b99fcceb1288e88d381f}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!ENABLE\_PHYSIOLOGY\_GENERATORS@{ENABLE\_PHYSIOLOGY\_GENERATORS}}
+\index{ENABLE\_PHYSIOLOGY\_GENERATORS@{ENABLE\_PHYSIOLOGY\_GENERATORS}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_PHYSIOLOGY\_GENERATORS}{ENABLE\_PHYSIOLOGY\_GENERATORS}}
+{\footnotesize\ttfamily boolean org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+ENABLE\+\_\+\+PHYSIOLOGY\+\_\+\+GENERATORS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{      Config.getAsBoolean(\textcolor{stringliteral}{"{}physiology.generators.enabled"{}}, \textcolor{keyword}{false})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0e0f25615d80691fff7aae963a9bd669}\label{classorg_1_1mitre_1_1synthea_1_1modules_1_1LifecycleModule_a0e0f25615d80691fff7aae963a9bd669}} 
+\index{org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}!LOSS\_OF\_CARE@{LOSS\_OF\_CARE}}
+\index{LOSS\_OF\_CARE@{LOSS\_OF\_CARE}!org.mitre.synthea.modules.LifecycleModule@{org.mitre.synthea.modules.LifecycleModule}}
+\doxysubsubsection{\texorpdfstring{LOSS\_OF\_CARE}{LOSS\_OF\_CARE}}
+{\footnotesize\ttfamily final Code org.\+mitre.\+synthea.\+modules.\+Lifecycle\+Module.\+LOSS\+\_\+\+OF\+\_\+\+CARE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Code(\textcolor{stringliteral}{"{}SNOMED-\/CT"{}}, \textcolor{stringliteral}{"{}397709008"{}},}
+\DoxyCodeLine{      \textcolor{stringliteral}{"{}Death due to Uncovered and Unreceived Treatment"{}})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/modules/Lifecycle\+Module.\+java\end{DoxyCompactItemize}

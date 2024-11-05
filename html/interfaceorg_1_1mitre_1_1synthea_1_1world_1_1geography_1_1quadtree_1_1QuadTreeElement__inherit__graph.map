@@ -1,0 +1,8 @@
+<map id="org.mitre.synthea.world.geography.quadtree.QuadTreeElement" name="org.mitre.synthea.world.geography.quadtree.QuadTreeElement">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,320,177"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Clinician.html" title=" " alt="" coords="410,5,641,47"/>
+<area shape="rect" id="node3" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person.html" title=" " alt="" coords="410,71,641,112"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Provider.html" title=" " alt="" coords="410,136,641,177"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Place.html" title="Place represents a named place with a postal code and coordinate." alt="" coords="399,201,652,243"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1quadtree_1_1TestElement.html" title=" " alt="" coords="368,267,683,308"/>
+</map>

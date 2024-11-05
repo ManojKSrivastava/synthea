@@ -1,0 +1,5 @@
+<map id="org.mitre.synthea.world.geography.Demographics" name="org.mitre.synthea.world.geography.Demographics">
+<area shape="rect" id="node1" title="Demographics class holds the information from the towns.json and associated county config files." alt="" coords="85,80,338,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,231,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="255,5,354,32"/>
+</map>

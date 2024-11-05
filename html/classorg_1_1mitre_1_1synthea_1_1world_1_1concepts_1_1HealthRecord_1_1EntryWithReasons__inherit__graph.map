@@ -1,0 +1,8 @@
+<map id="org.mitre.synthea.world.concepts.HealthRecord.EntryWithReasons" name="org.mitre.synthea.world.concepts.HealthRecord.EntryWithReasons">
+<area shape="rect" id="node1" title=" " alt="" coords="444,71,688,112"/>
+<area shape="rect" id="node4" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1CarePlan.html" title=" " alt="" coords="736,5,980,47"/>
+<area shape="rect" id="node5" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Medication.html" title=" " alt="" coords="736,71,980,112"/>
+<area shape="rect" id="node6" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Procedure.html" title=" " alt="" coords="736,136,980,177"/>
+<area shape="rect" id="node2" href="$classorg_1_1mitre_1_1synthea_1_1world_1_1concepts_1_1HealthRecord_1_1Entry.html" title="All things within a HealthRecord are instances of Entry." alt="" coords="152,71,396,112"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,78,104,105"/>
+</map>

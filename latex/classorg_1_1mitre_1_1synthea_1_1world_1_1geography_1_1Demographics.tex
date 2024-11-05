@@ -1,0 +1,280 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{}\doxysection{org.\+mitre.\+synthea.\+world.\+geography.\+Demographics Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} class holds the information from the towns.\+json and associated county config files.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+world.\+geography.\+Demographics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+world.\+geography.\+Demographics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ab22f5b1a02802c23c6334bb90a211915}{pick\+Age}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick an age based on the population distribution for the city. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6c23b35447f0a3d13988cd3b244e0f98}{pick\+Gender}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick a gender based on the population distribution for the city. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ad8aa98b567291fb26b0b1ae038c4b9b8}{pick\+Race}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick a race based on the population distribution for the city. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a9e7d1684a51b69077f5caf50efecc795}{pick\+Ethnicity}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick an ethnicity based on the population distribution for the city. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a78e500cbb8b6d728cc27c2557ce8afb4}{language\+From\+Race\+And\+Ethnicity}} (String race, String ethnicity, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Selects a language based on race and ethnicity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a5fd61e7f9a7f62b70563e213726d4bfd}{pick\+Income}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Pick an ethnicity based on the population distribution for the city. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a4d7182e18663455a208f0522cc18f1ad}{income\+Level}} (int income)
+\begin{DoxyCompactList}\small\item\em Simple linear formula just maps federal poverty level to 0.\+0 and 75,000 to 1.\+0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a118a9026e4be54ea8e1d328b80e73822}{poverty\+Ratio}} (int income)
+\begin{DoxyCompactList}\small\item\em Return the poverty ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6b495b63b39c30db6aaaeb3eea889257}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6b495b63b39c30db6aaaeb3eea889257}} 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6b495b63b39c30db6aaaeb3eea889257}{pick\+Education}} (\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Return a random education level based on statistics. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a81907998d26f69fb2e1999cd7feb7d3d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a81907998d26f69fb2e1999cd7feb7d3d}} 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a81907998d26f69fb2e1999cd7feb7d3d}{education\+Level}} (String level, \mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}} random)
+\begin{DoxyCompactList}\small\item\em Return a random number between the configured bounds for a specified education level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a0fe591cc27a60a2811e6e089da20ebb3}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a0fe591cc27a60a2811e6e089da20ebb3}} 
+double \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a0fe591cc27a60a2811e6e089da20ebb3}{socioeconomic\+Score}} (double income, double education, double occupation)
+\begin{DoxyCompactList}\small\item\em Calculate the socio-\/economic score for the supplied parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a61ec6609321fb3a5dcb2727d3d8437a2}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a61ec6609321fb3a5dcb2727d3d8437a2}} 
+String \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a61ec6609321fb3a5dcb2727d3d8437a2}{socioeconomic\+Category}} (double score)
+\begin{DoxyCompactList}\small\item\em Return a high/middle/low socio economic category based on the supplied score and the configured stratifier values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a38a3c30bd975e14386431ec332fd2b4d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a38a3c30bd975e14386431ec332fd2b4d}} 
+int {\bfseries compare\+To} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} o)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Table$<$ String, String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} $>$ \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ab28e9e9028538ce8015d9110c808f349}{load}} (String state)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Get a Table of (State, City\+Id, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}}), with the given restrictions on state and city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_af9945b056910a92cade2e6ca972d861e}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_af9945b056910a92cade2e6ca972d861e}} 
+long {\bfseries population}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_aafe550ee14246211afd7b98e2b58e021}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_aafe550ee14246211afd7b98e2b58e021}} 
+String {\bfseries id}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a201f78030cb4d10c176a090b45dd12c9}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a201f78030cb4d10c176a090b45dd12c9}} 
+String {\bfseries city}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a8bafe9c31d1f8d7ce2b0976235cacf20}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a8bafe9c31d1f8d7ce2b0976235cacf20}} 
+String {\bfseries state}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6d379b57975de2cec3468399d87107ca}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6d379b57975de2cec3468399d87107ca}} 
+String {\bfseries county}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6ea78cb77593e7b105ebef3c2f295342}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6ea78cb77593e7b105ebef3c2f295342}} 
+Map$<$ String, Double $>$ {\bfseries ages}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a80ce571e86e3577dc676accfc89c5186}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a80ce571e86e3577dc676accfc89c5186}} 
+Map$<$ String, Double $>$ {\bfseries gender}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a8ea4708f5ec4f9ac2a9b3a9efa9e2ca0}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a8ea4708f5ec4f9ac2a9b3a9efa9e2ca0}} 
+Map$<$ String, Double $>$ {\bfseries race}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a78abd1f479d3456d200dc36846816253}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a78abd1f479d3456d200dc36846816253}} 
+double {\bfseries ethnicity}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ae500abfab9cc1ad9a33bcff9494ab0b6}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ae500abfab9cc1ad9a33bcff9494ab0b6}} 
+Map$<$ String, Double $>$ {\bfseries income}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a9df001f8de31190ebfdcfbf924e1ae1d}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a9df001f8de31190ebfdcfbf924e1ae1d}} 
+Map$<$ String, Double $>$ {\bfseries education}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} class holds the information from the towns.\+json and associated county config files. 
+
+This data is used to build up a synthetic population matching these real-\/world statistics. A single instance of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}} represents a single city or town. The Ages, Gender, Race, Income, and Education properties are maps of frequency information. TODO\+: add ways to better wrap these maps so they are more accessible and useful. TODO\+: merge this with \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Location}{Location}} somehow. they probably don\textquotesingle{}t need to be separate classes 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a4d7182e18663455a208f0522cc18f1ad}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a4d7182e18663455a208f0522cc18f1ad}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!incomeLevel@{incomeLevel}}
+\index{incomeLevel@{incomeLevel}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{incomeLevel()}{incomeLevel()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+income\+Level (\begin{DoxyParamCaption}\item[{int}]{income }\end{DoxyParamCaption})}
+
+
+
+Simple linear formula just maps federal poverty level to 0.\+0 and 75,000 to 1.\+0. 
+
+The 75,000 figure was chosen based on \href{https://www.princeton.edu/~deaton/downloads/}{\texttt{ https\+://www.\+princeton.\+edu/$\sim$deaton/downloads/}} deaton\+\_\+kahneman\+\_\+high\+\_\+income\+\_\+improves\+\_\+evaluation\+\_\+\+August2010.\+pdf. \mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a78e500cbb8b6d728cc27c2557ce8afb4}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a78e500cbb8b6d728cc27c2557ce8afb4}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!languageFromRaceAndEthnicity@{languageFromRaceAndEthnicity}}
+\index{languageFromRaceAndEthnicity@{languageFromRaceAndEthnicity}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{languageFromRaceAndEthnicity()}{languageFromRaceAndEthnicity()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+language\+From\+Race\+And\+Ethnicity (\begin{DoxyParamCaption}\item[{String}]{race,  }\item[{String}]{ethnicity,  }\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Selects a language based on race and ethnicity. 
+
+For those of Hispanic ethnicity, language statistics are pulled from the national distribution of spoken languages. For non-\/\+Hispanic, national distributions by race are used. 
+\begin{DoxyParams}{Parameters}
+{\em race} & US Census race \\
+\hline
+{\em ethnicity} & \char`\"{}hispanic\char`\"{} or \char`\"{}nonhispanic\char`\"{} \\
+\hline
+{\em random} & random to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the language spoken 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ab28e9e9028538ce8015d9110c808f349}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ab28e9e9028538ce8015d9110c808f349}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!load@{load}}
+\index{load@{load}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static Table$<$String, String, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}}$>$ org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+load (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a Table of (State, City\+Id, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}}), with the given restrictions on state and city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The state that is desired. Other states will be excluded from the results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Table of (State, City\+Id, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics}{Demographics}}) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & if any exception occurs in reading the demographics file \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ab22f5b1a02802c23c6334bb90a211915}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ab22f5b1a02802c23c6334bb90a211915}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!pickAge@{pickAge}}
+\index{pickAge@{pickAge}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{pickAge()}{pickAge()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+pick\+Age (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick an age based on the population distribution for the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & random to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the age in years 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a9e7d1684a51b69077f5caf50efecc795}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a9e7d1684a51b69077f5caf50efecc795}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!pickEthnicity@{pickEthnicity}}
+\index{pickEthnicity@{pickEthnicity}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{pickEthnicity()}{pickEthnicity()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+pick\+Ethnicity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick an ethnicity based on the population distribution for the city. 
+
+Uses the US Census definition for ethnicity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & random to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}hispanic\char`\"{} or \char`\"{}nonhispanic\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6c23b35447f0a3d13988cd3b244e0f98}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a6c23b35447f0a3d13988cd3b244e0f98}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!pickGender@{pickGender}}
+\index{pickGender@{pickGender}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{pickGender()}{pickGender()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+pick\+Gender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick a gender based on the population distribution for the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & random to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the gender 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a5fd61e7f9a7f62b70563e213726d4bfd}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a5fd61e7f9a7f62b70563e213726d4bfd}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!pickIncome@{pickIncome}}
+\index{pickIncome@{pickIncome}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{pickIncome()}{pickIncome()}}
+{\footnotesize\ttfamily int org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+pick\+Income (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick an ethnicity based on the population distribution for the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random} & the random to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the income 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ad8aa98b567291fb26b0b1ae038c4b9b8}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_ad8aa98b567291fb26b0b1ae038c4b9b8}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!pickRace@{pickRace}}
+\index{pickRace@{pickRace}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{pickRace()}{pickRace()}}
+{\footnotesize\ttfamily String org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+pick\+Race (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1mitre_1_1synthea_1_1helpers_1_1RandomNumberGenerator}{Random\+Number\+Generator}}}]{random }\end{DoxyParamCaption})}
+
+
+
+Pick a race based on the population distribution for the city. 
+
+Uses the US Census definition for race 
+\begin{DoxyParams}{Parameters}
+{\em random} & random to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the race 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a118a9026e4be54ea8e1d328b80e73822}\label{classorg_1_1mitre_1_1synthea_1_1world_1_1geography_1_1Demographics_a118a9026e4be54ea8e1d328b80e73822}} 
+\index{org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}!povertyRatio@{povertyRatio}}
+\index{povertyRatio@{povertyRatio}!org.mitre.synthea.world.geography.Demographics@{org.mitre.synthea.world.geography.Demographics}}
+\doxysubsubsection{\texorpdfstring{povertyRatio()}{povertyRatio()}}
+{\footnotesize\ttfamily double org.\+mitre.\+synthea.\+world.\+geography.\+Demographics.\+poverty\+Ratio (\begin{DoxyParamCaption}\item[{int}]{income }\end{DoxyParamCaption})}
+
+
+
+Return the poverty ratio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em income} & Annual income. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+poverty ratio. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/world/geography/Demographics.\+java\end{DoxyCompactItemize}

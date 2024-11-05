@@ -1,0 +1,116 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic}{}\doxysection{org.\+mitre.\+synthea.\+engine.\+Logic Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic}\index{org.mitre.synthea.engine.Logic@{org.mitre.synthea.engine.Logic}}
+
+
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic}{Logic}} represents any portion of a generic module that requires a logical expression.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+engine.\+Logic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+engine.\+Logic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Active\+Allergy}
+\item 
+class {\bfseries Active\+Care\+Plan}
+\begin{DoxyCompactList}\small\item\em The Active Care\+Plan condition type tests whether a given care plan is currently prescribed and active for the patient. \end{DoxyCompactList}\item 
+class {\bfseries Active\+Condition}
+\begin{DoxyCompactList}\small\item\em The Active Condition condition type tests whether a given condition is currently diagnosed and active on the patient. \end{DoxyCompactList}\item 
+class {\bfseries Active\+Medication}
+\begin{DoxyCompactList}\small\item\em The Active Medication condition type tests whether a given medication is currently prescribed and active for the patient. \end{DoxyCompactList}\item 
+class {\bfseries Age}
+\begin{DoxyCompactList}\small\item\em The Age condition type tests the patient\textquotesingle{}s age, in a given unit. \end{DoxyCompactList}\item 
+class {\bfseries And}
+\begin{DoxyCompactList}\small\item\em The And condition type tests that a set of sub-\/conditions are all true. \end{DoxyCompactList}\item 
+class {\bfseries At\+Least}
+\begin{DoxyCompactList}\small\item\em The At Least condition type tests that a minimum number of conditions from a set of sub-\/conditions are true. \end{DoxyCompactList}\item 
+class {\bfseries At\+Most}
+\begin{DoxyCompactList}\small\item\em The At Most condition type tests that a maximum number of conditions from a set of sub-\/conditions are true. \end{DoxyCompactList}\item 
+class {\bfseries Attribute}
+\begin{DoxyCompactList}\small\item\em The Attribute condition type tests a named attribute on the patient entity. \end{DoxyCompactList}\item 
+class {\bfseries Date}
+\begin{DoxyCompactList}\small\item\em The Date condition type tests the current year, month, or date being simulated. \end{DoxyCompactList}\item 
+class {\bfseries False}
+\begin{DoxyCompactList}\small\item\em The False condition always returns false. \end{DoxyCompactList}\item 
+class {\bfseries Gender}
+\begin{DoxyCompactList}\small\item\em The Gender condition type tests the patient\textquotesingle{}s gender. \end{DoxyCompactList}\item 
+class {\bfseries Not}
+\begin{DoxyCompactList}\small\item\em The Not condition type negates its sub-\/condition. \end{DoxyCompactList}\item 
+class {\bfseries Observation}
+\begin{DoxyCompactList}\small\item\em The Observation condition type tests the most recent observation of a given type against a given value. \end{DoxyCompactList}\item 
+class {\bfseries Or}
+\begin{DoxyCompactList}\small\item\em The Or condition type tests that at least one of its sub-\/conditions is true. \end{DoxyCompactList}\item 
+class {\bfseries Prior\+State}
+\begin{DoxyCompactList}\small\item\em The Prior\+State condition type tests the progression of the patient through the module, and checks if a specific state has already been processed (in other words, the state is in the module\textquotesingle{}s state history). \end{DoxyCompactList}\item 
+class {\bfseries Race}
+\begin{DoxyCompactList}\small\item\em The Race condition type tests a patient\textquotesingle{}s race. \end{DoxyCompactList}\item 
+class {\bfseries Socioeconomic\+Status}
+\begin{DoxyCompactList}\small\item\em The Socioeconomic Status condition type tests the patient\textquotesingle{}s socioeconomic status. \end{DoxyCompactList}\item 
+class {\bfseries Symptom}
+\begin{DoxyCompactList}\small\item\em The Symptom condition type tests a patient\textquotesingle{}s current symptoms. \end{DoxyCompactList}\item 
+class {\bfseries True}
+\begin{DoxyCompactList}\small\item\em The True condition always returns true. \end{DoxyCompactList}\item 
+class {\bfseries Vital\+Sign}
+\begin{DoxyCompactList}\small\item\em The Vital Sign condition type tests a patient\textquotesingle{}s current vital signs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic_a1b12ae801c69d0b6bc3f2b2350a086dc}{test}} (\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, long time)
+\begin{DoxyCompactList}\small\item\em Test whether the logic is true for the given person at the given time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic_a86ae6ff96b9fe9d911435bb7923f6cb2}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic_a86ae6ff96b9fe9d911435bb7923f6cb2}} 
+List$<$ String $>$ {\bfseries remarks}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic}{Logic}} represents any portion of a generic module that requires a logical expression. 
+
+This class is stateless, and calling \textquotesingle{}test\textquotesingle{} on an instance must not modify state as instances of \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic}{Logic}} within Modules are shared across the population. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic_a1b12ae801c69d0b6bc3f2b2350a086dc}\label{classorg_1_1mitre_1_1synthea_1_1engine_1_1Logic_a1b12ae801c69d0b6bc3f2b2350a086dc}} 
+\index{org.mitre.synthea.engine.Logic@{org.mitre.synthea.engine.Logic}!test@{test}}
+\index{test@{test}!org.mitre.synthea.engine.Logic@{org.mitre.synthea.engine.Logic}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily abstract boolean org.\+mitre.\+synthea.\+engine.\+Logic.\+test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{long}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Test whether the logic is true for the given person at the given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Person to execute logic against \\
+\hline
+{\em time} & Timestamp to execute logic against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean -\/ whether or not the given condition is true or not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/engine/Logic.\+java\end{DoxyCompactItemize}

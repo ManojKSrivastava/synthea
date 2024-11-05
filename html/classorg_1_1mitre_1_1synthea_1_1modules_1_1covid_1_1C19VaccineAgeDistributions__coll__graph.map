@@ -1,0 +1,8 @@
+<map id="org.mitre.synthea.modules.covid.C19VaccineAgeDistributions" name="org.mitre.synthea.modules.covid.C19VaccineAgeDistributions">
+<area shape="rect" id="node1" title="This class parses the CSV file that is created by calling the CDC API for COVID&#45;19 vaccination inform..." alt="" coords="428,173,669,215"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,204,76"/>
+<area shape="rect" id="node3" title=" " alt="" coords="21,100,189,141"/>
+<area shape="rect" id="node4" title=" " alt="" coords="21,166,189,222"/>
+<area shape="rect" id="node5" title=" " alt="" coords="61,246,148,273"/>
+<area shape="rect" id="node6" title=" " alt="" coords="29,297,180,323"/>
+</map>

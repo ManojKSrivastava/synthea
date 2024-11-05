@@ -1,0 +1,208 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions}{}\doxysection{org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions}\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+
+
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions}{Actions}} class represents the set of all actions the Flexporter can perform.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Bundle \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_aa78611197525a7bfb2fa433ba1b5443e}{apply\+Mapping}} (Bundle bundle, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Mapping}{Mapping}} mapping, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}} fj\+Context)
+\begin{DoxyCompactList}\small\item\em Apply the given \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Mapping}{Mapping}} to the provided Bundle. \end{DoxyCompactList}\item 
+static Bundle \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a749780bc24503aca01a7ffeaf71e3a01}{apply\+Action}} (Bundle bundle, Map$<$ String, Object $>$ action, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}} fj\+Context)
+\begin{DoxyCompactList}\small\item\em Apply the given single Action to the provided Bundle. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a3da9f99c438ddd3614bfc0d4e00d57b9}{apply\+Profiles}} (Bundle bundle, List$<$ Map$<$ String, String $>$$>$ items)
+\begin{DoxyCompactList}\small\item\em Apply a profile to resources matching certain rules. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a3a84007686babd6456be589c51ad4929}{apply\+Profile}} (Resource resource, String profile\+URL)
+\begin{DoxyCompactList}\small\item\em Helper function to add a single profile URL to a resource, and set the Meta if not already set. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a8e0fec5373b79ebba1a29ca8dead6f63}{set\+Values}} (Bundle bundle, List$<$ Map$<$ String, Object $>$$>$ items, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}} fj\+Context)
+\begin{DoxyCompactList}\small\item\em Set values on existing resources within the Bundle, based on rules. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_aee1558d0b8148dccabd19f2646f4d892}{create\+Resource}} (Bundle bundle, List$<$ Map$<$ String, Object $>$$>$ resources\+To\+Create, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}} person, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}} fj\+Context)
+\begin{DoxyCompactList}\small\item\em Create new resources to add to the Bundle, either a single resource or a resource based on other instances of existing resources. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_add454c57f5de35f20540db19b1442a17}{delete\+Resources}} (Bundle bundle, List$<$ String $>$ list)
+\begin{DoxyCompactList}\small\item\em Filter the Bundle by removing selected resources. \end{DoxyCompactList}\item 
+static Bundle \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a2dcd7df7a9eca06bbb9a11b618ab2679}{execute\+Script}} (List$<$ Map$<$ String, String $>$$>$ scripts, Bundle bundle, \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}} fj\+Context)
+\begin{DoxyCompactList}\small\item\em Execute scripts against the given Bundle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions}{Actions}} class represents the set of all actions the Flexporter can perform. 
+
+The entry point is the apply\+Mapping function which invokes the appropriate method. Unlike the State class where each state type is a subclass, this uses a method to represent each action. At some point it may be refactored to be more like State. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a749780bc24503aca01a7ffeaf71e3a01}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a749780bc24503aca01a7ffeaf71e3a01}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!applyAction@{applyAction}}
+\index{applyAction@{applyAction}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{applyAction()}{applyAction()}}
+{\footnotesize\ttfamily static Bundle org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+apply\+Action (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{Map$<$ String, Object $>$}]{action,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}}}]{fj\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply the given single Action to the provided Bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & FHIR bundle \\
+\hline
+{\em action} & Flexporter action \\
+\hline
+{\em person} & Synthea Person object that was used to create the Bundle. This will be null if running the flexporter standalone from the run\+\_\+flexporter task. \\
+\hline
+{\em fj\+Context} & Flexporter Javascript Context associated with this run \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Bundle after the transformation has been applied. Important\+: in many cases it will be the same Bundle object as passed in, but not always! 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_aa78611197525a7bfb2fa433ba1b5443e}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_aa78611197525a7bfb2fa433ba1b5443e}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!applyMapping@{applyMapping}}
+\index{applyMapping@{applyMapping}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{applyMapping()}{applyMapping()}}
+{\footnotesize\ttfamily static Bundle org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+apply\+Mapping (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Mapping}{Mapping}}}]{mapping,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}}}]{fj\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply the given \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Mapping}{Mapping}} to the provided Bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & FHIR bundle \\
+\hline
+{\em mapping} & Flexporter mapping \\
+\hline
+{\em person} & Synthea Person object that was used to create the Bundle. This will be null if running the flexporter standalone from the run\+\_\+flexporter task. \\
+\hline
+{\em fj\+Context} & Flexporter Javascript Context associated with this run \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Bundle after all transformations have been applied. Important\+: in many cases it will be the same Bundle object as passed in, but not always! 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a3a84007686babd6456be589c51ad4929}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a3a84007686babd6456be589c51ad4929}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!applyProfile@{applyProfile}}
+\index{applyProfile@{applyProfile}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{applyProfile()}{applyProfile()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+apply\+Profile (\begin{DoxyParamCaption}\item[{Resource}]{resource,  }\item[{String}]{profile\+URL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Helper function to add a single profile URL to a resource, and set the Meta if not already set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & FHIR resource \\
+\hline
+{\em profile\+URL} & Profile URL to add, if not already present \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a3da9f99c438ddd3614bfc0d4e00d57b9}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a3da9f99c438ddd3614bfc0d4e00d57b9}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!applyProfiles@{applyProfiles}}
+\index{applyProfiles@{applyProfiles}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{applyProfiles()}{applyProfiles()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+apply\+Profiles (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{List$<$ Map$<$ String, String $>$$>$}]{items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply a profile to resources matching certain rules. 
+
+Note this only adds the profile URL to resource.\+meta.\+profile, it does not apply any other transformations or checking. Resources to apply the profile to are selected by FHIRPath. (Or simply resource type)
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & Bundle to apply profiles to \\
+\hline
+{\em items} & List of rule definitions for applying profiles. Each item should have a \char`\"{}profile\char`\"{} for the URL and \char`\"{}applicability\char`\"{} for the FHIRPath to select resources. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_aee1558d0b8148dccabd19f2646f4d892}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_aee1558d0b8148dccabd19f2646f4d892}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!createResource@{createResource}}
+\index{createResource@{createResource}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{createResource()}{createResource()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+create\+Resource (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{List$<$ Map$<$ String, Object $>$$>$}]{resources\+To\+Create,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}}}]{fj\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create new resources to add to the Bundle, either a single resource or a resource based on other instances of existing resources. 
+
+Fields on the resource as well as the \char`\"{}based on\char`\"{} resource will be set based on rules.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & Bundle to add resources to \\
+\hline
+{\em resources\+To\+Create} & List of rules. Rules include a \char`\"{}resource\+Type\char`\"{}, optionally a \char`\"{}based\+\_\+on\char`\"{} FHIRPath to select resources to base the new one off of, and \char`\"{}fields\char`\"{} which are \char`\"{}location\char`\"{} and \char`\"{}value\char`\"{} pairs defining which field to set and what value. \\
+\hline
+{\em person} & Synthea person object to fetch values from (e.\+g, attributes). May be null \\
+\hline
+{\em fj\+Context} & Javascript context for this run \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_add454c57f5de35f20540db19b1442a17}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_add454c57f5de35f20540db19b1442a17}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!deleteResources@{deleteResources}}
+\index{deleteResources@{deleteResources}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{deleteResources()}{deleteResources()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+delete\+Resources (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{List$<$ String $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Filter the Bundle by removing selected resources. 
+
+Resources that reference deleted resources will also be deleted, and so on. TODO\+: Support different methods for handling references\+: Cascade (current), Delete reference field but leave object, Do nothing
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & FHIR Bundle to filter \\
+\hline
+{\em list} & List of resource types to delete, other types not listed will be kept \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a2dcd7df7a9eca06bbb9a11b618ab2679}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a2dcd7df7a9eca06bbb9a11b618ab2679}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!executeScript@{executeScript}}
+\index{executeScript@{executeScript}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{executeScript()}{executeScript()}}
+{\footnotesize\ttfamily static Bundle org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+execute\+Script (\begin{DoxyParamCaption}\item[{List$<$ Map$<$ String, String $>$$>$}]{scripts,  }\item[{Bundle}]{bundle,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}}}]{fj\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Execute scripts against the given Bundle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scripts} & Script definitions, containing a definition of one or more JS functions, the name of the function to invoke, and whether it applies to the bundle as a whole, or to the individual resources. \\
+\hline
+{\em bundle} & FHIR bundle to apply scripts against \\
+\hline
+{\em fj\+Context} & Javascript context for this run \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new Bundle. IMPORTANT -\/ using the JS context will always result in a new bundle, not modify the existing one in-\/place. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a8e0fec5373b79ebba1a29ca8dead6f63}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1Actions_a8e0fec5373b79ebba1a29ca8dead6f63}} 
+\index{org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}!setValues@{setValues}}
+\index{setValues@{setValues}!org.mitre.synthea.export.flexporter.Actions@{org.mitre.synthea.export.flexporter.Actions}}
+\doxysubsubsection{\texorpdfstring{setValues()}{setValues()}}
+{\footnotesize\ttfamily static void org.\+mitre.\+synthea.\+export.\+flexporter.\+Actions.\+set\+Values (\begin{DoxyParamCaption}\item[{Bundle}]{bundle,  }\item[{List$<$ Map$<$ String, Object $>$$>$}]{items,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1world_1_1agents_1_1Person}{Person}}}]{person,  }\item[{\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1flexporter_1_1FlexporterJavascriptContext}{Flexporter\+Javascript\+Context}}}]{fj\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set values on existing resources within the Bundle, based on rules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bundle} & Bundle to apply rules to \\
+\hline
+{\em items} & List of rules. Rules include \char`\"{}applicability\char`\"{} to select which resources to apply values to, and \char`\"{}fields\char`\"{} which are \char`\"{}location\char`\"{} and \char`\"{}value\char`\"{} pairs defining which field to set and what value to put there. \\
+\hline
+{\em person} & Synthea person object to fetch values from (e.\+g, attributes). May be null \\
+\hline
+{\em fj\+Context} & Javascript context for this run \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/flexporter/Actions.\+java\end{DoxyCompactItemize}

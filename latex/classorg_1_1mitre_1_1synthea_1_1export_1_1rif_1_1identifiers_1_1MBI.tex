@@ -1,0 +1,93 @@
+\hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{}\doxysection{org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+MBI Class Reference}
+\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}\index{org.mitre.synthea.export.rif.identifiers.MBI@{org.mitre.synthea.export.rif.identifiers.MBI}}
+
+
+Utility class for working with CMS MBIs.  
+
+
+
+
+Inheritance diagram for org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+MBI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+MBI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_afdc55c52f4d17399c2bb85a019fb654b}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_afdc55c52f4d17399c2bb85a019fb654b}} 
+{\bfseries MBI} (long value)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_aff14b9b8841291dd4f880e2c5c00cbce}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_aff14b9b8841291dd4f880e2c5c00cbce}} 
+{\bfseries MBI} (long value, boolean fake)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a4457f55ef0ae19e72a4254a50a6a3b08}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a4457f55ef0ae19e72a4254a50a6a3b08}} 
+\mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}} {\bfseries next} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a93f7b056c3943b32ec337b0803ed49c0}{parse}} (String str)
+\begin{DoxyCompactList}\small\item\em Parse an \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}} from a String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_aad6d0ab40ad559f38994932cd94e9260}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_aad6d0ab40ad559f38994932cd94e9260}} 
+static final long {\bfseries MIN\+\_\+\+MBI} = 0
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_aa6498ee74db3315043f1a05407c5e067}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_aa6498ee74db3315043f1a05407c5e067}} 
+static final long {\bfseries MAX\+\_\+\+FAKE\+\_\+\+MBI} = max\+Value(FAKE\+\_\+\+MBI\+\_\+\+FORMAT)
+\item 
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a4df2dbb50abcdc47c0fcd6b7731bfdb5}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a4df2dbb50abcdc47c0fcd6b7731bfdb5}} 
+static final long {\bfseries MAX\+\_\+\+REAL\+\_\+\+MBI} = max\+Value(REAL\+\_\+\+MBI\+\_\+\+FORMAT)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Utility class for working with CMS MBIs. 
+
+Note that when used for fake MBIs, this class fixes the value of character position 2 to be \textquotesingle{}S\textquotesingle{}.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://www.cms.gov/Medicare/New-Medicare-Card/Understanding-the-MBI-with-Format.pdf}{\texttt{ https\+://www.\+cms.\+gov/\+Medicare/\+New-\/\+Medicare-\/\+Card/\+Understanding-\/the-\/\+MBI-\/with-\/\+Format.\+pdf}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a93f7b056c3943b32ec337b0803ed49c0}\label{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI_a93f7b056c3943b32ec337b0803ed49c0}} 
+\index{org.mitre.synthea.export.rif.identifiers.MBI@{org.mitre.synthea.export.rif.identifiers.MBI}!parse@{parse}}
+\index{parse@{parse}!org.mitre.synthea.export.rif.identifiers.MBI@{org.mitre.synthea.export.rif.identifiers.MBI}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}} org.\+mitre.\+synthea.\+export.\+rif.\+identifiers.\+MBI.\+parse (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse an \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}} from a String. 
+
+If the second character is \textquotesingle{}S\textquotesingle{} this will create a fake \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}}, otherwise it will create a \char`\"{}real\char`\"{} \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}}. 
+\begin{DoxyParams}{Parameters}
+{\em str} & the string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classorg_1_1mitre_1_1synthea_1_1export_1_1rif_1_1identifiers_1_1MBI}{MBI}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/mitre/synthea/export/rif/identifiers/MBI.\+java\end{DoxyCompactItemize}

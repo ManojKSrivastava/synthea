@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['synthea_20physiology_20simulations_2158',['Synthea Physiology Simulations',['../md_config_simulations_README.html',1,'']]],
+  ['synthea_3csup_3etm_3c_2fsup_3e_20patient_20generator_20_3cimg_20src_3d_22https_3a_2f_2fgithub_2ecom_2fsynthetichealth_2fsynthea_2fworkflows_2f_2egithub_2fworkflows_2fci_2dbuild_2dtest_2eyml_2fbadge_2esvg_3fbranch_3dmaster_22_20alt_3d_22build_20status_22_2f_3e_20_3ca_20href_3d_22https_3a_2f_2fcodecov_2eio_2fgh_2fsynthetichealth_2fsynthea_22_3e_3cimg_20src_3d_22https_3a_2f_2fcodecov_2eio_2fgh_2fsynthetichealth_2fsynthea_2fbranch_2fmaster_2fgraph_2fbadge_2esvg_22_20alt_3d_22codecov_22_2f_3e_3c_2fa_3e_2159',['Synthea&lt;sup&gt;TM&lt;/sup&gt; Patient Generator &lt;img src=&quot;https://github.com/synthetichealth/synthea/workflows/.github/workflows/ci-build-test.yml/badge.svg?branch=master&quot; alt=&quot;Build Status&quot;/&gt; &lt;a href=&quot;https://codecov.io/gh/synthetichealth/synthea&quot;&gt;&lt;img src=&quot;https://codecov.io/gh/synthetichealth/synthea/branch/master/graph/badge.svg&quot; alt=&quot;codecov&quot;/&gt;&lt;/a&gt;',['../md_README.html',1,'']]]
+];

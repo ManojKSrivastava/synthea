@@ -1,0 +1,8 @@
+<map id="org.mitre.synthea.world.concepts.HealthRecord.ImagingStudy.Series" name="org.mitre.synthea.world.concepts.HealthRecord.ImagingStudy.Series">
+<area shape="rect" id="node1" title="ImagingStudy.Series represents a series of images that were taken of a specific part of the body." alt="" coords="616,74,863,115"/>
+<area shape="rect" id="node2" title=" " alt="" coords="317,5,403,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="38,64,137,91"/>
+<area shape="rect" id="node5" title=" " alt="" coords="238,107,482,149"/>
+<area shape="rect" id="node4" title=" " alt="" coords="219,173,501,214"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,123,169,149"/>
+</map>
